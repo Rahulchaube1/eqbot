@@ -20,13 +20,19 @@ import { requestSourceIp } from "../../../server/source-ip";
 import { requireWorkerBindings } from "../../../server/types";
 
 async function handle({ request }: { request: Request }) {
-  if (new URL(request.url).pathname.startsWith("/api/browser/google/")) {
-    const result = await handleGoogleSignIn(request, requireWorkerBindings(env), (email) =>
+  const bindings = requireWorkerBindings(env);
+  const url = new URL(request.url);
+  if (url.pathname.startsWith("/api/browser/google/")) {
+    const result = await handleGoogleSignIn(request, bindings, (email) =>
       Effect.runPromise(requestCompanySignIn().usesCompanySignIn(email)),
     );
     if (result) return result;
   }
-  return handleBrowserApi(request, {
+  // Vercel forwards browser API requests to this Worker. Use the configured web origin
+  // for the existing same-origin checks and return URLs.
+  const webOrigin = bindings.GOOGLE_OAUTH_ORIGIN;
+  const publicRequest = webOrigin ? new Request(new URL(url.pathname + url.search, webOrigin), request) : request;
+  return handleBrowserApi(publicRequest, {
     auth: requestAuthService(),
     remote: requestRemoteControlPlane(),
     companySignIn: requestCompanySignIn,

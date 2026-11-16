@@ -13,6 +13,10 @@
   ],
   "rewrites": [
     {
+      "source": "/api/browser/:path*",
+      "destination": "https://eqbots-account.artisticmap.workers.dev/api/browser/:path*"
+    },
+    {
       "source": "/plugins",
       "destination": "/marketplace/apps/index.html"
     }

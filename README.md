@@ -246,6 +246,20 @@ bun run dev:prepare
 bun run dev
 ```
 
+### Deploy the EQBots website and account service
+
+The Vercel project serves the site at `eqbot.everestqai.com` and forwards browser account requests to the EQBots Cloudflare Worker. Build and deploy the account service from `apps/auth-api`:
+
+```bash
+bun run build
+bun run wrangler d1 migrations apply eqbots-auth --remote --config wrangler.eqbots.json
+bun run wrangler deploy --config wrangler.eqbots.json
+```
+
+Add `GOOGLE_OAUTH_CLIENT_ID` and `GOOGLE_OAUTH_CLIENT_SECRET` as Worker secrets. Set the Google web client's authorized redirect URI to `https://eqbot.everestqai.com/api/browser/google/callback`. The web app shows Google sign-in when the Worker reports that both secrets are present.
+
+Deploy the site from the repository root with `vercel deploy --prod` after linking the `eqbots` project.
+
 ### Marketplace launch catalog
 
 Seed the approved EQBots team catalog locally with `bun run marketplace:seed:local`, then start or reuse `bun run dev`. Search **EQBots** in Marketplace to review its Skills and Agents. See the [catalog and publication guide](marketplace/production-catalog/README.md).
