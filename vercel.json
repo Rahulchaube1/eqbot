@@ -1,0 +1,74 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "bun scripts/build-vercel.ts",
+  "outputDirectory": "vercel-dist",
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [
+    {
+      "source": "/download/macos/latest",
+      "has": [
+        {
+          "type": "query",
+          "key": "arch",
+          "value": "x64"
+        }
+      ],
+      "destination": "/installers/EQBots-0.70.0-x64.dmg"
+    },
+    {
+      "source": "/download/macos/latest",
+      "destination": "/installers/EQBots-0.70.0-arm64.dmg"
+    },
+    {
+      "source": "/download/windows/latest",
+      "destination": "/installers/EQBots-0.70.0-x64.exe"
+    },
+    {
+      "source": "/download/linux/latest",
+      "has": [
+        {
+          "type": "query",
+          "key": "arch",
+          "value": "arm64"
+        }
+      ],
+      "destination": "/installers/EQBots-0.70.0-arm64.AppImage"
+    },
+    {
+      "source": "/download/linux/latest",
+      "destination": "/installers/EQBots-0.70.0-x86_64.AppImage"
+    },
+    {
+      "source": "/download/ios/latest",
+      "destination": "/installers/EQBots-0.70.0-ios.ipa"
+    },
+    {
+      "source": "/download/android/latest",
+      "destination": "/installers/EQBots-0.70.0.apk"
+    },
+    {
+      "source": "/plugins",
+      "destination": "/marketplace/apps/index.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/installers/(.*)",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/octet-stream"
+        },
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"$1\""
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    }
+  ]
+}

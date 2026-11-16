@@ -1,0 +1,161 @@
+import { spawn } from "node:child_process";
+import { cpSync, existsSync, mkdirSync, rmSync, writeFileSync } from "node:fs";
+import { dirname, join, resolve } from "node:path";
+import { fileURLToPath } from "node:url";
+import { createOpenBotLogger } from "@openbot/logging";
+import { Effect } from "effect";
+import { BRAND_ASSETS } from "../apps/auth-api/src/lib/brand-assets";
+import { CONTENT_COLLECTIONS } from "../apps/auth-api/src/lib/content";
+import {
+  androidApkResponse,
+  iosDownloadResponse,
+  latestDownloadResponse,
+} from "../apps/auth-api/src/server/latest-download";
+
+const logger = createOpenBotLogger("build-vercel");
+const rootDir = resolve(dirname(fileURLToPath(import.meta.url)), "..");
+const authApiDir = join(rootDir, "apps", "auth-api");
+const distClientDir = join(authApiDir, "dist", "client");
+const outDir = join(rootDir, "vercel-dist");
+
+const STATIC_ROUTES = [
+  "/",
+  "/app",
+  "/app-preview",
+  "/download",
+  "/download/macos",
+  "/download/windows",
+  "/download/linux",
+  "/download/ios",
+  "/download/android",
+  "/brand",
+  "/marketplace",
+  "/marketplace/skills",
+  "/marketplace/apps",
+  "/teams",
+  "/pricing",
+  "/news",
+  "/guides",
+  "/compare",
+  "/providers",
+  "/changelog",
+  "/contact",
+  "/terms",
+  "/privacy-policy",
+  "/commercial-license",
+  "/dpa",
+  "/cla",
+  ...CONTENT_COLLECTIONS.flatMap((collection) =>
+    collection.articles.map((article) => `/${collection.id}/${article.slug}`),
+  ),
+];
+
+async function runCommand(cmd: string, args: string[], cwd: string): Promise<void> {
+  await new Promise<void>((resolvePromise, rejectPromise) => {
+    const child = spawn(cmd, args, {
+      cwd,
+      stdio: "inherit",
+      env: { ...process.env, NODE_OPTIONS: "--max-old-space-size=6144" },
+    });
+    child.on("exit", (code) => {
+      if (code === 0) resolvePromise();
+      else rejectPromise(new Error(`${cmd} ${args.join(" ")} exited with code ${code}`));
+    });
+  });
+}
+
+async function waitForServer(url: string, timeoutMs = 30000): Promise<void> {
+  const start = Date.now();
+  while (Date.now() - start < timeoutMs) {
+    try {
+      const res = await fetch(url);
+      if (res.ok) return;
+    } catch {}
+    await new Promise((r) => setTimeout(r, 400));
+  }
+  throw new Error(`Preview server did not start within ${timeoutMs}ms`);
+}
+
+async function main() {
+  const localD1Dir = join(authApiDir, ".wrangler", "state", "v3", "d1");
+  if (!existsSync(localD1Dir)) {
+    logger.info("Initializing local D1 database and EQBots marketplace catalog.");
+    await runCommand("bun", ["run", "api:migrate:local"], rootDir);
+    await runCommand("bun", ["run", "marketplace:seed:local"], rootDir);
+  }
+
+  if (!existsSync(distClientDir)) {
+    logger.info("Building apps/auth-api production bundle.");
+    await runCommand("bun", ["run", "build"], authApiDir);
+  }
+
+  rmSync(outDir, { recursive: true, force: true });
+  mkdirSync(outDir, { recursive: true });
+  cpSync(distClientDir, outDir, { recursive: true });
+
+  // Remove Cloudflare-only _headers / .assetsignore if present
+  rmSync(join(outDir, ".assetsignore"), { force: true });
+  rmSync(join(outDir, "_headers"), { force: true });
+  cpSync(join(rootDir, "vercel.json"), join(outDir, "vercel.json"));
+
+  // Write all /brand/*.svg assets
+  const brandDir = join(outDir, "brand");
+  mkdirSync(brandDir, { recursive: true });
+  for (const asset of BRAND_ASSETS) {
+    writeFileSync(join(brandDir, `${asset.file}.svg`), asset.svg, "utf8");
+  }
+
+  // Write all 7 platform installer packages under /installers/
+  const installersDir = join(outDir, "installers");
+  mkdirSync(installersDir, { recursive: true });
+
+  const installers = [
+    { file: "EQBots-0.70.0-arm64.dmg", res: await Effect.runPromise(latestDownloadResponse("macos", fetch, "arm64")) },
+    { file: "EQBots-0.70.0-x64.dmg", res: await Effect.runPromise(latestDownloadResponse("macos", fetch, "x64")) },
+    { file: "EQBots-0.70.0-x64.exe", res: await Effect.runPromise(latestDownloadResponse("windows", fetch, "x64")) },
+    {
+      file: "EQBots-0.70.0-x86_64.AppImage",
+      res: await Effect.runPromise(latestDownloadResponse("linux", fetch, "x64")),
+    },
+    {
+      file: "EQBots-0.70.0-arm64.AppImage",
+      res: await Effect.runPromise(latestDownloadResponse("linux", fetch, "arm64")),
+    },
+    { file: "EQBots-0.70.0-ios.ipa", res: iosDownloadResponse() },
+    { file: "EQBots-0.70.0.apk", res: androidApkResponse() },
+  ];
+
+  for (const item of installers) {
+    const buf = new Uint8Array(await item.res.arrayBuffer());
+    writeFileSync(join(installersDir, item.file), buf);
+  }
+
+  // Start vite preview to pre-render all HTML pages with production asset references
+  const previewPort = 3109;
+  const previewOrigin = `http://127.0.0.1:${previewPort}`;
+  const previewProc = spawn("bunx", ["vite", "preview", "--port", String(previewPort), "--host", "127.0.0.1"], {
+    cwd: authApiDir,
+    stdio: ["ignore", "pipe", "pipe"],
+  });
+
+  try {
+    await waitForServer(`${previewOrigin}/`);
+    for (const route of STATIC_ROUTES) {
+      const res = await fetch(`${previewOrigin}${route}`);
+      if (!res.ok) {
+        logger.warn(`Route ${route} returned ${res.status}`);
+        continue;
+      }
+      const html = await res.text();
+      const targetFile = route === "/" ? join(outDir, "index.html") : join(outDir, route.slice(1), "index.html");
+      mkdirSync(dirname(targetFile), { recursive: true });
+      writeFileSync(targetFile, html, "utf8");
+    }
+  } finally {
+    previewProc.kill();
+  }
+
+  logger.info(`Vercel static & installer bundle written to ${outDir}`);
+}
+
+await main();
