@@ -34,15 +34,6 @@ export const OPENBOT_DOWNLOAD_PAGE_LINKS = {
 export const OPENBOT_LINKS = {
   /** The contact form page. */
   contact: "/contact",
-  x: "https://x.com/OpenBot_",
-  threads: "https://www.threads.com/@openbot.run",
-  linkedin: "https://www.linkedin.com/company/openbot-si/",
-  reddit: "https://www.reddit.com/r/OpenBot_/",
-  instagram: "https://www.instagram.com/openbot.run/",
-  tiktok: "https://www.tiktok.com/@openbot.run",
-  facebook: "https://www.facebook.com/profile.php?id=61595425259628",
-  /** A Redirect Rule in the openbot.run Cloudflare zone sends this to the current Discord invite. */
-  discord: "https://discord.openbot.run",
   download: "#download",
   news: "/news",
   guides: "/guides",

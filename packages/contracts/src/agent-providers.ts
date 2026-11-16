@@ -900,6 +900,11 @@ export const OPENCODE_RECOMMENDED_FREE_MODELS: readonly AgentModelId[] = [
   OPENCODE_DEFAULT_FREE_MODEL,
   "opencode/big-pickle",
   "opencode/glm-5.3-flash-free",
+  "opencode/deepseek-v4.1-flash-free",
+  "opencode/minimax-m3.1-flash-free",
+  "opencode/mimo-v2.6-flash-free",
+  "opencode/nemotron-3.5-lightning-free",
+  "opencode/flint-40b-free",
 ];
 
 export function isFreeOpencodeModel(id: string, name: string): boolean {

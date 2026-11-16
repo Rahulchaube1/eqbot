@@ -1,0 +1,39 @@
+name: EQBots Windows installer
+on:
+  push:
+    tags:
+      - "eqbots-windows-v*"
+permissions:
+  contents: read
+jobs:
+  windows:
+    runs-on: windows-2025
+    timeout-minutes: 45
+    permissions:
+      contents: write
+    env:
+      CSC_IDENTITY_AUTO_DISCOVERY: "false"
+      GH_TOKEN: ${{ github.token }}
+      GITHUB_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - uses: ./.github/actions/setup-bun
+      - name: Install provider runtimes
+        run: |
+          bun scripts/install-codex-runtime.ts win32 x64
+          bun scripts/install-claude-runtime.ts win32 x64
+          bun scripts/install-grok-runtime.ts win32 x64
+      - name: Build installer
+        run: bun run dist:win
+      - name: Publish Windows installer
+        shell: pwsh
+        run: |
+          $installers = @(Get-ChildItem -LiteralPath dist -Filter 'EQBots-*-x64.exe' -File)
+          if ($installers.Count -ne 1) { throw "Expected exactly one EQBots x64 installer." }
+          $installer = $installers[0]
+          $checksum = Join-Path $installer.DirectoryName 'SHA256SUMS-windows.txt'
+          "$((Get-FileHash -LiteralPath $installer.FullName).Hash)  $($installer.Name)" | Set-Content $checksum -Encoding ascii
+          gh release create $env:GITHUB_REF_NAME $installer.FullName $checksum --verify-tag --title "EQBots for Windows" --notes "Windows x64 installer for EQBots. This build is unsigned."
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }

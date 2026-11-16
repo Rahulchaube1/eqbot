@@ -2,7 +2,6 @@ import { Effect } from "effect";
 // App identity, first-run setup, the analytics preference, external links and the data and
 // diagnostics exports.
 
-import { bugReportFormUrl } from "@openbot/contracts/feedback";
 import { HOSTED_SERVER_CONTACT_URL } from "@openbot/contracts/hosted-servers";
 import { INPUT_LIMITS } from "@openbot/contracts/input-limits";
 import {
@@ -16,7 +15,6 @@ import {
   externalLinkAppName,
   GROK_BOT_EXPORT_URL,
 } from "@openbot/contracts/ipc";
-import type { AppTranslate } from "@openbot/i18n";
 import { analyticsOnByDefault } from "@openbot/telemetry";
 import { app, type BrowserWindow, dialog, type OpenDialogOptions, type WebContents } from "electron";
 import { version as developmentVersion } from "../../../package.json";
@@ -31,7 +29,6 @@ import type { AppearanceService } from "../appearance-service";
 import type { ApprovalAutomation } from "../approval-automation-store";
 import type { BusyMessageModePreferenceStore } from "../busy-message-mode-preference-store";
 import type { ExternalLinkOpener, ExternalLinkPreferenceStore } from "../external-link-opener";
-import { feedbackFacts } from "../feedback";
 import { listInstalledFonts } from "../installed-fonts";
 import type { InterfaceSizeService } from "../interface-size-service";
 import type { LanguageService } from "../language-service";
@@ -63,13 +60,6 @@ import {
 } from "./app-inputs";
 import { stringPayload } from "./validation";
 
-const OPENBOT_SITE = "https://openbot.run";
-
-/** The first post that the social toast offers, encoded for a query string. */
-function draftPost(translate: AppTranslate): string {
-  return encodeURIComponent(translate("app.socialFollow.draftPost", { site: "openbot.run" }));
-}
-
 /**
  * Every destination `openExternal` may reach, as a closed table.
  *
@@ -81,37 +71,18 @@ function draftPost(translate: AppTranslate): string {
  * it is read from `mac-permission-urls.ts` rather than written twice. `hosted-server-contact` is a
  * `mailto:` address, which `openUrl` refuses; the web client opens the same constant.
  */
-const EXTERNAL_DESTINATIONS: Record<ExternalDestination, string | ((translate: AppTranslate) => string)> = {
-  "agent-setup": "https://github.com/nightly-labs/openbot/blob/main/docs/TROUBLESHOOTING.md",
+const EXTERNAL_DESTINATIONS: Partial<Record<ExternalDestination, string>> = {
+  "agent-setup": "https://github.com/Rahulchaube1/eqbot/blob/main/docs/TROUBLESHOOTING.md",
   "opencode-install": "https://opencode.ai/docs/",
   "opencode-auth": "https://opencode.ai/auth",
   "claude-install": "https://code.claude.com/docs",
   "hermes-install": "https://hermes-agent.nousresearch.com/docs/getting-started/installation",
-  feedback: "https://x.com/intent/post?text=Feedback%20for%20OpenBot%20%40norbertbodziony%3A%20",
-  "report-problem": () => bugReportFormUrl(feedbackFacts()),
-  message: "https://x.com/norbertbodziony",
-  changelog: "https://openbot.run/changelog",
-  guides: "https://openbot.run/guides",
-  // A Redirect Rule in the openbot.run Cloudflare zone sends this to the current Discord invite.
-  discord: "https://discord.openbot.run",
-  github: "https://github.com/nightly-labs/openbot",
-  x: "https://x.com/OpenBot_",
-  threads: "https://www.threads.com/@openbot.run",
-  instagram: "https://www.instagram.com/openbot.run/",
-  tiktok: "https://www.tiktok.com/@openbot.run",
-  facebook: "https://www.facebook.com/profile.php?id=61595425259628",
-  linkedin: "https://www.linkedin.com/company/openbot-si/",
-  reddit: "https://www.reddit.com/r/OpenBot_/",
-  // A post page that takes text opens with the first post in the app language. LinkedIn and Facebook
-  // take only a link; Instagram and TikTok take nothing, so the renderer copies the post first.
-  "x-post": (translate) => `https://x.com/intent/post?text=${draftPost(translate)}`,
-  "threads-post": (translate) => `https://www.threads.com/intent/post?text=${draftPost(translate)}`,
-  "linkedin-post": `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(OPENBOT_SITE)}`,
-  "reddit-post": (translate) =>
-    `https://www.reddit.com/r/OpenBot_/submit?type=TEXT&title=${encodeURIComponent(translate("app.socialFollow.redditTitle"))}&text=${draftPost(translate)}`,
-  "facebook-post": `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(OPENBOT_SITE)}`,
-  "instagram-post": "https://www.instagram.com/",
-  "tiktok-post": "https://www.tiktok.com/upload",
+  feedback: "https://github.com/Rahulchaube1/eqbot/issues/new",
+  "report-problem": "https://github.com/Rahulchaube1/eqbot/issues/new",
+  message: "https://github.com/Rahulchaube1/eqbot/issues/new",
+  changelog: "https://bots.everestqai.com/changelog",
+  guides: "https://bots.everestqai.com/guides",
+  github: "https://github.com/Rahulchaube1/eqbot",
   "grok-bot-export": GROK_BOT_EXPORT_URL,
   "hosted-server-contact": HOSTED_SERVER_CONTACT_URL,
   "mac-screen-recording": MAC_PERMISSION_URLS["screen-recording"],
@@ -308,7 +279,7 @@ export function appIpcHandlers({
       }),
       openExternal: payloadHandler(parseExternalDestination, (parsed) => {
         const target = EXTERNAL_DESTINATIONS[parsed];
-        return openLink(typeof target === "string" ? target : target(language.translate));
+        return target ? openLink(target) : Promise.resolve();
       }),
       getSentMessageStats: handler(() => service.readSentMessageStats()),
       openUrl: payloadHandler(stringPayload("URL", INPUT_LIMITS.browserUrl), (url) => openHttpLink(url, openLink)),

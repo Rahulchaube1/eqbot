@@ -20,8 +20,8 @@ electronFuses:
   grantFileProtocolExtraPrivileges: false
 publish:
   provider: github
-  owner: nightly-labs
-  repo: openbot
+  owner: Rahulchaube1
+  repo: eqbot
 files:
   - out/**/*
   - package.json

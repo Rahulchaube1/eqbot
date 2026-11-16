@@ -171,7 +171,6 @@ import { ServerRail } from "@openbot/ui/features/servers/ServerRail";
 import type { SettingsPagePlacement } from "@openbot/ui/features/settings/SettingsDialogShell";
 import { createSettingsHostedServersStore } from "@openbot/ui/features/settings/stores/hosted-servers-store";
 import { Sidebar } from "@openbot/ui/features/sidebar/Sidebar";
-import { SidebarCommunityCard } from "@openbot/ui/features/sidebar/SidebarCommunityCard";
 import { sidebarAgentOrder } from "@openbot/ui/features/sidebar/sidebar-agent-order";
 import {
   computeSidebarAgentStates,
@@ -302,7 +301,6 @@ import type { HostClaudeCompactWindowCalls } from "../settings/provider-claude-c
 import type { HostClaudeUserSetupCalls } from "../settings/provider-claude-user-setup";
 import type { HostModelVisibilityCalls } from "../settings/provider-model-visibility";
 import type { HostPromptCacheTtlCalls } from "../settings/provider-prompt-cache";
-import { createCommunityCardVisibility } from "../sidebar/community-card";
 import { createSidebarAlertCards, SidebarAlertCards } from "../sidebar/SidebarAlertCards";
 import { isReaderAuthor } from "../team/reader-identity";
 import type { ServerVaultOptions } from "../vault/ServerVaultPanel";
@@ -871,7 +869,6 @@ function WebWorkspaceFrame(props: WebWorkspaceProps) {
       hiddenAgentIds: hiddenAgentIds(),
     }),
   );
-  const communityCard = createCommunityCardVisibility();
   const [messageFocusRequest, setMessageFocusRequest] = createSignal<{
     agentId: string;
     messageId: string;
@@ -3290,13 +3287,6 @@ function WebWorkspaceFrame(props: WebWorkspaceProps) {
                           members={workspace.state.presence?.members ?? []}
                           onOpenStorage={(serverId) => void openServerSettings(serverId, null, "storage")}
                         />
-                        <Show when={!alertCards.shown() && !communityCard.dismissed()}>
-                          <SidebarCommunityCard
-                            onJoinDiscord={() => void openWebDestination("discord")}
-                            onFollowX={() => void openWebDestination("x")}
-                            onDismiss={communityCard.dismiss}
-                          />
-                        </Show>
                       </>
                     }
                     emptyAction={

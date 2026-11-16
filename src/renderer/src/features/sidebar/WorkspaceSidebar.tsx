@@ -3,7 +3,6 @@ import { AGENT_NOTIFICATION_LEVELS_CAPABILITY } from "@openbot/contracts/team-pr
 import { CONVERSATION_UNREAD_FROM_CAPABILITY } from "@openbot/contracts/team-protocol/conversation-unread-from-v1";
 import { AGENT_HIDDEN_CAPABILITY } from "@openbot/contracts/team-protocol/current";
 import { Sidebar } from "@openbot/ui/features/sidebar/Sidebar";
-import { SidebarCommunityCard } from "@openbot/ui/features/sidebar/SidebarCommunityCard";
 import { SidebarMobileAppCard } from "@openbot/ui/features/sidebar/SidebarMobileAppCard";
 import { sidebarChannelWaits } from "@openbot/ui/features/sidebar/sidebar-agent-states";
 import { teamMemberName } from "@openbot/ui/features/team/TeamPersonAvatar";
@@ -33,7 +32,6 @@ import { useServers } from "../servers/servers-context";
 import { useSettings } from "../settings/settings-context";
 import { usePresence } from "../team/team-context";
 import { SidebarUpdateIsland } from "../updates/SidebarUpdateIsland";
-import { createCommunityCardVisibility } from "./community-card";
 import { createSidebarAlertCards, SidebarAlertCards } from "./SidebarAlertCards";
 import { ServerUpgradeOffer } from "./server-upgrade-offer";
 import { useSidebar } from "./sidebar-context";
@@ -153,7 +151,6 @@ export function WorkspaceSidebar(props: { peopleEnabled: boolean }) {
   const [mobileAppDismissed, setMobileAppDismissed] = createSignal(
     window.localStorage.getItem(MOBILE_APP_DISMISSED_STORAGE_KEY) === "true",
   );
-  const communityCard = createCommunityCardVisibility();
   const alertCards = createSidebarAlertCards(activeServer);
   // A clear in Server settings frees space and can change an alert level, so both cards read
   // again when settings close.
@@ -337,17 +334,6 @@ export function WorkspaceSidebar(props: { peopleEnabled: boolean }) {
                   window.localStorage.setItem(MOBILE_APP_DISMISSED_STORAGE_KEY, "true");
                   setMobileAppDismissed(true);
                 }}
-              />
-            </Show>
-            <Show
-              when={
-                !platform.landingPreview && !alertCards.shown() && mobileAppDismissed() && !communityCard.dismissed()
-              }
-            >
-              <SidebarCommunityCard
-                onJoinDiscord={() => void appPort().openExternal("discord")}
-                onFollowX={() => void appPort().openExternal("x")}
-                onDismiss={communityCard.dismiss}
               />
             </Show>
             <SidebarUpdateIsland />

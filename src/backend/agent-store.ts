@@ -370,6 +370,7 @@ export class AgentStore {
       if (input.avatarHue !== null && !isAvatarHue(input.avatarHue)) throw new Error("Invalid avatar hue.");
       if (input.avatarColor != null && !isAvatarColor(input.avatarColor)) throw new Error("Invalid avatar color.");
       const record = this.#createRecord(`agent-${randomUUID()}`, name, "", description);
+      record.ownBrowserSession = true;
       record.avatarSeed = input.avatarSeed;
       record.avatarHue = input.avatarHue;
       applyAvatarColor(record, input.avatarHue, input.avatarColor);
@@ -437,7 +438,8 @@ export class AgentStore {
       if (source.busyMessageMode) record.busyMessageMode = source.busyMessageMode;
       if (source.taskLimit !== undefined) record.taskLimit = source.taskLimit;
       if (source.backupModels) record.backupModels = structuredClone(source.backupModels);
-      // A named profile carries over; "Only this agent" would give the copy a new, empty session.
+      // A duplicate keeps a named profile or starts with an empty private session.
+      record.ownBrowserSession = true;
       if (source.browserProfileId !== undefined) {
         record.browserProfileId = source.browserProfileId;
         record.ownBrowserSession = true;

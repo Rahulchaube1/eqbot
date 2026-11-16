@@ -10,10 +10,10 @@ import { isDynamicRecord, isOneOf, isString } from "./runtime-values";
  * user reads a prefilled form and submits it in the browser. `parseFeedback` is the feedback that the
  * app sends, which the account Worker opens as an issue with the same sections.
  */
-const ISSUE_FORM = "https://github.com/nightly-labs/openbot/issues/new?template=";
+const ISSUE_FORM = "https://github.com/Rahulchaube1/eqbot/issues/new?template=";
 
 /** The repository that gets the feedback, as `owner/name`. */
-export const FEEDBACK_REPOSITORY = "nightly-labs/openbot";
+export const FEEDBACK_REPOSITORY = "Rahulchaube1/eqbot";
 
 /** A bug report (`bug_report.yml`) or a feature idea (`feature_request.yml`). */
 export const FEEDBACK_KINDS = ["bug", "idea"] as const;

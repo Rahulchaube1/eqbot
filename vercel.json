@@ -6,6 +6,11 @@
   "trailingSlash": false,
   "redirects": [
     {
+      "source": "/download/windows/latest",
+      "destination": "https://github.com/Rahulchaube1/eqbot/releases/download/eqbots-windows-v0.70.0/EQBots-0.70.0-x64.exe",
+      "permanent": false
+    },
+    {
       "source": "/app",
       "has": [{ "type": "host", "value": "(bots\\.everestqai\\.com|eqbots\\.vercel\\.app)" }],
       "destination": "https://eqbot.everestqai.com/app",
