@@ -22,6 +22,8 @@ interface AccountLoginProps {
   onOpenCompanySignIn?: () => Promise<void>;
   /** A choice under the send button, such as the analytics box of the web app. */
   consent?: JSX.Element;
+  googleSignIn?: boolean;
+  googleSignInFailed?: boolean;
   /** Fine print under the lock line, such as the Terms of Service notice of the web app. */
   notice?: JSX.Element;
   /** The language the screen is in. The button that opens the language choice again shows its name. */
@@ -633,6 +635,14 @@ export function AccountLogin(props: AccountLoginProps) {
                         : t("account.login.sendingCode")}
                     </Show>
                   </Button>
+                  <Show when={props.googleSignIn}>
+                    <a class="account-login-google" href="/api/browser/google/start">
+                      {t("account.login.continueWithGoogle")}
+                    </a>
+                  </Show>
+                  <Show when={props.googleSignInFailed}>
+                    <p role="alert">{t("account.login.googleSignInFailed")}</p>
+                  </Show>
                   {props.consent}
                   <div class="account-login-footer">
                     {/* The account is for sign-in only. A new user asks what leaves the computer. */}

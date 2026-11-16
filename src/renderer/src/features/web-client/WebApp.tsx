@@ -256,6 +256,24 @@ export function WebApp(props: { createRuntime?: WebRuntimeFactory } = {}) {
     });
     resetAnalyticsBox();
   }
+  const [googleSignIn, setGoogleSignIn] = createSignal(false);
+  const [googleSignInFailed, setGoogleSignInFailed] = createSignal(false);
+  onSettled(() => {
+    const current = new URL(window.location.href);
+    if (current.searchParams.get("google_sign_in") === "failed") {
+      setGoogleSignInFailed(true);
+      current.searchParams.delete("google_sign_in");
+      window.history.replaceState(window.history.state, "", current);
+    }
+    void fetch("/api/browser/google/status")
+      .then(async (response) => {
+        if (!response.ok) return;
+        const result = await response.json();
+        setGoogleSignIn(isDynamicRecord(result) && result.enabled === true);
+      })
+      .catch(() => undefined);
+  });
+
   const accountFetch: typeof fetch = async (input, init) => {
     const generation = sessionGeneration;
     const response = await fetch(input, init);
@@ -549,6 +567,8 @@ export function WebApp(props: { createRuntime?: WebRuntimeFactory } = {}) {
                     language={resolveLocale(languagePreference.language(), navigator.language)}
                     onChangeLanguage={() => setLanguageWheelOpen(true)}
                     state={state.login}
+                    googleSignIn={googleSignIn()}
+                    googleSignInFailed={googleSignInFailed()}
                     onRetry={checkSession}
                     onRequestEmailCode={start}
                     onVerifyEmailCode={verify}

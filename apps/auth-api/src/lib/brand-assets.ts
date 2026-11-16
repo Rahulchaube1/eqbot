@@ -22,7 +22,7 @@ type Ink = "dark" | "light";
 export type BrandSpace = "tight" | "safe";
 
 // The colors of the brand tokens in `@openbot/brand/tokens.css`. A file must not depend on a page's CSS.
-const FILL: Record<IconColor, string> = { lilac: "#d6adf2", white: "#ffffff", black: "#040007" };
+const FILL: Record<IconColor, string> = { lilac: "#26c6c2", white: "#ffffff", black: "#040007" };
 const BODY: Record<IconColor, string> = { lilac: "#e6e6e6", white: "#e6e6e6", black: "#2a2733" };
 const EYE: Record<IconColor, string> = { lilac: "#040007", white: "#040007", black: "#ffffff" };
 const INK: Record<Ink, string> = { dark: "#040007", light: "#ffffff" };
@@ -50,8 +50,8 @@ function mark(color: IconColor, shape: IconShape, x: number, y: number): string 
   return [
     `<g transform="translate(${x} ${y})">`,
     `<rect width="${APP_LOGO_SIZE}" height="${APP_LOGO_SIZE}" rx="${corner}" fill="${FILL[color]}"/>`,
-    `<path fill="${BODY[color]}" d="${APP_LOGO_ROBOT_BODY_PATH}"/>`,
     `<path fill="${EYE[color]}" d="${APP_LOGO_ROBOT_OUTLINE_PATH}"/>`,
+    `<path fill="${BODY[color]}" d="${APP_LOGO_ROBOT_BODY_PATH}"/>`,
     `<path fill="${EYE[color]}" d="${APP_LOGO_ROBOT_FACE_PATH}"/>`,
     "</g>",
   ].join("");

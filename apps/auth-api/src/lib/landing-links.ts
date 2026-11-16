@@ -55,7 +55,7 @@ export const OPENBOT_LINKS = {
   documentation: "https://github.com/Rahulchaube1/eqbot#readme",
   troubleshooting: "https://github.com/Rahulchaube1/eqbot/blob/main/docs/TROUBLESHOOTING.md",
   /** GitHub Pages hosts the status page, so it stays up when Cloudflare does not. */
-  status: "https://bots.everestqai.com",
+  status: "https://eqbot.everestqai.com",
   selfHostedServer: "https://github.com/Rahulchaube1/eqbot/blob/main/docs/self-hosted-server.md",
   dockerDocumentation: "https://github.com/Rahulchaube1/eqbot/blob/main/docs/docker.md",
   dockerInstallUbuntu: "https://docs.docker.com/engine/install/ubuntu/",

@@ -279,6 +279,31 @@ export class D1AuthRepository implements AuthRepository {
     (operation) => operation.pipe(Effect.provide(this.#layer)),
   ).bind(this);
 
+  readonly createVerifiedBrowserSession = Effect.fn("D1AuthRepository.createVerifiedBrowserSession")(
+    function* (
+      this: D1AuthRepository,
+      email: string,
+      session: { id: string; token: string; expiresAt: number },
+      now: number,
+    ) {
+      const database = yield* AuthDatabase;
+      const { user } = yield* this.#upsertEmailUserEffect(email, now);
+      const tokenHash = yield* sha256(session.token).pipe(
+        Effect.mapError(() => new AuthStoreError({ message: "Account store operation failed." })),
+      );
+      yield* storeCall(() =>
+        database
+          .prepare(
+            `INSERT INTO auth_sessions(id, user_id, token_hash, expires_at, created_at, last_used_at)
+         VALUES (?, ?, ?, ?, ?, ?)`,
+          )
+          .bind(session.id, user.id, tokenHash, session.expiresAt, now, now)
+          .run(),
+      );
+    },
+    (operation) => operation.pipe(Effect.provide(this.#layer)),
+  ).bind(this);
+
   readonly incrementRateLimit = Effect.fn("D1AuthRepository.incrementRateLimit")(
     function* (
       this: D1AuthRepository,

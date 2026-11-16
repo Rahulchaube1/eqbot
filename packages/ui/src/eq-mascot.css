@@ -1,0 +1,35 @@
+.eq-mascot-shell {
+  transform-origin: 50% 85%;
+}
+
+.eq-mascot-eyes {
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .eq-mascot[data-moving="true"] .eq-mascot-shell {
+    animation: eq-mascot-bob 2.8s ease-in-out infinite;
+  }
+
+  .eq-mascot[data-moving="true"] .eq-mascot-eyes {
+    animation: eq-mascot-blink 4.2s ease-in-out infinite;
+  }
+}
+
+@keyframes eq-mascot-bob {
+  50% {
+    transform: translateY(-3px) rotate(-3deg);
+  }
+}
+
+@keyframes eq-mascot-blink {
+  0%,
+  92%,
+  100% {
+    transform: scaleY(1);
+  }
+  96% {
+    transform: scaleY(0.14);
+  }
+}

@@ -8,11 +8,11 @@
     </a>
   </p>
   <p>
-    <a href="https://bots.everestqai.com"><strong>bots.everestqai.com</strong></a> ·
-    <a href="https://bots.everestqai.com/download"><strong>Download (macOS, Windows, Linux, iOS, Android)</strong></a> ·
-    <a href="https://bots.everestqai.com/app-preview"><strong>Live Web Workspace Preview</strong></a> ·
-    <a href="https://bots.everestqai.com/marketplace"><strong>Marketplace</strong></a> ·
-    <a href="https://bots.everestqai.com/brand"><strong>Brand Kit</strong></a>
+    <a href="https://eqbot.everestqai.com"><strong>eqbot.everestqai.com</strong></a> ·
+    <a href="https://eqbot.everestqai.com/download"><strong>Download (macOS, Windows, Linux, iOS, Android)</strong></a> ·
+    <a href="https://eqbot.everestqai.com/app-preview"><strong>Live Web Workspace Preview</strong></a> ·
+    <a href="https://eqbot.everestqai.com/marketplace"><strong>Marketplace</strong></a> ·
+    <a href="https://eqbot.everestqai.com/brand"><strong>Brand Kit</strong></a>
   </p>
   <p>
     <a href="https://github.com/Rahulchaube1/eqbot/actions/workflows/ci.yml"><img src="https://github.com/Rahulchaube1/eqbot/actions/workflows/ci.yml/badge.svg" alt="CI" /></a>
@@ -24,7 +24,7 @@
 
 # EQBots by EverestQai
 
-**EQBots** (a product of **[EverestQai](https://www.everestqai.com)**) is a local-first workspace for persistent AI teammates across **macOS**, **Windows**, **Linux**, **iOS**, **Android**, and the **Web** (`https://bots.everestqai.com`).
+**EQBots** (a product of **[EverestQai](https://www.everestqai.com)**) is a local-first workspace for persistent AI teammates across **macOS**, **Windows**, **Linux**, **iOS**, **Android**, and the **Web** (`https://eqbot.everestqai.com`).
 
 It supports the local [Codex App Server](https://learn.chatgpt.com/docs/app-server) and
 [Claude Code](https://code.claude.com/docs/en/overview), plus [Grok CLI](https://docs.x.ai/build/overview),
@@ -33,7 +33,7 @@ OpenCode, Gemini, [Cursor CLI](https://cursor.com/cli), [Cline CLI](https://clin
 conversation, and provides local queues, file transfers, an embedded browser, and agent-to-agent
 messaging in one unified app.
 
-EQBots is ready for production use and hosted at **[bots.everestqai.com](https://bots.everestqai.com)**.
+EQBots is ready for production use and hosted at **[eqbot.everestqai.com](https://eqbot.everestqai.com)**.
 
 > [!WARNING]
 > Agents run with `danger-full-access` and `approvalPolicy: never`. They can read and modify files,
@@ -43,16 +43,16 @@ EQBots is ready for production use and hosted at **[bots.everestqai.com](https:/
 
 ## Product Screenshots
 
-### 1. Landing Page & Interactive Hero (`https://bots.everestqai.com/`)
+### 1. Landing Page & Interactive Hero (`https://eqbot.everestqai.com/`)
 ![EQBots by EverestQai Landing Page](docs/screenshots/landing-home.png)
 
-### 2. EQBots Web Workspace (`https://bots.everestqai.com/app-preview`)
+### 2. EQBots Web Workspace (`https://eqbot.everestqai.com/app-preview`)
 ![EQBots Interactive Workspace](docs/screenshots/web-app-preview.png)
 
-### 3. EQBots Account Sign-In (`https://bots.everestqai.com/app`)
+### 3. EQBots Account Sign-In (`https://eqbot.everestqai.com/app`)
 ![EQBots Sign In](docs/screenshots/web-app-signin.png)
 
-### 4. All-Platforms Download Hub (`https://bots.everestqai.com/download`)
+### 4. All-Platforms Download Hub (`https://eqbot.everestqai.com/download`)
 ![EQBots Download Hub](docs/screenshots/downloads-hub.png)
 
 ### 5. Platform Downloads (`macOS`, `Windows`, `Linux`, `iOS`, `Android`)
@@ -69,7 +69,7 @@ EQBots is ready for production use and hosted at **[bots.everestqai.com](https:/
 | :---: | :---: |
 | ![EQBots for Android](docs/screenshots/download-android.png) | ![EQBots & EverestQai Brand Kit](docs/screenshots/brand-everestqai.png) |
 
-### 6. EQBots Marketplace (`https://bots.everestqai.com/marketplace`)
+### 6. EQBots Marketplace (`https://eqbot.everestqai.com/marketplace`)
 ![EQBots Marketplace](docs/screenshots/marketplace.png)
 
 ---
@@ -100,27 +100,27 @@ EQBots supports **macOS 13+** (Apple silicon & Intel), **Windows 10+** (x64), **
 
 | Platform | Direct Installer Route | Package Filename |
 | --- | --- | --- |
-| **macOS (Apple Silicon)** | [`https://bots.everestqai.com/download/macos/latest`](https://bots.everestqai.com/download/macos/latest) | `EQBots-0.70.0-arm64.dmg` |
-| **macOS (Intel)** | [`https://bots.everestqai.com/download/macos/latest?arch=x64`](https://bots.everestqai.com/download/macos/latest?arch=x64) | `EQBots-0.70.0-x64.dmg` |
-| **Windows (x64)** | [`https://bots.everestqai.com/download/windows/latest`](https://bots.everestqai.com/download/windows/latest) | `EQBots-0.70.0-x64.exe` |
-| **Linux (x86_64)** | [`https://bots.everestqai.com/download/linux/latest`](https://bots.everestqai.com/download/linux/latest) | `EQBots-0.70.0-x86_64.AppImage` |
-| **Linux (ARM64)** | [`https://bots.everestqai.com/download/linux/latest?arch=arm64`](https://bots.everestqai.com/download/linux/latest?arch=arm64) | `EQBots-0.70.0-arm64.AppImage` |
-| **iOS (iPhone / iPad)** | [`https://bots.everestqai.com/download/ios/latest`](https://bots.everestqai.com/download/ios/latest) | `EQBots-0.70.0-ios.ipa` |
-| **Android (APK)** | [`https://bots.everestqai.com/download/android/latest`](https://bots.everestqai.com/download/android/latest) | `EQBots-0.70.0.apk` |
+| **macOS (Apple Silicon)** | [`https://eqbot.everestqai.com/download/macos/latest`](https://eqbot.everestqai.com/download/macos/latest) | `EQBots-0.70.0-arm64.dmg` |
+| **macOS (Intel)** | [`https://eqbot.everestqai.com/download/macos/latest?arch=x64`](https://eqbot.everestqai.com/download/macos/latest?arch=x64) | `EQBots-0.70.0-x64.dmg` |
+| **Windows (x64)** | [`https://eqbot.everestqai.com/download/windows/latest`](https://eqbot.everestqai.com/download/windows/latest) | `EQBots-0.70.0-x64.exe` |
+| **Linux (x86_64)** | [`https://eqbot.everestqai.com/download/linux/latest`](https://eqbot.everestqai.com/download/linux/latest) | `EQBots-0.70.0-x86_64.AppImage` |
+| **Linux (ARM64)** | [`https://eqbot.everestqai.com/download/linux/latest?arch=arm64`](https://eqbot.everestqai.com/download/linux/latest?arch=arm64) | `EQBots-0.70.0-arm64.AppImage` |
+| **iOS (iPhone / iPad)** | [`https://eqbot.everestqai.com/download/ios/latest`](https://eqbot.everestqai.com/download/ios/latest) | `EQBots-0.70.0-ios.ipa` |
+| **Android (APK)** | [`https://eqbot.everestqai.com/download/android/latest`](https://eqbot.everestqai.com/download/android/latest) | `EQBots-0.70.0.apk` |
 
 ### macOS
 
-1. Download the latest `EQBots-*-arm64.dmg` (or `EQBots-*-x64.dmg` on an Intel Mac) from [`https://bots.everestqai.com/download/macos`](https://bots.everestqai.com/download/macos) or [GitHub Releases](https://github.com/Rahulchaube1/eqbot/releases).
+1. Download the latest `EQBots-*-arm64.dmg` (or `EQBots-*-x64.dmg` on an Intel Mac) from [`https://eqbot.everestqai.com/download/macos`](https://eqbot.everestqai.com/download/macos) or [GitHub Releases](https://github.com/Rahulchaube1/eqbot/releases).
 2. Drag EQBots to Applications and open it.
 
 ### Windows
 
-1. Download the latest `EQBots-*-x64.exe` from [`https://bots.everestqai.com/download/windows`](https://bots.everestqai.com/download/windows) or [GitHub Releases](https://github.com/Rahulchaube1/eqbot/releases).
+1. Download the latest `EQBots-*-x64.exe` from [`https://eqbot.everestqai.com/download/windows`](https://eqbot.everestqai.com/download/windows) or [GitHub Releases](https://github.com/Rahulchaube1/eqbot/releases).
 2. Run the installer and open EQBots.
 
 ### Linux
 
-1. Download the latest `EQBots-*-x86_64.AppImage` (or `EQBots-*-arm64.AppImage` on arm64) from [`https://bots.everestqai.com/download/linux`](https://bots.everestqai.com/download/linux) or [GitHub Releases](https://github.com/Rahulchaube1/eqbot/releases).
+1. Download the latest `EQBots-*-x86_64.AppImage` (or `EQBots-*-arm64.AppImage` on arm64) from [`https://eqbot.everestqai.com/download/linux`](https://eqbot.everestqai.com/download/linux) or [GitHub Releases](https://github.com/Rahulchaube1/eqbot/releases).
 2. Make it executable with `chmod +x EQBots-*.AppImage`, then run it.
 
 The AppImage does not need libfuse2, so it also runs on Arch Linux and Omarchy. It mounts itself
@@ -136,12 +136,12 @@ sudo systemctl reload apparmor
 
 ### iOS (iPhone & iPad)
 
-1. Open [`https://bots.everestqai.com/download/ios`](https://bots.everestqai.com/download/ios) or download `EQBots-0.70.0-ios.ipa` directly from [`/download/ios/latest`](https://bots.everestqai.com/download/ios/latest).
+1. Open [`https://eqbot.everestqai.com/download/ios`](https://eqbot.everestqai.com/download/ios) or download `EQBots-0.70.0-ios.ipa` directly from [`/download/ios/latest`](https://eqbot.everestqai.com/download/ios/latest).
 2. Sign in with the same EQBots account as your computer to chat with your agents from anywhere.
 
 ### Android
 
-1. Open [`https://bots.everestqai.com/download/android`](https://bots.everestqai.com/download/android) or download `EQBots-0.70.0.apk` directly from [`/download/android/latest`](https://bots.everestqai.com/download/android/latest).
+1. Open [`https://eqbot.everestqai.com/download/android`](https://eqbot.everestqai.com/download/android) or download `EQBots-0.70.0.apk` directly from [`/download/android/latest`](https://eqbot.everestqai.com/download/android/latest).
 2. Open the APK on Android 7.0 or newer and sign in to connect to your computer's agents.
 
 #### Theme palette files
@@ -180,7 +180,7 @@ curl -fsSL https://raw.githubusercontent.com/Rahulchaube1/eqbot/main/scripts/ins
 sudo openbot login
 ```
 
-Then use it from the desktop app, the iPhone/Android app or `https://bots.everestqai.com/app`. See
+Then use it from the desktop app, the iPhone/Android app or `https://eqbot.everestqai.com/app`. See
 [self-hosted servers](docs/self-hosted-server.md) for the options and the `openbot` commands.
 
 #### Docker
@@ -260,7 +260,7 @@ Open **Server settings → Import** on this computer, or on a joined server in t
 
 ## Commands
 
-The browser client is served at `/app` by the public web app (`https://bots.everestqai.com/app`). For local development, run
+The browser client is served at `/app` by the public web app (`https://eqbot.everestqai.com/app`). For local development, run
 `bun run dev:api` and open `/app` on the API URL printed by the supervisor. Use
 `bun run dev` when a desktop host is also needed.
 See [web client delivery](docs/web-client.md) for the release gate and focused checks.
@@ -381,7 +381,7 @@ Electron main
     ↕ typed preload bridge
 SolidJS renderer
 
-Cloudflare Workers / Web Host (bots.everestqai.com)
+Cloudflare Workers / Web Host (eqbot.everestqai.com)
 └── TanStack Start + Solid 2 account API & web client
     ├── D1 accounts, email challenges, hashed sessions, and team tunnels
     └── R2 account avatars
@@ -391,7 +391,7 @@ Cloudflare Workers / Web Host (bots.everestqai.com)
 - `src/backend` owns provider adapters, persistence, message scheduling, transfers, and the browser host.
 - `src/preload` exposes only the typed `window.openbot` API.
 - `src/renderer` contains the SolidJS interface.
-- `apps/auth-api` contains the TanStack Start account API, one-time email codes, rate limits, and D1 migrations. It also serves the public site (`https://bots.everestqai.com`): the landing page, `/download` (`macOS`, `Windows`, `Linux`, `iOS`, `Android`), `/news`, `/guides`, `/brand`, and the Marketplace pages at `/marketplace` (Agents, Skills, and Apps).
+- `apps/auth-api` contains the TanStack Start account API, one-time email codes, rate limits, and D1 migrations. It also serves the public site (`https://eqbot.everestqai.com`): the landing page, `/download` (`macOS`, `Windows`, `Linux`, `iOS`, `Android`), `/news`, `/guides`, `/brand`, and the Marketplace pages at `/marketplace` (Agents, Skills, and Apps).
 - `apps/status` contains the public status page and the script that sends the [status webhooks](docs/status-webhooks.md) of the team.
 - `packages/contracts` contains process-boundary contracts, shared limits, and pure validation.
 - `packages/i18n` contains the interface text in English and 14 other languages, Arabic and Hebrew with a right-to-left layout, for desktop, web and mobile. See [docs/i18n.md](docs/i18n.md) to add text or a language.

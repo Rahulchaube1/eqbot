@@ -1,8 +1,8 @@
-import { BloubBot } from "@norbert_bodziony/bloub";
 import { bloubAvatarProfile } from "@openbot/brand/bloub-avatar";
 import type { AvatarColor, AvatarHue } from "@openbot/contracts/ipc";
 import { render } from "@solidjs/web";
 import { flush } from "solid-js";
+import { EqMascot } from "./eq-mascot";
 
 /**
  * When an avatar animates, which is a performance decision and not a state one: `hover` and `idle`
@@ -47,12 +47,12 @@ export function createStaticAvatarSvg(
   const svg = host.querySelector("svg");
   if (!svg) {
     dispose();
-    throw new Error("Bloub did not render an SVG avatar.");
+    throw new Error("EQBots did not render an SVG avatar.");
   }
   const result = svg.cloneNode(true);
   if (!(result instanceof SVGSVGElement)) {
     dispose();
-    throw new Error("Bloub did not clone an SVG avatar.");
+    throw new Error("EQBots did not clone an SVG avatar.");
   }
   dispose();
   return result;
@@ -67,7 +67,7 @@ function mountStaticAvatar(
   const profile = bloubAvatarProfile(seed, hue, color);
   const dispose = render(
     () => (
-      <BloubBot
+      <EqMascot
         size={100}
         shape={profile.shape}
         color={profile.color}
@@ -82,7 +82,7 @@ function mountStaticAvatar(
   const svg = host.querySelector("svg");
   if (!svg) {
     dispose();
-    throw new Error("Bloub did not render an SVG avatar.");
+    throw new Error("EQBots did not render an SVG avatar.");
   }
   svg.removeAttribute("role");
   svg.removeAttribute("aria-label");

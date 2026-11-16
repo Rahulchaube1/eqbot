@@ -74,6 +74,8 @@ export const messages = defineMessages("account", {
   "account.login.emailInvalid": "Enter a valid email address.",
   "account.login.checkDelivery": "Check delivery",
   "account.login.checkAgainIn": "Check again in {time}",
+  "account.login.continueWithGoogle": "Continue with Google",
+  "account.login.googleSignInFailed": "Google sign-in could not finish. Try again or use an email code.",
   "account.login.sendCode": "Send sign-in code",
   "account.login.tryAgainIn": "Try again in {time}",
   "account.login.checkingDelivery": "Checking delivery…",

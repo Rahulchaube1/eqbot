@@ -1,5 +1,8 @@
+import { env } from "cloudflare:workers";
 import { createFileRoute } from "@tanstack/solid-router";
+import { Effect } from "effect";
 import { handleBrowserApi } from "../../../server/browser-api";
+import { handleGoogleSignIn } from "../../../server/google-sign-in";
 import { readHostLogo } from "../../../server/host-logo";
 import {
   hostedServerErrorResponse,
@@ -14,8 +17,15 @@ import {
   requestTeamInviteEmailDelivery,
 } from "../../../server/request-auth";
 import { requestSourceIp } from "../../../server/source-ip";
+import { requireWorkerBindings } from "../../../server/types";
 
-function handle({ request }: { request: Request }) {
+async function handle({ request }: { request: Request }) {
+  if (new URL(request.url).pathname.startsWith("/api/browser/google/")) {
+    const result = await handleGoogleSignIn(request, requireWorkerBindings(env), (email) =>
+      Effect.runPromise(requestCompanySignIn().usesCompanySignIn(email)),
+    );
+    if (result) return result;
+  }
   return handleBrowserApi(request, {
     auth: requestAuthService(),
     remote: requestRemoteControlPlane(),

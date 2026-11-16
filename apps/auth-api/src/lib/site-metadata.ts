@@ -6,7 +6,7 @@
 import { faqStructuredData, type LandingQuestion } from "./landing-faq";
 import { OPENBOT_ALTERNATE_DOWNLOAD_LINKS, OPENBOT_DOWNLOAD_LINKS, OPENBOT_LINKS } from "./landing-links";
 
-export const OPENBOT_SITE_URL = "https://bots.everestqai.com/";
+export const OPENBOT_SITE_URL = "https://eqbot.everestqai.com/";
 export const OPENBOT_SITE_TITLE = "EQBots: Run a team of AI agents on your computer";
 export const OPENBOT_SITE_DESCRIPTION =
   "A free desktop app by EverestQai that runs AI agents as a team on your own computer, with the ChatGPT, Claude, Gemini or Grok plan you already pay for, or your own model.";
@@ -79,8 +79,8 @@ export function pageSocialImageMeta(image: PageSocialImage, siteUrl: string) {
 }
 
 // The hosts production answers on. Both serve the same pages, and those pages go by
-// bots.everestqai.com.
-const OPENBOT_PRODUCTION_HOSTS = new Set(["bots.everestqai.com", "openbot.run", "api.openbot.run"]);
+// eqbot.everestqai.com.
+const OPENBOT_PRODUCTION_HOSTS = new Set(["eqbot.everestqai.com", "openbot.run", "api.openbot.run"]);
 
 /**
  * The site that the head tags of a page served at `pageUrl` name. Social sites fetch

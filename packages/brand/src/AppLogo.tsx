@@ -195,8 +195,8 @@ export function AppLogo(props: AppLogoProps) {
         rx={APP_LOGO_CORNER}
         ry={APP_LOGO_CORNER}
       />
-      <path class="app-logo-robot-body" d={APP_LOGO_ROBOT_BODY_PATH} />
       <path class="app-logo-robot-outline" d={APP_LOGO_ROBOT_OUTLINE_PATH} />
+      <path class="app-logo-robot-body" d={APP_LOGO_ROBOT_BODY_PATH} />
       <g class="app-logo-eye-motion">
         <path class="app-logo-eye app-logo-eye-left app-logo-robot-face" d={APP_LOGO_ROBOT_FACE_PATH} />
       </g>

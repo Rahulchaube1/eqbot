@@ -30,7 +30,7 @@ export const DEFAULT_APP_LOGO_COLOR: AppLogoColor = "lavender";
  * renderers set `--openbot-logo-production` to it, so the icon and the logos show the same color.
  */
 export const APP_LOGO_COLOR_HEX = {
-  lavender: "#d6adf2",
+  lavender: "#26c6c2",
   green: "#7cc68a",
   gold: "#dcba70",
   terracotta: "#cb9071",

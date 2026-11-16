@@ -1,6 +1,7 @@
 import type { BotExpression, ExpressionId } from "@norbert_bodziony/bloub";
-import { PLUSH_CHARACTER_BY_ID, PlushBot } from "@norbert_bodziony/bloub/plush";
+import { PLUSH_CHARACTER_BY_ID } from "@norbert_bodziony/bloub/plush";
 import { createEffect, createSignal, For, onSettled, untrack } from "solid-js";
+import { EqMascot } from "../../eq-mascot";
 import type { CrewFace, CrewFilm, CrewMember, CrewPile } from "./crew-pile";
 
 /** The face of a crew plush at rest: its character's own face, as PlushBot shows without an expression. */
@@ -320,7 +321,7 @@ export function CrewPileStage(props: CrewPileStageProps) {
                   class="app-loading-squash"
                   style={{ "transform-origin": `50% ${(member.cy + member.h / 2) * 100}%` }}
                 >
-                  <PlushBot
+                  <EqMascot
                     character={member.character}
                     state={crewState()}
                     expression={expression()}

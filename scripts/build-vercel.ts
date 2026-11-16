@@ -3,14 +3,8 @@ import { cpSync, existsSync, mkdirSync, rmSync, writeFileSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { createOpenBotLogger } from "@openbot/logging";
-import { Effect } from "effect";
 import { BRAND_ASSETS } from "../apps/auth-api/src/lib/brand-assets";
 import { CONTENT_COLLECTIONS } from "../apps/auth-api/src/lib/content";
-import {
-  androidApkResponse,
-  iosDownloadResponse,
-  latestDownloadResponse,
-} from "../apps/auth-api/src/server/latest-download";
 
 const logger = createOpenBotLogger("build-vercel");
 const rootDir = resolve(dirname(fileURLToPath(import.meta.url)), "..");
@@ -105,38 +99,17 @@ async function main() {
     writeFileSync(join(brandDir, `${asset.file}.svg`), asset.svg, "utf8");
   }
 
-  // Write all 7 platform installer packages under /installers/
-  const installersDir = join(outDir, "installers");
-  mkdirSync(installersDir, { recursive: true });
-
-  const installers = [
-    { file: "EQBots-0.70.0-arm64.dmg", res: await Effect.runPromise(latestDownloadResponse("macos", fetch, "arm64")) },
-    { file: "EQBots-0.70.0-x64.dmg", res: await Effect.runPromise(latestDownloadResponse("macos", fetch, "x64")) },
-    { file: "EQBots-0.70.0-x64.exe", res: await Effect.runPromise(latestDownloadResponse("windows", fetch, "x64")) },
-    {
-      file: "EQBots-0.70.0-x86_64.AppImage",
-      res: await Effect.runPromise(latestDownloadResponse("linux", fetch, "x64")),
-    },
-    {
-      file: "EQBots-0.70.0-arm64.AppImage",
-      res: await Effect.runPromise(latestDownloadResponse("linux", fetch, "arm64")),
-    },
-    { file: "EQBots-0.70.0-ios.ipa", res: iosDownloadResponse() },
-    { file: "EQBots-0.70.0.apk", res: androidApkResponse() },
-  ];
-
-  for (const item of installers) {
-    const buf = new Uint8Array(await item.res.arrayBuffer());
-    writeFileSync(join(installersDir, item.file), buf);
-  }
-
   // Start vite preview to pre-render all HTML pages with production asset references
   const previewPort = 3109;
   const previewOrigin = `http://127.0.0.1:${previewPort}`;
-  const previewProc = spawn("bunx", ["vite", "preview", "--port", String(previewPort), "--host", "127.0.0.1"], {
-    cwd: authApiDir,
-    stdio: ["ignore", "pipe", "pipe"],
-  });
+  const previewProc = spawn(
+    process.execPath,
+    ["x", "vite", "preview", "--port", String(previewPort), "--host", "127.0.0.1"],
+    {
+      cwd: authApiDir,
+      stdio: "inherit",
+    },
+  );
 
   try {
     await waitForServer(`${previewOrigin}/`);
@@ -155,7 +128,7 @@ async function main() {
     previewProc.kill();
   }
 
-  logger.info(`Vercel static & installer bundle written to ${outDir}`);
+  logger.info(`Vercel static site written to ${outDir}`);
 }
 
 await main();

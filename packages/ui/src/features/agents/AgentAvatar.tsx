@@ -1,5 +1,5 @@
-import { BloubBot, type ExpressionId, POSES } from "@norbert_bodziony/bloub";
-import { PlushBot, type PlushState, type PlushTransition } from "@norbert_bodziony/bloub/plush";
+import { type ExpressionId, POSES } from "@norbert_bodziony/bloub";
+import type { PlushState, PlushTransition } from "@norbert_bodziony/bloub/plush";
 import { type AvatarMood, avatarMoodPresentation, type ShapeSafeStateId } from "@openbot/brand/bloub-avatar-motion";
 import type { AgentStepActivity, AvatarColor, AvatarHue } from "@openbot/contracts/ipc";
 import { prefersReducedMotion } from "@openbot/ui/utils";
@@ -15,6 +15,7 @@ import {
 import type { AgentProfile } from "../../data";
 import { documentFocused } from "../../document-focus";
 import { documentSoftwareRendering } from "../../document-rendering";
+import { EqMascot } from "../../eq-mascot";
 
 // Cap avatar animation at 30fps: uncapped bloub clocks measured 30% renderer / 24% GPU
 // for two visible avatars. The shape is 24-40px, so the eye cannot see the difference.
@@ -394,7 +395,7 @@ function GeneratedAvatar(props: {
   // pose on screen and resumes from it, and a change made while it rests still plays to its end. So a
   // new shape or colour always pops: the old body shrinks away and the new one springs out.
   const avatar = () => (
-    <PlushBot
+    <EqMascot
       size={100}
       shape={appearance().shape}
       color={appearance().color}
@@ -416,7 +417,7 @@ function GeneratedAvatar(props: {
   );
 
   const flatAvatar = () => (
-    <BloubBot
+    <EqMascot
       size={100}
       shape={flatAppearance().shape}
       color={flatAppearance().color}
@@ -443,7 +444,7 @@ function GeneratedAvatar(props: {
              at once, with no transition. */
         <Show when={appearance()} keyed>
           {(frozen) => (
-            <PlushBot
+            <EqMascot
               size={100}
               shape={frozen.shape}
               color={frozen.color}
@@ -479,7 +480,7 @@ function GeneratedAvatar(props: {
           fallback={
             <Show when={flatAppearance()} keyed>
               {(frozen) => (
-                <BloubBot
+                <EqMascot
                   size={100}
                   shape={frozen.shape}
                   color={frozen.color}
