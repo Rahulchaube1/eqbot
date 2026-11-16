@@ -4,16 +4,14 @@
 // from the root route instead of as an import here.
 
 import { faqStructuredData, type LandingQuestion } from "./landing-faq";
-import { OPENBOT_ALTERNATE_DOWNLOAD_LINKS, OPENBOT_DOWNLOAD_LINKS, OPENBOT_LINKS } from "./landing-links";
+import { OPENBOT_ALTERNATE_DOWNLOAD_LINKS, OPENBOT_DOWNLOAD_LINKS } from "./landing-links";
 
-export const OPENBOT_SITE_URL = "https://eqbot.everestqai.com/";
+export const OPENBOT_SITE_URL = "https://bots.everestqai.com/";
 export const OPENBOT_SITE_TITLE = "EQBots: Run a team of AI agents on your computer";
 export const OPENBOT_SITE_DESCRIPTION =
   "A free desktop app by EverestQai that runs AI agents as a team on your own computer, with the ChatGPT, Claude, Gemini or Grok plan you already pay for, or your own model.";
-export const OPENBOT_SOCIAL_IMAGE_URL = `${OPENBOT_SITE_URL}openbot-social.png`;
-/** The account `OPENBOT_LINKS.x` opens, which a shared card names. */
+export const OPENBOT_SOCIAL_IMAGE_URL = `${OPENBOT_SITE_URL}eqbots-social.png`;
 export const OPENBOT_X_HANDLE = "@EQBots";
-const OPENBOT_X_URL = "https://x.com/OpenBot_";
 const OPENBOT_REPOSITORY_URL = "https://github.com/Rahulchaube1/eqbot";
 const OPENBOT_PRODUCT_HUNT_URL = "https://www.everestqai.com";
 const OPENBOT_LICENSE_URL = "https://polyformproject.org/licenses/noncommercial/1.0.0/";
@@ -24,7 +22,7 @@ const OPENBOT_WEBSITE_ID = `${OPENBOT_SITE_URL}#website`;
 const OPENBOT_APPLICATION_ID = `${OPENBOT_SITE_URL}#app`;
 /** Square, as schema.org wants for a publisher logo. */
 export const OPENBOT_LOGO_URL = "https://www.everestqai.com/everestq.png";
-export const OPENBOT_SOCIAL_IMAGE_ALT = "Meet EQBots on a dark grid background";
+export const OPENBOT_SOCIAL_IMAGE_ALT = "EQBots, a workspace for your AI team";
 
 /** The Open Graph tags of the site's own social card, which is 1600x900. */
 export const OPENBOT_SOCIAL_IMAGE_META = [
@@ -80,7 +78,7 @@ export function pageSocialImageMeta(image: PageSocialImage, siteUrl: string) {
 
 // The hosts production answers on. Both serve the same pages, and those pages go by
 // eqbot.everestqai.com.
-const OPENBOT_PRODUCTION_HOSTS = new Set(["eqbot.everestqai.com", "openbot.run", "api.openbot.run"]);
+const OPENBOT_PRODUCTION_HOSTS = new Set(["bots.everestqai.com", "eqbot.everestqai.com", "eqbots.vercel.app"]);
 
 /**
  * The site that the head tags of a page served at `pageUrl` name. Social sites fetch
@@ -159,18 +157,7 @@ const OPENBOT_ORGANIZATION = {
   name: "EverestQai",
   url: "https://www.everestqai.com",
   logo: OPENBOT_LOGO_URL,
-  sameAs: [
-    "https://www.everestqai.com",
-    OPENBOT_REPOSITORY_URL,
-    OPENBOT_X_URL,
-    OPENBOT_LINKS.threads,
-    OPENBOT_LINKS.linkedin,
-    OPENBOT_LINKS.reddit,
-    OPENBOT_LINKS.instagram,
-    OPENBOT_LINKS.tiktok,
-    OPENBOT_LINKS.facebook,
-    OPENBOT_PRODUCT_HUNT_URL,
-  ],
+  sameAs: ["https://www.everestqai.com", OPENBOT_REPOSITORY_URL, OPENBOT_PRODUCT_HUNT_URL],
 } as const;
 
 const OPENBOT_WEBSITE = {
@@ -228,7 +215,7 @@ export function openBotRootHead(interLatinFont: string) {
 /** The home page's own social card. Other pages without a card of their own keep the site's card. */
 const OPENBOT_HOME_SOCIAL_IMAGE: PageSocialImage = {
   path: "/social/home.jpg",
-  alt: "Models come and go. Your team stays. EQBots agents on a paper planet",
+  alt: "EQBots, a workspace for your AI team, by EverestQai",
 };
 
 /** The text and the address of the home page in one language. */

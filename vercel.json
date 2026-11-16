@@ -7,7 +7,7 @@
   "redirects": [
     {
       "source": "/download/:platform(macos|windows|linux|ios|android)/latest",
-      "destination": "https://openbot.run/download/:platform/latest",
+      "destination": "https://github.com/Rahulchaube1/eqbot/releases",
       "permanent": false
     }
   ],

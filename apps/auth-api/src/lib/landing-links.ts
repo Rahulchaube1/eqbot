@@ -149,7 +149,6 @@ export const FOOTER_COLUMNS: readonly FooterColumn[] = [
       { label: { text: "contributing" }, external: true, href: OPENBOT_LINKS.contributing },
       { label: "Codex", external: true, href: OPENBOT_LINKS.codex },
       { label: "Claude Code", external: true, href: OPENBOT_LINKS.claude },
-      { label: "Discord", external: true, href: OPENBOT_LINKS.discord },
     ],
   },
   {

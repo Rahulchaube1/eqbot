@@ -11,9 +11,7 @@ import type { ContactPageText } from "./contact-page-text";
 
 /** The channels with a description in the page text. Email follows them, with the address as its description. */
 const CONTACT_CHANNELS = [
-  { id: "discord", label: "Discord", href: OPENBOT_LINKS.discord },
   { id: "github", label: "GitHub", href: `${OPENBOT_LINKS.repository}/issues/new/choose` },
-  { id: "x", label: "X", href: OPENBOT_LINKS.x },
 ] as const;
 
 type ContactStatus = "idle" | "sending" | "sent" | "failed" | "limited";
