@@ -6,23 +6,22 @@
   "trailingSlash": false,
   "redirects": [
     {
-      "source": "/download/windows/latest",
-      "destination": "https://github.com/Rahulchaube1/eqbot/releases/download/eqbots-windows-v0.70.0/Cat-0.70.0-x64.exe",
-      "permanent": false
-    },
-    {
       "source": "/app",
-      "has": [{ "type": "host", "value": "(bots\\.everestqai\\.com|eqbots\\.vercel\\.app)" }],
+      "has": [
+        {
+          "type": "host",
+          "value": "(bots\\.everestqai\\.com|eqbots\\.vercel\\.app)"
+        }
+      ],
       "destination": "https://eqbot.everestqai.com/app",
-      "permanent": false
-    },
-    {
-      "source": "/download/:platform(macos|windows|linux|ios|android)/latest",
-      "destination": "https://github.com/Rahulchaube1/eqbot/releases",
       "permanent": false
     }
   ],
   "rewrites": [
+    {
+      "source": "/download/:platform/latest",
+      "destination": "https://eqbots-account.artisticmap.workers.dev/download/:platform/latest"
+    },
     {
       "source": "/api/browser/:path*",
       "destination": "https://eqbots-account.artisticmap.workers.dev/api/browser/:path*"

@@ -11,7 +11,7 @@ import {
   APP_LOGO_ROBOT_OUTLINE_PATH,
   APP_LOGO_SIZE,
 } from "@openbot/brand/app-logo-shape";
-import { WORDMARK_PATHS, WORDMARK_WIDTH } from "@openbot/brand/wordmark-shape";
+import { WORDMARK_PATH, WORDMARK_WIDTH } from "@openbot/brand/wordmark-shape";
 import { BRAND_ROUTE } from "./brand-page";
 
 export const BRAND_ZIP_FILE = "cat-brand.zip";
@@ -60,7 +60,7 @@ function mark(color: IconColor, shape: IconShape, x: number, y: number): string 
 function wordmark(ink: Ink, x: number, y: number): string {
   return [
     `<g transform="translate(${x} ${y})" fill="${INK[ink]}">`,
-    `<path d="${WORDMARK_PATHS.light}"/><path d="${WORDMARK_PATHS.medium}"/>`,
+    `<path d="${WORDMARK_PATH}"/>`,
     "</g>",
   ].join("");
 }

@@ -162,20 +162,12 @@ export const DOWNLOAD_PAGES: Record<DownloadPagePlatform, DownloadPageContent> =
     heading: "Cat for Mac",
     intro:
       "Run a team of AI agents on your Mac with the ChatGPT, Claude, Gemini or Grok plan you already pay for, or with your own model. Your chats and files stay on your Mac.",
-    installers: [
-      {
-        label: "Download for Apple silicon",
-        shortLabel: "Apple silicon",
-        detail: "For a Mac with M1 or newer",
-        href: OPENBOT_DOWNLOAD_LINKS.macos,
-      },
-      {
-        label: "Download for Intel Mac",
-        shortLabel: "Intel",
-        detail: "For a Mac with an Intel processor",
-        href: OPENBOT_ALTERNATE_DOWNLOAD_LINKS.macos,
-      },
-    ],
+    installers: [{
+      label: "Open web workspace",
+      shortLabel: "Open workspace",
+      detail: "A native Cat installer is not available for this system.",
+      href: "/app",
+    }],
     specs: [
       { label: "System", value: "macOS 13 Ventura or later" },
       { label: "Processor", value: "Apple silicon or Intel" },
@@ -266,20 +258,12 @@ export const DOWNLOAD_PAGES: Record<DownloadPagePlatform, DownloadPageContent> =
     heading: "Cat for Linux",
     intro:
       "Run a team of AI agents on your Linux computer with the ChatGPT, Claude, Gemini or Grok plan you already pay for, or with your own model. Your chats and files stay on your computer.",
-    installers: [
-      {
-        label: "Download for Linux x64",
-        shortLabel: "x64",
-        detail: "When uname -m shows x86_64",
-        href: OPENBOT_DOWNLOAD_LINKS.linux,
-      },
-      {
-        label: "Download for Linux arm64",
-        shortLabel: "arm64",
-        detail: "When uname -m shows aarch64",
-        href: OPENBOT_ALTERNATE_DOWNLOAD_LINKS.linux,
-      },
-    ],
+    installers: [{
+      label: "Open web workspace",
+      shortLabel: "Open workspace",
+      detail: "A native Cat installer is not available for this system.",
+      href: "/app",
+    }],
     specs: [
       { label: "System", value: "Any 64-bit distribution" },
       { label: "Processor", value: "x64 or arm64" },
@@ -359,15 +343,12 @@ export const DOWNLOAD_PAGES: Record<DownloadPagePlatform, DownloadPageContent> =
     heading: "Cat for iPhone",
     intro:
       "Chat with the agents on your computer from anywhere, follow their progress and send them files. Download the iOS package directly.",
-    installers: [
-      {
-        label: "Download for iPhone",
-        shortLabel: "iOS (.ipa)",
-        detail: "For an iPhone with iOS 16.4 or later",
-        href: MOBILE_APPS.ios.href,
-        external: false,
-      },
-    ],
+    installers: [{
+      label: "Open web workspace",
+      shortLabel: "Open workspace",
+      detail: "A native Cat installer is not available for this system.",
+      href: "/app",
+    }],
     specs: [
       { label: "System", value: "iOS 16.4 or later" },
       { label: "Store", value: "App Store / Direct IPA" },
@@ -396,16 +377,12 @@ export const DOWNLOAD_PAGES: Record<DownloadPagePlatform, DownloadPageContent> =
     intro: ANDROID_APK_AVAILABLE
       ? "Chat with the agents on your computer from anywhere, follow their progress and send them files. Get the app or download the APK."
       : "Chat with the agents on your computer from anywhere, follow their progress and send them files. Get the app on Google Play.",
-    installers: [
-      {
-        label: "Download for Android",
-        shortLabel: "Android",
-        detail: "For a phone with Android 7.0 or later",
-        href: MOBILE_APPS.android.href,
-        external: false,
-      },
-      ...(ANDROID_APK_AVAILABLE ? [ANDROID_APK.installer] : []),
-    ],
+    installers: [{
+      label: "Open web workspace",
+      shortLabel: "Open workspace",
+      detail: "A native Cat installer is not available for this system.",
+      href: "/app",
+    }],
     specs: [
       { label: "System", value: "Android 7.0 or later" },
       { label: "Store", value: ANDROID_APK_AVAILABLE ? "Google Play, or an APK" : "Google Play" },

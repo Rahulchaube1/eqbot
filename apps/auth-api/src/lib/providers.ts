@@ -22,7 +22,7 @@ export const PROVIDERS_COLLECTION: ContentCollection<"providers"> = {
   feedTitle: "Cat providers",
   backLabel: "All providers",
   moreTitle: "More providers",
-  imageEyebrow: "EQBOTS · PROVIDERS",
+  imageEyebrow: "CAT · PROVIDERS",
   articles: publishedFirst([
     {
       slug: "claude-code",

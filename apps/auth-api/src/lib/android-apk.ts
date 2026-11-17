@@ -45,4 +45,4 @@ export function androidApkVersion(
 }
 
 /** True when the site shows the APK download. */
-export const ANDROID_APK_AVAILABLE = true;
+export const ANDROID_APK_AVAILABLE = false;

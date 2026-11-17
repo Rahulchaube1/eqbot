@@ -22,7 +22,7 @@ export const GUIDES_COLLECTION: ContentCollection<"guides"> = {
   feedTitle: "Cat guides",
   backLabel: "All guides",
   moreTitle: "More guides",
-  imageEyebrow: "EQBOTS · GUIDES",
+  imageEyebrow: "CAT · GUIDES",
   articles: publishedFirst([
     {
       slug: "ai-workspace-vs-chat",

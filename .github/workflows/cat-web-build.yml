@@ -1,0 +1,18 @@
+name: Build Cat website
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ./.github/actions/setup-bun
+      - run: bun run --cwd apps/auth-api build
+      - run: tar -czf cat-worker.tar.gz -C apps/auth-api/dist .
+      - uses: actions/upload-artifact@v4
+        with:
+          name: cat-worker
+          path: cat-worker.tar.gz
+          retention-days: 1

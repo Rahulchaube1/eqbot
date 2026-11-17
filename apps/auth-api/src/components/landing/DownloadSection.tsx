@@ -2,9 +2,7 @@ import { type MobilePlatformLogoVariant, PlatformLogo, type PlatformLogoVariant 
 import type { JSX } from "@solidjs/web";
 import { Link } from "@tanstack/solid-router";
 import { For, Show } from "solid-js";
-import { ANDROID_APK_AVAILABLE } from "../../lib/android-apk";
 import { DOWNLOAD_PLATFORM_ORDER, DOWNLOAD_PLATFORMS } from "../../lib/download-platforms";
-import { OPENBOT_ANDROID_APK_LINK } from "../../lib/landing-links";
 import { MOBILE_APP_ORDER, MOBILE_APPS } from "../../lib/mobile-apps";
 import { createLandingReveal } from "./createLandingReveal";
 import { LandingIcon } from "./LandingIcon";
@@ -54,9 +52,7 @@ export function DownloadSection() {
   const revealState = () => (revealed() ? "true" : "false");
   const landing = useLandingText();
   const text = () => landing().download;
-  const macos = DOWNLOAD_PLATFORMS.macos;
   const windows = DOWNLOAD_PLATFORMS.windows;
-  const linux = DOWNLOAD_PLATFORMS.linux;
 
   return (
     <section ref={sectionRef} id="download" class="landing-download" aria-labelledby="download-title">
@@ -67,22 +63,6 @@ export function DownloadSection() {
         </header>
 
         <div class="landing-download-grid">
-          <a
-            class="landing-download-card"
-            href={macos.href}
-            data-download-platform="macos"
-            data-state="available"
-            data-revealed={revealState()}
-          >
-            <DownloadCardContent
-              platform="macos"
-              status={text().available}
-              title={macos.label}
-              description={macos.description}
-              action={text().desktop.macos}
-            />
-          </a>
-
           <a
             class="landing-download-card"
             href={windows.href}
@@ -101,79 +81,6 @@ export function DownloadSection() {
 
           {/* The hero selector already offers Linux and /download/linux/latest resolves an AppImage, so the
               card is the same link the other two are. A non-clickable card here contradicted both. */}
-          <a
-            class="landing-download-card"
-            href={linux.href}
-            data-download-platform="linux"
-            data-state="available"
-            data-revealed={revealState()}
-          >
-            <DownloadCardContent
-              platform="linux"
-              status={text().available}
-              title={linux.label}
-              description={linux.description}
-              action={text().desktop.linux}
-            />
-          </a>
-        </div>
-
-        <div class="landing-download-grid landing-download-grid-mobile">
-          <For each={MOBILE_APP_ORDER}>
-            {(platform) => {
-              const app = MOBILE_APPS[platform];
-              // Android has two downloads while a version has an APK. A link cannot contain a link,
-              // so the card is a box: the primary link covers it, and the APK link is on top.
-              if (platform === "android" && ANDROID_APK_AVAILABLE)
-                return (
-                  <div
-                    class="landing-download-card"
-                    data-download-platform={platform}
-                    data-state="available"
-                    data-revealed={revealState()}
-                  >
-                    <DownloadCardContent
-                      platform={platform}
-                      status={text().available}
-                      title={app.label}
-                      description={text().phone[platform].description}
-                      actions={
-                        <>
-                          <a class="landing-download-action landing-download-card-link" href={app.href}>
-                            {text().phone[platform].action}
-                            <LandingIcon name="arrow-up-right" class="landing-download-arrow" />
-                          </a>
-                          <a
-                            class="landing-download-action landing-download-action-apk"
-                            href={OPENBOT_ANDROID_APK_LINK}
-                          >
-                            {text().apk}
-                            <LandingIcon name="download" class="landing-download-action-icon" />
-                          </a>
-                        </>
-                      }
-                    />
-                  </div>
-                );
-              return (
-                <a
-                  class="landing-download-card"
-                  href={app.href}
-                  data-download-platform={platform}
-                  data-state="available"
-                  data-revealed={revealState()}
-                >
-                  <DownloadCardContent
-                    platform={platform}
-                    status={text().available}
-                    title={app.label}
-                    description={text().phone[platform].description}
-                    action={text().phone[platform].action}
-                  />
-                </a>
-              );
-            }}
-          </For>
         </div>
 
         {/* The cards start the download, so the pages that explain each installer get their own

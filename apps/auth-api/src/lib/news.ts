@@ -25,7 +25,7 @@ export const NEWS_COLLECTION: ContentCollection<"news"> = {
   feedTitle: "Cat news",
   backLabel: "All news",
   moreTitle: "More from Cat",
-  imageEyebrow: "EQBOTS · NEWS",
+  imageEyebrow: "CAT · NEWS",
   articles: publishedFirst([
     {
       slug: "introducing-openbot",

@@ -22,7 +22,7 @@ export const COMPARE_COLLECTION: ContentCollection<"compare"> = {
   feedTitle: "Cat comparisons",
   backLabel: "All comparisons",
   moreTitle: "More comparisons",
-  imageEyebrow: "EQBOTS · COMPARE",
+  imageEyebrow: "CAT · COMPARE",
   articles: publishedFirst([
     {
       slug: "paperclip",
