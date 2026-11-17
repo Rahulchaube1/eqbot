@@ -5,6 +5,7 @@ import { fileURLToPath } from "node:url";
 import { createOpenBotLogger } from "@openbot/logging";
 import { BRAND_ASSETS } from "../apps/auth-api/src/lib/brand-assets";
 import { CONTENT_COLLECTIONS } from "../apps/auth-api/src/lib/content";
+import { SITE_PLUGINS } from "../apps/auth-api/src/lib/plugins";
 
 const logger = createOpenBotLogger("build-vercel");
 const rootDir = resolve(dirname(fileURLToPath(import.meta.url)), "..");
@@ -26,6 +27,7 @@ const STATIC_ROUTES = [
   "/marketplace",
   "/marketplace/skills",
   "/marketplace/apps",
+  ...SITE_PLUGINS.map((plugin) => `/plugins/${plugin.slug}`),
   "/teams",
   "/pricing",
   "/news",

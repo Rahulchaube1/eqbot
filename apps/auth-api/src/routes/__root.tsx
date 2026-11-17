@@ -86,6 +86,7 @@ function RootDocument(props: { children: JSX.Element }) {
     <html lang={lang()}>
       <head>
         <HeadContent />
+        <link rel="stylesheet" href="/eqbots-everest.css" />
         {/* Text waits at opacity 0 for a script to reveal it. Without scripts,
             show it as it is, so the page can still be read. */}
         <noscript innerHTML={NO_SCRIPT_STYLE} />
