@@ -10,14 +10,14 @@ export const CURSOR_PROVIDER: ProviderPage = {
   provider: "cursor",
   name: "Cursor",
   answer:
-    "EQBots runs the Cursor agent outside the Cursor editor, on macOS, Windows or Linux, with your Cursor plan or a Cursor API key. You get shared channels with agents on other providers, and an app on your phone.",
+    "Cat runs the Cursor agent outside the Cursor editor, on macOS, Windows or Linux, with your Cursor plan or a Cursor API key. You get shared channels with agents on other providers, and an app on your phone.",
   connect:
-    "Choose Cursor, and EQBots downloads and pins its own copy of the Cursor CLI, or uses the one you installed. Then sign in with Cursor in the browser, or set `CURSOR_API_KEY`.",
+    "Choose Cursor, and Cat downloads and pins its own copy of the Cursor CLI, or uses the one you installed. Then sign in with Cursor in the browser, or set `CURSOR_API_KEY`.",
   adds: [
     {
       icon: "laptop",
       title: "The Cursor agent without the editor",
-      text: "The Cursor CLI runs in the terminal. EQBots gives it a desktop app with threads and files, so you can use Cursor's models without the editor open.",
+      text: "The Cursor CLI runs in the terminal. Cat gives it a desktop app with threads and files, so you can use Cursor's models without the editor open.",
     },
   ],
   vendor: "Cursor",
@@ -38,20 +38,20 @@ export const CURSOR_PROVIDER: ProviderPage = {
     {
       question: "Is there a GUI for the Cursor CLI?",
       answer:
-        "The Cursor editor is Cursor's own graphical app. The Cursor CLI also runs in editors that speak the Agent Client Protocol, such as Zed and JetBrains IDEs. EQBots is a desktop app that runs it as one agent of a team.",
+        "The Cursor editor is Cursor's own graphical app. The Cursor CLI also runs in editors that speak the Agent Client Protocol, such as Zed and JetBrains IDEs. Cat is a desktop app that runs it as one agent of a team.",
     },
     {
-      question: "Which Cursor plan does EQBots need?",
+      question: "Which Cursor plan does Cat need?",
       answer:
         "Your Cursor plan, or a Cursor API key from the Cursor dashboard. Hobby is free; Pro is $20 a month, Pro Plus $60 and Ultra $200. Use beyond the plan is billed at API prices.",
     },
     {
-      question: "Do I need the Cursor editor to use Cursor in EQBots?",
+      question: "Do I need the Cursor editor to use Cursor in Cat?",
       answer:
-        "No. EQBots runs the Cursor CLI, which is a separate program. The editor does not have to be installed or open.",
+        "No. Cat runs the Cursor CLI, which is a separate program. The editor does not have to be installed or open.",
     },
     {
-      question: "Can Cursor and Claude Code work together in EQBots?",
+      question: "Can Cursor and Claude Code work together in Cat?",
       answer:
         "Yes. Each agent has its own provider. A Cursor agent and a Claude Code agent can work in the same channel and give tasks to each other.",
     },

@@ -75,7 +75,7 @@ async function waitForServer(url: string, timeoutMs = 30000): Promise<void> {
 async function main() {
   const localD1Dir = join(authApiDir, ".wrangler", "state", "v3", "d1");
   if (!existsSync(localD1Dir)) {
-    logger.info("Initializing local D1 database and EQBots marketplace catalog.");
+    logger.info("Initializing local D1 database and Cat marketplace catalog.");
     await runCommand("bun", ["run", "api:migrate:local"], rootDir);
     await runCommand("bun", ["run", "marketplace:seed:local"], rootDir);
   }

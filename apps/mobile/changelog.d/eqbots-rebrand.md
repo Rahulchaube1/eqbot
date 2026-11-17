@@ -1,3 +1,3 @@
 ### Changed
 
-- Rebranded the mobile application to **EQBots** by **EverestQai** with updated app icons and store/package download links.
+- Rebranded the mobile application to **Cat** by **EverestQai** with updated app icons and store/package download links.

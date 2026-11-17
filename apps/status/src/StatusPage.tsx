@@ -169,15 +169,15 @@ export function StatusPage(props: StatusPageProps) {
   return (
     <div class="status-page">
       <header class="status-header">
-        <a class="status-brand" href={SITE_URL} aria-label="EQBots home">
+        <a class="status-brand" href={SITE_URL} aria-label="Cat home">
           <AppLogo variant="production" class="status-brand-logo" />
-          <span>EQBots</span>
+          <span>Cat</span>
         </a>
       </header>
 
       <main class="status-main">
         <header class="status-hero">
-          <h1 class="status-title">EQBots status</h1>
+          <h1 class="status-title">Cat status</h1>
           <div class="status-hero-actions">
             <a class="status-button" href="feed.xml" type="application/atom+xml">
               <Rss class="status-button-icon" aria-hidden="true" />

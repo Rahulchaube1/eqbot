@@ -4,7 +4,7 @@ import type { messages as source } from "../../en/mobile/chat";
 export const messages = {
   "mobile.chat.dictation.microphoneOffTitle": "Dostęp do mikrofonu jest wyłączony",
   "mobile.chat.dictation.microphoneOffMessage":
-    "Aby dyktować wiadomość, zezwól EQBots na używanie mikrofonu i rozpoznawania mowy w Ustawieniach.",
+    "Aby dyktować wiadomość, zezwól Cat na używanie mikrofonu i rozpoznawania mowy w Ustawieniach.",
   "mobile.chat.dictation.stopped": "Dyktowanie zatrzymane",
   "mobile.chat.dictation.tryAgain": "Spróbuj ponownie.",
   "mobile.chat.dictation.unavailable": "Dyktowanie jest niedostępne",
@@ -134,7 +134,7 @@ export const messages = {
   "mobile.chat.attachment.unavailable": "Załącznik jest niedostępny. Spróbuj ponownie.",
   "mobile.chat.attachment.openFailed": "Nie udało się otworzyć załącznika",
   "mobile.chat.attachment.photosNeedUpdate": "Zapisywanie zdjęć wymaga najnowszej wersji aplikacji.",
-  "mobile.chat.attachment.photosPermission": "Zezwól EQBots na dodawanie zdjęć w Ustawieniach, aby zapisać ten obraz.",
+  "mobile.chat.attachment.photosPermission": "Zezwól Cat na dodawanie zdjęć w Ustawieniach, aby zapisać ten obraz.",
   "mobile.chat.attachment.imageUnavailable": "Obraz jest niedostępny. Spróbuj ponownie.",
   "mobile.chat.attachment.saveImageFailed": "Nie udało się zapisać obrazu",
   "mobile.chat.attachment.copyImageFailed": "Nie można skopiować obrazu",
@@ -166,9 +166,9 @@ export const messages = {
   "mobile.chat.attachment.unsupported":
     "{name}: wybierz obrazy, dźwięk MP3, wideo MOV lub MP4, archiwa ZIP, PDF, dokumenty Office, EML, tekst, Markdown, dane lub pliki źródłowe.",
   "mobile.chat.attachment.hostRejectsType":
-    "{name}: komputer hosta nie przyjmuje plików {type}. Zaktualizuj tam EQBots, aby je załączać.",
+    "{name}: komputer hosta nie przyjmuje plików {type}. Zaktualizuj tam Cat, aby je załączać.",
   "mobile.chat.attachment.hostRejects":
-    "{name}: komputer hosta nie przyjmuje tych plików. Zaktualizuj tam EQBots, aby je załączać.",
+    "{name}: komputer hosta nie przyjmuje tych plików. Zaktualizuj tam Cat, aby je załączać.",
   "mobile.chat.attachment.nameTooLong": "Wybierz plik o krótszej nazwie.",
   "mobile.chat.attachment.damaged": "Załącznik jest uszkodzony. Wybierz go ponownie.",
   "mobile.chat.attachment.tooLarge": "{name} ma ponad 10 MB.",
@@ -217,12 +217,12 @@ export const messages = {
   "mobile.chat.liveVoice.voiceServerFailed":
     "Serwer głosowy nie mógł odczytać odpowiedzi. Sprawdź go w Ustawienia > Głos.",
   "mobile.chat.liveVoice.gptUnsupported":
-    "Ten serwer nie obsługuje GPT Live Voice. Zaktualizuj EQBots na komputerze, na którym działa.",
+    "Ten serwer nie obsługuje GPT Live Voice. Zaktualizuj Cat na komputerze, na którym działa.",
   "mobile.chat.liveVoice.gptFailed":
     "Nie udało się uruchomić GPT Live Voice. Wyłącz wyciszenie, aby spróbować ponownie.",
   "mobile.chat.liveVoice.gptEnded": "GPT Live Voice zatrzymał się. Wyłącz wyciszenie, aby uruchomić go ponownie.",
   "mobile.chat.liveVoice.gptMicrophoneOff":
-    "Zezwól EQBots na użycie mikrofonu w Ustawieniach. Potem wyłącz wyciszenie, aby spróbować ponownie.",
+    "Zezwól Cat na użycie mikrofonu w Ustawieniach. Potem wyłącz wyciszenie, aby spróbować ponownie.",
   "mobile.chat.composer.addAttachment": "Dodaj załącznik",
   "mobile.chat.composer.ask": "Zapytaj: {name}",
   "mobile.chat.composer.stopFailed": "Nie udało się zatrzymać agenta. Mógł już skończyć.",
@@ -243,7 +243,7 @@ export const messages = {
   "mobile.chat.pins.unpin": "Odepnij",
   "mobile.chat.pins.failed": "Przypięcie się nie zmieniło.",
   "mobile.chat.pins.loadFailed": "Nie udało się wczytać przypiętych wiadomości.",
-  "mobile.chat.pins.unsupported": "Ten host nie może przypinać wiadomości. Zaktualizuj EQBots na hoście.",
+  "mobile.chat.pins.unsupported": "Ten host nie może przypinać wiadomości. Zaktualizuj Cat na hoście.",
   "mobile.chat.pins.mainChat": "Czat główny",
   "mobile.chat.pins.thread": "Wątek boczny",
   "mobile.chat.pins.pinnedBy": "Przypięte przez: {name}",
@@ -340,7 +340,7 @@ export const messages = {
   "mobile.chat.imageGallery.saveAll": "Zapisz wszystkie",
   "mobile.chat.imageGallery.saved": "Zapisano w Zdjęciach",
   "mobile.chat.imageGallery.shareAll": "Udostępnij wszystkie",
-  "mobile.chat.imageGallery.photosPermission": "Pozwól EQBots dodawać zdjęcia w Ustawieniach, aby zapisać te obrazy.",
+  "mobile.chat.imageGallery.photosPermission": "Pozwól Cat dodawać zdjęcia w Ustawieniach, aby zapisać te obrazy.",
   "mobile.chat.imageGallery.saveFailed": "Nie udało się zapisać obrazów",
   "mobile.chat.imageGallery.shareFailed": "Nie udało się udostępnić obrazów",
   "mobile.chat.imageGallery.shareNeedsUpdate": "Udostępnianie wielu obrazów wymaga najnowszej wersji aplikacji.",
@@ -348,7 +348,7 @@ export const messages = {
   "mobile.chat.video.retry": "Wczytaj film",
   "mobile.chat.video.share": "Udostępnij: {name}",
   "mobile.chat.video.save": "Zapisz {name} w Zdjęciach",
-  "mobile.chat.video.photosPermission": "Zezwól EQBots na dodawanie zdjęć w Ustawieniach, aby zapisać ten film.",
+  "mobile.chat.video.photosPermission": "Zezwól Cat na dodawanie zdjęć w Ustawieniach, aby zapisać ten film.",
   "mobile.chat.video.saveFailed": "Nie udało się zapisać filmu",
   "mobile.chat.audio.play": "Odtwórz: {name}",
   "mobile.chat.audio.pause": "Wstrzymaj: {name}",
@@ -362,7 +362,7 @@ export const messages = {
   "mobile.chat.browserSecret.authenticatorCode": "Kod z aplikacji uwierzytelniającej",
   "mobile.chat.browserSecret.oneTimeCode": "Kod jednorazowy",
   "mobile.chat.browserSecret.takeoverTitle": "Przejęcie przeglądarki",
-  "mobile.chat.browserSecret.takeoverBody": "Wykonaj ten krok w przeglądarce na komputerze z EQBots.",
+  "mobile.chat.browserSecret.takeoverBody": "Wykonaj ten krok w przeglądarce na komputerze z Cat.",
   "mobile.chat.browserSecret.takeoverReload": "Potem odśwież stronę, zanim wybierzesz „Gotowe”.",
   "mobile.chat.browserSecret.takeoverFailed": "Nie udało się zrealizować żądania.",
   "mobile.chat.browserSecret.done": "Gotowe",
@@ -450,14 +450,14 @@ export const messages = {
   "mobile.chat.approval.effect.permissions":
     "„Zezwól” daje agentowi {name} te uprawnienia na serwerze {server}. „Odmów” zachowuje obecne uprawnienia.",
   "mobile.chat.approval.partial":
-    "{server} wysyła na telefon tylko początek tego żądania. Aby na nie zezwolić, zaktualizuj EQBots na serwerze {server} albo otwórz ten czat w aplikacji EQBots na komputerze. Odmówić możesz tutaj.",
+    "{server} wysyła na telefon tylko początek tego żądania. Aby na nie zezwolić, zaktualizuj Cat na serwerze {server} albo otwórz ten czat w aplikacji Cat na komputerze. Odmówić możesz tutaj.",
   "mobile.chat.approval.loading": "Wczytywanie całego żądania…",
   "mobile.chat.approval.loadFailed": "Nie udało się wczytać całego żądania. Odmówić możesz tutaj.",
   "mobile.chat.approval.retry": "Spróbuj ponownie",
   "mobile.chat.approval.report.bugHeadline": "Znalazłeś błąd? Naprawmy go.",
   "mobile.chat.approval.report.ideaHeadline": "Masz pomysł? Zróbmy to.",
   "mobile.chat.approval.report.dontSend": "Nie teraz",
-  "mobile.chat.approval.report.send": "Wyślij do zespołu EQBots",
+  "mobile.chat.approval.report.send": "Wyślij do zespołu Cat",
   "mobile.chat.approval.allow": "Zezwól",
   "mobile.chat.approval.deny": "Odmów",
   "mobile.chat.approval.reconnect": "Połącz się z serwerem {server}, aby odpowiedzieć na to żądanie.",
@@ -588,13 +588,13 @@ export const messages = {
   "mobile.chat.threads.renameSave": "Zapisz",
   "mobile.chat.threads.name": "Nazwa wątku",
   "mobile.chat.threads.renameUnavailable":
-    "Nie możesz teraz zmienić nazwy tego wątku. Połącz się z serwerem lub zaktualizuj EQBots na hoście.",
+    "Nie możesz teraz zmienić nazwy tego wątku. Połącz się z serwerem lub zaktualizuj Cat na hoście.",
   "mobile.chat.threads.delete.action": "Usuń",
   "mobile.chat.threads.delete.title": "Usunąć ten wątek?",
   "mobile.chat.threads.delete.body":
-    "EQBots usuwa wątek, jego wiadomości i pliki na zawsze. Główny czat się nie zmienia.",
-  "mobile.chat.threads.filesUnsupported": "Ten host nie przyjmuje plików w wątku. Zaktualizuj EQBots na hoście.",
-  "mobile.chat.threads.unsupported": "Ten host nie może zmieniać nazw ani usuwać wątków. Zaktualizuj EQBots na hoście.",
+    "Cat usuwa wątek, jego wiadomości i pliki na zawsze. Główny czat się nie zmienia.",
+  "mobile.chat.threads.filesUnsupported": "Ten host nie przyjmuje plików w wątku. Zaktualizuj Cat na hoście.",
+  "mobile.chat.threads.unsupported": "Ten host nie może zmieniać nazw ani usuwać wątków. Zaktualizuj Cat na hoście.",
   "mobile.chat.threads.error.rename": "Nie udało się zmienić nazwy wątku.",
   "mobile.chat.threads.error.delete": "Nie udało się usunąć wątku.",
   "mobile.chat.channelWork.working": "Pracuje w kanale {channel}",

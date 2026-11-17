@@ -56,8 +56,8 @@ export const messages = {
   "browser.pip.reattach": "Volver a acoplar el navegador a la barra lateral derecha",
   "browser.pip.reattachTitle": "Volver a acoplar navegador",
   "browser.pip.close": "Cerrar ventana emergente del navegador",
-  "browser.pip.reattachFailed": "EQBots no pudo volver a acoplar el navegador.",
-  "browser.pip.closeFailed": "EQBots no pudo cerrar la ventana emergente del navegador.",
+  "browser.pip.reattachFailed": "Cat no pudo volver a acoplar el navegador.",
+  "browser.pip.closeFailed": "Cat no pudo cerrar la ventana emergente del navegador.",
   "browser.popupBlocked.title": "Ventana emergente bloqueada",
   "browser.popupBlocked.dismiss": "Descartar mensaje de ventana emergente",
   "browser.liveView.label": "Vista en directo de la página en el servidor",
@@ -150,22 +150,22 @@ export const messages = {
   "browser.signIn.local": "Iniciar sesión en este ordenador",
   "browser.signIn.title": "Iniciar sesión en {site}",
   "browser.signIn.description":
-    "Algunos sitios rechazan un inicio de sesión desde un servidor. Inicia sesión en este ordenador y EQBots enviará el inicio de sesión de {site} a {server}. Todos los agentes y miembros de {server} podrán usarlo en el navegador.",
+    "Algunos sitios rechazan un inicio de sesión desde un servidor. Inicia sesión en este ordenador y Cat enviará el inicio de sesión de {site} a {server}. Todos los agentes y miembros de {server} podrán usarlo en el navegador.",
   "browser.signIn.windowOpen":
-    "Inicia sesión en la ventana que se abrió. EQBots envía el inicio de sesión cuando está completo. Si la ventana sigue abierta, selecciona Listo.",
+    "Inicia sesión en la ventana que se abrió. Cat envía el inicio de sesión cuando está completo. Si la ventana sigue abierta, selecciona Listo.",
   "browser.signIn.windowClosed":
     "La ventana de inicio de sesión está cerrada. Selecciona Listo para enviar el inicio de sesión o abre la ventana de nuevo.",
   "browser.signIn.reopen": "Abrir la ventana de inicio de sesión",
   "browser.signIn.sending": "Enviando a {server}…",
   "browser.signIn.sent": "Sesión iniciada en {site} en {server}",
   "browser.signIn.notFound":
-    "EQBots no encontró un inicio de sesión para {site}. Inicia sesión en la ventana y selecciona Listo.",
+    "Cat no encontró un inicio de sesión para {site}. Inicia sesión en la ventana y selecciona Listo.",
   "browser.signIn.stillSignedOut":
     "{server} todavía muestra una página de inicio de sesión de {site}. Termina el inicio de sesión en la ventana.",
-  "browser.signIn.failed": "EQBots no pudo enviar el inicio de sesión.",
+  "browser.signIn.failed": "Cat no pudo enviar el inicio de sesión.",
   "browser.profiles.title": "Perfiles del navegador",
   "browser.profiles.subtitle":
-    "Cada perfil guarda sus propios inicios de sesión, cookies y datos de sitios en el equipo que ejecuta EQBots.",
+    "Cada perfil guarda sus propios inicios de sesión, cookies y datos de sitios en el equipo que ejecuta Cat.",
   "browser.profiles.label": "Perfiles del navegador",
   "browser.profiles.newName": "Nombre del perfil",
   "browser.profiles.create": "Añadir",
@@ -184,8 +184,8 @@ export const messages = {
   "browser.profiles.deleteDescription":
     "Esto elimina los inicios de sesión, las cookies y los datos de sitios del perfil. Sus pestañas abiertas se cierran.",
   "browser.profiles.deleteAgents": "Estos agentes pasan al perfil compartido: {agents}.",
-  "browser.profiles.failed": "EQBots no pudo cambiar los perfiles del navegador.",
-  "browser.profiles.loadFailed": "EQBots no pudo cargar los perfiles del navegador.",
+  "browser.profiles.failed": "Cat no pudo cambiar los perfiles del navegador.",
+  "browser.profiles.loadFailed": "Cat no pudo cargar los perfiles del navegador.",
   "browser.profiles.tabLabel": "Perfil: {name}",
   "browser.profiles.tabLabelProxy": "Perfil: {name} · Proxy: {proxy}",
   "browser.profiles.agentTabLabel": "Perfil propio del agente",
@@ -200,7 +200,7 @@ export const messages = {
   "browser.proxies.addTitle": "Añadir proxy",
   "browser.proxies.editTitle": "Editar {name}",
   "browser.proxies.dialogDescription":
-    "Usa socks5, http o https. El nombre de usuario y la contraseña son opcionales en cada tipo. La contraseña se guarda cifrada en el equipo que ejecuta EQBots.",
+    "Usa socks5, http o https. El nombre de usuario y la contraseña son opcionales en cada tipo. La contraseña se guarda cifrada en el equipo que ejecuta Cat.",
   "browser.proxies.address": "Dirección",
   "browser.proxies.addressPlaceholder": "socks5://user:password@host:1080",
   "browser.proxies.deleteUsed": {
@@ -210,7 +210,7 @@ export const messages = {
   "browser.proxies.deleteUnused": "Ningún perfil usa este proxy.",
   "browser.proxies.failing": "{name} no responde",
   "browser.proxies.signInRefused": "{name} rechazó el inicio de sesión",
-  "browser.proxies.unsupported": "Este servidor no puede usar proxies. Actualiza EQBots en ese servidor.",
+  "browser.proxies.unsupported": "Este servidor no puede usar proxies. Actualiza Cat en ese servidor.",
   "browser.proxies.yourComputer": "Tu ordenador",
   "browser.proxies.memberComputer": "Ordenador de {name}",
   "browser.proxies.unknownComputer": "Ordenador de un miembro",
@@ -221,7 +221,7 @@ export const messages = {
   "browser.proxies.offlineBadge": "{name} está sin conexión",
   "browser.proxies.shareTitle": "¿Compartir la conexión de este ordenador?",
   "browser.proxies.shareDescription":
-    "Los perfiles que usan tu ordenador abren sitios públicos a través de la conexión a internet de este ordenador. Esto solo funciona mientras EQBots esté abierto aquí. El servidor no puede abrir direcciones de tu red local.",
+    "Los perfiles que usan tu ordenador abren sitios públicos a través de la conexión a internet de este ordenador. Esto solo funciona mientras Cat esté abierto aquí. El servidor no puede abrir direcciones de tu red local.",
   "browser.proxies.share": "Compartir",
   "browser.proxies.stopSharing": "Dejar de compartir",
   "browser.proxies.closesTabs": {

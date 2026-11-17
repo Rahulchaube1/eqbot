@@ -2,7 +2,7 @@ import type { PartialTranslation } from "../../message";
 import type { messages as source } from "../en/webClient";
 
 export const messages = {
-  "webClient.loading": "Carregando o EQBots…",
+  "webClient.loading": "Carregando o Cat…",
   "webClient.loadingLine.wake": "Acordando os agentes…",
   "webClient.loadingLine.coffee": "Servindo café para os agentes…",
   "webClient.loadingLine.tokens": "Contando tokens nos dedos…",
@@ -24,18 +24,18 @@ export const messages = {
   "webClient.notice.hostsFailed": "Não foi possível carregar seus servidores",
   "webClient.notice.connectComputer": "Conecte um servidor",
   "webClient.connect.description":
-    "Execute o EQBots no seu computador para conversar com seus agentes neste navegador. Você também pode entrar em um servidor com um convite.",
+    "Execute o Cat no seu computador para conversar com seus agentes neste navegador. Você também pode entrar em um servidor com um convite.",
   "webClient.connect.descriptionHosted":
-    "Crie um servidor hospedado para conversar com seus agentes neste navegador. Você também pode executar o EQBots no seu computador ou entrar em um servidor com um convite.",
-  "webClient.connect.stepInstall": "Instale e abra o EQBots no seu computador.",
+    "Crie um servidor hospedado para conversar com seus agentes neste navegador. Você também pode executar o Cat no seu computador ou entrar em um servidor com um convite.",
+  "webClient.connect.stepInstall": "Instale e abra o Cat no seu computador.",
   "webClient.connect.stepSignIn": "Entre com seu e-mail.",
   "webClient.connect.stepRemote": "Ative o acesso remoto.",
-  "webClient.notice.download": "Baixar EQBots",
+  "webClient.notice.download": "Baixar Cat",
   "webClient.notice.createServer": "Criar servidor hospedado",
   "webClient.notice.join": "Entrar com convite",
   "webClient.notice.refreshHosts": "Atualizar servidores",
   "webClient.otherTab.title": "{name} está aberto em outra aba",
-  "webClient.otherTab.description": "O EQBots pode usar um servidor em uma aba de cada vez.",
+  "webClient.otherTab.description": "O Cat pode usar um servidor em uma aba de cada vez.",
   "webClient.otherTab.useHere": "Usar aqui",
   "webClient.agent.modelsFailed": "Não foi possível carregar os modelos do servidor.",
   "webClient.agent.refreshFailed":
@@ -45,7 +45,7 @@ export const messages = {
   "webClient.error.usageOffline": "Conecte-se ao seu servidor para ver o uso.",
   "webClient.error.desktopOnly": "Esta ação está disponível no app para computador.",
   "webClient.settings.preferences.title": "Preferências",
-  "webClient.settings.preferences.description": "Escolha o idioma e os sons do EQBots neste navegador.",
+  "webClient.settings.preferences.description": "Escolha o idioma e os sons do Cat neste navegador.",
   "webClient.error.checkConversation": "Verifique a conversa antes de enviar novamente.",
   "webClient.error.hostReported": "O servidor informou um erro. Verifique a conversa e o status do servidor.",
   "webClient.error.requestFailed": "A solicitação falhou.",
@@ -75,14 +75,14 @@ export const messages = {
   "webClient.error.identityChanged": "A identidade do servidor mudou. Conexão recusada.",
   "webClient.error.connectionUnavailable": "A conexão com o servidor está indisponível.",
   "webClient.error.incompatible":
-    "Este servidor não é compatível com o EQBots web. Atualize-o e recarregue esta página.",
+    "Este servidor não é compatível com o Cat web. Atualize-o e recarregue esta página.",
   "webClient.error.sendUnconfirmed": "A entrega da mensagem não foi confirmada. Atualize antes de enviá-la novamente.",
   "webClient.error.fileType": "Atualize o servidor para anexar este tipo de arquivo.",
   "webClient.error.uploadCancelled": "O envio do anexo foi cancelado.",
   "webClient.error.duplication": "Este servidor não permite duplicar agentes.",
   "webClient.error.connectServerFirst": "Conecte-se a este servidor primeiro.",
   "webClient.error.agentInstallNotAllowed":
-    "Só um proprietário ou administrador pode adicionar um agente aqui, e o servidor deve executar uma versão atual do EQBots.",
+    "Só um proprietário ou administrador pode adicionar um agente aqui, e o servidor deve executar uma versão atual do Cat.",
   "webClient.error.linkDesktopOnly": "Este link abre apenas no app para computador.",
   "webClient.error.saveEndpointOffline": "Conecte-se ao seu servidor para salvar um endpoint.",
   "webClient.error.removeEndpointOffline": "Conecte-se ao seu servidor para remover um endpoint.",

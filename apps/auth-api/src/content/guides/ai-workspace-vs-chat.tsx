@@ -10,7 +10,7 @@ export function AIWorkspaceVsChat() {
       </p>
 
       <p>
-        In EQBots, an agent has both a working folder and a saved conversation. You can discuss the work in chat, ask
+        In Cat, an agent has both a working folder and a saved conversation. You can discuss the work in chat, ask
         the agent to save the result, and return to those files for the next task.
       </p>
 
@@ -45,7 +45,7 @@ export function AIWorkspaceVsChat() {
         check which version you approved and which earlier suggestions you rejected.
       </p>
 
-      <p>In EQBots, you can ask the agent to save four files in its workspace:</p>
+      <p>In Cat, you can ask the agent to save four files in its workspace:</p>
 
       <ul>
         <li>
@@ -63,7 +63,7 @@ export function AIWorkspaceVsChat() {
       </ul>
 
       <p>
-        These are suggested filenames, not files EQBots creates automatically. Ask the agent to create them and review
+        These are suggested filenames, not files Cat creates automatically. Ask the agent to create them and review
         their contents before treating them as the agreed project record.
       </p>
 
@@ -85,7 +85,7 @@ export function AIWorkspaceVsChat() {
       </p>
 
       <p>
-        EQBots keeps the conversation too. Saved files give you another way to identify the current result; they do not
+        Cat keeps the conversation too. Saved files give you another way to identify the current result; they do not
         replace the discussion that led to it.
       </p>
 
@@ -103,7 +103,7 @@ export function AIWorkspaceVsChat() {
       </p>
 
       <p>
-        The new model does not automatically receive the whole earlier conversation. EQBots passes along selected parts,
+        The new model does not automatically receive the whole earlier conversation. Cat passes along selected parts,
         and the agent can look up more of its saved history when needed. Some details of the old provider's work do not
         transfer.
       </p>
@@ -113,10 +113,10 @@ export function AIWorkspaceVsChat() {
         sources and revise this section."
       </p>
 
-      <h2>Passing the report to another EQBots agent</h2>
+      <h2>Passing the report to another Cat agent</h2>
 
       <p>
-        Agents on the same EQBots computer or server can use its shared folder for files they need to work on together.
+        Agents on the same Cat computer or server can use its shared folder for files they need to work on together.
         They can also send messages with files attached. A channel gives the team a place to discuss the shared task.
       </p>
 
@@ -136,7 +136,7 @@ export function AIWorkspaceVsChat() {
       </p>
 
       <p>
-        The working files live on the computer or server running that EQBots instance. Connecting from your phone does
+        The working files live on the computer or server running that Cat instance. Connecting from your phone does
         not turn its shared folder into a folder synchronized across all your devices.
       </p>
 
@@ -148,7 +148,7 @@ export function AIWorkspaceVsChat() {
       </p>
 
       <p>
-        A folder also does not decide what an agent can access. EQBots's Workspace only setting, for supported
+        A folder also does not decide what an agent can access. Cat's Workspace only setting, for supported
         providers, limits writes to allowed folders; it does not block file reads or network access. Full access is a
         separate setting.
       </p>

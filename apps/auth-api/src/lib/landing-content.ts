@@ -141,7 +141,7 @@ export const LANDING_NETWORK_AGENTS: readonly { teammate: LandingTeammate; provi
 ];
 
 /** The name under the mark at the centre of the network picture. */
-export const LANDING_NETWORK_HUB = "EQBots";
+export const LANDING_NETWORK_HUB = "Cat";
 
 export interface LandingProvider {
   provider: ProviderLogoVariant;

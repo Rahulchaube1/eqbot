@@ -15,23 +15,23 @@ export const NEWS_COLLECTION: ContentCollection<"news"> = {
   indexRoute: "/news",
   articleRoute: "/news/$slug",
   name: "News",
-  indexTitle: "EQBots News: Updates on the Local AI Agent App",
+  indexTitle: "Cat News: Updates on the Local AI Agent App",
   indexDescription:
-    "Notes on building EQBots: local-first storage, agents that outlive their provider, and how the pieces fit together.",
+    "Notes on building Cat: local-first storage, agents that outlive their provider, and how the pieces fit together.",
   indexSocialImage: {
     path: "/social/news.jpg",
-    alt: "Good things in the making. EQBots agents on a paper moon under the stars",
+    alt: "Good things in the making. Cat agents on a paper moon under the stars",
   },
-  feedTitle: "EQBots news",
+  feedTitle: "Cat news",
   backLabel: "All news",
-  moreTitle: "More from EQBots",
+  moreTitle: "More from Cat",
   imageEyebrow: "EQBOTS · NEWS",
   articles: publishedFirst([
     {
       slug: "introducing-openbot",
-      title: "Introducing EQBots: A Shared Workspace for AI Agents",
+      title: "Introducing Cat: A Shared Workspace for AI Agents",
       description:
-        "Meet EQBots, a local-first workspace where the AI models you already use can work as a team of agents, alongside you and your coworkers.",
+        "Meet Cat, a local-first workspace where the AI models you already use can work as a team of agents, alongside you and your coworkers.",
       publishedAt: "2026-09-14",
       author: NEWS_AUTHOR,
     },
@@ -79,7 +79,7 @@ export const NEWS_COLLECTION: ContentCollection<"news"> = {
       slug: "run-the-team-server-yourself",
       title: "Run the team server yourself",
       description:
-        "Learn how self-hosting an EQBots team server works, where conversations and files live, what the account service handles, and who is responsible for uptime.",
+        "Learn how self-hosting an Cat team server works, where conversations and files live, what the account service handles, and who is responsible for uptime.",
       publishedAt: "2026-07-11",
       updatedAt: "2026-10-07",
       author: NEWS_AUTHOR,

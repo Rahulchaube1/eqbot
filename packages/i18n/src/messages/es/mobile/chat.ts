@@ -4,7 +4,7 @@ import type { messages as source } from "../../en/mobile/chat";
 export const messages = {
   "mobile.chat.dictation.microphoneOffTitle": "El acceso al micrófono está desactivado",
   "mobile.chat.dictation.microphoneOffMessage":
-    "Para dictar un mensaje, permite que EQBots use el micrófono y el reconocimiento de voz en Ajustes.",
+    "Para dictar un mensaje, permite que Cat use el micrófono y el reconocimiento de voz en Ajustes.",
   "mobile.chat.dictation.stopped": "Dictado detenido",
   "mobile.chat.dictation.tryAgain": "Vuelve a intentarlo.",
   "mobile.chat.dictation.unavailable": "El dictado no está disponible",
@@ -119,7 +119,7 @@ export const messages = {
   "mobile.chat.attachment.unavailable": "El archivo adjunto no está disponible. Vuelve a intentarlo.",
   "mobile.chat.attachment.openFailed": "No se pudo abrir el archivo adjunto",
   "mobile.chat.attachment.photosNeedUpdate": "Para guardar fotos necesitas la versión más reciente de la app.",
-  "mobile.chat.attachment.photosPermission": "Permite que EQBots añada fotos en Ajustes para guardar esta imagen.",
+  "mobile.chat.attachment.photosPermission": "Permite que Cat añada fotos en Ajustes para guardar esta imagen.",
   "mobile.chat.attachment.imageUnavailable": "La imagen no está disponible. Vuelve a intentarlo.",
   "mobile.chat.attachment.saveImageFailed": "No se pudo guardar la imagen",
   "mobile.chat.attachment.copyImageFailed": "No se pudo copiar la imagen",
@@ -152,9 +152,9 @@ export const messages = {
   "mobile.chat.attachment.unsupported":
     "{name}: elige imágenes, audio MP3, vídeo MOV o MP4, archivos ZIP, PDF, documentos de Office, EML, texto, Markdown, datos o archivos de código fuente.",
   "mobile.chat.attachment.hostRejectsType":
-    "{name}: el equipo host no acepta archivos {type}. Actualiza EQBots en ese equipo para adjuntarlos.",
+    "{name}: el equipo host no acepta archivos {type}. Actualiza Cat en ese equipo para adjuntarlos.",
   "mobile.chat.attachment.hostRejects":
-    "{name}: el equipo host no acepta estos archivos. Actualiza EQBots en ese equipo para adjuntarlos.",
+    "{name}: el equipo host no acepta estos archivos. Actualiza Cat en ese equipo para adjuntarlos.",
   "mobile.chat.attachment.nameTooLong": "Elige un archivo con un nombre más corto.",
   "mobile.chat.attachment.damaged": "El archivo adjunto está dañado. Vuelve a seleccionarlo.",
   "mobile.chat.attachment.tooLarge": "{name} ocupa más de 10 MB.",
@@ -202,11 +202,11 @@ export const messages = {
   "mobile.chat.liveVoice.networkNeeded": "ElevenLabs necesita conexión de red.",
   "mobile.chat.liveVoice.voiceServerFailed": "Tu servidor de voz no pudo leer la respuesta. Revísalo en Ajustes > Voz.",
   "mobile.chat.liveVoice.gptUnsupported":
-    "Este servidor no admite GPT Live Voice. Actualiza EQBots en el ordenador que lo ejecuta.",
+    "Este servidor no admite GPT Live Voice. Actualiza Cat en el ordenador que lo ejecuta.",
   "mobile.chat.liveVoice.gptFailed": "GPT Live Voice no pudo iniciarse. Activa el micrófono para intentarlo de nuevo.",
   "mobile.chat.liveVoice.gptEnded": "GPT Live Voice se detuvo. Activa el micrófono para iniciarlo de nuevo.",
   "mobile.chat.liveVoice.gptMicrophoneOff":
-    "Permite que EQBots use el micrófono en Ajustes. Después activa el micrófono para intentarlo de nuevo.",
+    "Permite que Cat use el micrófono en Ajustes. Después activa el micrófono para intentarlo de nuevo.",
   "mobile.chat.composer.addAttachment": "Añadir archivo adjunto",
   "mobile.chat.composer.ask": "Preguntar a {name}",
   "mobile.chat.composer.stopFailed": "No se pudo detener al agente. Puede que ya haya terminado.",
@@ -227,7 +227,7 @@ export const messages = {
   "mobile.chat.pins.unpin": "Desfijar",
   "mobile.chat.pins.failed": "La fijación no cambió.",
   "mobile.chat.pins.loadFailed": "No se pudieron cargar los mensajes fijados.",
-  "mobile.chat.pins.unsupported": "Este host no puede fijar mensajes. Actualiza EQBots en el host.",
+  "mobile.chat.pins.unsupported": "Este host no puede fijar mensajes. Actualiza Cat en el host.",
   "mobile.chat.pins.mainChat": "Chat principal",
   "mobile.chat.pins.thread": "Hilo lateral",
   "mobile.chat.pins.pinnedBy": "Fijado por {name}",
@@ -317,7 +317,7 @@ export const messages = {
   "mobile.chat.imageGallery.saveAll": "Guardar todo",
   "mobile.chat.imageGallery.saved": "Guardado en Fotos",
   "mobile.chat.imageGallery.shareAll": "Compartir todo",
-  "mobile.chat.imageGallery.photosPermission": "Permite que EQBots añada fotos en Ajustes para guardar estas imágenes.",
+  "mobile.chat.imageGallery.photosPermission": "Permite que Cat añada fotos en Ajustes para guardar estas imágenes.",
   "mobile.chat.imageGallery.saveFailed": "No se pudieron guardar las imágenes",
   "mobile.chat.imageGallery.shareFailed": "No se pudieron compartir las imágenes",
   "mobile.chat.imageGallery.shareNeedsUpdate":
@@ -326,7 +326,7 @@ export const messages = {
   "mobile.chat.video.retry": "Reintentar vídeo",
   "mobile.chat.video.share": "Compartir {name}",
   "mobile.chat.video.save": "Guardar {name} en Fotos",
-  "mobile.chat.video.photosPermission": "Permite que EQBots añada fotos en Ajustes para guardar este vídeo.",
+  "mobile.chat.video.photosPermission": "Permite que Cat añada fotos en Ajustes para guardar este vídeo.",
   "mobile.chat.video.saveFailed": "No se pudo guardar el vídeo",
   "mobile.chat.audio.play": "Reproducir {name}",
   "mobile.chat.audio.pause": "Pausar {name}",
@@ -340,7 +340,7 @@ export const messages = {
   "mobile.chat.browserSecret.authenticatorCode": "Código de autenticación",
   "mobile.chat.browserSecret.oneTimeCode": "Código de un solo uso",
   "mobile.chat.browserSecret.takeoverTitle": "Control del navegador",
-  "mobile.chat.browserSecret.takeoverBody": "Completa este paso en el navegador del equipo que ejecuta EQBots.",
+  "mobile.chat.browserSecret.takeoverBody": "Completa este paso en el navegador del equipo que ejecuta Cat.",
   "mobile.chat.browserSecret.takeoverReload": "Después, vuelve a cargar la página antes de elegir «He terminado».",
   "mobile.chat.browserSecret.takeoverFailed": "No se pudo completar la solicitud.",
   "mobile.chat.browserSecret.done": "He terminado",
@@ -416,14 +416,14 @@ export const messages = {
   "mobile.chat.approval.effect.permissions":
     "«Permitir» le da a {name} estos permisos en {server}. «Rechazar» mantiene los permisos actuales.",
   "mobile.chat.approval.partial":
-    "{server} envía al teléfono solo el inicio de esta solicitud. Para permitirla, actualiza EQBots en {server} o abre este chat en la app de escritorio de EQBots. Puedes rechazarla aquí.",
+    "{server} envía al teléfono solo el inicio de esta solicitud. Para permitirla, actualiza Cat en {server} o abre este chat en la app de escritorio de Cat. Puedes rechazarla aquí.",
   "mobile.chat.approval.loading": "Cargando la solicitud completa…",
   "mobile.chat.approval.loadFailed": "No se pudo cargar la solicitud completa. Puedes rechazarla aquí.",
   "mobile.chat.approval.retry": "Reintentar",
   "mobile.chat.approval.report.bugHeadline": "¿Encontraste un error? Vamos a corregirlo.",
   "mobile.chat.approval.report.ideaHeadline": "¿Tienes una idea? Vamos a hacerla realidad.",
   "mobile.chat.approval.report.dontSend": "Ahora no",
-  "mobile.chat.approval.report.send": "Enviar al equipo de EQBots",
+  "mobile.chat.approval.report.send": "Enviar al equipo de Cat",
   "mobile.chat.approval.allow": "Permitir",
   "mobile.chat.approval.deny": "Rechazar",
   "mobile.chat.approval.reconnect": "Conéctate a {server} para responder a esta solicitud.",
@@ -502,7 +502,7 @@ export const messages = {
   "mobile.chat.queue.steerNeedsTurn": "Orientar necesita un turno en curso.",
   "mobile.chat.queue.stillHoldingTitle": "El mensaje sigue retenido",
   "mobile.chat.queue.stillHoldingMessage":
-    "EQBots no pudo liberar este mensaje, así que el agente sigue esperándolo. Vuelve a intentarlo cuando el teléfono se vuelva a conectar.",
+    "Cat no pudo liberar este mensaje, así que el agente sigue esperándolo. Vuelve a intentarlo cuando el teléfono se vuelva a conectar.",
   "mobile.chat.queue.keepEditing": "Seguir editando",
   "mobile.chat.queue.leaveAnyway": "Salir de todos modos",
   "mobile.chat.queue.discardTitle": "¿Descartar los cambios?",
@@ -510,7 +510,7 @@ export const messages = {
   "mobile.chat.queue.discard": "Descartar",
   "mobile.chat.queue.alreadyReceived": "El agente ya recibió este mensaje, así que no se puede cambiar.",
   "mobile.chat.queue.holding": "Reteniendo el mensaje para ti…",
-  "mobile.chat.queue.holdFailed": "EQBots no pudo retener este mensaje para editarlo.",
+  "mobile.chat.queue.holdFailed": "Cat no pudo retener este mensaje para editarlo.",
   "mobile.chat.queue.messageLabel": "Mensaje",
   "mobile.chat.queue.messagePlaceholder": "Texto del mensaje",
   "mobile.chat.queue.save": "Guardar mensaje en cola",
@@ -541,14 +541,14 @@ export const messages = {
   "mobile.chat.threads.renameSave": "Guardar",
   "mobile.chat.threads.name": "Nombre del hilo",
   "mobile.chat.threads.renameUnavailable":
-    "No puedes renombrar este hilo ahora. Conéctate al servidor o actualiza EQBots en el host.",
+    "No puedes renombrar este hilo ahora. Conéctate al servidor o actualiza Cat en el host.",
   "mobile.chat.threads.delete.action": "Eliminar",
   "mobile.chat.threads.delete.title": "¿Eliminar este hilo?",
   "mobile.chat.threads.delete.body":
-    "EQBots elimina el hilo, sus mensajes y sus archivos para siempre. El chat principal no cambia.",
+    "Cat elimina el hilo, sus mensajes y sus archivos para siempre. El chat principal no cambia.",
   "mobile.chat.threads.filesUnsupported":
-    "Este host no puede recibir archivos en un hilo. Actualiza EQBots en el host.",
-  "mobile.chat.threads.unsupported": "Este host no puede renombrar ni eliminar hilos. Actualiza EQBots en el host.",
+    "Este host no puede recibir archivos en un hilo. Actualiza Cat en el host.",
+  "mobile.chat.threads.unsupported": "Este host no puede renombrar ni eliminar hilos. Actualiza Cat en el host.",
   "mobile.chat.threads.error.rename": "No se pudo renombrar el hilo.",
   "mobile.chat.threads.error.delete": "No se pudo eliminar el hilo.",
   "mobile.chat.channelWork.working": "Trabajando en {channel}",

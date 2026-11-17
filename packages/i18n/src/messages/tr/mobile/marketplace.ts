@@ -64,12 +64,12 @@ export const messages = {
   "mobile.marketplace.facts.accessNone": "Oturum gerekmez",
   "mobile.marketplace.permission.admin": "Pazaryerinden yalnızca sahipler ve yöneticiler kurulum yapabilir.",
   "mobile.marketplace.permission.unavailable":
-    "Bu sunucu çevrimdışı veya EQBots sürümü bunun için çok eski. EQBots'u, sunucuyu çalıştıran bilgisayarda güncelleyin.",
-  "mobile.marketplace.error.agentUnsupported": "Pazaryerinden ajan eklemek için sunucudaki EQBots'u güncelleyin.",
+    "Bu sunucu çevrimdışı veya Cat sürümü bunun için çok eski. Cat'u, sunucuyu çalıştıran bilgisayarda güncelleyin.",
+  "mobile.marketplace.error.agentUnsupported": "Pazaryerinden ajan eklemek için sunucudaki Cat'u güncelleyin.",
   "mobile.marketplace.error.agentUpdateUnsupported":
-    "Pazaryerindeki ajanları güncellemek için sunucudaki EQBots’u güncelleyin.",
+    "Pazaryerindeki ajanları güncellemek için sunucudaki Cat’u güncelleyin.",
   "mobile.marketplace.error.signInUnsupported":
-    "Telefondan uygulamalarda oturum açmak için sunucudaki EQBots'u güncelleyin.",
+    "Telefondan uygulamalarda oturum açmak için sunucudaki Cat'u güncelleyin.",
   "mobile.marketplace.agent.add": "Ajan ekle",
   "mobile.marketplace.agent.adding": "Ajan ekleniyor",
   "mobile.marketplace.agent.update": "Ajanı güncelle",
@@ -112,9 +112,9 @@ export const messages = {
   "mobile.marketplace.app.linkInvalid": "{hostname} üzerinde bir https bağlantısı kullanın.",
   "mobile.marketplace.app.docs": "Anahtar al",
   "mobile.marketplace.app.local":
-    "Bu uygulama EQBots'un çalıştığı bilgisayarda çalışır. Uygulamayı o bilgisayarda kurun.",
+    "Bu uygulama Cat'un çalıştığı bilgisayarda çalışır. Uygulamayı o bilgisayarda kurun.",
   "mobile.marketplace.app.relayUnsupported":
-    "Bu uygulama tarayıcıda oturum açmayı gerektirir. Sunucudaki EQBots'u güncelleyin veya uygulamayı bilgisayarda bağlayın.",
+    "Bu uygulama tarayıcıda oturum açmayı gerektirir. Sunucudaki Cat'u güncelleyin veya uygulamayı bilgisayarda bağlayın.",
   "mobile.marketplace.app.waiting": "Oturum açma sayfası bekleniyor…",
   "mobile.marketplace.app.openAgain": "Oturum açma sayfasını yeniden aç",
   "mobile.marketplace.app.pasteHint":

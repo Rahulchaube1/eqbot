@@ -10,10 +10,10 @@ export const messages = {
   "mcp.connect.useKey": "Liever een API-sleutel",
   "mcp.connect.useSignIn": "Liever inloggen",
   "mcp.connect.keyDescription":
-    "Plak een inloggegeven van je {name}-account. EQBots verbindt ermee en bewaart het op {host}.",
+    "Plak een inloggegeven van je {name}-account. Cat verbindt ermee en bewaart het op {host}.",
   "mcp.connect.thisComputer": "deze computer",
   "mcp.connect.noCredentialDescription":
-    "{name} vraagt geen inloggegevens. EQBots verbindt één keer om te zien welke tools het biedt.",
+    "{name} vraagt geen inloggegevens. Cat verbindt één keer om te zien welke tools het biedt.",
   "mcp.connect.connect": "Verbinden",
   "mcp.connect.required": "Vereist.",
   "mcp.connect.keptOn": "Bewaard op {host}.",
@@ -24,7 +24,7 @@ export const messages = {
   "mcp.local.address": "Adres",
   "mcp.local.docs": "Installatiegids",
   "mcp.signIn.description":
-    "Log in bij je {name}-account. EQBots krijgt de tools die dat account kan bereiken, en geen wachtwoord.",
+    "Log in bij je {name}-account. Cat krijgt de tools die dat account kan bereiken, en geen wachtwoord.",
   "mcp.signIn.waiting": "Wachten op de browser…",
   "mcp.signIn.continue": "Doorgaan naar {name}",
   "mcp.signIn.pageDescription": "Deze pagina is geopend in de browser op {host}. Log hier in.",
@@ -62,7 +62,7 @@ export const messages = {
   "mcp.panel.empty": "Nog geen MCP-servers.",
   "mcp.panel.enable": "{name} inschakelen",
   "mcp.panel.detailsTitle": "Details",
-  "mcp.panel.detailsDescription": "Geef deze server een naam en kies hoe EQBots hem bereikt.",
+  "mcp.panel.detailsDescription": "Geef deze server een naam en kies hoe Cat hem bereikt.",
   "mcp.panel.transport": "Transport",
   "mcp.panel.name": "Naam",
   "mcp.panel.namePlaceholder": "Naam van MCP-server",
@@ -113,16 +113,16 @@ export const messages = {
   "mcp.panel.signInTo": "Inloggen bij {name}",
   "mcp.panel.cancelSignInTo": "Inloggen bij {name} annuleren",
   "mcp.panel.signInWaiting": {
-    one: "Rond het inloggen af in je browser. EQBots stopt met wachten na {count} minuut.",
-    other: "Rond het inloggen af in je browser. EQBots stopt met wachten na {count} minuten.",
+    one: "Rond het inloggen af in je browser. Cat stopt met wachten na {count} minuut.",
+    other: "Rond het inloggen af in je browser. Cat stopt met wachten na {count} minuten.",
   },
   "mcp.panel.signInWaitingOn": {
-    one: "De inlogpagina wordt geopend op {host}. EQBots stopt met wachten na {count} minuut.",
-    other: "De inlogpagina wordt geopend op {host}. EQBots stopt met wachten na {count} minuten.",
+    one: "De inlogpagina wordt geopend op {host}. Cat stopt met wachten na {count} minuut.",
+    other: "De inlogpagina wordt geopend op {host}. Cat stopt met wachten na {count} minuten.",
   },
   "mcp.panel.appTitle": "Inlog-app",
   "mcp.panel.appDescription":
-    "Gebruik een OAuth-app die je hebt geregistreerd bij de aanbieder van de server. EQBots gebruikt die als de server EQBots niet zelf kan registreren. Laat leeg om EQBots zelf te laten registreren.",
+    "Gebruik een OAuth-app die je hebt geregistreerd bij de aanbieder van de server. Cat gebruikt die als de server Cat niet zelf kan registreren. Laat leeg om Cat zelf te laten registreren.",
   "mcp.panel.appSaveFirst": "Sla deze server eerst op. Daarna kun je een inlog-app toevoegen.",
   "mcp.panel.appUrlChanged": "Sla eerst de nieuwe server-URL op. De inlog-app hoort bij de opgeslagen URL.",
   "mcp.panel.appLoadFailed": "Kan de inlog-app niet lezen.",
@@ -145,18 +145,18 @@ export const messages = {
   "mcp.panel.appSaved": "App opgeslagen. Log in om hem te gebruiken.",
   "mcp.panel.appRemoved": "App verwijderd.",
   "mcp.signIn.relayDescription":
-    "Log in je browser in op {page}. Als je klaar bent, stuurt EQBots de login naar {host}.",
+    "Log in je browser in op {page}. Als je klaar bent, stuurt Cat de login naar {host}.",
   "mcp.signIn.relayOpenDescription":
-    "Log in je browser in op {page}. Als je klaar bent, plak je hier het adres dat de browser toont. EQBots stuurt de login daarna naar {host}.",
+    "Log in je browser in op {page}. Als je klaar bent, plak je hier het adres dat de browser toont. Cat stuurt de login daarna naar {host}.",
   "mcp.signIn.relayDeviceDescription":
     "Log in je browser in op {page} en rond het daar af. {host} ziet de login vanzelf.",
   "mcp.signIn.relayOpen": "Inlogpagina openen",
   "mcp.signIn.relayPasteHint":
-    "Als de browser niet terugkeert naar EQBots, kopieer dan het adres dat hij toont en plak het hier.",
+    "Als de browser niet terugkeert naar Cat, kopieer dan het adres dat hij toont en plak het hier.",
   "mcp.signIn.relayPasteRequired":
-    "EQBots kan de login niet zelf uit de browser halen. Als je klaar bent, kopieer je het adres dat de browser toont en plak je het hier.",
+    "Cat kan de login niet zelf uit de browser halen. Als je klaar bent, kopieer je het adres dat de browser toont en plak je het hier.",
   "mcp.signIn.relayAddress": "Browseradres",
   "mcp.signIn.relaySend": "Versturen",
   "mcp.panel.callbackUrlRelayed":
-    "De inlogpagina opent in je browser, en EQBots op je computer stuurt de login naar {host}. Voeg precies deze URL toe aan de toegestane redirect-URL’s van de app.",
+    "De inlogpagina opent in je browser, en Cat op je computer stuurt de login naar {host}. Voeg precies deze URL toe aan de toegestane redirect-URL’s van de app.",
 } as const satisfies PartialTranslation<typeof source>;

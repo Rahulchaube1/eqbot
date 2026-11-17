@@ -18,8 +18,8 @@ export const messages = {
   "notification.channelMessage": "Hat eine Nachricht gesendet.",
   "notification.usageLimit.title": "Das {provider}-Konto hat sein Limit erreicht",
   "notification.usageLimit.body": {
-    one: "{count} Agent wartet. EQBots versucht es später erneut.",
-    other: "{count} Agenten warten. EQBots versucht es später erneut.",
+    one: "{count} Agent wartet. Cat versucht es später erneut.",
+    other: "{count} Agenten warten. Cat versucht es später erneut.",
   },
   "notification.usageLimit.bodyResets": {
     one: "{count} Agent wartet. Das Limit wird {reset} zurückgesetzt.",
@@ -31,7 +31,7 @@ export const messages = {
   "notification.machineAlert.body":
     "Der Warnwert von {level} wurde überschritten. Siehe Servereinstellungen → Speicher.",
   "notification.test": "Benachrichtigungen funktionieren.",
-  "notification.welcome": "EQBots informiert dich hier, wenn ein Agent dich braucht.",
+  "notification.welcome": "Cat informiert dich hier, wenn ein Agent dich braucht.",
   "notification.toast.region": "Benachrichtigungen",
   "notification.toast.close": "Benachrichtigung schließen",
 } as const satisfies PartialTranslation<typeof source>;

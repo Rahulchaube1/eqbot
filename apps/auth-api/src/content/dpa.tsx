@@ -8,25 +8,25 @@ export function Dpa() {
     <>
       <p>
         This Data Processing Addendum ("DPA") forms an integral part of the{" "}
-        <Link to="/terms">EQBots Terms &amp; Conditions</Link> or any other applicable agreement (the "Agreement")
-        between EverestQai, operating as EQBots (the "Processor"), and the customer accepting the Agreement (the
+        <Link to="/terms">Cat Terms &amp; Conditions</Link> or any other applicable agreement (the "Agreement")
+        between EverestQai, operating as Cat (the "Processor"), and the customer accepting the Agreement (the
         "Controller").
       </p>
       <p>
-        This DPA applies where EQBots Processes Personal Data on behalf of the Controller in connection with the
-        provision of the Services, particularly EQBots Hosted Server Services.
+        This DPA applies where Cat Processes Personal Data on behalf of the Controller in connection with the
+        provision of the Services, particularly Cat Hosted Server Services.
       </p>
       <p>
-        This DPA does not govern Personal Data processed by EQBots as an independent Data Controller, including Personal
+        This DPA does not govern Personal Data processed by Cat as an independent Data Controller, including Personal
         Data processed for account administration, authentication, subscriptions, payments, billing, and other
-        independent purposes described in the <Link to="/privacy-policy">EQBots Privacy Policy</Link>.
+        independent purposes described in the <Link to="/privacy-policy">Cat Privacy Policy</Link>.
       </p>
       <p>
-        Where the Controller uses EQBots exclusively on its own devices or independently managed infrastructure, and
-        EQBots does not Process Personal Data on the Controller's behalf, this DPA does not apply to such independently
+        Where the Controller uses Cat exclusively on its own devices or independently managed infrastructure, and
+        Cat does not Process Personal Data on the Controller's behalf, this DPA does not apply to such independently
         managed Processing.
       </p>
-      <p>This DPA becomes effective upon acceptance of the EQBots Terms &amp; Conditions by the Controller.</p>
+      <p>This DPA becomes effective upon acceptance of the Cat Terms &amp; Conditions by the Controller.</p>
 
       <h2>§ 1</h2>
       <p>
@@ -35,7 +35,7 @@ export function Dpa() {
       </p>
       <ul>
         <li>
-          <strong>"Agreement"</strong> means the EQBots Terms &amp; Conditions or any other agreement concluded between
+          <strong>"Agreement"</strong> means the Cat Terms &amp; Conditions or any other agreement concluded between
           the Parties governing the provision and use of the Services to which this DPA relates.
         </li>
         <li>
@@ -44,7 +44,7 @@ export function Dpa() {
           under this DPA.
         </li>
         <li>
-          <strong>"Processor"</strong> means EverestQai, operating under the name EQBots, insofar as it Processes
+          <strong>"Processor"</strong> means EverestQai, operating under the name Cat, insofar as it Processes
           Personal Data on behalf of the Controller pursuant to this DPA.
         </li>
         <li>
@@ -70,15 +70,15 @@ export function Dpa() {
         <li>
           <strong>"Customer Data"</strong> means information, content, files, and other materials submitted, created,
           uploaded, imported, connected, or otherwise made available by or on behalf of the Controller through the
-          Services, to the extent Processed by EQBots on the Controller's behalf.
+          Services, to the extent Processed by Cat on the Controller's behalf.
         </li>
         <li>
-          <strong>"Services"</strong> means the services provided by EQBots under the Agreement, particularly Hosted
+          <strong>"Services"</strong> means the services provided by Cat under the Agreement, particularly Hosted
           Server Services, insofar as they involve the Processing of Personal Data on behalf of the Controller.
         </li>
         <li>
-          <strong>"Hosted Server Services"</strong> means the optional hosting services provided by EQBots that enable
-          the Controller to operate the EQBots application and store and Process Customer Data within hosted server
+          <strong>"Hosted Server Services"</strong> means the optional hosting services provided by Cat that enable
+          the Controller to operate the Cat application and store and Process Customer Data within hosted server
           environments.
         </li>
         <li>
@@ -87,7 +87,7 @@ export function Dpa() {
           otherwise Processed, as defined in Article 4(12) GDPR.
         </li>
         <li>
-          <strong>"Sub-processor"</strong> means any third-party Processor engaged by EQBots to Process Personal Data on
+          <strong>"Sub-processor"</strong> means any third-party Processor engaged by Cat to Process Personal Data on
           behalf of the Controller in connection with the provision of the Services.
         </li>
       </ul>
@@ -95,11 +95,11 @@ export function Dpa() {
       <h2>§ 2</h2>
       <ol>
         <li>
-          Where EQBots Processes Personal Data on behalf of the Controller, the Controller acts as the Controller and
-          EQBots acts as the Processor.
+          Where Cat Processes Personal Data on behalf of the Controller, the Controller acts as the Controller and
+          Cat acts as the Processor.
         </li>
         <li>
-          The Controller determines the purposes and essential means of the Processing, while EQBots carries out
+          The Controller determines the purposes and essential means of the Processing, while Cat carries out
           Processing in accordance with documented instructions and applicable Data Protection Laws.
         </li>
         <li>Each Party shall comply with its respective obligations under applicable Data Protection Laws.</li>
@@ -128,7 +128,7 @@ export function Dpa() {
       <h2>§ 4</h2>
       <ol>
         <li>
-          The categories of Personal Data Processed by EQBots on behalf of the Controller depend on the Controller's use
+          The categories of Personal Data Processed by Cat on behalf of the Controller depend on the Controller's use
           of the Services, particularly Hosted Server Services, and the information submitted, created, uploaded,
           imported, connected, or otherwise made available by the Controller or its authorised users.
         </li>
@@ -170,7 +170,7 @@ export function Dpa() {
           tasks performed by its AI Agents.
         </li>
         <li>
-          EQBots does not require Customer Data to contain any particular category of Personal Data. The Controller
+          Cat does not require Customer Data to contain any particular category of Personal Data. The Controller
           remains responsible for determining which Personal Data is made available through the Services, exercising
           appropriate caution when disclosing sensitive Personal Data, and ensuring that such Processing complies with
           applicable Data Protection Laws.
@@ -211,7 +211,7 @@ export function Dpa() {
       <h2>§ 6</h2>
       <ol>
         <li>
-          EQBots Processes Personal Data on behalf of the Controller solely for the purpose of providing the Services
+          Cat Processes Personal Data on behalf of the Controller solely for the purpose of providing the Services
           covered by this DPA.
         </li>
         <li>
@@ -254,7 +254,7 @@ export function Dpa() {
           </ul>
         </li>
         <li>
-          EQBots shall not Process Personal Data entrusted by the Controller for purposes unrelated to the provision of
+          Cat shall not Process Personal Data entrusted by the Controller for purposes unrelated to the provision of
           the Services or outside the scope of the Controller's documented instructions, except where required by
           applicable law.
         </li>
@@ -338,7 +338,7 @@ export function Dpa() {
         <li>
           The Controller acknowledges and authorises the engagement of Dedale AI, Corp. (operating as Boat) as a
           Sub-processor for the provision of Hosted Server Services. Boat provides the cloud infrastructure used to host
-          EQBots server environments and store and Process associated Customer Data. Any additions or replacements of
+          Cat server environments and store and Process associated Customer Data. Any additions or replacements of
           Sub-processors shall be subject to the requirements set out in paragraph 4 above.
         </li>
       </ol>
@@ -381,7 +381,7 @@ export function Dpa() {
         <li>
           Personal Data stored on the Controller's own devices or independently managed infrastructure remains under the
           Controller's control and is not automatically deleted upon termination of the Agreement or deletion of an
-          EQBots account.
+          Cat account.
         </li>
         <li>
           The Processor shall make available to the Controller all information necessary to demonstrate compliance with

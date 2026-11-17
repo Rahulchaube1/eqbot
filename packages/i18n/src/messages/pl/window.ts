@@ -2,7 +2,7 @@ import type { PartialTranslation } from "../../message";
 import type { messages as source } from "../en/window";
 
 export const messages = {
-  "window.localHostTitle": "EQBots – lokalny host",
-  "window.localClientTitle": "EQBots – lokalny klient",
+  "window.localHostTitle": "Cat – lokalny host",
+  "window.localClientTitle": "Cat – lokalny klient",
   "window.computerUsePermissionTitle": "Włącz Sterowanie komputerem",
 } as const satisfies PartialTranslation<typeof source>;

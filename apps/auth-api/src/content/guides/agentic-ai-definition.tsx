@@ -9,7 +9,7 @@ export function AgenticAIDefinition() {
         to ask next yourself.
       </p>
       <p>
-        The easiest way to see the difference is to compare a one-off chat with an AI agent in EQBots. EQBots lets you
+        The easiest way to see the difference is to compare a one-off chat with an AI agent in Cat. Cat lets you
         create a named agent, give it instructions, and assign work that may involve a browser, files, or another agent.
       </p>
 
@@ -21,9 +21,9 @@ export function AgenticAIDefinition() {
         into your document. Next week you may need to explain the job again.
       </p>
       <p>
-        In EQBots, you could give a research agent one clear assignment: “Read these release notes, check each important
+        In Cat, you could give a research agent one clear assignment: “Read these release notes, check each important
         claim against its source, and save a short brief with links. Flag anything you cannot confirm.” The agent can
-        open pages in EQBots&apos;s built-in browser and work with files. You can then pass the brief to a writing
+        open pages in Cat&apos;s built-in browser and work with files. You can then pass the brief to a writing
         agent, or ask the same agent to draft the article.
       </p>
       <p>
@@ -31,25 +31,25 @@ export function AgenticAIDefinition() {
         out more of the steps between your request and that review.
       </p>
 
-      <h2>What Makes the EQBots Agent Useful?</h2>
+      <h2>What Makes the Cat Agent Useful?</h2>
       <p>
-        <strong>It keeps a place for ongoing work.</strong> Each EQBots agent has its own instructions, conversation,
-        and workspace. If you return to a task later, the conversation and files remain on the computer running EQBots.
+        <strong>It keeps a place for ongoing work.</strong> Each Cat agent has its own instructions, conversation,
+        and workspace. If you return to a task later, the conversation and files remain on the computer running Cat.
         You do not have to recreate the same agent every time.
       </p>
       <p>
         <strong>It can leave you a real deliverable.</strong> An answer in chat can be helpful, but a saved brief or
-        draft is easier to review, edit, and pass along. An EQBots agent can use files and a built-in browser as part of
+        draft is easier to review, edit, and pass along. An Cat agent can use files and a built-in browser as part of
         the job.
       </p>
       <p>
         <strong>It can work with another agent.</strong> A research agent can share its notes with a writing agent. A
-        reviewer can check the draft before it reaches you. EQBots supports messages, file sharing, and task handoffs
+        reviewer can check the draft before it reaches you. Cat supports messages, file sharing, and task handoffs
         between agents. Start with one agent; add another when the roles are genuinely different.
       </p>
       <p>
-        <strong>You can choose the AI service.</strong> EQBots can run agents with providers including Codex, Claude
-        Code, Gemini, and Grok. EQBots organizes the work; the connected AI service helps the agent carry it out.
+        <strong>You can choose the AI service.</strong> Cat can run agents with providers including Codex, Claude
+        Code, Gemini, and Grok. Cat organizes the work; the connected AI service helps the agent carry it out.
       </p>
       <p>
         These are practical advantages for a repeated, multi-step job. They do not make every agent answer correct. A
@@ -64,7 +64,7 @@ export function AgenticAIDefinition() {
       </p>
       <p>
         For a quick definition, a rough idea, or a short rewrite, chat may be all you need. For research, drafting,
-        checking sources, and handing work between people or agents, EQBots gives the job a place to continue. For a
+        checking sources, and handing work between people or agents, Cat gives the job a place to continue. For a
         broader introduction, read{" "}
         <Link to="/guides/$slug" params={{ slug: "what-are-ai-agents" }}>
           What Are AI Agents?
@@ -73,18 +73,18 @@ export function AgenticAIDefinition() {
 
       <h2>Try a Small Task First</h2>
       <p>
-        Create one EQBots agent for a narrow job. For example: “Check these three approved pages and save a one-page
+        Create one Cat agent for a narrow job. For example: “Check these three approved pages and save a one-page
         brief with links. Tell me when a fact cannot be verified. Do not publish anything.” Read the brief, check its
         sources, and adjust the instructions before giving the agent a larger task.
       </p>
       <p>
-        EQBots agents can read and change files and use the network, so give them tasks you trust and review important
-        results. The AI provider you connect may receive the prompts sent to it, even though EQBots keeps the workspace
+        Cat agents can read and change files and use the network, so give them tasks you trust and review important
+        results. The AI provider you connect may receive the prompts sent to it, even though Cat keeps the workspace
         and files on the computer running the app.
       </p>
 
       <h2>Frequently Asked Questions</h2>
-      <h3>What Is an AI Agent in EQBots?</h3>
+      <h3>What Is an AI Agent in Cat?</h3>
       <p>
         A saved AI teammate with instructions and its own place for conversations and files. You can give it a task and
         review what it produces.

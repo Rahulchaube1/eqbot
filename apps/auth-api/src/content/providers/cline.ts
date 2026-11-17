@@ -10,14 +10,14 @@ export const CLINE_PROVIDER: ProviderPage = {
   provider: "cline",
   name: "Cline",
   answer:
-    "EQBots runs the Cline agent without an editor, on macOS, Windows or Linux, with your Cline account or a Cline API key. You get shared channels with agents on other providers, and an app on your phone.",
+    "Cat runs the Cline agent without an editor, on macOS, Windows or Linux, with your Cline account or a Cline API key. You get shared channels with agents on other providers, and an app on your phone.",
   connect:
-    "Choose Cline, and EQBots downloads and pins its own copy of the Cline CLI, or uses the one you installed, version 3.0.68 or later. Then sign in with Cline in the browser, or set `CLINE_API_KEY`.",
+    "Choose Cline, and Cat downloads and pins its own copy of the Cline CLI, or uses the one you installed, version 3.0.68 or later. Then sign in with Cline in the browser, or set `CLINE_API_KEY`.",
   adds: [
     {
       icon: "laptop",
       title: "A window for the Cline CLI",
-      text: "The Cline CLI runs in the terminal. EQBots gives it a desktop app with threads and files, and no editor is necessary.",
+      text: "The Cline CLI runs in the terminal. Cat gives it a desktop app with threads and files, and no editor is necessary.",
     },
   ],
   vendor: "Cline",
@@ -43,19 +43,19 @@ export const CLINE_PROVIDER: ProviderPage = {
     {
       question: "Is there a Cline desktop app?",
       answer:
-        "Yes. Cline for Desktop is in beta. Its download page lists macOS, Windows and Linux, but the Cline documentation names only macOS and Windows. EQBots is a different desktop app: it runs the Cline CLI as one agent of a team.",
+        "Yes. Cline for Desktop is in beta. Its download page lists macOS, Windows and Linux, but the Cline documentation names only macOS and Windows. Cat is a different desktop app: it runs the Cline CLI as one agent of a team.",
     },
     {
-      question: "What does Cline cost in EQBots?",
+      question: "What does Cline cost in Cat?",
       answer:
-        "Cline is open source under the Apache 2.0 license, and has no subscription: you pay for AI use. ClinePass, at $9.99 a month, is optional. EQBots uses your Cline account or a Cline API key.",
+        "Cline is open source under the Apache 2.0 license, and has no subscription: you pay for AI use. ClinePass, at $9.99 a month, is optional. Cat uses your Cline account or a Cline API key.",
     },
     {
-      question: "Do I need VS Code to use Cline in EQBots?",
-      answer: "No. EQBots runs the Cline CLI, which needs no editor.",
+      question: "Do I need VS Code to use Cline in Cat?",
+      answer: "No. Cat runs the Cline CLI, which needs no editor.",
     },
     {
-      question: "Can Cline and Claude Code work together in EQBots?",
+      question: "Can Cline and Claude Code work together in Cat?",
       answer:
         "Yes. Each agent has its own provider. A Cline agent and a Claude Code agent can work in the same channel and give tasks to each other.",
     },

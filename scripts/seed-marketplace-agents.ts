@@ -25,7 +25,7 @@ const creator = {
   id: "seed-agents-openbot",
   subject: "seed-agents-openbot",
   email: "agents@everestqai.com",
-  name: "EQBots",
+  name: "Cat",
 };
 
 const agents: SeedAgent[] = [

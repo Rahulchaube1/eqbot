@@ -33,7 +33,7 @@ export const messages = {
   "provider.status.checking": "確認中",
   "provider.status.off": "オフ",
   "provider.gemini.hostSignIn":
-    "Gemini を接続するには、ホストで EQBots を開き、「サーバーの設定」>「プロバイダー」で「接続」を選択してください。Google へのサインインには、そのホストのブラウザーが必要です。リモートでのサインインには対応していません。",
+    "Gemini を接続するには、ホストで Cat を開き、「サーバーの設定」>「プロバイダー」で「接続」を選択してください。Google へのサインインには、そのホストのブラウザーが必要です。リモートでのサインインには対応していません。",
 
   "provider.key.free": "無料",
 
@@ -62,12 +62,12 @@ export const messages = {
   "provider.aria.apiKey": "{name} の API キー",
   "provider.connecting.browserHint": "ブラウザーのページが開いたら、サインインを完了してください。",
   "provider.connecting.cancelFailed":
-    "EQBots は {name} のサインインをキャンセルできませんでした。もう一度お試しください。",
+    "Cat は {name} のサインインをキャンセルできませんでした。もう一度お試しください。",
   "provider.aria.install": "{name} をインストール",
   "provider.aria.signIn": "{name} にサインイン",
   "provider.aria.codeFallback": "コードで {name} にログイン",
   "provider.aria.moreActions": "{name} のその他の操作",
-  "provider.aria.use": "EQBots で {name} を使用",
+  "provider.aria.use": "Cat で {name} を使用",
   "provider.use.inUseOne":
     "{agent} が {name} を使用しています。このエージェントのモデルを変更してから、{name} をオフにしてください。",
   "provider.use.inUse": {
@@ -76,7 +76,7 @@ export const messages = {
   },
 
   "provider.codeLogin.title": "コードで {name} にログイン",
-  "provider.codeLogin.description": "スマートフォンか別のブラウザーで完了してください。EQBots はここで待機します。",
+  "provider.codeLogin.description": "スマートフォンか別のブラウザーで完了してください。Cat はここで待機します。",
   "provider.codeLogin.starting": "{name} からコードを取得しています…",
   "provider.codeLogin.qrLabel": "{name} のログインページの QR コード",
   "provider.codeLogin.open": "開く",
@@ -98,12 +98,12 @@ export const messages = {
     "このページは {host} のブラウザーで開いています。ここでサインインしてください。",
   "provider.codeLogin.relayStarting": "{host} で {name} のサインインを開始しています…",
   "provider.codeLogin.pageOpening": "{host} で {name} のサインインページを開いています…",
-  "provider.codeLogin.linkStep": "{name} にログインします。EQBots は自動で続行します。",
+  "provider.codeLogin.linkStep": "{name} にログインします。Cat は自動で続行します。",
   "provider.codeLogin.chatgptDeviceSetting":
     "パソコンの ChatGPT でセキュリティ設定を開き、Codex のデバイスコードによるサインインをオンにします。仕事用アカウントでは、ワークスペースの管理者がオンにします。",
-  "provider.useApp.title": "EQBots アプリで {name} に接続",
+  "provider.useApp.title": "Cat アプリで {name} に接続",
   "provider.useApp.description":
-    "{name} のサインインは開始したコンピューターに戻るため、ブラウザーのタブでは受け取れません。EQBots アプリで {name} に接続してください。アプリがサインインを自動で完了します。",
+    "{name} のサインインは開始したコンピューターに戻るため、ブラウザーのタブでは受け取れません。Cat アプリで {name} に接続してください。アプリがサインインを自動で完了します。",
   "provider.useApp.download": "アプリを入手",
 
   "provider.picker.noEndpoints": "エンドポイントはまだありません",
@@ -114,7 +114,7 @@ export const messages = {
   "provider.picker.providers": "モデルプロバイダー",
   "provider.picker.downloading": "ダウンロード中 {percent}",
   "provider.picker.unavailable": "{name} は利用できません。",
-  "provider.picker.updateToUse": "{name} を使うには EQBots を更新してください",
+  "provider.picker.updateToUse": "{name} を使うには Cat を更新してください",
   "provider.picker.models": "{name} のモデル",
   "provider.picker.addProvider": "プロバイダーを追加",
   "provider.picker.download": "{name} のダウンロード",
@@ -183,21 +183,21 @@ export const messages = {
   "provider.cursorKey.label": "Cursor API キー",
   "provider.inceptionKey.title": "Inception API キー",
   "provider.inceptionKey.description":
-    "Mercury モデルを使うには、このコンピューターに Inception API キーを保存します。EQBots はダウンロードした Pi CLI でモデルを実行します。",
+    "Mercury モデルを使うには、このコンピューターに Inception API キーを保存します。Cat はダウンロードした Pi CLI でモデルを実行します。",
   "provider.inceptionKey.descriptionHost":
-    "Mercury モデルを使うには、ホストに Inception API キーを保存します。EQBots はダウンロードした Pi CLI でモデルを実行します。",
+    "Mercury モデルを使うには、ホストに Inception API キーを保存します。Cat はダウンロードした Pi CLI でモデルを実行します。",
   "provider.inceptionKey.label": "Inception API キー",
   "provider.deepseekKey.title": "DeepSeek API キー",
   "provider.deepseekKey.description":
-    "DeepSeek モデルを使うには、このコンピューターに DeepSeek API キーを保存します。EQBots はダウンロードした Pi CLI でモデルを実行します。",
+    "DeepSeek モデルを使うには、このコンピューターに DeepSeek API キーを保存します。Cat はダウンロードした Pi CLI でモデルを実行します。",
   "provider.deepseekKey.descriptionHost":
-    "DeepSeek モデルを使うには、ホストに DeepSeek API キーを保存します。EQBots はダウンロードした Pi CLI でモデルを実行します。",
+    "DeepSeek モデルを使うには、ホストに DeepSeek API キーを保存します。Cat はダウンロードした Pi CLI でモデルを実行します。",
   "provider.deepseekKey.label": "DeepSeek API キー",
   "provider.openrouterKey.title": "OpenRouter API キー",
   "provider.openrouterKey.description":
-    "OpenRouter のモデルを使うには、このコンピューターに OpenRouter API キーを保存します。EQBots はダウンロードした Pi CLI でモデルを実行します。",
+    "OpenRouter のモデルを使うには、このコンピューターに OpenRouter API キーを保存します。Cat はダウンロードした Pi CLI でモデルを実行します。",
   "provider.openrouterKey.descriptionHost":
-    "OpenRouter のモデルを使うには、ホストに OpenRouter API キーを保存します。EQBots はダウンロードした Pi CLI でモデルを実行します。",
+    "OpenRouter のモデルを使うには、ホストに OpenRouter API キーを保存します。Cat はダウンロードした Pi CLI でモデルを実行します。",
   "provider.openrouterKey.label": "OpenRouter API キー",
 
   "provider.openCodeKey.title": "OpenCode Go にサインイン",
@@ -255,16 +255,16 @@ export const messages = {
   "provider.settings.disconnectTitle": "{name} を切断しますか？",
   "provider.settings.disconnectOthers": "{provider} を再接続するまで、ほかの {provider} アカウントは待機します。",
   "provider.settings.disconnectLocal":
-    "EQBots はこのコンピュータで {provider} からサインアウトします。ターミナルの {provider} CLI もサインアウトします。",
-  "provider.settings.disconnectHost": "EQBots はサーバーで {provider} からサインアウトします。",
+    "Cat はこのコンピュータで {provider} からサインアウトします。ターミナルの {provider} CLI もサインアウトします。",
+  "provider.settings.disconnectHost": "Cat はサーバーで {provider} からサインアウトします。",
   "provider.settings.geminiKeyReplacesAccount":
     "保存された Gemini API キーが Google のサインインの代わりに使われます。Google のプランとそのモデルを使うには、キーを削除してください。",
   "provider.settings.versionInstalledByUser": "{version} · 自分でインストール",
-  "provider.settings.versionDownloaded": "{version} · EQBots がダウンロード",
+  "provider.settings.versionDownloaded": "{version} · Cat がダウンロード",
   "provider.settings.otherVersionInstalledByUser": "未使用：{version} · 自分でインストール",
-  "provider.settings.otherVersionDownloaded": "未使用：{version} · EQBots がダウンロード",
+  "provider.settings.otherVersionDownloaded": "未使用：{version} · Cat がダウンロード",
   "provider.settings.useInstalledVersion": "インストール版を使う",
-  "provider.settings.useDownloadedVersion": "EQBots 版を使う",
+  "provider.settings.useDownloadedVersion": "Cat 版を使う",
   "provider.settings.cache": "キャッシュ",
   "provider.settings.promptCache": "プロンプトキャッシュ",
   "provider.settings.promptCacheDescription":
@@ -297,10 +297,10 @@ export const messages = {
   "provider.settings.modelsLoadFailed": "このサーバーのモデルを読み込めませんでした。",
   "provider.settings.deleteTitle": "{name} を削除",
   "provider.settings.deleteOn":
-    "{name} をオフにして、EQBots がダウンロードした CLI を削除します。アカウント、サインイン、エージェントは残ります。",
+    "{name} をオフにして、Cat がダウンロードした CLI を削除します。アカウント、サインイン、エージェントは残ります。",
   "provider.settings.deleteOff":
-    "EQBots が {name} 用にダウンロードした CLI（{size}）を削除します。アカウント、サインイン、エージェントは残ります。",
+    "Cat が {name} 用にダウンロードした CLI（{size}）を削除します。アカウント、サインイン、エージェントは残ります。",
   "provider.settings.removeDownloadFailed": "ダウンロードを削除できませんでした。",
   "provider.settings.disconnectLocalOnly":
-    "EQBots はこのコンピュータで {provider} からサインアウトします。ターミナルの {provider} CLI はサインインしたままです。",
+    "Cat はこのコンピュータで {provider} からサインアウトします。ターミナルの {provider} CLI はサインインしたままです。",
 } as const satisfies PartialTranslation<typeof source>;

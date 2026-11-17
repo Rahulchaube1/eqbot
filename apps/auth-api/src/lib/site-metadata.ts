@@ -7,11 +7,11 @@ import { faqStructuredData, type LandingQuestion } from "./landing-faq";
 import { OPENBOT_ALTERNATE_DOWNLOAD_LINKS, OPENBOT_DOWNLOAD_LINKS } from "./landing-links";
 
 export const OPENBOT_SITE_URL = "https://bots.everestqai.com/";
-export const OPENBOT_SITE_TITLE = "EQBots: Run a team of AI agents on your computer";
+export const OPENBOT_SITE_TITLE = "Cat: Run a team of AI agents on your computer";
 export const OPENBOT_SITE_DESCRIPTION =
   "A free desktop app by EverestQai that runs AI agents as a team on your own computer, with the ChatGPT, Claude, Gemini or Grok plan you already pay for, or your own model.";
-export const OPENBOT_SOCIAL_IMAGE_URL = `${OPENBOT_SITE_URL}eqbots-social.png`;
-export const OPENBOT_X_HANDLE = "@EQBots";
+export const OPENBOT_SOCIAL_IMAGE_URL = `${OPENBOT_SITE_URL}cat-social.png`;
+export const OPENBOT_X_HANDLE = "@Cat";
 const OPENBOT_REPOSITORY_URL = "https://github.com/Rahulchaube1/eqbot";
 const OPENBOT_PRODUCT_HUNT_URL = "https://www.everestqai.com";
 const OPENBOT_LICENSE_URL = "https://polyformproject.org/licenses/noncommercial/1.0.0/";
@@ -22,7 +22,7 @@ const OPENBOT_WEBSITE_ID = `${OPENBOT_SITE_URL}#website`;
 const OPENBOT_APPLICATION_ID = `${OPENBOT_SITE_URL}#app`;
 /** Square, as schema.org wants for a publisher logo. */
 export const OPENBOT_LOGO_URL = "https://www.everestqai.com/everestq.png";
-export const OPENBOT_SOCIAL_IMAGE_ALT = "EQBots, a workspace for your AI team";
+export const OPENBOT_SOCIAL_IMAGE_ALT = "Cat, a workspace for your AI team";
 
 /** The Open Graph tags of the site's own social card, which is 1600x900. */
 export const OPENBOT_SOCIAL_IMAGE_META = [
@@ -52,7 +52,7 @@ export interface PageSocialImage {
 /** The card of the terms, the privacy policy and the DPA. */
 export const OPENBOT_LEGAL_SOCIAL_IMAGE: PageSocialImage = {
   path: "/social/legal.jpg",
-  alt: "Plain terms. No surprises. EQBots agents beside a paper map",
+  alt: "Plain terms. No surprises. Cat agents beside a paper map",
 };
 
 /**
@@ -104,7 +104,7 @@ export function openBotSoftwareApplication(facts: OpenBotApplicationFacts) {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
     "@id": OPENBOT_APPLICATION_ID,
-    name: "EQBots",
+    name: "Cat",
     url: OPENBOT_SITE_URL,
     image: OPENBOT_SOCIAL_IMAGE_URL,
     description: OPENBOT_SITE_DESCRIPTION,
@@ -164,7 +164,7 @@ const OPENBOT_WEBSITE = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   "@id": OPENBOT_WEBSITE_ID,
-  name: "EQBots",
+  name: "Cat",
   url: OPENBOT_SITE_URL,
   publisher: { "@id": OPENBOT_ORGANIZATION_ID },
 } as const;
@@ -192,7 +192,7 @@ export function openBotRootHead(interLatinFont: string) {
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: OPENBOT_SITE_TITLE },
       { name: "description", content: OPENBOT_SITE_DESCRIPTION },
-      { name: "application-name", content: "EQBots" },
+      { name: "application-name", content: "Cat" },
       { name: "color-scheme", content: "dark" },
       { name: "theme-color", content: "#1a1a1a" },
     ],
@@ -215,7 +215,7 @@ export function openBotRootHead(interLatinFont: string) {
 /** The home page's own social card. Other pages without a card of their own keep the site's card. */
 const OPENBOT_HOME_SOCIAL_IMAGE: PageSocialImage = {
   path: "/social/home.jpg",
-  alt: "EQBots, a workspace for your AI team, by EverestQai",
+  alt: "Cat, a workspace for your AI team, by EverestQai",
 };
 
 /** The text and the address of the home page in one language. */
@@ -242,7 +242,7 @@ export function openBotHomeHead(application: OpenBotSoftwareApplication, siteUrl
       { "script:ld+json": OPENBOT_ORGANIZATION },
       { "script:ld+json": OPENBOT_WEBSITE },
       { property: "og:type", content: "website" },
-      { property: "og:site_name", content: "EQBots" },
+      { property: "og:site_name", content: "Cat" },
       { property: "og:locale", content: page.openGraphLocale },
       { property: "og:url", content: url },
       { property: "og:title", content: page.title },

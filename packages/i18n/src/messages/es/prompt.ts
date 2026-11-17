@@ -26,11 +26,11 @@ export const messages = {
   "prompt.approval.alwaysAllow": "Permitir siempre",
   "prompt.approval.deny": "Rechazar",
   "prompt.approval.cut":
-    "Esta tarjeta muestra solo el inicio de la solicitud, así que solo permite rechazarla. Si Permitir no aparece pronto, actualiza EQBots en el servidor.",
+    "Esta tarjeta muestra solo el inicio de la solicitud, así que solo permite rechazarla. Si Permitir no aparece pronto, actualiza Cat en el servidor.",
   "prompt.approval.report.bugHeadline": "¿Encontraste un error? Vamos a corregirlo.",
   "prompt.approval.report.ideaHeadline": "¿Tienes una idea? Vamos a hacerla realidad.",
   "prompt.approval.report.dontSend": "Ahora no",
-  "prompt.approval.report.send": "Enviar al equipo de EQBots",
+  "prompt.approval.report.send": "Enviar al equipo de Cat",
   "prompt.approval.title.command": "Ejecutar un comando",
   "prompt.approval.title.fileChange": "Cambiar archivos",
   "prompt.approval.title.permissions": "Conceder permisos",
@@ -55,7 +55,7 @@ export const messages = {
   "prompt.browser.signInBlocked.title": "{host} bloqueó el inicio de sesión desde {server}",
   "prompt.browser.signInBlocked.cancelledTitle": "Inicio de sesión en {host} cancelado",
   "prompt.browser.signInBlocked.body":
-    "Inicia sesión en este ordenador. EQBots envía solo el inicio de sesión de {host} a {server}, y {name} continúa.",
+    "Inicia sesión en este ordenador. Cat envía solo el inicio de sesión de {host} a {server}, y {name} continúa.",
   "prompt.browser.signInBlocked.cancelledBody": "El inicio de sesión se canceló.",
   "prompt.browser.signInBlocked.waiting": "Esperando el inicio de sesión",
   "prompt.browser.signInBlocked.waitingButton": "Esperando el inicio de sesión…",

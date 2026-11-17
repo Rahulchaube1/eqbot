@@ -10,7 +10,7 @@ export function AIAgentsExamples() {
       </p>
 
       <p>
-        In EQBots, you can give an agent instructions, let it work with files and approved web pages, and return to the
+        In Cat, you can give an agent instructions, let it work with files and approved web pages, and return to the
         same conversation later. You can also pass work to another agent when a separate reviewer or writer helps. The
         20 examples below are tasks to try, not customer case studies or promises that every result will be correct.
       </p>
@@ -120,12 +120,12 @@ export function AIAgentsExamples() {
 
       <p>
         Pick a task whose answer you can check in a few minutes. Vendor research, an article update or a report from a
-        small export are good starts. Give the EQBots agent the input, the result you want, the sources it may use and
+        small export are good starts. Give the Cat agent the input, the result you want, the sources it may use and
         the actions it must leave to you. Ask it to save a file and mark anything it cannot confirm.
       </p>
 
       <p>
-        Start with one agent. If you later need a second opinion, another EQBots agent can review the saved file or take
+        Start with one agent. If you later need a second opinion, another Cat agent can review the saved file or take
         a separate writing task. Your review remains the final step for important facts, messages, code changes and
         publishing.
       </p>
@@ -133,7 +133,7 @@ export function AIAgentsExamples() {
       <p>
         If you have not created an agent yet, start with{" "}
         <Link to="/guides/$slug" params={{ slug: "openbot-101" }}>
-          How to Use EQBots
+          How to Use Cat
         </Link>
         .
       </p>

@@ -53,7 +53,7 @@ function searchDescription(text: string): string {
 }
 
 function articleOgImageAlt(title: string): string {
-  return `${title} — EQBots`;
+  return `${title} — Cat`;
 }
 
 export function collectionIndexHead(collection: ContentCollection, siteUrl: string) {
@@ -69,7 +69,7 @@ export function collectionIndexHead(collection: ContentCollection, siteUrl: stri
       { name: "description", content: collection.indexDescription },
       { "script:ld+json": collectionStructuredData(collection, siteUrl) },
       { property: "og:type", content: "website" },
-      { property: "og:site_name", content: "EQBots" },
+      { property: "og:site_name", content: "Cat" },
       { property: "og:locale", content: "en_US" },
       { property: "og:url", content: url },
       { property: "og:title", content: collection.indexTitle },
@@ -111,7 +111,7 @@ export function articleHead(
   const url = articleUrl(collection, article.slug, siteUrl);
   const image = articleOgImageUrl(collection, article.slug, siteUrl);
   const alt = articleOgImageAlt(article.title);
-  const title = `${article.title} — EQBots`;
+  const title = `${article.title} — Cat`;
 
   return {
     meta: [
@@ -121,7 +121,7 @@ export function articleHead(
       { "script:ld+json": articleStructuredData(collection, article, siteUrl) },
       { "script:ld+json": articleBreadcrumbData(collection, article, siteUrl) },
       { property: "og:type", content: "article" },
-      { property: "og:site_name", content: "EQBots" },
+      { property: "og:site_name", content: "Cat" },
       { property: "og:locale", content: "en_US" },
       { property: "og:url", content: url },
       { property: "og:title", content: title },
@@ -187,7 +187,7 @@ function articleStructuredData(collection: ContentCollection, article: Collectio
 /** Home › collection › article, which search results show in place of the bare URL. */
 function articleBreadcrumbData(collection: ContentCollection, article: CollectionArticle, siteUrl: string) {
   const trail = [
-    { name: "EQBots", url: siteUrl },
+    { name: "Cat", url: siteUrl },
     { name: collection.name, url: collectionIndexUrl(collection, siteUrl) },
     { name: article.title, url: articleUrl(collection, article.slug, siteUrl) },
   ];
@@ -244,7 +244,7 @@ function collectionStructuredData(collection: ContentCollection, siteUrl: string
  */
 export function pluginHead(plugin: SitePlugin, siteUrl: string) {
   const url = pluginUrl(plugin.slug, siteUrl);
-  const title = `${plugin.name} MCP Plugin for AI Agents — EQBots`;
+  const title = `${plugin.name} MCP Plugin for AI Agents — Cat`;
   const description = searchDescription(plugin.description);
   const image = pageSocialImageMeta(PLUGIN_PAGE_SOCIAL_IMAGE, siteUrl);
 
@@ -254,7 +254,7 @@ export function pluginHead(plugin: SitePlugin, siteUrl: string) {
       { name: "description", content: description },
       { "script:ld+json": pluginStructuredData(plugin, siteUrl) },
       { property: "og:type", content: "website" },
-      { property: "og:site_name", content: "EQBots" },
+      { property: "og:site_name", content: "Cat" },
       { property: "og:locale", content: "en_US" },
       { property: "og:url", content: url },
       { property: "og:title", content: title },
@@ -284,7 +284,7 @@ function pluginStructuredData(plugin: SitePlugin, siteUrl: string) {
     applicationCategory: "DeveloperApplication",
     softwareVersion: plugin.version,
     author: { "@type": "Organization", name: plugin.creatorName },
-    isPartOf: { "@type": "SoftwareApplication", name: "EQBots", url: OPENBOT_SITE_URL },
+    isPartOf: { "@type": "SoftwareApplication", name: "Cat", url: OPENBOT_SITE_URL },
     mainEntityOfPage: { "@type": "WebPage", "@id": pluginUrl(plugin.slug, siteUrl) },
     url: pluginUrl(plugin.slug, siteUrl),
   };

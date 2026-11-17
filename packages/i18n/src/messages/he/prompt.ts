@@ -26,11 +26,11 @@ export const messages = {
   "prompt.approval.alwaysAllow": "אישור תמיד",
   "prompt.approval.deny": "דחייה",
   "prompt.approval.cut":
-    "הכרטיס מציג רק את תחילת הבקשה, ולכן אפשר רק לדחות. אם כפתור האישור לא יופיע בקרוב, יש לעדכן את EQBots בשרת.",
+    "הכרטיס מציג רק את תחילת הבקשה, ולכן אפשר רק לדחות. אם כפתור האישור לא יופיע בקרוב, יש לעדכן את Cat בשרת.",
   "prompt.approval.report.bugHeadline": "מצאת באג? בוא נתקן אותו.",
   "prompt.approval.report.ideaHeadline": "יש לך רעיון? בוא נגשים אותו.",
   "prompt.approval.report.dontSend": "לא עכשיו",
-  "prompt.approval.report.send": "שליחה לצוות EQBots",
+  "prompt.approval.report.send": "שליחה לצוות Cat",
   "prompt.approval.title.command": "הרצת פקודה",
   "prompt.approval.title.fileChange": "שינוי קבצים",
   "prompt.approval.title.permissions": "מתן הרשאות",
@@ -55,7 +55,7 @@ export const messages = {
   "prompt.browser.signInBlocked.title": "{host} חסם את ההתחברות מ-{server}",
   "prompt.browser.signInBlocked.cancelledTitle": "ההתחברות אל {host} בוטלה",
   "prompt.browser.signInBlocked.body":
-    "יש להתחבר במחשב הזה. EQBots שולח אל {server} רק את ההתחברות אל {host}, ו-{name} ממשיך.",
+    "יש להתחבר במחשב הזה. Cat שולח אל {server} רק את ההתחברות אל {host}, ו-{name} ממשיך.",
   "prompt.browser.signInBlocked.cancelledBody": "ההתחברות בוטלה.",
   "prompt.browser.signInBlocked.waiting": "ממתין להתחברות",
   "prompt.browser.signInBlocked.waitingButton": "ממתין להתחברות…",

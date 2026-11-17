@@ -3,16 +3,16 @@ import type { messages as source } from "../en/messaging";
 
 export const messages = {
   "messaging.help.invalid_token":
-    "Slack כבר לא מקבל את EQBots בסביבת העבודה הזאת. ייתכן שהוא הוסר. יש לחבר את סביבת העבודה מחדש.",
+    "Slack כבר לא מקבל את Cat בסביבת העבודה הזאת. ייתכן שהוא הוסר. יש לחבר את סביבת העבודה מחדש.",
   "messaging.help.secret_storage_unavailable":
-    "EQBots לא יכול לקרוא את האסימונים השמורים במחשב הזה. יש לנתק את סביבת העבודה ואז לחבר אותה מחדש.",
+    "Cat לא יכול לקרוא את האסימונים השמורים במחשב הזה. יש לנתק את סביבת העבודה ואז לחבר אותה מחדש.",
   "messaging.help.relay_unavailable":
-    "EQBots לא יכול לקבל אירועי Slack במחשב הזה. יש להתחבר, לתת למחשב הזה שם בהגדרות השרת ולהשאיר את EQBots פתוח.",
+    "Cat לא יכול לקבל אירועי Slack במחשב הזה. יש להתחבר, לתת למחשב הזה שם בהגדרות השרת ולהשאיר את Cat פתוח.",
   "messaging.help.not_linked": 'סביבת העבודה הזו לא מקושרת לשרת הזה. בחרו "חיבור מחדש" כדי לקשר אותה.',
   "messaging.discordHelp.invalid_token":
-    "Discord כבר לא מקבל את EQBots בשרת ה-Discord הזה. ייתכן שהוא הוסר. יש לחבר את שרת ה-Discord מחדש.",
+    "Discord כבר לא מקבל את Cat בשרת ה-Discord הזה. ייתכן שהוא הוסר. יש לחבר את שרת ה-Discord מחדש.",
   "messaging.discordHelp.secret_storage_unavailable":
-    "EQBots לא יכול לקרוא את האסימונים השמורים במחשב הזה. יש לנתק את שרת ה-Discord ואז לחבר אותו מחדש.",
+    "Cat לא יכול לקרוא את האסימונים השמורים במחשב הזה. יש לנתק את שרת ה-Discord ואז לחבר אותו מחדש.",
   "messaging.discordHelp.relay_unavailable":
-    "EQBots לא יכול לקבל אירועי Discord במחשב הזה. יש להתחבר, לתת למחשב הזה שם בהגדרות השרת ולהשאיר את EQBots פתוח.",
+    "Cat לא יכול לקבל אירועי Discord במחשב הזה. יש להתחבר, לתת למחשב הזה שם בהגדרות השרת ולהשאיר את Cat פתוח.",
 } as const satisfies PartialTranslation<typeof source>;

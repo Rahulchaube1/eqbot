@@ -20,7 +20,7 @@ const owner = {
   id: "openbot-production-catalog",
   identityKey: "openbot-production-catalog",
   email: "catalog@everestqai.com",
-  name: "EQBots",
+  name: "Cat",
   avatarUrl: "https://eqbot.everestqai.com/icon-192x192.png",
 } as const;
 

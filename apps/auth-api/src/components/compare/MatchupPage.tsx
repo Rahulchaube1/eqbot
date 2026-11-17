@@ -152,7 +152,7 @@ export function MatchupPage(props: MatchupPageProps) {
               {(setup) => (
                 <li>
                   <Link to="/providers/$slug" params={{ slug: setup.slug }}>
-                    Set up {setup.name} in EQBots
+                    Set up {setup.name} in Cat
                     <LandingIcon name="arrow-right" class="provider-step-arrow provider-related-arrow" />
                   </Link>
                 </li>

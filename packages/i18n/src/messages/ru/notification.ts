@@ -18,10 +18,10 @@ export const messages = {
   "notification.channelMessage": "Новое сообщение.",
   "notification.usageLimit.title": "Аккаунт {provider} достиг лимита",
   "notification.usageLimit.body": {
-    one: "Ждёт {count} агент. EQBots попробует позже.",
-    few: "Ждут {count} агента. EQBots попробует позже.",
-    many: "Ждут {count} агентов. EQBots попробует позже.",
-    other: "Ждут {count} агента. EQBots попробует позже.",
+    one: "Ждёт {count} агент. Cat попробует позже.",
+    few: "Ждут {count} агента. Cat попробует позже.",
+    many: "Ждут {count} агентов. Cat попробует позже.",
+    other: "Ждут {count} агента. Cat попробует позже.",
   },
   "notification.usageLimit.bodyResets": {
     one: "Ждёт {count} агент. Сброс {reset}.",
@@ -34,7 +34,7 @@ export const messages = {
   "notification.machineAlert.cpu": "{server}: CPU загружен на {percent}",
   "notification.machineAlert.body": "Превышен порог оповещения {level}. См. «Настройки сервера» → «Хранилище».",
   "notification.test": "Уведомления работают.",
-  "notification.welcome": "EQBots сообщит здесь, когда вы понадобитесь агенту.",
+  "notification.welcome": "Cat сообщит здесь, когда вы понадобитесь агенту.",
   "notification.toast.region": "Уведомления",
   "notification.toast.close": "Закрыть уведомление",
 } as const satisfies PartialTranslation<typeof source>;

@@ -33,17 +33,17 @@ function absolute(path: string): string {
 
 function llmsTxt(): string {
   const lines = [
-    "# EQBots",
+    "# Cat",
     "",
     `> ${OPENBOT_SITE_DESCRIPTION}`,
     "",
-    "EQBots is a desktop app for macOS, Windows and Linux. Each agent has its own workspace, thread and history, and keeps them when you change its provider or restart the app. Agents can give work to other agents, and can move to a backup model on another provider when a plan reaches its limit. Agents also answer in Slack, Discord and Telegram. Chats, files and workspaces stay on your computer; EQBots has no server that holds them. The app is free for noncommercial use. iPhone and Android apps connect to EQBots on your own computer.",
+    "Cat is a desktop app for macOS, Windows and Linux. Each agent has its own workspace, thread and history, and keeps them when you change its provider or restart the app. Agents can give work to other agents, and can move to a backup model on another provider when a plan reaches its limit. Agents also answer in Slack, Discord and Telegram. Chats, files and workspaces stay on your computer; Cat has no server that holds them. The app is free for noncommercial use. iPhone and Android apps connect to Cat on your own computer.",
     "",
     `Each article below also has its text as Markdown, at its URL with \`.md\` added. [llms-full.txt](${absolute("/llms-full.txt")}) holds all of them in one file.`,
     "",
     "## Models and plans",
     "",
-    "EQBots sells no model. Each agent uses a plan or a key you already have:",
+    "Cat sells no model. Each agent uses a plan or a key you already have:",
     "",
     ...OPENBOT_PLANS.map((plan) => `- ${plan.name}: ${plan.plan}`),
     "",

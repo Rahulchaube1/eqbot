@@ -40,11 +40,11 @@ const PLUGIN_INDEX_ROUTE = "/plugins";
 export const PLUGIN_DETAIL_ROUTE = "/plugins/$slug";
 
 export const PLUGINS_DESCRIPTION =
-  "Apps and skills an EQBots agent can use. Open a plugin in the app, and decide there what it connects to.";
+  "Apps and skills an Cat agent can use. Open a plugin in the app, and decide there what it connects to.";
 /** One social card for the page of every plugin. */
 export const PLUGIN_PAGE_SOCIAL_IMAGE: PageSocialImage = {
   path: "/social/plugin.jpg",
-  alt: "Plant an idea. Your agents do the rest. EQBots agents among paper trees",
+  alt: "Plant an idea. Your agents do the rest. Cat agents among paper trees",
 };
 
 /** Newest listing first is not a thing here: the order is the order the index declares. */

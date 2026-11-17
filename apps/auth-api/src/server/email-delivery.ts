@@ -199,7 +199,7 @@ const sendThroughCloudflare = Effect.fn("EmailDelivery.cloudflare")(function* (
   yield* Effect.tryPromise({
     try: () =>
       binding.send({
-        from: { name: "EQBots", email: from },
+        from: { name: "Cat", email: from },
         to: message.email,
         ...(message.replyTo ? { replyTo: message.replyTo } : {}),
         subject,

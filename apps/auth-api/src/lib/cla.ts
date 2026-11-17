@@ -9,7 +9,7 @@ export const CLA_PDF_PATH = "/openbot-cla.pdf";
 export const CLA_UPDATED_AT = "2026-11-04";
 
 export const CLA_META = {
-  title: "EQBots Contributor License Agreement",
+  title: "Cat Contributor License Agreement",
   description:
-    "The copyright and patent licenses that individual and corporate contributors give to EverestQai for their contributions to EQBots, and how to sign the agreement.",
+    "The copyright and patent licenses that individual and corporate contributors give to EverestQai for their contributions to Cat, and how to sign the agreement.",
 } as const;

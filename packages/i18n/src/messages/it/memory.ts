@@ -41,7 +41,7 @@ export const messages = {
   "memory.clearAll": "Cancella tutte le memorie",
   "memory.clearTitle": "Cancellare tutte le memorie?",
   "memory.clearDescription":
-    "EQBots rimuoverà definitivamente tutte le {total} memorie salvate per {name}. I messaggi originali resteranno nella cronologia della conversazione.",
+    "Cat rimuoverà definitivamente tutte le {total} memorie salvate per {name}. I messaggi originali resteranno nella cronologia della conversazione.",
 
   "memory.loadFailed": "Impossibile caricare le memorie.",
   "memory.saveFailed": "Impossibile salvare la memoria.",

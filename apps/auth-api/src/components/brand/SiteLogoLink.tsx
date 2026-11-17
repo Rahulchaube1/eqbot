@@ -71,7 +71,7 @@ export function SiteLogoLink() {
           onKeyDown={handleKeyDown}
         >
           <AppLogo variant="production" class="landing-brand-logo" />
-          <span>EQBots</span>
+          <span>Cat</span>
           <span
             class="landing-brand-company"
             style={{

@@ -3,7 +3,7 @@ import type { messages as source } from "../en/window";
 
 export const messages = {
   // Native window titles.
-  "window.localHostTitle": "EQBots ローカルホスト",
-  "window.localClientTitle": "EQBots ローカルクライアント",
+  "window.localHostTitle": "Cat ローカルホスト",
+  "window.localClientTitle": "Cat ローカルクライアント",
   "window.computerUsePermissionTitle": "Computer Use をオンにする",
 } as const satisfies PartialTranslation<typeof source>;

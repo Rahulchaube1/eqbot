@@ -310,8 +310,11 @@ if (commandLineUserDataDirectory) {
       ),
     ),
   );
+} else {
+  // Keep the shipped desktop profile when the product's display name changes.
+  app.setPath("userData", join(app.getPath("appData"), "OpenBot"));
 }
-app.setName("OpenBot");
+app.setName("Cat");
 app.enableSandbox();
 if (process.platform === "win32") app.setAppUserModelId("app.openbot.desktop");
 // Linux: on Wayland, Chromium waits until a monitor is on before it starts. With none, start again on

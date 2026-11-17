@@ -131,7 +131,7 @@ export const messages = {
   "diagram.routine.runLabel": "{status}, {time}",
   "diagram.routine.manual": "Ręcznie",
   "diagram.flows.unsupported":
-    "Ten serwer nie obsługuje przepływów rutyn. Zaktualizuj EQBots na komputerze, na którym działa.",
+    "Ten serwer nie obsługuje przepływów rutyn. Zaktualizuj Cat na komputerze, na którym działa.",
   "diagram.flows.webhookAdminOnly":
     "Tylko właściciel lub administrator tego serwera może zmienić lub uruchomić rutynę z webhookiem.",
   "diagram.flows.loadFailed": "Nie udało się wczytać rutyn tego agenta.",

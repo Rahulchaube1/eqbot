@@ -26,11 +26,11 @@ export const messages = {
   "prompt.approval.alwaysAllow": "Zawsze zezwalaj",
   "prompt.approval.deny": "Odrzuć",
   "prompt.approval.cut":
-    "Ta karta pokazuje tylko początek żądania, więc można je tylko odrzucić. Jeśli przycisk Zezwól nie pojawi się wkrótce, zaktualizuj EQBots na serwerze.",
+    "Ta karta pokazuje tylko początek żądania, więc można je tylko odrzucić. Jeśli przycisk Zezwól nie pojawi się wkrótce, zaktualizuj Cat na serwerze.",
   "prompt.approval.report.bugHeadline": "Znalazłeś błąd? Naprawmy go.",
   "prompt.approval.report.ideaHeadline": "Masz pomysł? Zróbmy to.",
   "prompt.approval.report.dontSend": "Nie teraz",
-  "prompt.approval.report.send": "Wyślij do zespołu EQBots",
+  "prompt.approval.report.send": "Wyślij do zespołu Cat",
   "prompt.approval.title.command": "Uruchom polecenie",
   "prompt.approval.title.fileChange": "Zmień pliki",
   "prompt.approval.title.permissions": "Przyznaj uprawnienia",
@@ -55,7 +55,7 @@ export const messages = {
   "prompt.browser.signInBlocked.title": "Strona {host} zablokowała logowanie z {server}",
   "prompt.browser.signInBlocked.cancelledTitle": "Logowanie do {host} anulowane",
   "prompt.browser.signInBlocked.body":
-    "Zaloguj się na tym komputerze. EQBots wyśle do {server} tylko logowanie do {host}, a {name} będzie kontynuować.",
+    "Zaloguj się na tym komputerze. Cat wyśle do {server} tylko logowanie do {host}, a {name} będzie kontynuować.",
   "prompt.browser.signInBlocked.cancelledBody": "Logowanie zostało anulowane.",
   "prompt.browser.signInBlocked.waiting": "Czekam na logowanie",
   "prompt.browser.signInBlocked.waitingButton": "Czekam na logowanie…",

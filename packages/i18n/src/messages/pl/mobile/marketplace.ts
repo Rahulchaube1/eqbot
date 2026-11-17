@@ -64,12 +64,12 @@ export const messages = {
   "mobile.marketplace.facts.accessNone": "Bez logowania",
   "mobile.marketplace.permission.admin": "Tylko właściciele i administratorzy mogą instalować z Marketplace.",
   "mobile.marketplace.permission.unavailable":
-    "Ten serwer jest offline lub jego EQBots jest na to za stary. Zaktualizuj EQBots na komputerze, na którym działa.",
-  "mobile.marketplace.error.agentUnsupported": "Zaktualizuj EQBots na serwerze, aby dodawać agentów z Marketplace.",
+    "Ten serwer jest offline lub jego Cat jest na to za stary. Zaktualizuj Cat na komputerze, na którym działa.",
+  "mobile.marketplace.error.agentUnsupported": "Zaktualizuj Cat na serwerze, aby dodawać agentów z Marketplace.",
   "mobile.marketplace.error.agentUpdateUnsupported":
-    "Zaktualizuj EQBots na serwerze, aby aktualizować agentów z Marketplace.",
+    "Zaktualizuj Cat na serwerze, aby aktualizować agentów z Marketplace.",
   "mobile.marketplace.error.signInUnsupported":
-    "Zaktualizuj EQBots na serwerze, aby logować się do aplikacji z telefonu.",
+    "Zaktualizuj Cat na serwerze, aby logować się do aplikacji z telefonu.",
   "mobile.marketplace.agent.add": "Dodaj agenta",
   "mobile.marketplace.agent.adding": "Dodawanie agenta",
   "mobile.marketplace.agent.update": "Zaktualizuj",
@@ -112,9 +112,9 @@ export const messages = {
   "mobile.marketplace.app.connectFailed": "Nie udało się połączyć aplikacji.",
   "mobile.marketplace.app.linkInvalid": "Użyj linku https w domenie {hostname}.",
   "mobile.marketplace.app.docs": "Uzyskaj klucz",
-  "mobile.marketplace.app.local": "Ta aplikacja działa na komputerze z EQBots. Skonfiguruj ją na tym komputerze.",
+  "mobile.marketplace.app.local": "Ta aplikacja działa na komputerze z Cat. Skonfiguruj ją na tym komputerze.",
   "mobile.marketplace.app.relayUnsupported":
-    "Ta aplikacja wymaga logowania w przeglądarce. Zaktualizuj EQBots na serwerze lub połącz aplikację na komputerze.",
+    "Ta aplikacja wymaga logowania w przeglądarce. Zaktualizuj Cat na serwerze lub połącz aplikację na komputerze.",
   "mobile.marketplace.app.waiting": "Oczekiwanie na stronę logowania…",
   "mobile.marketplace.app.openAgain": "Otwórz ponownie stronę logowania",
   "mobile.marketplace.app.pasteHint":

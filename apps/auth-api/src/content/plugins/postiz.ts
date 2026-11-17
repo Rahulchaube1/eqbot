@@ -31,7 +31,7 @@ export const POSTIZ_PLUGIN_GUIDE: PluginGuide = {
     {
       question: "How do I connect Postiz?",
       answer:
-        "Sign in to your Postiz account through the browser. EQBots keeps the token in encrypted storage. You can also type the API key from Settings › Developers in Postiz in the connect dialog. EQBots sends it as a bearer token in the Authorization header. The plugin catalog holds no secret.",
+        "Sign in to your Postiz account through the browser. Cat keeps the token in encrypted storage. You can also type the API key from Settings › Developers in Postiz in the connect dialog. Cat sends it as a bearer token in the Authorization header. The plugin catalog holds no secret.",
     },
     {
       question: "Does the Postiz MCP server cost anything?",
@@ -41,12 +41,12 @@ export const POSTIZ_PLUGIN_GUIDE: PluginGuide = {
     {
       question: "Can an agent publish without asking?",
       answer:
-        "The schedulePostTool tool can publish a post immediately. Whether the agent asks first depends on its permission mode in EQBots, so review each post before you approve it.",
+        "The schedulePostTool tool can publish a post immediately. Whether the agent asks first depends on its permission mode in Cat, so review each post before you approve it.",
     },
     {
       question: "What data does Postiz get?",
       answer:
-        "Postiz gets the requests that the agent sends: the text and media of your posts and the questions about your channels. Postiz stores your posts and media and logs the API calls. Your workspaces, conversations and files stay on the computer that runs EQBots.",
+        "Postiz gets the requests that the agent sends: the text and media of your posts and the questions about your channels. Postiz stores your posts and media and logs the API calls. Your workspaces, conversations and files stay on the computer that runs Cat.",
     },
   ],
   sources: [

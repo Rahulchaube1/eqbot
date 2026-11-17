@@ -62,10 +62,10 @@ export const messages = {
   "composer.voice.transcribing": "Sesli istem metne dönüştürülüyor",
   "composer.voice.start": "Sesle istem oluştur",
   "composer.voice.blocked":
-    "Mikrofon erişimi engellendi. Sistem ayarlarından EQBots'un mikrofonu kullanmasına izin verin.",
+    "Mikrofon erişimi engellendi. Sistem ayarlarından Cat'un mikrofonu kullanmasına izin verin.",
   "composer.voice.noMicrophone": "Kullanılabilir mikrofon yok.",
-  "composer.voice.startFailed": "EQBots ses kaydını başlatamadı.",
-  "composer.voice.transcribeFailed": "EQBots bu kaydı metne dönüştüremedi.",
+  "composer.voice.startFailed": "Cat ses kaydını başlatamadı.",
+  "composer.voice.transcribeFailed": "Cat bu kaydı metne dönüştüremedi.",
   "composer.reply.toYou": "Mesajınıza yanıt veriliyor",
   "composer.reply.toAgent": "Ajana yanıt veriliyor",
   "composer.reply.attachment": "Ek",

@@ -64,13 +64,13 @@ export const messages = {
   "mobile.marketplace.facts.accessNone": "サインイン不要",
   "mobile.marketplace.permission.admin": "マーケットプレイスからインストールできるのはオーナーと管理者のみです。",
   "mobile.marketplace.permission.unavailable":
-    "このサーバーはオフラインか、EQBots が古すぎます。サーバーを実行しているコンピューターで EQBots をアップデートしてください。",
+    "このサーバーはオフラインか、Cat が古すぎます。サーバーを実行しているコンピューターで Cat をアップデートしてください。",
   "mobile.marketplace.error.agentUnsupported":
-    "マーケットプレイスからエージェントを追加するには、サーバーの EQBots をアップデートしてください。",
+    "マーケットプレイスからエージェントを追加するには、サーバーの Cat をアップデートしてください。",
   "mobile.marketplace.error.agentUpdateUnsupported":
-    "マーケットプレイスからエージェントを更新するには、サーバーの EQBots を更新してください。",
+    "マーケットプレイスからエージェントを更新するには、サーバーの Cat を更新してください。",
   "mobile.marketplace.error.signInUnsupported":
-    "電話からアプリにサインインするには、サーバーの EQBots をアップデートしてください。",
+    "電話からアプリにサインインするには、サーバーの Cat をアップデートしてください。",
   "mobile.marketplace.agent.add": "エージェントを追加",
   "mobile.marketplace.agent.adding": "エージェントを追加中",
   "mobile.marketplace.agent.update": "エージェントをアップデート",
@@ -115,9 +115,9 @@ export const messages = {
   "mobile.marketplace.app.linkInvalid": "{hostname} の https リンクを使ってください。",
   "mobile.marketplace.app.docs": "キーを取得",
   "mobile.marketplace.app.local":
-    "このアプリは EQBots が動作するコンピューターで実行されます。そのコンピューターで設定してください。",
+    "このアプリは Cat が動作するコンピューターで実行されます。そのコンピューターで設定してください。",
   "mobile.marketplace.app.relayUnsupported":
-    "このアプリにはブラウザーでのサインインが必要です。サーバーの EQBots をアップデートするか、コンピューターでアプリを接続してください。",
+    "このアプリにはブラウザーでのサインインが必要です。サーバーの Cat をアップデートするか、コンピューターでアプリを接続してください。",
   "mobile.marketplace.app.waiting": "サインインページを待っています…",
   "mobile.marketplace.app.openAgain": "サインインページをもう一度開く",
   "mobile.marketplace.app.pasteHint":

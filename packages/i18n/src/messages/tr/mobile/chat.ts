@@ -4,7 +4,7 @@ import type { messages as source } from "../../en/mobile/chat";
 export const messages = {
   "mobile.chat.dictation.microphoneOffTitle": "Mikrofon erişimi kapalı",
   "mobile.chat.dictation.microphoneOffMessage":
-    "Bir mesajı sesle yazdırmak için Ayarlar'dan EQBots'un mikrofon ve konuşma tanımayı kullanmasına izin verin.",
+    "Bir mesajı sesle yazdırmak için Ayarlar'dan Cat'un mikrofon ve konuşma tanımayı kullanmasına izin verin.",
   "mobile.chat.dictation.stopped": "Dikte durduruldu",
   "mobile.chat.dictation.tryAgain": "Tekrar deneyin.",
   "mobile.chat.dictation.unavailable": "Dikte kullanılamıyor",
@@ -118,7 +118,7 @@ export const messages = {
   "mobile.chat.attachment.openFailed": "Ek açılamadı",
   "mobile.chat.attachment.photosNeedUpdate": "Fotoğrafları kaydetmek uygulamanın en son sürümünü gerektirir.",
   "mobile.chat.attachment.photosPermission":
-    "Bu görseli kaydetmek için Ayarlar'da EQBots'un fotoğraf eklemesine izin verin.",
+    "Bu görseli kaydetmek için Ayarlar'da Cat'un fotoğraf eklemesine izin verin.",
   "mobile.chat.attachment.imageUnavailable": "Görsel kullanılamıyor. Tekrar deneyin.",
   "mobile.chat.attachment.saveImageFailed": "Görsel kaydedilemedi",
   "mobile.chat.attachment.copyImageFailed": "Görsel kopyalanamadı",
@@ -150,9 +150,9 @@ export const messages = {
   "mobile.chat.attachment.unsupported":
     "{name}: görsel, MP3 ses, MOV veya MP4 video, ZIP arşivleri, PDF, Office belgeleri, EML, metin, Markdown, veri veya kaynak dosyaları seçin.",
   "mobile.chat.attachment.hostRejectsType":
-    "{name}: ana makine {type} dosyalarını kabul etmiyor. Bunları eklemek için oradaki EQBots'u güncelleyin.",
+    "{name}: ana makine {type} dosyalarını kabul etmiyor. Bunları eklemek için oradaki Cat'u güncelleyin.",
   "mobile.chat.attachment.hostRejects":
-    "{name}: ana makine bu dosyaları kabul etmiyor. Bunları eklemek için oradaki EQBots'u güncelleyin.",
+    "{name}: ana makine bu dosyaları kabul etmiyor. Bunları eklemek için oradaki Cat'u güncelleyin.",
   "mobile.chat.attachment.nameTooLong": "Daha kısa ada sahip bir dosya seçin.",
   "mobile.chat.attachment.damaged": "Ek bozuk. Tekrar seçin.",
   "mobile.chat.attachment.tooLarge": "{name} 10 MB'tan daha büyük.",
@@ -200,11 +200,11 @@ export const messages = {
   "mobile.chat.liveVoice.networkNeeded": "ElevenLabs için ağ bağlantısı gerekir.",
   "mobile.chat.liveVoice.voiceServerFailed": "Ses sunucunuz yanıtı okuyamadı. Ayarlar > Ses bölümünden kontrol edin.",
   "mobile.chat.liveVoice.gptUnsupported":
-    "Bu sunucu GPT Live Voice'u desteklemiyor. Onu çalıştıran bilgisayarda EQBots'u güncelleyin.",
+    "Bu sunucu GPT Live Voice'u desteklemiyor. Onu çalıştıran bilgisayarda Cat'u güncelleyin.",
   "mobile.chat.liveVoice.gptFailed": "GPT Live Voice başlatılamadı. Yeniden denemek için mikrofonun sesini açın.",
   "mobile.chat.liveVoice.gptEnded": "GPT Live Voice durdu. Yeniden başlatmak için mikrofonun sesini açın.",
   "mobile.chat.liveVoice.gptMicrophoneOff":
-    "Ayarlar'da EQBots'un mikrofonu kullanmasına izin verin. Sonra yeniden denemek için mikrofonun sesini açın.",
+    "Ayarlar'da Cat'un mikrofonu kullanmasına izin verin. Sonra yeniden denemek için mikrofonun sesini açın.",
   "mobile.chat.composer.addAttachment": "Ek ekle",
   "mobile.chat.composer.ask": "{name} ajanına sor",
   "mobile.chat.composer.stopFailed": "Ajan durdurulamadı. Zaten bitmiş olabilir.",
@@ -225,7 +225,7 @@ export const messages = {
   "mobile.chat.pins.unpin": "Sabitlemeyi kaldır",
   "mobile.chat.pins.failed": "Sabitleme değişmedi.",
   "mobile.chat.pins.loadFailed": "Sabitlenen mesajlar yüklenemedi.",
-  "mobile.chat.pins.unsupported": "Bu ana bilgisayar mesaj sabitleyemiyor. Ana bilgisayarda EQBots'u güncelleyin.",
+  "mobile.chat.pins.unsupported": "Bu ana bilgisayar mesaj sabitleyemiyor. Ana bilgisayarda Cat'u güncelleyin.",
   "mobile.chat.pins.mainChat": "Ana sohbet",
   "mobile.chat.pins.thread": "Yan ileti dizisi",
   "mobile.chat.pins.pinnedBy": "Sabitleyen: {name}",
@@ -316,7 +316,7 @@ export const messages = {
   "mobile.chat.imageGallery.saved": "Fotoğraflar'a kaydedildi",
   "mobile.chat.imageGallery.shareAll": "Tümünü paylaş",
   "mobile.chat.imageGallery.photosPermission":
-    "Bu görselleri kaydetmek için Ayarlar'da EQBots'un fotoğraf eklemesine izin ver.",
+    "Bu görselleri kaydetmek için Ayarlar'da Cat'un fotoğraf eklemesine izin ver.",
   "mobile.chat.imageGallery.saveFailed": "Görseller kaydedilemedi",
   "mobile.chat.imageGallery.shareFailed": "Görseller paylaşılamadı",
   "mobile.chat.imageGallery.shareNeedsUpdate": "Birden çok görseli paylaşmak uygulamanın en son sürümünü gerektirir.",
@@ -324,7 +324,7 @@ export const messages = {
   "mobile.chat.video.retry": "Videoyu tekrar dene",
   "mobile.chat.video.share": "{name} adlı videoyu paylaş",
   "mobile.chat.video.save": "{name} adlı videoyu Fotoğraflar'a kaydet",
-  "mobile.chat.video.photosPermission": "Bu videoyu kaydetmek için Ayarlar'da EQBots'un fotoğraf eklemesine izin ver.",
+  "mobile.chat.video.photosPermission": "Bu videoyu kaydetmek için Ayarlar'da Cat'un fotoğraf eklemesine izin ver.",
   "mobile.chat.video.saveFailed": "Video kaydedilemedi",
   "mobile.chat.audio.play": "{name} oynat",
   "mobile.chat.audio.pause": "{name} duraklat",
@@ -338,7 +338,7 @@ export const messages = {
   "mobile.chat.browserSecret.authenticatorCode": "Doğrulama kodu",
   "mobile.chat.browserSecret.oneTimeCode": "Tek kullanımlık kod",
   "mobile.chat.browserSecret.takeoverTitle": "Tarayıcı devralma",
-  "mobile.chat.browserSecret.takeoverBody": "Bu adımı EQBots çalıştıran bilgisayardaki tarayıcıda tamamlayın.",
+  "mobile.chat.browserSecret.takeoverBody": "Bu adımı Cat çalıştıran bilgisayardaki tarayıcıda tamamlayın.",
   "mobile.chat.browserSecret.takeoverReload": "Ardından “Bitirdim” seçeneğini seçmeden önce sayfayı yeniden yükleyin.",
   "mobile.chat.browserSecret.takeoverFailed": "İstek tamamlanamadı.",
   "mobile.chat.browserSecret.done": "Bitirdim",
@@ -412,14 +412,14 @@ export const messages = {
   "mobile.chat.approval.effect.permissions":
     "“İzin ver”, {name} ajanına {server} üzerinde bu izinleri verir. “Reddet” mevcut izinleri korur.",
   "mobile.chat.approval.partial":
-    "{server}, bu isteğin yalnızca başını telefona gönderiyor. İzin vermek için {server} üzerindeki EQBots'u güncelleyin veya bu sohbeti EQBots masaüstü uygulamasında açın. Burada reddedebilirsiniz.",
+    "{server}, bu isteğin yalnızca başını telefona gönderiyor. İzin vermek için {server} üzerindeki Cat'u güncelleyin veya bu sohbeti Cat masaüstü uygulamasında açın. Burada reddedebilirsiniz.",
   "mobile.chat.approval.loading": "Tam istek yükleniyor…",
   "mobile.chat.approval.loadFailed": "Tam istek yüklenemedi. Burada reddedebilirsiniz.",
   "mobile.chat.approval.retry": "Tekrar dene",
   "mobile.chat.approval.report.bugHeadline": "Bir hata mı buldun? Hadi düzeltelim.",
   "mobile.chat.approval.report.ideaHeadline": "Bir fikrin mi var? Hadi hayata geçirelim.",
   "mobile.chat.approval.report.dontSend": "Şimdi değil",
-  "mobile.chat.approval.report.send": "EQBots ekibine gönder",
+  "mobile.chat.approval.report.send": "Cat ekibine gönder",
   "mobile.chat.approval.allow": "İzin ver",
   "mobile.chat.approval.deny": "Reddet",
   "mobile.chat.approval.reconnect": "Bu isteği yanıtlamak için {server} sunucusuna bağlanın.",
@@ -498,7 +498,7 @@ export const messages = {
   "mobile.chat.queue.steerNeedsTurn": "Yönlendirme için çalışan bir tur gereklidir.",
   "mobile.chat.queue.stillHoldingTitle": "Mesaj hâlâ tutuluyor",
   "mobile.chat.queue.stillHoldingMessage":
-    "EQBots bu mesajı serbest bırakamadı, bu nedenle ajan bunu beklemeye devam ediyor. Telefon yeniden bağlandıktan sonra tekrar deneyin.",
+    "Cat bu mesajı serbest bırakamadı, bu nedenle ajan bunu beklemeye devam ediyor. Telefon yeniden bağlandıktan sonra tekrar deneyin.",
   "mobile.chat.queue.keepEditing": "Düzenlemeye devam et",
   "mobile.chat.queue.leaveAnyway": "Yine de ayrıl",
   "mobile.chat.queue.discardTitle": "Değişiklikler atılsın mı?",
@@ -506,7 +506,7 @@ export const messages = {
   "mobile.chat.queue.discard": "At",
   "mobile.chat.queue.alreadyReceived": "Ajan bu mesajı zaten aldı, bu nedenle değiştirilemez.",
   "mobile.chat.queue.holding": "Mesaj sizin için tutuluyor…",
-  "mobile.chat.queue.holdFailed": "EQBots bu mesajı düzenleme için tutamadı.",
+  "mobile.chat.queue.holdFailed": "Cat bu mesajı düzenleme için tutamadı.",
   "mobile.chat.queue.messageLabel": "Mesaj",
   "mobile.chat.queue.messagePlaceholder": "Mesaj metni",
   "mobile.chat.queue.save": "Kuyruktaki mesajı kaydet",
@@ -537,15 +537,15 @@ export const messages = {
   "mobile.chat.threads.renameSave": "Kaydet",
   "mobile.chat.threads.name": "Mesaj dizisi adı",
   "mobile.chat.threads.renameUnavailable":
-    "Bu diziyi şimdi yeniden adlandıramazsınız. Sunucuya bağlanın veya ana bilgisayardaki EQBots'u güncelleyin.",
+    "Bu diziyi şimdi yeniden adlandıramazsınız. Sunucuya bağlanın veya ana bilgisayardaki Cat'u güncelleyin.",
   "mobile.chat.threads.delete.action": "Sil",
   "mobile.chat.threads.delete.title": "Bu dizi silinsin mi?",
   "mobile.chat.threads.delete.body":
-    "EQBots diziyi, mesajlarını ve dosyalarını kalıcı olarak siler. Ana sohbet değişmez.",
+    "Cat diziyi, mesajlarını ve dosyalarını kalıcı olarak siler. Ana sohbet değişmez.",
   "mobile.chat.threads.filesUnsupported":
-    "Bu ana bilgisayar bir dizide dosya alamaz. Ana bilgisayardaki EQBots'u güncelleyin.",
+    "Bu ana bilgisayar bir dizide dosya alamaz. Ana bilgisayardaki Cat'u güncelleyin.",
   "mobile.chat.threads.unsupported":
-    "Bu ana bilgisayar dizileri yeniden adlandıramaz veya silemez. Ana bilgisayardaki EQBots'u güncelleyin.",
+    "Bu ana bilgisayar dizileri yeniden adlandıramaz veya silemez. Ana bilgisayardaki Cat'u güncelleyin.",
   "mobile.chat.threads.error.rename": "Dizi yeniden adlandırılamadı.",
   "mobile.chat.threads.error.delete": "Dizi silinemedi.",
   "mobile.chat.channelWork.working": "{channel} kanalında çalışıyor",

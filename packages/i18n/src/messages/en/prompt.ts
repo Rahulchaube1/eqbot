@@ -25,11 +25,11 @@ export const messages = defineMessages("prompt", {
   "prompt.approval.alwaysAllow": "Always allow",
   "prompt.approval.deny": "Deny",
   "prompt.approval.cut":
-    "This card shows only the start of the request, so it offers only Deny. If Allow does not show soon, update EQBots on the server.",
+    "This card shows only the start of the request, so it offers only Deny. If Allow does not show soon, update Cat on the server.",
   "prompt.approval.report.bugHeadline": "Found a bug? Let's get it fixed.",
   "prompt.approval.report.ideaHeadline": "Have an idea? Let's make it real.",
   "prompt.approval.report.dontSend": "Not now",
-  "prompt.approval.report.send": "Send to the EQBots team",
+  "prompt.approval.report.send": "Send to the Cat team",
   "prompt.approval.title.command": "Run a command",
   "prompt.approval.title.fileChange": "Change files",
   "prompt.approval.title.permissions": "Grant permissions",
@@ -54,7 +54,7 @@ export const messages = defineMessages("prompt", {
   "prompt.browser.signInBlocked.title": "{host} blocked the sign-in from {server}",
   "prompt.browser.signInBlocked.cancelledTitle": "Sign-in to {host} cancelled",
   "prompt.browser.signInBlocked.body":
-    "Sign in on this computer. EQBots sends only the {host} sign-in to {server}, and {name} continues.",
+    "Sign in on this computer. Cat sends only the {host} sign-in to {server}, and {name} continues.",
   "prompt.browser.signInBlocked.cancelledBody": "The sign-in was cancelled.",
   "prompt.browser.signInBlocked.waiting": "Waiting for the sign-in",
   "prompt.browser.signInBlocked.waitingButton": "Waiting for the sign-in…",

@@ -26,7 +26,7 @@ export const COMPOSIO_PLUGIN_GUIDE: PluginGuide = {
     {
       question: "Does the Composio plugin need an API key?",
       answer:
-        "No. Select Connect and sign in with your Composio account in the browser: Composio starts its own sign-in for MCP clients that support auth. To use a key, select Use an API key instead, and type the consumer API key from your Composio account, in Settings > Sessions & API Key. EQBots sends the key in the x-consumer-api-key header. If you regenerate the key, Composio stops the old key at once, so type the new key in EQBots.",
+        "No. Select Connect and sign in with your Composio account in the browser: Composio starts its own sign-in for MCP clients that support auth. To use a key, select Use an API key instead, and type the consumer API key from your Composio account, in Settings > Sessions & API Key. Cat sends the key in the x-consumer-api-key header. If you regenerate the key, Composio stops the old key at once, so type the new key in Cat.",
     },
     {
       question: "Which apps can the Composio MCP server reach?",
@@ -41,7 +41,7 @@ export const COMPOSIO_PLUGIN_GUIDE: PluginGuide = {
     {
       question: "What data does Composio get?",
       answer:
-        "Composio gets the tool calls that the agent sends, with their inputs, and runs them on the apps that you connected. Your app connections stay in your Composio account. Your EQBots workspaces, conversations and files stay on the computer that runs EQBots. Composio's own plan limits apply.",
+        "Composio gets the tool calls that the agent sends, with their inputs, and runs them on the apps that you connected. Your app connections stay in your Composio account. Your Cat workspaces, conversations and files stay on the computer that runs Cat. Composio's own plan limits apply.",
     },
   ],
   sources: [

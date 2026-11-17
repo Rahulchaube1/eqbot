@@ -27,7 +27,7 @@ export const HINDSIGHT_PLUGIN_GUIDE: PluginGuide = {
     {
       question: "Does the Hindsight plugin need an API key?",
       answer:
-        "No. Select Connect and sign in to Hindsight Cloud in the browser. You choose the organization that EQBots can use, and only an Owner or an Admin of the organization can approve. To use a key, select Use an API key instead, and type a key from the Connect page of Hindsight Cloud. Keys start with hsk_. EQBots keeps the key in encrypted storage.",
+        "No. Select Connect and sign in to Hindsight Cloud in the browser. You choose the organization that Cat can use, and only an Owner or an Admin of the organization can approve. To use a key, select Use an API key instead, and type a key from the Connect page of Hindsight Cloud. Keys start with hsk_. Cat keeps the key in encrypted storage.",
     },
     {
       question: "Which memory bank does the agent use?",

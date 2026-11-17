@@ -28,7 +28,7 @@ export function sitePageHead(siteUrl: string, head: SitePageHead) {
       { title: head.title },
       { name: "description", content: head.description },
       { property: "og:type", content: "website" },
-      { property: "og:site_name", content: "EQBots" },
+      { property: "og:site_name", content: "Cat" },
       { property: "og:locale", content: SITE_OPEN_GRAPH_LOCALES[head.locale] },
       { property: "og:url", content: url },
       { property: "og:title", content: head.title },

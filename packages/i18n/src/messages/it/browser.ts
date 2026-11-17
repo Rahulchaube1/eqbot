@@ -56,8 +56,8 @@ export const messages = {
   "browser.pip.reattach": "Riaggancia il browser alla barra laterale destra",
   "browser.pip.reattachTitle": "Riaggancia il browser",
   "browser.pip.close": "Chiudi il popup del browser",
-  "browser.pip.reattachFailed": "EQBots non è riuscito a riagganciare il browser.",
-  "browser.pip.closeFailed": "EQBots non è riuscito a chiudere il popup del browser.",
+  "browser.pip.reattachFailed": "Cat non è riuscito a riagganciare il browser.",
+  "browser.pip.closeFailed": "Cat non è riuscito a chiudere il popup del browser.",
   "browser.popupBlocked.title": "Popup bloccato",
   "browser.popupBlocked.dismiss": "Chiudi il messaggio del popup",
   "browser.liveView.label": "Vista in diretta della pagina sul server",
@@ -150,21 +150,21 @@ export const messages = {
   "browser.signIn.local": "Accedi su questo computer",
   "browser.signIn.title": "Accedi a {site}",
   "browser.signIn.description":
-    "Alcuni siti rifiutano un accesso da un server. Accedi su questo computer e EQBots invia l’accesso a {site} a {server}. Tutti gli agenti e i membri di {server} potranno usarlo nel browser.",
+    "Alcuni siti rifiutano un accesso da un server. Accedi su questo computer e Cat invia l’accesso a {site} a {server}. Tutti gli agenti e i membri di {server} potranno usarlo nel browser.",
   "browser.signIn.windowOpen":
-    "Accedi nella finestra che si è aperta. EQBots invia l’accesso quando è completo. Se la finestra resta aperta, seleziona Fine.",
+    "Accedi nella finestra che si è aperta. Cat invia l’accesso quando è completo. Se la finestra resta aperta, seleziona Fine.",
   "browser.signIn.windowClosed":
     "La finestra di accesso è chiusa. Seleziona Fine per inviare l’accesso, o apri di nuovo la finestra.",
   "browser.signIn.reopen": "Apri la finestra di accesso",
   "browser.signIn.sending": "Invio a {server}…",
   "browser.signIn.sent": "Accesso a {site} su {server} eseguito",
-  "browser.signIn.notFound": "EQBots non ha trovato un accesso per {site}. Accedi nella finestra, poi seleziona Fine.",
+  "browser.signIn.notFound": "Cat non ha trovato un accesso per {site}. Accedi nella finestra, poi seleziona Fine.",
   "browser.signIn.stillSignedOut":
     "{server} mostra ancora una pagina di accesso di {site}. Completa l’accesso nella finestra.",
-  "browser.signIn.failed": "EQBots non è riuscito a inviare l’accesso.",
+  "browser.signIn.failed": "Cat non è riuscito a inviare l’accesso.",
   "browser.profiles.title": "Profili del browser",
   "browser.profiles.subtitle":
-    "Ogni profilo mantiene accessi, cookie e dati dei siti propri sul computer su cui gira EQBots.",
+    "Ogni profilo mantiene accessi, cookie e dati dei siti propri sul computer su cui gira Cat.",
   "browser.profiles.label": "Profili del browser",
   "browser.profiles.newName": "Nome del profilo",
   "browser.profiles.create": "Aggiungi",
@@ -183,8 +183,8 @@ export const messages = {
   "browser.profiles.deleteDescription":
     "Questa azione elimina gli accessi, i cookie e i dati dei siti del profilo. Le sue schede aperte si chiudono.",
   "browser.profiles.deleteAgents": "Questi agenti passano al profilo condiviso: {agents}.",
-  "browser.profiles.failed": "EQBots non è riuscito a modificare i profili del browser.",
-  "browser.profiles.loadFailed": "EQBots non è riuscito a caricare i profili del browser.",
+  "browser.profiles.failed": "Cat non è riuscito a modificare i profili del browser.",
+  "browser.profiles.loadFailed": "Cat non è riuscito a caricare i profili del browser.",
   "browser.profiles.tabLabel": "Profilo: {name}",
   "browser.profiles.tabLabelProxy": "Profilo: {name} · Proxy: {proxy}",
   "browser.profiles.agentTabLabel": "Profilo proprio dell’agente",
@@ -199,7 +199,7 @@ export const messages = {
   "browser.proxies.addTitle": "Aggiungi proxy",
   "browser.proxies.editTitle": "Modifica {name}",
   "browser.proxies.dialogDescription":
-    "Usa socks5, http o https. Nome utente e password sono facoltativi per ogni tipo. La password resta cifrata sul computer su cui gira EQBots.",
+    "Usa socks5, http o https. Nome utente e password sono facoltativi per ogni tipo. La password resta cifrata sul computer su cui gira Cat.",
   "browser.proxies.address": "Indirizzo",
   "browser.proxies.addressPlaceholder": "socks5://user:password@host:1080",
   "browser.proxies.deleteUsed": {
@@ -209,7 +209,7 @@ export const messages = {
   "browser.proxies.deleteUnused": "Nessun profilo usa questo proxy.",
   "browser.proxies.failing": "{name} non risponde",
   "browser.proxies.signInRefused": "{name} ha rifiutato l’accesso",
-  "browser.proxies.unsupported": "Questo server non può usare proxy. Aggiorna EQBots su quel server.",
+  "browser.proxies.unsupported": "Questo server non può usare proxy. Aggiorna Cat su quel server.",
   "browser.proxies.yourComputer": "Il tuo computer",
   "browser.proxies.memberComputer": "Computer di {name}",
   "browser.proxies.unknownComputer": "Computer di un membro",
@@ -220,7 +220,7 @@ export const messages = {
   "browser.proxies.offlineBadge": "{name} è offline",
   "browser.proxies.shareTitle": "Condividere la connessione di questo computer?",
   "browser.proxies.shareDescription":
-    "I profili che usano il tuo computer aprono i siti pubblici tramite la connessione internet di questo computer. Funziona solo mentre EQBots è aperto qui. Il server non può aprire indirizzi della tua rete locale.",
+    "I profili che usano il tuo computer aprono i siti pubblici tramite la connessione internet di questo computer. Funziona solo mentre Cat è aperto qui. Il server non può aprire indirizzi della tua rete locale.",
   "browser.proxies.share": "Condividi",
   "browser.proxies.stopSharing": "Interrompi condivisione",
   "browser.proxies.closesTabs": {

@@ -484,7 +484,7 @@ export const messages = {
   "chat.suggestion.detailsNamed": "{name} im Marketplace öffnen",
   "chat.suggestion.dismissed": "Vorschlag für {name} ausgeblendet.",
   "chat.suggestion.undo": "Rückgängig",
-  "chat.suggestion.localOnly": "Verbinde {name} in EQBots auf deinem eigenen Computer.",
+  "chat.suggestion.localOnly": "Verbinde {name} in Cat auf deinem eigenen Computer.",
   "chat.suggestion.unavailable": "Dieser Server kann {name} nicht verbinden.",
   "chat.serverInstall.title": "Neuer Server",
   "chat.serverInstall.expired": "Der Befehl ist abgelaufen. Bitte den Agenten um einen neuen.",
@@ -499,6 +499,6 @@ export const messages = {
   "chat.reference.open.thread": "Thread {name} öffnen",
   "chat.feedbackSent.title": "Danke für dein Feedback 🙏",
   "chat.feedbackSent.badge": "Gesendet",
-  "chat.feedbackSent.body": "Das EQBots-Team liest es und kümmert sich darum 💜",
+  "chat.feedbackSent.body": "Das Cat-Team liest es und kümmert sich darum 💜",
   "chat.feedbackSent.openNamed": "Issue #{number} auf GitHub öffnen",
 } as const satisfies PartialTranslation<typeof source>;

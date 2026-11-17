@@ -1,7 +1,7 @@
 {
   "id": "/",
-  "name": "EQBots",
-  "short_name": "EQBots",
+  "name": "Cat",
+  "short_name": "Cat",
   "description": "Run Codex and Claude side by side as persistent AI teammates, each with its own workspace, queue, and context.",
   "start_url": "/app",
   "scope": "/",

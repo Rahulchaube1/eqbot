@@ -10,14 +10,14 @@ export const CLAUDE_CODE_PROVIDER: ProviderPage = {
   provider: "claude",
   name: "Claude Code",
   answer:
-    "EQBots runs Claude Code as one agent of a team, on macOS, Windows or Linux, with the Claude plan you already pay for. You get shared channels with agents on other providers, and an app on your phone.",
+    "Cat runs Claude Code as one agent of a team, on macOS, Windows or Linux, with the Claude plan you already pay for. You get shared channels with agents on other providers, and an app on your phone.",
   connect:
-    "Choose Claude, and EQBots downloads and pins its own copy of Claude Code, or uses the one you installed. Then sign in with your Claude account. If `claude` works in your terminal, it works in EQBots.",
+    "Choose Claude, and Cat downloads and pins its own copy of Claude Code, or uses the one you installed. Then sign in with your Claude account. If `claude` works in your terminal, it works in Cat.",
   adds: [
     {
       icon: "laptop",
       title: "A full desktop app on Linux",
-      text: "Anthropic's desktop app is in beta on Linux, for Ubuntu and Debian only. EQBots runs Claude Code on x64 and arm64 Linux, as an AppImage.",
+      text: "Anthropic's desktop app is in beta on Linux, for Ubuntu and Debian only. Cat runs Claude Code on x64 and arm64 Linux, as an AppImage.",
     },
   ],
   vendor: "Anthropic",
@@ -48,20 +48,20 @@ export const CLAUDE_CODE_PROVIDER: ProviderPage = {
     {
       question: "Is there a GUI for Claude Code?",
       answer:
-        "Yes. Anthropic's Claude desktop app has a Code tab for macOS and Windows, and Linux in beta. EQBots is a different desktop app: it runs Claude Code as one agent of a team, with agents on other providers and an app on your phone.",
+        "Yes. Anthropic's Claude desktop app has a Code tab for macOS and Windows, and Linux in beta. Cat is a different desktop app: it runs Claude Code as one agent of a team, with agents on other providers and an app on your phone.",
     },
     {
-      question: "Does EQBots need an Anthropic API key for Claude Code?",
+      question: "Does Cat need an Anthropic API key for Claude Code?",
       answer:
-        "No. EQBots uses the sign-in of Claude Code, so your Claude Pro or Max plan works. EQBots does not copy your credentials. The free Claude plan does not include Claude Code.",
+        "No. Cat uses the sign-in of Claude Code, so your Claude Pro or Max plan works. Cat does not copy your credentials. The free Claude plan does not include Claude Code.",
     },
     {
       question: "Can I run Claude Code on Linux with a graphical app?",
       answer:
-        "Yes. Anthropic's desktop app is in beta on Linux, for Ubuntu 22.04 or later and Debian 12 or later. EQBots runs Claude Code on x64 and arm64 Linux as an AppImage, on any distribution that runs an AppImage.",
+        "Yes. Anthropic's desktop app is in beta on Linux, for Ubuntu 22.04 or later and Debian 12 or later. Cat runs Claude Code on x64 and arm64 Linux as an AppImage, on any distribution that runs an AppImage.",
     },
     {
-      question: "Can Claude Code and Codex work together in EQBots?",
+      question: "Can Claude Code and Codex work together in Cat?",
       answer:
         "Yes. Each agent has its own provider. A Claude Code agent and a Codex agent can work in the same channel and give tasks to each other.",
     },

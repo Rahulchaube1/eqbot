@@ -33,25 +33,25 @@ export const messages = {
   "update.provider.showDetails": "Ayrıntıları göster",
   "update.provider.hideDetails": "Ayrıntıları gizle",
 
-  "update.scheduled.title": "{name} bir EQBots güncellemesi zamanladı",
-  "update.scheduled.automaticTitle": "EQBots bir güncelleme yüklüyor",
-  "update.scheduled.whenIdle": "EQBots, ajanlar boştayken yeniden başlar.",
-  "update.scheduled.now": "EQBots, güncelleme indirildiğinde yeniden başlar.",
+  "update.scheduled.title": "{name} bir Cat güncellemesi zamanladı",
+  "update.scheduled.automaticTitle": "Cat bir güncelleme yüklüyor",
+  "update.scheduled.whenIdle": "Cat, ajanlar boştayken yeniden başlar.",
+  "update.scheduled.now": "Cat, güncelleme indirildiğinde yeniden başlar.",
   "update.scheduled.cancel": "Güncellemeyi iptal et",
   "update.scheduled.cancelFailed": "Güncelleme iptal edilemedi.",
 
   // Bu bilgisayarın kullanıcısının istediği yeniden başlatma. Hiçbir çalışma kalmayana kadar bekler.
-  "update.idleRestart.relaunchTitle": "Ajanlar boştayken EQBots yeniden başlatılır",
-  "update.idleRestart.updateTitle": "Ajanlar boştayken EQBots güncellemeyi yükler",
+  "update.idleRestart.relaunchTitle": "Ajanlar boştayken Cat yeniden başlatılır",
+  "update.idleRestart.updateTitle": "Ajanlar boştayken Cat güncellemeyi yükler",
   "update.idleRestart.description": "Yeni rutin çalıştırmaları yeniden başlatmaya kadar bekler.",
   "update.idleRestart.waitingFor": "{reasons} bekleniyor.",
   "update.idleRestart.cancel": "Yeniden başlatmayı iptal et",
   "update.idleRestart.cancelFailed": "Yeniden başlatma iptal edilemedi.",
   "update.idleRestart.requestFailed": "Yeniden başlatma zamanlanamadı.",
-  "update.idleRestart.failedTitle": "EQBots yeniden başlatılmadı",
+  "update.idleRestart.failedTitle": "Cat yeniden başlatılmadı",
 
-  "update.whatsNew.title": "EQBots'taki yenilikler",
-  "update.whatsNew.description": "EQBots'un bu sürümündeki yeni özellikler ve değişiklikler.",
+  "update.whatsNew.title": "Cat'taki yenilikler",
+  "update.whatsNew.description": "Cat'un bu sürümündeki yeni özellikler ve değişiklikler.",
   "update.whatsNew.version": "Sürüm {version}",
   "update.whatsNew.updatedFrom": "{from} sürümünden {to} sürümüne güncellendi",
   "update.whatsNew.group.added": "Yeni",
@@ -68,6 +68,6 @@ export const messages = {
   "update.whatsNew.empty.body":
     "Bu sürümde burada gösterilecek bir not yok. Tüm değişiklikler tam sürüm günlüğünde gösterilir.",
   "update.whatsNew.changelog": "Tam sürüm günlüğü",
-  "update.whatsNew.changelogFailed": "EQBots sürüm günlüğünü açamadı.",
+  "update.whatsNew.changelogFailed": "Cat sürüm günlüğünü açamadı.",
   "update.whatsNew.done": "Anladım",
 } as const satisfies PartialTranslation<typeof source>;

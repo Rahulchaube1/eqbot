@@ -9,10 +9,10 @@ export const messages = {
   "mobile.server.drawer.leaveFailed": "Não foi possível sair de {name}",
   "mobile.server.drawer.removeFailed": "Não foi possível remover {name}",
   "mobile.server.drawer.deleteFailed": "Não foi possível excluir {name}",
-  "mobile.server.drawer.actionFailed": "O EQBots não conseguiu concluir esta ação. Tente novamente.",
+  "mobile.server.drawer.actionFailed": "O Cat não conseguiu concluir esta ação. Tente novamente.",
   "mobile.server.drawer.moveUp": "Mover para cima",
   "mobile.server.drawer.moveDown": "Mover para baixo",
-  "mobile.server.drawer.orderHint": "O EQBots abre no primeiro servidor. A ordem é salva neste dispositivo.",
+  "mobile.server.drawer.orderHint": "O Cat abre no primeiro servidor. A ordem é salva neste dispositivo.",
   "mobile.server.drawer.title": "Servidores",
   "mobile.server.drawer.serverSettings": "Configurações do servidor",
   "mobile.server.drawer.serverListHint": "Mostra ou oculta os servidores",
@@ -33,8 +33,8 @@ export const messages = {
   "mobile.server.drawer.close": "Fechar painel de servidores",
   "mobile.server.invite.noExpiry": "{role} · Não expira",
   "mobile.server.invite.expires": "{role} · Expira em {date}",
-  "mobile.server.invite.loadFailed": "O EQBots não conseguiu carregar este convite.",
-  "mobile.server.invite.joinFailed": "O EQBots não conseguiu entrar neste servidor.",
+  "mobile.server.invite.loadFailed": "O Cat não conseguiu carregar este convite.",
+  "mobile.server.invite.joinFailed": "O Cat não conseguiu entrar neste servidor.",
   "mobile.server.invite.checking": "Verificando convite…",
   "mobile.server.invite.unavailable": "Convite indisponível",
   "mobile.server.invite.verifying": "Verificando a identidade do servidor.",
@@ -77,7 +77,7 @@ export const messages = {
   "mobile.server.local.optionHint": "No computador que roda {name}, com seus próprios agentes, conversas e arquivos.",
   "mobile.server.local.title": "Novo servidor",
   "mobile.server.local.description":
-    "O servidor roda no computador que roda {name}, com seus próprios agentes, conversas e arquivos. Ele fica disponível enquanto o EQBots roda nesse computador.",
+    "O servidor roda no computador que roda {name}, com seus próprios agentes, conversas e arquivos. Ele fica disponível enquanto o Cat roda nesse computador.",
   "mobile.server.local.nameLabel": "Nome do servidor",
   "mobile.server.local.nameTooShort": "Use pelo menos {limit} caracteres.",
   "mobile.server.local.create": "Criar",
@@ -89,22 +89,22 @@ export const messages = {
   "mobile.server.local.createdOn": "{name} roda no mesmo computador que {computer}.",
   "mobile.server.local.waiting": "Aguardando {name} ficar online…",
   "mobile.server.local.notPublished":
-    "{name} está rodando, mas este celular ainda não consegue abri-lo. Verifique se o EQBots no computador que roda {computer} está conectado à conta e online.",
+    "{name} está rodando, mas este celular ainda não consegue abri-lo. Verifique se o Cat no computador que roda {computer} está conectado à conta e online.",
   "mobile.server.local.open": "Abrir servidor",
   "mobile.server.local.ownerOnly": "Só o proprietário pode criar um servidor neste computador.",
-  "mobile.server.local.unsupported": "Atualize o EQBots neste computador para criar um servidor aqui.",
+  "mobile.server.local.unsupported": "Atualize o Cat neste computador para criar um servidor aqui.",
   "mobile.server.local.deleteOffline":
-    "Só o computador deste servidor pode excluí-lo. Abra o EQBots nesse computador e tente de novo.",
+    "Só o computador deste servidor pode excluí-lo. Abra o Cat nesse computador e tente de novo.",
   "mobile.server.hosted.intro.title": "Seus agentes sempre ativos",
   "mobile.server.hosted.intro.description":
-    "Um servidor na nuvem executa seus agentes e rotinas quando o computador está desligado. O EQBots configura e mantém o servidor funcionando.",
+    "Um servidor na nuvem executa seus agentes e rotinas quando o computador está desligado. O Cat configura e mantém o servidor funcionando.",
   "mobile.server.hosted.planFacts": "{members} · {storage} · {sites} · {speed}",
   "mobile.server.hosted.computer.title": "No seu computador",
   "mobile.server.hosted.computer.add": "Adicionar um servidor na nuvem",
   "mobile.server.hosted.computer.addHint":
-    "No EQBots, abra Configurações → Servidores hospedados e selecione Adicionar servidor.",
+    "No Cat, abra Configurações → Servidores hospedados e selecione Adicionar servidor.",
   "mobile.server.hosted.computer.change": "Mudar de plano",
-  "mobile.server.hosted.computer.changeHint": "No EQBots, abra Configurações → Cobrança.",
+  "mobile.server.hosted.computer.changeHint": "No Cat, abra Configurações → Cobrança.",
   "mobile.server.hosted.yourServers": "Seus servidores",
   "mobile.server.hosted.plans": "Planos",
   "mobile.server.hosted.currentPlan": "Seu plano",
@@ -121,7 +121,7 @@ export const messages = {
   "mobile.server.hosted.paymentTitle": "Aguardando o pagamento",
   "mobile.server.hosted.paymentDescription": "A configuração começa quando o pagamento é confirmado.",
   "mobile.server.hosted.progressTitle": "Configurando {name}",
-  "mobile.server.hosted.progressDescription": "O EQBots prepara uma máquina privada para você.",
+  "mobile.server.hosted.progressDescription": "O Cat prepara uma máquina privada para você.",
   "mobile.server.hosted.closeHint":
     "Você pode fechar esta janela. A configuração continua, e o servidor aparece na sua lista quando estiver pronto.",
   "mobile.server.hosted.readyTitle": "{name} está pronto",
@@ -130,21 +130,21 @@ export const messages = {
   "mobile.server.hosted.open": "Abrir servidor",
   "mobile.server.hosted.failedTitle": "Não foi possível iniciar o servidor",
   "mobile.server.hosted.failedDescription":
-    "Tente novamente. Se falhar de novo, exclua o servidor em Configurações no EQBots do seu computador.",
+    "Tente novamente. Se falhar de novo, exclua o servidor em Configurações no Cat do seu computador.",
   "mobile.server.hosted.retrying": "Iniciando…",
   "mobile.server.hosted.expiredTitle": "A página de pagamento expirou",
   "mobile.server.hosted.expiredDescription": "O servidor não foi pago, então foi removido.",
   "mobile.server.hosted.step.payment": "Confirmar o pagamento",
   "mobile.server.hosted.step.create": "Criar a máquina",
-  "mobile.server.hosted.step.start": "Iniciar o EQBots",
+  "mobile.server.hosted.step.start": "Iniciar o Cat",
   "mobile.server.hosted.step.connect": "Conectar à sua conta",
   "mobile.server.hosted.detail.payment": "Aguardando a Stripe",
   "mobile.server.hosted.detail.reserve": "Reservando uma máquina privada",
-  "mobile.server.hosted.detail.copy": "Copiando o EQBots para a máquina",
+  "mobile.server.hosted.detail.copy": "Copiando o Cat para a máquina",
   "mobile.server.hosted.detail.key": "Adicionando uma chave de login de uso único",
   "mobile.server.hosted.detail.boot": "Ligando a máquina",
-  "mobile.server.hosted.detail.app": "Iniciando o EQBots",
-  "mobile.server.hosted.detail.wait": "Aguardando a resposta do EQBots",
+  "mobile.server.hosted.detail.app": "Iniciando o Cat",
+  "mobile.server.hosted.detail.wait": "Aguardando a resposta do Cat",
   "mobile.server.hosted.detail.signIn": "Entrando com sua conta",
   "mobile.server.hosted.detail.publish": "Adicionando o servidor à sua conta",
   "mobile.server.hosted.detail.check": "Verificando a conexão",
@@ -152,7 +152,7 @@ export const messages = {
   "mobile.server.hosted.stepActive": "em andamento",
   "mobile.server.hosted.stepPending": "não iniciado",
   "mobile.server.hosted.stepFailed": "falhou",
-  "mobile.server.scan.notInvitation": "Este código QR não é um convite do EQBots.",
+  "mobile.server.scan.notInvitation": "Este código QR não é um convite do Cat.",
   "mobile.server.scan.title": "Ler convite",
   "mobile.server.role.owner": "proprietário",
   "mobile.server.role.admin": "administrador",
@@ -192,7 +192,7 @@ export const messages = {
   "mobile.server.routines.status.paused": "Pausada",
   "mobile.server.routines.status.failed": "Falhou",
   "mobile.server.routines.status.completed": "Concluída",
-  "mobile.server.threads.unsupported": "Este host não oferece suporte a tópicos. Atualize o EQBots no host.",
+  "mobile.server.threads.unsupported": "Este host não oferece suporte a tópicos. Atualize o Cat no host.",
   "mobile.server.threads.ask": "O que você quer que seja feito?",
   "mobile.server.threads.chooseAgent": "Iniciar o tópico com",
   "mobile.server.threads.agentLabel": "Iniciar o tópico com {name}",
@@ -258,7 +258,7 @@ export const messages = {
     "O servidor para e inicia novamente. Isso leva cerca de um minuto. Os turnos de agentes em andamento param, e os membros perdem a conexão até o servidor voltar. Arquivos e chats são mantidos.",
   "mobile.server.settings.restartConfirm": "Reiniciar",
   "mobile.server.settings.restarted": "{name} está reiniciando",
-  "mobile.server.settings.restartUnsupported": "Atualize o EQBots neste servidor para reiniciá-lo aqui.",
+  "mobile.server.settings.restartUnsupported": "Atualize o Cat neste servidor para reiniciá-lo aqui.",
   "mobile.server.settings.leaveTitle": "Sair de {name}?",
   "mobile.server.settings.leaveBody": "Você precisará de outro convite para entrar novamente.",
   "mobile.server.settings.leave": "Sair do servidor",
@@ -268,7 +268,7 @@ export const messages = {
   "mobile.server.settings.remove": "Remover servidor",
   "mobile.server.settings.deleteTitle": "Excluir {name}?",
   "mobile.server.settings.deleteBody":
-    "O EQBots para o servidor no computador dele e move os agentes, conversas e arquivos para a lixeira desse computador. O servidor sai da lista de servidores em todos os seus dispositivos.",
+    "O Cat para o servidor no computador dele e move os agentes, conversas e arquivos para a lixeira desse computador. O servidor sai da lista de servidores em todos os seus dispositivos.",
   "mobile.server.settings.delete": "Excluir servidor",
   "mobile.server.settings.name": "Nome do servidor",
   "mobile.server.settings.nameLength": "Use de {min} a {max} caracteres.",
@@ -282,7 +282,7 @@ export const messages = {
   "mobile.server.settings.identityNotAllowed":
     "Só um proprietário ou administrador pode alterar o nome e o logotipo do servidor.",
   "mobile.server.settings.identityUnsupported":
-    "Atualize o EQBots neste servidor para alterar o nome e o logotipo aqui.",
+    "Atualize o Cat neste servidor para alterar o nome e o logotipo aqui.",
   "mobile.server.settings.identityOffline": "Conecte-se a este servidor para alterar o nome e o logotipo.",
   "mobile.server.route.cropLogo": "Recortar logotipo",
   "mobile.server.members.remove": "Remover membro",
@@ -339,7 +339,7 @@ export const messages = {
   "mobile.server.storage.category.caches": "Arquivos do servidor em cache",
   "mobile.server.storage.category.runtimes": "Ambientes de execução dos provedores",
   "mobile.server.storage.category.logs": "Registros",
-  "mobile.server.storage.total": "EQBots em {name}",
+  "mobile.server.storage.total": "Cat em {name}",
   "mobile.server.storage.used": "Usado",
   "mobile.server.storage.byType": "Armazenamento por tipo",
   "mobile.server.storage.free": "{size} livres neste disco",
@@ -361,10 +361,10 @@ export const messages = {
   "mobile.server.storage.clearTitle.caches": "Limpar arquivos do servidor em cache?",
   "mobile.server.storage.clearTitle.logs": "Limpar registros?",
   "mobile.server.storage.clearBody.caches":
-    "Cópias de arquivos do servidor. O EQBots as baixa novamente quando você as abre.",
+    "Cópias de arquivos do servidor. O Cat as baixa novamente quando você as abre.",
   "mobile.server.storage.clearBody.logs": "Registros de diagnóstico. Novos registros começam imediatamente.",
   "mobile.server.storage.clearFailed": "Não foi possível limpar os dados",
-  "mobile.server.storage.clearFailedBody": "O EQBots não conseguiu limpar estes dados no servidor.",
+  "mobile.server.storage.clearFailedBody": "O Cat não conseguiu limpar estes dados no servidor.",
   "mobile.server.storage.noFiles": "Não há arquivos armazenados neste servidor.",
   "mobile.server.library.type.all": "Todos",
   "mobile.server.library.type.images": "Imagens",
@@ -455,7 +455,7 @@ export const messages = {
   "mobile.server.settings.timezoneSaveFailed": "Não foi possível salvar o fuso horário. Tente de novo.",
   "mobile.server.settings.timezoneUnavailable":
     "Conecte-se a este servidor como proprietário ou admin para alterar o fuso horário.",
-  "mobile.server.settings.timezoneUnsupported": "Atualize o EQBots neste servidor para alterar o fuso horário aqui.",
+  "mobile.server.settings.timezoneUnsupported": "Atualize o Cat neste servidor para alterar o fuso horário aqui.",
   "mobile.server.settings.keySection": "Chave do servidor",
   "mobile.server.settings.keyChanged": "Última alteração",
   "mobile.server.settings.keyChange": "Alterar chave",
@@ -473,13 +473,13 @@ export const messages = {
     "O servidor usa a chave nova. Este app passa para ela quando a lista de servidores carregar de novo.",
   "mobile.server.settings.keyChangeFailed": "Não foi possível alterar a chave do servidor. Tente de novo.",
   "mobile.server.settings.keyOwnerOnly": "Só o proprietário pode alterar a chave do servidor.",
-  "mobile.server.settings.keyUnsupported": "Atualize o EQBots neste servidor para alterar a chave dele aqui.",
+  "mobile.server.settings.keyUnsupported": "Atualize o Cat neste servidor para alterar a chave dele aqui.",
   "mobile.server.settings.memoryLimit": "Memórias por agente",
   "mobile.server.settings.memoryLimitDescription": "Quantas memórias cada agente neste servidor pode manter.",
   "mobile.server.settings.memoryLimitLoadFailed": "Não foi possível carregar o limite de memórias deste servidor.",
   "mobile.server.settings.memoryLimitSaveFailed": "Não foi possível salvar o limite de memórias. Tente de novo.",
   "mobile.server.settings.memoryLimitUnsupported":
-    "Atualize o EQBots neste servidor para alterar o limite de memórias aqui.",
+    "Atualize o Cat neste servidor para alterar o limite de memórias aqui.",
   "mobile.server.settings.memoryReview": "Revisão de memórias",
   "mobile.server.settings.memoryReviewDescription":
     "Com que frequência os agentes deste servidor guardam em segundo plano fatos duradouros das conversas.",
@@ -499,7 +499,7 @@ export const messages = {
     "Quando você controla o navegador de um agente, o agente aprende como os sites funcionam pelas páginas e botões que você usa. O texto digitado não é guardado.",
   "mobile.server.settings.browsingMemoryLoadFailed": "Não foi possível carregar a configuração de navegação.",
   "mobile.server.settings.learningSaveFailed": "Não foi possível salvar esta configuração. Tente de novo.",
-  "mobile.server.settings.learningUnsupported": "Atualize o EQBots neste servidor para alterar esta configuração aqui.",
+  "mobile.server.settings.learningUnsupported": "Atualize o Cat neste servidor para alterar esta configuração aqui.",
   "mobile.server.settings.responseStyleDescription":
     "Natural: os agentes enviam atualizações curtas enquanto trabalham, e o chat as mostra. Clássico: os agentes respondem uma vez, ao terminar.",
   "mobile.server.settings.responseStyleNatural": "Natural",
@@ -507,17 +507,17 @@ export const messages = {
   "mobile.server.settings.personalityLoadFailed": "Não foi possível carregar a personalidade do servidor.",
   "mobile.server.settings.personalitySaveFailed": "Não foi possível salvar o estilo de resposta. Tente de novo.",
   "mobile.server.settings.personalityUnsupported":
-    "Atualize o EQBots neste servidor para alterar o estilo de resposta aqui.",
+    "Atualize o Cat neste servidor para alterar o estilo de resposta aqui.",
   "mobile.server.settings.agentsUnavailable":
     "Conecte-se a este servidor como proprietário ou admin para alterar as configurações dos agentes.",
   "mobile.server.route.browserProfiles": "Perfis do navegador",
   "mobile.server.browserProfiles.unavailable":
     "Só o proprietário ou um administrador de um servidor online pode gerenciar os perfis do navegador dele.",
   "mobile.server.browserProfiles.unsupported":
-    "Atualize o EQBots neste servidor para gerenciar os perfis do navegador aqui.",
+    "Atualize o Cat neste servidor para gerenciar os perfis do navegador aqui.",
   "mobile.server.browserProfiles.loading": "Carregando perfis do navegador…",
-  "mobile.server.browserProfiles.loadFailed": "O EQBots não conseguiu carregar os perfis do navegador.",
-  "mobile.server.browserProfiles.saveFailed": "O EQBots não conseguiu alterar o perfil do navegador.",
+  "mobile.server.browserProfiles.loadFailed": "O Cat não conseguiu carregar os perfis do navegador.",
+  "mobile.server.browserProfiles.saveFailed": "O Cat não conseguiu alterar o perfil do navegador.",
   "mobile.server.browserProfiles.description":
     "Cada perfil guarda seus próprios logins, cookies e dados de sites no computador que executa o servidor. Os agentes que usam o mesmo perfil compartilham os logins.",
   "mobile.server.browserProfiles.shared": "Compartilhado",
@@ -550,13 +550,13 @@ export const messages = {
   "mobile.server.browserProfiles.deleteBody":
     "Isso exclui os logins, cookies e dados de sites do perfil. As abas abertas dele fecham.",
   "mobile.server.browserProfiles.deleteAgents": "Estes agentes passam para o perfil compartilhado: {agents}.",
-  "mobile.server.browserProxies.unsupported": "Atualize o EQBots neste servidor para gerenciar os proxies aqui.",
+  "mobile.server.browserProxies.unsupported": "Atualize o Cat neste servidor para gerenciar os proxies aqui.",
   "mobile.server.browserProxies.loading": "Carregando proxies…",
-  "mobile.server.browserProxies.loadFailed": "O EQBots não conseguiu carregar os proxies.",
-  "mobile.server.browserProxies.saveFailed": "O EQBots não conseguiu alterar o proxy.",
+  "mobile.server.browserProxies.loadFailed": "O Cat não conseguiu carregar os proxies.",
+  "mobile.server.browserProxies.saveFailed": "O Cat não conseguiu alterar o proxy.",
   "mobile.server.browserProxies.title": "Proxies",
   "mobile.server.browserProxies.sectionHint":
-    "Um perfil com proxy abre as páginas por esse proxy. Um membro compartilha um computador pelo app do EQBots para computador.",
+    "Um perfil com proxy abre as páginas por esse proxy. Um membro compartilha um computador pelo app do Cat para computador.",
   "mobile.server.browserProxies.limit": "Um servidor pode ter no máximo {limit} proxies.",
   "mobile.server.browserProxies.add": "Adicionar proxy",
   "mobile.server.browserProxies.new": "Novo proxy",
@@ -584,7 +584,7 @@ export const messages = {
   "mobile.server.browserProxies.addressInvalid":
     "Este não é um endereço de proxy. Use socks5://host:1080, http://user:password@host:3128 ou host:port:user:password.",
   "mobile.server.browserProxies.computerHint":
-    "As páginas dos perfis que usam este computador saem pela conexão de internet dele enquanto o membro o compartilha pelo app do EQBots para computador. O computador abre apenas endereços públicos da internet.",
+    "As páginas dos perfis que usam este computador saem pela conexão de internet dele enquanto o membro o compartilha pelo app do Cat para computador. O computador abre apenas endereços públicos da internet.",
   "mobile.server.browserProxies.profilesTitle": "Perfis",
   "mobile.server.browserProxies.delete": "Excluir proxy",
   "mobile.server.browserProxies.deleteHint": "Excluir passa os perfis deste proxy para “Automático”.",
@@ -601,11 +601,11 @@ export const messages = {
   "mobile.server.browserProxies.change": "Alterar proxy",
   "mobile.server.browserProxies.choiceHint":
     "“Automático” usa as configurações de proxy do computador que executa o servidor. Uma alteração fecha as abas abertas do perfil.",
-  "mobile.server.browserProxies.shareHint": "Para usar seu computador, compartilhe-o no app do EQBots para computador.",
+  "mobile.server.browserProxies.shareHint": "Para usar seu computador, compartilhe-o no app do Cat para computador.",
   "mobile.server.route.connectors": "Conectores",
   "mobile.server.connectors.unavailable":
     "Conecte-se a este servidor como proprietário ou administrador para gerenciar os conectores dele.",
-  "mobile.server.connectors.unsupported": "Atualize o EQBots neste servidor para gerenciar os conectores dele aqui.",
+  "mobile.server.connectors.unsupported": "Atualize o Cat neste servidor para gerenciar os conectores dele aqui.",
   "mobile.server.connectors.loading": "Carregando conectores…",
   "mobile.server.connectors.localOnly": "Só no app para computador",
   "mobile.server.connectors.statusConnected": "Conectado",
@@ -629,7 +629,7 @@ export const messages = {
   "mobile.server.connectors.bitwarden.description":
     "Preencha logins do navegador em {host} a partir do Bitwarden ou do Vaultwarden.",
   "mobile.server.connectors.bitwarden.howItWorks":
-    "{host} entra com a própria CLI do Bitwarden. No seu cofre, crie uma pasta chamada Shared with EQBots e coloque nela apenas os logins que os agentes podem usar. No cofre web, abra Configurações › Segurança › Chaves e veja sua chave de API.",
+    "{host} entra com a própria CLI do Bitwarden. No seu cofre, crie uma pasta chamada Shared with Cat e coloque nela apenas os logins que os agentes podem usar. No cofre web, abra Configurações › Segurança › Chaves e veja sua chave de API.",
   "mobile.server.connectors.bitwarden.serverUrl": "Endereço do servidor",
   "mobile.server.connectors.bitwarden.serverUrlHint":
     "Bitwarden, ou o endereço do seu servidor Vaultwarden. {host} precisa acessá-lo por HTTPS.",
@@ -643,7 +643,7 @@ export const messages = {
   "mobile.server.connectors.bitwarden.connectingBody":
     "{host} está entrando no Bitwarden. A primeira entrada pode levar alguns minutos.",
   "mobile.server.connectors.bitwarden.folderTitle": "Pasta compartilhada",
-  "mobile.server.connectors.bitwarden.folderName": "Shared with EQBots",
+  "mobile.server.connectors.bitwarden.folderName": "Shared with Cat",
   "mobile.server.connectors.bitwarden.folderKind": "Pasta no Bitwarden",
   "mobile.server.connectors.bitwarden.folderFooter":
     "Mova um login para esta pasta no Bitwarden para que os agentes possam usá-lo. Remova-o para parar.",
@@ -654,7 +654,7 @@ export const messages = {
   "mobile.server.connectors.github.title": "GitHub",
   "mobile.server.connectors.github.description":
     "Todos os agentes em {host} podem usar seus repositórios, issues e pull requests do GitHub, além de gh e git.",
-  "mobile.server.connectors.github.unavailable": "O EQBots neste servidor não consegue conectar o GitHub.",
+  "mobile.server.connectors.github.unavailable": "O Cat neste servidor não consegue conectar o GitHub.",
   "mobile.server.connectors.github.connect": "Conectar GitHub",
   "mobile.server.connectors.github.codeTitle": "Digite este código no GitHub",
   "mobile.server.connectors.github.codeFooter":
@@ -664,12 +664,12 @@ export const messages = {
   "mobile.server.connectors.github.connectedAs": "Conectado como @{login}",
   "mobile.server.connectors.github.chooseRepositories": "Escolher repositórios",
   "mobile.server.connectors.github.repositoriesFooter":
-    "Os agentes só podem usar os repositórios em que o aplicativo EQBots para GitHub está instalado.",
+    "Os agentes só podem usar os repositórios em que o aplicativo Cat para GitHub está instalado.",
   "mobile.server.connectors.github.repositoriesTitle": "Repositórios",
   "mobile.server.connectors.github.repositoriesLoading": "Lendo os repositórios do GitHub",
-  "mobile.server.connectors.github.repositoriesFailed": "O EQBots não conseguiu ler os repositórios do GitHub.",
+  "mobile.server.connectors.github.repositoriesFailed": "O Cat não conseguiu ler os repositórios do GitHub.",
   "mobile.server.connectors.github.noRepositories":
-    "O aplicativo EQBots para GitHub ainda não está instalado em nenhum repositório.",
+    "O aplicativo Cat para GitHub ainda não está instalado em nenhum repositório.",
   "mobile.server.connectors.github.moreRepositories": {
     one: "E mais {count} repositório",
     other: "E mais {count} repositórios",
@@ -683,12 +683,12 @@ export const messages = {
   "mobile.server.connectors.github.disconnect": "Desconectar GitHub",
   "mobile.server.connectors.github.disconnectTitle": "Desconectar GitHub?",
   "mobile.server.connectors.github.disconnectBody":
-    "Isso remove o login de @{login} de {host}, e todos os agentes perdem as ferramentas do GitHub, gh e git. Em seguida, o GitHub abre para você revogar o EQBots.",
+    "Isso remove o login de @{login} de {host}, e todos os agentes perdem as ferramentas do GitHub, gh e git. Em seguida, o GitHub abre para você revogar o Cat.",
   "mobile.server.connectors.onePassword.title": "1Password",
   "mobile.server.connectors.onePassword.description":
-    "Compartilhe um cofre dedicado do 1Password com o EQBots em {host} por meio de uma conta de serviço, para que os agentes em {host} possam entrar em sites no navegador dele.",
+    "Compartilhe um cofre dedicado do 1Password com o Cat em {host} por meio de uma conta de serviço, para que os agentes em {host} possam entrar em sites no navegador dele.",
   "mobile.server.connectors.onePassword.howItWorks":
-    "No 1Password.com, crie uma conta de serviço que possa ler apenas o cofre que você compartilha com o EQBots e cole o token dela aqui. {host} verifica o token e o guarda; este celular não. Os agentes nunca veem uma senha.",
+    "No 1Password.com, crie uma conta de serviço que possa ler apenas o cofre que você compartilha com o Cat e cole o token dela aqui. {host} verifica o token e o guarda; este celular não. Os agentes nunca veem uma senha.",
   "mobile.server.connectors.onePassword.token": "Token da conta de serviço",
   "mobile.server.connectors.onePassword.tokenPlaceholder": "ops_…",
   "mobile.server.connectors.onePassword.connect": "Conectar o 1Password",
@@ -705,9 +705,9 @@ export const messages = {
     "{host} esquece o token. O cofre e a conta de serviço continuam no 1Password; remova-os lá se não precisar mais deles.",
   "mobile.server.connectors.protonPass.title": "Proton Pass",
   "mobile.server.connectors.protonPass.description":
-    "Compartilhe um cofre do Proton Pass com o EQBots em {host}, para que os agentes em {host} possam entrar em sites no navegador dele.",
+    "Compartilhe um cofre do Proton Pass com o Cat em {host}, para que os agentes em {host} possam entrar em sites no navegador dele.",
   "mobile.server.connectors.protonPass.keyHelp":
-    "No Proton Pass, crie uma chave de acesso que só possa ler o cofre que você compartilha com o EQBots e cole-a aqui. {host} guarda a chave; este telefone não.",
+    "No Proton Pass, crie uma chave de acesso que só possa ler o cofre que você compartilha com o Cat e cole-a aqui. {host} guarda a chave; este telefone não.",
   "mobile.server.connectors.protonPass.keyPlaceholder": "pst_…",
   "mobile.server.connectors.passwordManager.unavailable": "{name} não está disponível neste servidor.",
   "mobile.server.connectors.passwordManager.howItWorks":
@@ -748,14 +748,14 @@ export const messages = {
     "{host} exclui a chave de acesso dele. O cofre e os logins dele continuam na sua conta do {name}.",
   "mobile.server.connectors.slack.title": "Slack",
   "mobile.server.connectors.slack.description":
-    "As pessoas mencionam @EQBots no Slack ou enviam uma mensagem direta para ele. O Orquestrador do Slack consulta o agente certo e responde.",
+    "As pessoas mencionam @Cat no Slack ou enviam uma mensagem direta para ele. O Orquestrador do Slack consulta o agente certo e responde.",
   "mobile.server.connectors.slack.attention": {
     one: "{count} espaço de trabalho precisa de atenção",
     other: "{count} espaços de trabalho precisam de atenção",
   },
   "mobile.server.connectors.slack.connect": "Conectar Slack",
   "mobile.server.connectors.slack.connectFooter":
-    "O Slack abre em um navegador. Selecione o espaço de trabalho no canto superior direito e depois Permitir. O EQBots instala um aplicativo chamado EQBots, que entra em todos os canais públicos.",
+    "O Slack abre em um navegador. Selecione o espaço de trabalho no canto superior direito e depois Permitir. O Cat instala um aplicativo chamado Cat, que entra em todos os canais públicos.",
   "mobile.server.connectors.slack.add": "Adicionar espaço de trabalho",
   "mobile.server.connectors.slack.limit": {
     one: "Você pode conectar no máximo {count} espaço de trabalho.",
@@ -763,16 +763,16 @@ export const messages = {
   },
   "mobile.server.connectors.slack.workspaceTitle": "Espaço de trabalho",
   "mobile.server.connectors.slack.workspaceDescription":
-    "As pessoas mencionam @EQBots ou enviam uma mensagem direta para ele.",
+    "As pessoas mencionam @Cat ou enviam uma mensagem direta para ele.",
   "mobile.server.connectors.slack.missingScopes":
-    "O EQBots não tem estas permissões no Slack: {scopes}. Desconecte o espaço de trabalho e conecte-o novamente.",
-  "mobile.server.connectors.slack.retryAt": "O Slack pediu para o EQBots aguardar. Ele tentará novamente às {time}.",
+    "O Cat não tem estas permissões no Slack: {scopes}. Desconecte o espaço de trabalho e conecte-o novamente.",
+  "mobile.server.connectors.slack.retryAt": "O Slack pediu para o Cat aguardar. Ele tentará novamente às {time}.",
   "mobile.server.connectors.slack.helpInvalidToken":
-    "O Slack não aceita mais o EQBots neste espaço de trabalho. Ele pode ter sido desinstalado. Conecte o espaço de trabalho novamente.",
+    "O Slack não aceita mais o Cat neste espaço de trabalho. Ele pode ter sido desinstalado. Conecte o espaço de trabalho novamente.",
   "mobile.server.connectors.slack.helpSecretStorage":
-    "O EQBots não consegue ler os tokens salvos em {host}. Desconecte o espaço de trabalho e conecte-o novamente.",
+    "O Cat não consegue ler os tokens salvos em {host}. Desconecte o espaço de trabalho e conecte-o novamente.",
   "mobile.server.connectors.slack.helpRelay":
-    "O EQBots em {host} não consegue receber eventos do Slack. Em {host}, entre na sua conta, dê um nome ao servidor nas Configurações do servidor e mantenha o EQBots aberto.",
+    "O Cat em {host} não consegue receber eventos do Slack. Em {host}, entre na sua conta, dê um nome ao servidor nas Configurações do servidor e mantenha o Cat aberto.",
   "mobile.server.connectors.slack.helpNotLinked":
     "Este workspace não está vinculado a {host}. Toque em Reconectar para vinculá-lo.",
   "mobile.server.connectors.slack.orchestratorTitle": "Orquestrador do Slack",
@@ -782,27 +782,27 @@ export const messages = {
     "Adicione o Orquestrador do Slack para que o Slack receba respostas.",
   "mobile.server.connectors.slack.addAgent": "Adicionar Orquestrador do Slack",
   "mobile.server.connectors.slack.note":
-    "O EQBots entra automaticamente em todos os canais públicos, inclusive nos novos. Para um canal privado, convide-o: /invite @EQBots.",
+    "O Cat entra automaticamente em todos os canais públicos, inclusive nos novos. Para um canal privado, convide-o: /invite @Cat.",
   "mobile.server.connectors.slack.disconnectTitle": "Desconectar {workspace}?",
   "mobile.server.connectors.slack.disconnectBody":
-    "O EQBots para de responder em {workspace} e remove o token do Slack de {host}.",
-  "mobile.server.connectors.slack.disconnectKept": "As conversas e o Orquestrador do Slack continuam no EQBots.",
+    "O Cat para de responder em {workspace} e remove o token do Slack de {host}.",
+  "mobile.server.connectors.slack.disconnectKept": "As conversas e o Orquestrador do Slack continuam no Cat.",
   "mobile.server.connectors.slack.disconnectDeleted":
-    "O Orquestrador do Slack e as conversas dele são excluídos do EQBots.",
+    "O Orquestrador do Slack e as conversas dele são excluídos do Cat.",
   "mobile.server.connectors.slack.agentPromptTitle": "Adicionar o Orquestrador do Slack?",
   "mobile.server.connectors.slack.agentPromptBody":
-    "Este novo agente responde a tudo que as pessoas enviam para @EQBots em {workspace}.",
+    "Este novo agente responde a tudo que as pessoas enviam para @Cat em {workspace}.",
   "mobile.server.connectors.slack.installFailed": "O Slack não concluiu a instalação. Tente novamente.",
   "mobile.server.connectors.discord.title": "Discord",
   "mobile.server.connectors.discord.description":
-    "As pessoas mencionam @EQBots em um canal de um servidor do Discord. O Orquestrador do Discord consulta o agente certo e responde.",
+    "As pessoas mencionam @Cat em um canal de um servidor do Discord. O Orquestrador do Discord consulta o agente certo e responde.",
   "mobile.server.connectors.discord.attention": {
     one: "{count} servidor do Discord precisa de atenção",
     other: "{count} servidores do Discord precisam de atenção",
   },
   "mobile.server.connectors.discord.connect": "Conectar Discord",
   "mobile.server.connectors.discord.connectFooter":
-    "O Discord abre em um navegador. Selecione o servidor do Discord e depois Autorizar. O EQBots adiciona um bot chamado EQBots.",
+    "O Discord abre em um navegador. Selecione o servidor do Discord e depois Autorizar. O Cat adiciona um bot chamado Cat.",
   "mobile.server.connectors.discord.add": "Adicionar servidor do Discord",
   "mobile.server.connectors.discord.limit": {
     one: "Você pode conectar no máximo {count} servidor do Discord.",
@@ -810,37 +810,37 @@ export const messages = {
   },
   "mobile.server.connectors.discord.workspaceTitle": "Servidor do Discord",
   "mobile.server.connectors.discord.workspaceDescription":
-    "Mencione @EQBots em um canal. Responda ao EQBots para continuar.",
+    "Mencione @Cat em um canal. Responda ao Cat para continuar.",
   "mobile.server.connectors.discord.missingScopes":
-    "O EQBots não tem estas permissões no Discord: {scopes}. Desconecte o servidor do Discord e conecte-o novamente.",
+    "O Cat não tem estas permissões no Discord: {scopes}. Desconecte o servidor do Discord e conecte-o novamente.",
   "mobile.server.connectors.discord.retryAt":
-    "O Discord pediu para o EQBots aguardar. Ele tentará novamente às {time}.",
+    "O Discord pediu para o Cat aguardar. Ele tentará novamente às {time}.",
   "mobile.server.connectors.discord.helpInvalidToken":
-    "O Discord não aceita mais o EQBots neste servidor do Discord. Ele pode ter sido removido. Conecte o servidor do Discord novamente.",
+    "O Discord não aceita mais o Cat neste servidor do Discord. Ele pode ter sido removido. Conecte o servidor do Discord novamente.",
   "mobile.server.connectors.discord.helpSecretStorage":
-    "O EQBots não consegue ler os tokens salvos em {host}. Desconecte o servidor do Discord e conecte-o novamente.",
+    "O Cat não consegue ler os tokens salvos em {host}. Desconecte o servidor do Discord e conecte-o novamente.",
   "mobile.server.connectors.discord.helpRelay":
-    "O EQBots em {host} não consegue receber eventos do Discord. Em {host}, entre na sua conta, dê um nome ao servidor nas Configurações do servidor e mantenha o EQBots aberto.",
+    "O Cat em {host} não consegue receber eventos do Discord. Em {host}, entre na sua conta, dê um nome ao servidor nas Configurações do servidor e mantenha o Cat aberto.",
   "mobile.server.connectors.discord.orchestratorTitle": "Orquestrador do Discord",
   "mobile.server.connectors.discord.orchestratorDescription":
     "Este agente recebe todas as solicitações do Discord. Ele mesmo responde às curtas, encaminha o restante do trabalho ao agente certo e responde no canal.",
   "mobile.server.connectors.discord.orchestratorNone":
     "Adicione o Orquestrador do Discord para que o Discord receba respostas.",
   "mobile.server.connectors.discord.addAgent": "Adicionar Orquestrador do Discord",
-  "mobile.server.connectors.discord.note": "O EQBots vê os canais que a função dele pode visualizar.",
+  "mobile.server.connectors.discord.note": "O Cat vê os canais que a função dele pode visualizar.",
   "mobile.server.connectors.discord.disconnectTitle": "Desconectar {workspace}?",
   "mobile.server.connectors.discord.disconnectBody":
-    "O EQBots para de responder em {workspace} e remove a conexão do Discord de {host}.",
-  "mobile.server.connectors.discord.disconnectKept": "As conversas e o Orquestrador do Discord continuam no EQBots.",
+    "O Cat para de responder em {workspace} e remove a conexão do Discord de {host}.",
+  "mobile.server.connectors.discord.disconnectKept": "As conversas e o Orquestrador do Discord continuam no Cat.",
   "mobile.server.connectors.discord.disconnectDeleted":
-    "O Orquestrador do Discord e as conversas dele são excluídos do EQBots.",
+    "O Orquestrador do Discord e as conversas dele são excluídos do Cat.",
   "mobile.server.connectors.discord.agentPromptTitle": "Adicionar o Orquestrador do Discord?",
   "mobile.server.connectors.discord.agentPromptBody":
-    "Este novo agente responde a tudo que as pessoas enviam para @EQBots em {workspace}.",
+    "Este novo agente responde a tudo que as pessoas enviam para @Cat em {workspace}.",
   "mobile.server.connectors.discord.installFailed": "O Discord não concluiu a autorização. Tente novamente.",
   "mobile.server.connectors.telegram.title": "Telegram",
   "mobile.server.connectors.telegram.description":
-    "Adicione o bot do EQBots a um grupo do Telegram ou abra um chat direto com ele. O Orquestrador do Telegram consulta o agente certo e responde.",
+    "Adicione o bot do Cat a um grupo do Telegram ou abra um chat direto com ele. O Orquestrador do Telegram consulta o agente certo e responde.",
   "mobile.server.connectors.telegram.attention": {
     one: "{count} chat precisa de atenção",
     other: "{count} chats precisam de atenção",
@@ -851,15 +851,15 @@ export const messages = {
   "mobile.server.connectors.telegram.directDescription":
     "Todas as mensagens deste chat vão para o Orquestrador do Telegram.",
   "mobile.server.connectors.telegram.helpRemoved":
-    "O bot do EQBots não está mais neste chat. Desconecte o chat e adicione o bot novamente.",
+    "O bot do Cat não está mais neste chat. Desconecte o chat e adicione o bot novamente.",
   "mobile.server.connectors.telegram.helpRelay":
-    "O EQBots em {host} não consegue receber mensagens do Telegram. Em {host}, entre na sua conta, dê um nome ao servidor nas Configurações do servidor e mantenha o EQBots aberto.",
+    "O Cat em {host} não consegue receber mensagens do Telegram. Em {host}, entre na sua conta, dê um nome ao servidor nas Configurações do servidor e mantenha o Cat aberto.",
   "mobile.server.connectors.telegram.helpError":
-    "O EQBots não consegue acessar este chat. Reconecte ou desconecte o chat.",
+    "O Cat não consegue acessar este chat. Reconecte ou desconecte o chat.",
   "mobile.server.connectors.telegram.helpNotLinked":
     "Este chat não está vinculado a {host}. Toque em Reconectar para vinculá-lo.",
   "mobile.server.connectors.telegram.retryAt":
-    "O Telegram pediu para o EQBots aguardar. Ele tentará novamente às {time}.",
+    "O Telegram pediu para o Cat aguardar. Ele tentará novamente às {time}.",
   "mobile.server.connectors.telegram.linkTitle": "Vincular um chat",
   "mobile.server.connectors.telegram.linkAnother": "Vincular outro chat",
   "mobile.server.connectors.telegram.linkFooter":
@@ -872,15 +872,15 @@ export const messages = {
   "mobile.server.connectors.telegram.openDirectChat": "Abrir um chat direto",
   "mobile.server.connectors.telegram.orchestratorTitle": "Orquestrador do Telegram",
   "mobile.server.connectors.telegram.orchestratorDescription":
-    "Este agente recebe as mensagens para o EQBots de todos os seus chats do Telegram. Ele mesmo responde às curtas, encaminha o restante do trabalho ao agente certo e publica a resposta no chat.",
+    "Este agente recebe as mensagens para o Cat de todos os seus chats do Telegram. Ele mesmo responde às curtas, encaminha o restante do trabalho ao agente certo e publica a resposta no chat.",
   "mobile.server.connectors.telegram.orchestratorNone":
     "Adicione o Orquestrador do Telegram para que o Telegram receba respostas.",
   "mobile.server.connectors.telegram.addAgent": "Adicionar Orquestrador do Telegram",
   "mobile.server.connectors.telegram.disconnectTitle": "Desconectar {chat}?",
-  "mobile.server.connectors.telegram.disconnectBody": "O bot do EQBots sai de {chat} e o EQBots para de responder lá.",
-  "mobile.server.connectors.telegram.disconnectKept": "As conversas e o Orquestrador do Telegram continuam no EQBots.",
+  "mobile.server.connectors.telegram.disconnectBody": "O bot do Cat sai de {chat} e o Cat para de responder lá.",
+  "mobile.server.connectors.telegram.disconnectKept": "As conversas e o Orquestrador do Telegram continuam no Cat.",
   "mobile.server.connectors.telegram.disconnectDeleted":
-    "Este é o último chat, então o Orquestrador do Telegram e as conversas dele são excluídos do EQBots.",
+    "Este é o último chat, então o Orquestrador do Telegram e as conversas dele são excluídos do Cat.",
   "mobile.server.connectors.whatsapp.title": "WhatsApp",
   "mobile.server.connectors.whatsapp.description":
     "Vincule um número do WhatsApp a este servidor. O Orquestrador do WhatsApp consulta o agente certo e responde.",
@@ -891,25 +891,25 @@ export const messages = {
   "mobile.server.connectors.whatsapp.numbersTitle": "Números",
   "mobile.server.connectors.whatsapp.linkNumber": "Vincular um número",
   "mobile.server.connectors.whatsapp.ownNumberNote":
-    "Seu chat “Mensagem para você mesmo” e as pessoas que você permitir falam com o EQBots.",
+    "Seu chat “Mensagem para você mesmo” e as pessoas que você permitir falam com o Cat.",
   "mobile.server.connectors.whatsapp.dedicatedNote":
-    "As pessoas que você permitir falam com o EQBots. Outras pessoas recebem um código para passar a você.",
+    "As pessoas que você permitir falam com o Cat. Outras pessoas recebem um código para passar a você.",
   "mobile.server.connectors.whatsapp.helpLoggedOut":
     "O WhatsApp removeu este servidor dos dispositivos conectados. Vincule o número novamente.",
   "mobile.server.connectors.whatsapp.helpError":
-    "O EQBots não consegue acessar o WhatsApp neste número. Reconecte ou desconecte o número.",
+    "O Cat não consegue acessar o WhatsApp neste número. Reconecte ou desconecte o número.",
   "mobile.server.connectors.whatsapp.retryAt":
-    "O WhatsApp pediu para o EQBots aguardar. Ele tentará novamente às {time}.",
+    "O WhatsApp pediu para o Cat aguardar. Ele tentará novamente às {time}.",
   "mobile.server.connectors.whatsapp.linkAgain": "Vincular de novo",
   "mobile.server.connectors.whatsapp.ownNumber": "Número pessoal",
   "mobile.server.connectors.whatsapp.ownNumberDescription":
-    "Só o seu chat “Mensagem para você mesmo” e as pessoas que você permitir podem escrever. Desative para um número só para o EQBots.",
+    "Só o seu chat “Mensagem para você mesmo” e as pessoas que você permitir podem escrever. Desative para um número só para o Cat.",
   "mobile.server.connectors.whatsapp.workingMessage": "Mensagem “Trabalhando nisso…”",
   "mobile.server.connectors.whatsapp.workingMessageDescription":
-    "O EQBots a envia enquanto o agente trabalha e depois a substitui pela resposta. Desative para enviar só a resposta.",
+    "O Cat a envia enquanto o agente trabalha e depois a substitui pela resposta. Desative para enviar só a resposta.",
   "mobile.server.connectors.whatsapp.orchestratorTitle": "Orquestrador do WhatsApp",
   "mobile.server.connectors.whatsapp.orchestratorDescription":
-    "Este agente recebe as mensagens para o EQBots de todos os seus números vinculados. Ele mesmo responde às curtas, encaminha o restante do trabalho ao agente certo e responde no WhatsApp.",
+    "Este agente recebe as mensagens para o Cat de todos os seus números vinculados. Ele mesmo responde às curtas, encaminha o restante do trabalho ao agente certo e responde no WhatsApp.",
   "mobile.server.connectors.whatsapp.orchestratorNone":
     "Adicione o Orquestrador do WhatsApp para que o WhatsApp receba respostas.",
   "mobile.server.connectors.whatsapp.addAgent": "Adicionar o Orquestrador do WhatsApp",
@@ -919,12 +919,12 @@ export const messages = {
   "mobile.server.connectors.whatsapp.linkDescription":
     "Selecione o número e depois vincule este servidor pelo WhatsApp no seu celular.",
   "mobile.server.connectors.whatsapp.codeOnly":
-    "No telefone, vincule com um código de pareamento. Para escanear um código QR, use o EQBots em um computador.",
+    "No telefone, vincule com um código de pareamento. Para escanear um código QR, use o Cat em um computador.",
   "mobile.server.connectors.whatsapp.kindLabel": "Número",
   "mobile.server.connectors.whatsapp.kindPersonal": "Meu número pessoal",
   "mobile.server.connectors.whatsapp.kindPersonalDescription":
-    "O EQBots responde só ao seu chat “Mensagem para você mesmo” e às pessoas que você permitir.",
-  "mobile.server.connectors.whatsapp.kindDedicated": "Um número só para o EQBots",
+    "O Cat responde só ao seu chat “Mensagem para você mesmo” e às pessoas que você permitir.",
+  "mobile.server.connectors.whatsapp.kindDedicated": "Um número só para o Cat",
   "mobile.server.connectors.whatsapp.kindDedicatedDescription":
     "Pessoas desconhecidas recebem um código para passar a você. Você as aprova aqui.",
   "mobile.server.connectors.whatsapp.phoneLabel": "Número de telefone",
@@ -946,21 +946,21 @@ export const messages = {
   "mobile.server.connectors.whatsapp.failedBusy":
     "Outra vinculação está em andamento. Aguarde até que ela termine e tente novamente.",
   "mobile.server.connectors.whatsapp.failedUnavailable":
-    "O EQBots não consegue acessar o WhatsApp. Verifique a conexão com a internet.",
+    "O Cat não consegue acessar o WhatsApp. Verifique a conexão com a internet.",
   "mobile.server.connectors.whatsapp.tryAgain": "Tentar de novo",
   "mobile.server.connectors.whatsapp.agentStepDescription":
-    "Este novo agente responde às mensagens para o EQBots em {number} e em cada número que você vincular depois.",
-  "mobile.server.connectors.whatsapp.doneTitle": "O EQBots está vinculado a {number}",
+    "Este novo agente responde às mensagens para o Cat em {number} e em cada número que você vincular depois.",
+  "mobile.server.connectors.whatsapp.doneTitle": "O Cat está vinculado a {number}",
   "mobile.server.connectors.whatsapp.done": "Concluir",
   "mobile.server.connectors.whatsapp.disconnectTitle": "Desconectar {number}?",
   "mobile.server.connectors.whatsapp.disconnectBody":
-    "O EQBots sai do WhatsApp em {number}. Se o EQBots estava desligado, remova também o dispositivo em WhatsApp > Dispositivos conectados.",
+    "O Cat sai do WhatsApp em {number}. Se o Cat estava desligado, remova também o dispositivo em WhatsApp > Dispositivos conectados.",
   "mobile.server.connectors.whatsapp.disconnectEffect":
     "Ninguém poderá mais acessar seus agentes por meio de {number}.",
   "mobile.server.connectors.whatsapp.removeEffectKept":
-    "As conversas e o Orquestrador do WhatsApp continuam no EQBots.",
+    "As conversas e o Orquestrador do WhatsApp continuam no Cat.",
   "mobile.server.connectors.whatsapp.removeEffectDeleted":
-    "Este é o último número, então o Orquestrador do WhatsApp e as conversas dele são excluídos do EQBots.",
+    "Este é o último número, então o Orquestrador do WhatsApp e as conversas dele são excluídos do Cat.",
   "mobile.server.connectors.whatsapp.keep": "Manter vinculado",
   "mobile.server.connectors.whatsapp.sendersTitle": "Quem pode escrever para {number}",
   "mobile.server.connectors.whatsapp.sendersDescription":
@@ -983,7 +983,7 @@ export const messages = {
     "As pessoas deste grupo podem passar trabalho para seus agentes.",
   "mobile.server.connectors.whatsapp.groupSearch": "Buscar grupos",
   "mobile.server.connectors.whatsapp.groupsLoading": "Lendo os grupos…",
-  "mobile.server.connectors.whatsapp.groupsLoadFailed": "O EQBots não conseguiu ler os grupos",
+  "mobile.server.connectors.whatsapp.groupsLoadFailed": "O Cat não conseguiu ler os grupos",
   "mobile.server.connectors.whatsapp.groupsEmpty": "Este número não está em nenhum grupo.",
   "mobile.server.connectors.whatsapp.groupsNoMatch": "Nenhum grupo tem este nome.",
   "mobile.server.connectors.whatsapp.groupAdded": "Adicionado",
@@ -1007,9 +1007,9 @@ export const messages = {
   "mobile.server.providers.runtimesFailed": "Não foi possível carregar os downloads deste servidor.",
   "mobile.server.providers.unavailable":
     "Conecte-se a este servidor como proprietário ou administrador para gerenciar os provedores.",
-  "mobile.server.providers.unsupported": "Atualize o EQBots neste servidor para gerenciar os provedores aqui.",
+  "mobile.server.providers.unsupported": "Atualize o Cat neste servidor para gerenciar os provedores aqui.",
   "mobile.server.providers.signInUnsupported": "Este servidor não consegue entrar neste provedor pelo celular.",
-  "mobile.server.providers.actionFailed": "O EQBots não conseguiu concluir esta ação. Tente de novo.",
+  "mobile.server.providers.actionFailed": "O Cat não conseguiu concluir esta ação. Tente de novo.",
   "mobile.server.providers.openFailed": "Não foi possível abrir a página de login.",
   "mobile.server.providers.copyFailed": "Não foi possível copiar o código.",
   "mobile.server.providers.statusLabel": "Status",
@@ -1018,10 +1018,10 @@ export const messages = {
   "mobile.server.providers.connect": "Conectar",
   "mobile.server.providers.reconnect": "Reconectar",
   "mobile.server.providers.connectHint":
-    "O servidor inicia o login. Depois o EQBots mostra as etapas, e você as conclui neste celular.",
+    "O servidor inicia o login. Depois o Cat mostra as etapas, e você as conclui neste celular.",
   "mobile.server.providers.relayHint":
-    "O EQBots abre a página de login do provedor neste celular. Se você precisar copiar algo de volta, o EQBots mostra as etapas antes.",
-  "mobile.server.providers.connectOnComputer": "Conecte este provedor no EQBots em um computador.",
+    "O Cat abre a página de login do provedor neste celular. Se você precisar copiar algo de volta, o Cat mostra as etapas antes.",
+  "mobile.server.providers.connectOnComputer": "Conecte este provedor no Cat em um computador.",
   "mobile.server.providers.signInTo": "Entrar em {name}",
   "mobile.server.providers.starting": "Iniciando o login no servidor…",
   "mobile.server.providers.openPage": "Abrir página de login",
@@ -1032,15 +1032,15 @@ export const messages = {
     "No ChatGPT em um computador, abra as configurações de segurança e ative o login com código de dispositivo para o Codex. Em uma conta de trabalho, o administrador do workspace ativa isso.",
   "mobile.server.providers.codeStepCopy": "Copie o código.",
   "mobile.server.providers.codeStepEnter": "Abra a página de login e digite o código.",
-  "mobile.server.providers.codeStepReturn": "Volte ao EQBots. O login termina sozinho.",
+  "mobile.server.providers.codeStepReturn": "Volte ao Cat. O login termina sozinho.",
   "mobile.server.providers.pasteStepSignIn": "Abra a página de login e entre.",
   "mobile.server.providers.pasteStepCopy": "Copie o código que a página mostra.",
-  "mobile.server.providers.pasteStepReturn": "Volte ao EQBots e cole o código abaixo.",
+  "mobile.server.providers.pasteStepReturn": "Volte ao Cat e cole o código abaixo.",
   "mobile.server.providers.relayStepSignIn": "Abra a página de login e entre.",
   "mobile.server.providers.relayStepBlank": "A última página não carrega. Isso é o esperado.",
   "mobile.server.providers.relayStepCopy": "Toque na barra de endereço e copie o endereço completo.",
-  "mobile.server.providers.relayStepReturn": "Volte ao EQBots e cole o endereço abaixo.",
-  "mobile.server.providers.linkHint": "Entre na página. O EQBots continua sozinho.",
+  "mobile.server.providers.relayStepReturn": "Volte ao Cat e cole o endereço abaixo.",
+  "mobile.server.providers.linkHint": "Entre na página. O Cat continua sozinho.",
   "mobile.server.providers.relayWaiting": "Aguardando a página de login do servidor…",
   "mobile.server.providers.code": "Código da página",
   "mobile.server.providers.codePlaceholder": "Cole o código aqui",
@@ -1103,7 +1103,7 @@ export const messages = {
   "mobile.server.providers.accountsPooledHint":
     "Os agentes compartilham estas contas. Uma conta nova entra pela página dela neste celular.",
   "mobile.server.providers.accountsPooledOnComputer":
-    "Os agentes compartilham estas contas. Adicione uma conta no EQBots em um computador.",
+    "Os agentes compartilham estas contas. Adicione uma conta no Cat em um computador.",
   "mobile.server.providers.inUse": "Em uso",
   "mobile.server.providers.notInPool": "Fora do grupo",
   "mobile.server.providers.leaveOutOfPool": "Tirar do grupo",
@@ -1143,7 +1143,7 @@ export const messages = {
   "mobile.server.providers.disconnect": "Desconectar",
   "mobile.server.providers.disconnectTitle": "Desconectar {name}?",
   "mobile.server.providers.disconnectBody":
-    "O EQBots encerra a sessão de {provider} no servidor. Os agentes aguardam até você conectar {provider} novamente.",
+    "O Cat encerra a sessão de {provider} no servidor. Os agentes aguardam até você conectar {provider} novamente.",
   "mobile.server.providers.resetUsage": "Redefinir uso",
   "mobile.server.providers.resettingUsage": "Redefinindo…",
   "mobile.server.providers.resetUsageTitle": "Redefinir o uso de {name}?",
@@ -1161,7 +1161,7 @@ export const messages = {
   "mobile.server.providers.sectionRuntime": "Runtime",
   "mobile.server.providers.updateTo": "Atualizar para {version}",
   "mobile.server.providers.versionInstalledByUser": "{version} · instalada por você",
-  "mobile.server.providers.versionDownloaded": "{version} · baixada pelo EQBots",
+  "mobile.server.providers.versionDownloaded": "{version} · baixada pelo Cat",
   "mobile.server.providers.keyFree": "Grátis",
   "mobile.server.providers.keyOptional": "Opcional. Uma chave adiciona modelos pagos.",
   "mobile.server.providers.geminiKeyInUse":
@@ -1180,11 +1180,11 @@ export const messages = {
   "mobile.server.providers.connectFirst": "Conecte o {name} primeiro.",
   "mobile.server.settings.mcp": "Servidores MCP",
   "mobile.server.settings.mcpCount": { one: "{count} servidor", other: "{count} servidores" },
-  "mobile.server.mcp.unsupported": "Atualize o EQBots neste servidor para gerenciar os servidores MCP dele aqui.",
+  "mobile.server.mcp.unsupported": "Atualize o Cat neste servidor para gerenciar os servidores MCP dele aqui.",
   "mobile.server.mcp.unavailable":
     "Conecte-se a este servidor como proprietário ou administrador para gerenciar os servidores MCP dele.",
   "mobile.server.mcp.accessUnsupported":
-    "Atualize o EQBots neste servidor para escolher quem recebe os servidores MCP dele.",
+    "Atualize o Cat neste servidor para escolher quem recebe os servidores MCP dele.",
   "mobile.server.mcp.description":
     "Servidores MCP dão mais ferramentas aos agentes deste servidor. Agentes Claude e Codex recebem apenas os servidores desta lista.",
   "mobile.server.mcp.loading": "Carregando servidores MCP…",
@@ -1201,7 +1201,7 @@ export const messages = {
   "mobile.server.mcp.addConfirm": "Adicionar",
   "mobile.server.mcp.name": "Nome",
   "mobile.server.mcp.namePlaceholder": "Nome do servidor MCP",
-  "mobile.server.mcp.nameReserved": "O EQBots já usa o nome {name}.",
+  "mobile.server.mcp.nameReserved": "O Cat já usa o nome {name}.",
   "mobile.server.mcp.transport": "Transporte",
   "mobile.server.mcp.stdio": "Comando (STDIO)",
   "mobile.server.mcp.http": "URL (HTTP)",
@@ -1212,12 +1212,12 @@ export const messages = {
   "mobile.server.mcp.command": "Comando",
   "mobile.server.mcp.commandHint": "Somente o programa. Coloque cada palavra seguinte em Argumentos.",
   "mobile.server.mcp.arguments": "Argumentos",
-  "mobile.server.mcp.argumentsHint": "O EQBots passa cada argumento ao programa como uma palavra.",
+  "mobile.server.mcp.argumentsHint": "O Cat passa cada argumento ao programa como uma palavra.",
   "mobile.server.mcp.addArgument": "Adicionar argumento",
   "mobile.server.mcp.argument": "Argumento {position}",
   "mobile.server.mcp.removeArgument": "Remover argumento {position}",
   "mobile.server.mcp.environment": "Variáveis de ambiente",
-  "mobile.server.mcp.environmentHint": "O EQBots passa estas variáveis ao servidor MCP quando ele inicia.",
+  "mobile.server.mcp.environmentHint": "O Cat passa estas variáveis ao servidor MCP quando ele inicia.",
   "mobile.server.mcp.addVariable": "Adicionar variável",
   "mobile.server.mcp.variableKey": "Nome da variável {position}",
   "mobile.server.mcp.variableValue": "Valor da variável {position}",
@@ -1232,7 +1232,7 @@ export const messages = {
   "mobile.server.mcp.url": "URL do servidor",
   "mobile.server.mcp.urlInvalid": "Digite um endereço http ou https.",
   "mobile.server.mcp.headers": "Cabeçalhos",
-  "mobile.server.mcp.headersHint": "O EQBots envia estes cabeçalhos com cada solicitação.",
+  "mobile.server.mcp.headersHint": "O Cat envia estes cabeçalhos com cada solicitação.",
   "mobile.server.mcp.addHeader": "Adicionar cabeçalho",
   "mobile.server.mcp.headerName": "Nome do cabeçalho {position}",
   "mobile.server.mcp.headerValue": "Valor do cabeçalho {position}",
@@ -1249,7 +1249,7 @@ export const messages = {
   "mobile.server.mcp.testFailed": "O servidor MCP não respondeu.",
   "mobile.server.mcp.connected": { one: "Conectado · {count} ferramenta", other: "Conectado · {count} ferramentas" },
   "mobile.server.mcp.signInOnComputer":
-    "Este servidor MCP pede login. Entre pelo EQBots em um computador e teste de novo.",
+    "Este servidor MCP pede login. Entre pelo Cat em um computador e teste de novo.",
   "mobile.server.mcp.signedInDescription": "{server} está conectado a este servidor MCP.",
   "mobile.server.mcp.signOut": "Sair",
   "mobile.server.mcp.saveFailed": "Não foi possível salvar a alteração. Tente de novo.",
@@ -1303,8 +1303,8 @@ export const messages = {
   "mobile.server.settings.updates": "Atualizações",
   "mobile.server.settings.updateAvailable": "Atualização disponível",
   "mobile.server.route.updates": "Atualizações",
-  "mobile.server.update.hostTitle": "EQBots em {name}",
-  "mobile.server.update.version": "EQBots {version}",
+  "mobile.server.update.hostTitle": "Cat em {name}",
+  "mobile.server.update.version": "Cat {version}",
   "mobile.server.update.status.idle": "Busque atualizações para encontrar a versão mais recente.",
   "mobile.server.update.status.checking": "Buscando atualizações…",
   "mobile.server.update.status.available": "{version} está disponível.",
@@ -1312,28 +1312,28 @@ export const messages = {
   "mobile.server.update.status.downloadingUnknown": "Baixando {version}…",
   "mobile.server.update.status.ready": "{version} foi baixada.",
   "mobile.server.update.status.installing": "{name} está reiniciando para instalar a atualização.",
-  "mobile.server.update.status.upToDate": "O EQBots está atualizado em {name}.",
+  "mobile.server.update.status.upToDate": "O Cat está atualizado em {name}.",
   "mobile.server.update.status.checkFailed": "{name} não conseguiu buscar atualizações. Tente novamente.",
   "mobile.server.update.status.downloadFailed": "{name} não conseguiu baixar a atualização. Tente novamente.",
   "mobile.server.update.status.installFailed":
-    "{name} não conseguiu instalar a atualização. Verifique se nenhum outro usuário desse computador está executando o EQBots e tente novamente.",
+    "{name} não conseguiu instalar a atualização. Verifique se nenhum outro usuário desse computador está executando o Cat e tente novamente.",
   "mobile.server.update.releaseCheckFailed":
     "{name} não conseguiu ler o feed de versões. Verifique a conexão de rede do computador anfitrião e tente de novo.",
   "mobile.server.update.releaseUnavailable":
     "A verificação de versões não está disponível nesta compilação. Peça ao administrador do computador anfitrião para buscar uma versão compatível.",
   "mobile.server.update.externalTitle": "O computador anfitrião controla a instalação",
   "mobile.server.update.path.hostManager":
-    "O EQBots Host Manager instala atualizações quando todos os usuários estão ociosos. Se uma atualização não iniciar, peça ao administrador do computador anfitrião para verificar o status do Host Manager.",
+    "O Cat Host Manager instala atualizações quando todos os usuários estão ociosos. Se uma atualização não iniciar, peça ao administrador do computador anfitrião para verificar o status do Host Manager.",
   "mobile.server.update.path.hosted":
     "O serviço hospedado baixa atualizações em segundo plano. Uma atualização baixada inicia na próxima inicialização do servidor. Aguarde o trabalho ativo terminar antes de parar e retomar o servidor. Se ele continuar em uma versão antiga, contate o administrador do computador anfitrião.",
   "mobile.server.update.path.system":
-    "No computador anfitrião, execute sudo openbot update para instalar a versão mais recente. Este comando interrompe o EQBots. Aguarde o trabalho ativo terminar primeiro. Downloads automáticos são instalados na próxima inicialização.",
+    "No computador anfitrião, execute sudo openbot update para instalar a versão mais recente. Este comando interrompe o Cat. Aguarde o trabalho ativo terminar primeiro. Downloads automáticos são instalados na próxima inicialização.",
   "mobile.server.update.path.container":
-    "No computador anfitrião do Docker, baixe a nova imagem do EQBots e crie o contêiner de novo com os mesmos volumes de dados. Aguarde o trabalho ativo terminar primeiro. Mantenha os volumes existentes para preservar seus dados.",
+    "No computador anfitrião do Docker, baixe a nova imagem do Cat e crie o contêiner de novo com os mesmos volumes de dados. Aguarde o trabalho ativo terminar primeiro. Mantenha os volumes existentes para preservar seus dados.",
   "mobile.server.update.path.manual":
-    "Esta instalação não pode se substituir. Peça ao administrador do computador anfitrião para instalar a versão compatível de github.com/nightly-labs/openbot/releases. Mantenha os dados existentes do EQBots.",
+    "Esta instalação não pode se substituir. Peça ao administrador do computador anfitrião para instalar a versão compatível de github.com/nightly-labs/openbot/releases. Mantenha os dados existentes do Cat.",
   "mobile.server.update.path.unavailable":
-    "Esta é uma compilação de desenvolvimento. Use uma versão instalada do EQBots para verificar atualizações.",
+    "Esta é uma compilação de desenvolvimento. Use uma versão instalada do Cat para verificar atualizações.",
   "mobile.server.update.check": "Buscar atualizações",
   "mobile.server.update.start": "Atualizar quando ocioso",
   "mobile.server.update.restartNow": "Reiniciar agora",
@@ -1343,27 +1343,27 @@ export const messages = {
   "mobile.server.update.requestedBy": "{member} solicitou esta atualização.",
   "mobile.server.update.automatic": "{name} instala atualizações automaticamente.",
   "mobile.server.update.autoDownloadTitle": "Baixar atualizações automaticamente",
-  "mobile.server.update.autoDownloadDescription": "{name} baixa cada nova versão do EQBots quando ela é lançada.",
+  "mobile.server.update.autoDownloadDescription": "{name} baixa cada nova versão do Cat quando ela é lançada.",
   "mobile.server.update.autoInstallTitle": "Instalar atualizações automaticamente",
   "mobile.server.update.autoInstallDescription":
     "{name} reinicia para aplicar uma atualização baixada quando seus agentes estão ociosos. Os membros são desconectados por um breve período e se reconectam automaticamente.",
   "mobile.server.update.waitingFor": "Aguardando {reasons}.",
   "mobile.server.update.disabledTitle": "As atualizações remotas estão desativadas",
   "mobile.server.update.disabledDescription":
-    "O usuário de {name} desativou as atualizações por membros do servidor. Peça que atualize o EQBots ou ative a opção.",
+    "O usuário de {name} desativou as atualizações por membros do servidor. Peça que atualize o Cat ou ative a opção.",
   "mobile.server.update.managedTitle": "Um Host Manager controla as atualizações",
   "mobile.server.update.managedDescription":
-    "O EQBots Host Manager atualiza {name}. Entre em contato com o administrador do computador anfitrião.",
+    "O Cat Host Manager atualiza {name}. Entre em contato com o administrador do computador anfitrião.",
   "mobile.server.update.unsupportedTitle": "{name} não pode se atualizar sozinho",
   "mobile.server.update.unsupportedDescription":
-    "Esta compilação do EQBots não tem um atualizador. Instale uma nova versão em {name}.",
+    "Esta compilação do Cat não tem um atualizador. Instale uma nova versão em {name}.",
   "mobile.server.update.restarting": "Reiniciando…",
   "mobile.server.update.loadFailed": "O status da atualização de {name} não foi carregado.",
-  "mobile.server.update.dialog.offerTitle": "Atualizar {name} para o EQBots {version}",
+  "mobile.server.update.dialog.offerTitle": "Atualizar {name} para o Cat {version}",
   "mobile.server.update.dialog.offerDescription":
-    "{name} usa o EQBots {current}. Primeiro ele baixa a atualização e depois reinicia.",
+    "{name} usa o Cat {current}. Primeiro ele baixa a atualização e depois reinicia.",
   "mobile.server.update.dialog.offerReadyDescription":
-    "{name} usa o EQBots {current}. A atualização foi baixada. {name} reinicia para instalá-la.",
+    "{name} usa o Cat {current}. A atualização foi baixada. {name} reinicia para instalá-la.",
   "mobile.server.update.dialog.waitIdleDescription":
     "A reinicialização aguarda a conclusão dos turnos de agente e das execuções de rotina.",
   "mobile.server.update.dialog.updateNow": "Atualizar agora",
@@ -1379,10 +1379,10 @@ export const messages = {
   "mobile.server.update.reason.fileTransfer": "uma transferência de arquivo",
   "mobile.server.update.reason.browserControl": "controle do navegador por um agente",
   "mobile.server.update.reason.updateOperation": "outra etapa da atualização",
-  "mobile.server.update.reason.initialization": "a inicialização do EQBots",
+  "mobile.server.update.reason.initialization": "a inicialização do Cat",
   "mobile.server.update.reason.other": "outros trabalhos",
   "mobile.server.update.actionFailed": "A ação do servidor falhou.",
-  "mobile.server.update.unavailable": "Conecte-se a este servidor para ver as atualizações do EQBots.",
+  "mobile.server.update.unavailable": "Conecte-se a este servidor para ver as atualizações do Cat.",
   "mobile.server.update.loading": "Carregando atualizações…",
   "mobile.server.route.sites": "Sites",
   "mobile.server.settings.sites": "Sites",
@@ -1401,13 +1401,13 @@ export const messages = {
   "mobile.server.sites.deleteDescription": "Este endereço retornará 410 Gone imediatamente.",
   "mobile.server.sites.deleteFailed": "Não foi possível excluir o site.",
   "mobile.server.sites.openFailed": "Não foi possível abrir o site.",
-  "mobile.server.sites.unsupported": "Atualize o EQBots neste servidor para ver os sites dele aqui.",
+  "mobile.server.sites.unsupported": "Atualize o Cat neste servidor para ver os sites dele aqui.",
   "mobile.server.sites.offline": "Conecte-se a este servidor para ver os sites dele.",
   "mobile.server.route.roles": "Permissões",
   "mobile.server.route.role": "Função",
   "mobile.server.roles.description":
     "Escolha os agentes que os membros podem usar. Proprietários e administradores podem usar todos os agentes.",
-  "mobile.server.roles.unsupported": "Atualize o EQBots neste servidor para gerenciar funções.",
+  "mobile.server.roles.unsupported": "Atualize o Cat neste servidor para gerenciar funções.",
   "mobile.server.roles.unavailable":
     "Só um proprietário ou administrador de um servidor online pode gerenciar funções.",
   "mobile.server.roles.loading": "Carregando funções…",
@@ -1448,7 +1448,7 @@ export const messages = {
   "mobile.server.route.audit": "Registro de auditoria",
   "mobile.server.audit.description":
     "Alterações nos membros, funções e acesso a agentes deste servidor, das mais recentes para as mais antigas. O host guarda as 500 alterações mais recentes.",
-  "mobile.server.audit.unsupported": "Atualize o EQBots neste servidor para ver o registro de auditoria.",
+  "mobile.server.audit.unsupported": "Atualize o Cat neste servidor para ver o registro de auditoria.",
   "mobile.server.audit.unavailable":
     "Somente um proprietário ou administrador de um servidor online pode ver o registro de auditoria.",
   "mobile.server.audit.loading": "Carregando alterações…",
@@ -1477,7 +1477,7 @@ export const messages = {
   // Server settings › Import agents: Grok Bot and Hermes exports (`agent-import-v1`).
   "mobile.server.settings.importAgents": "Importar agentes",
   "mobile.server.route.import": "Importar agentes",
-  "mobile.server.import.unsupported": "Atualize o EQBots neste servidor para importar agentes aqui.",
+  "mobile.server.import.unsupported": "Atualize o Cat neste servidor para importar agentes aqui.",
   "mobile.server.import.unavailable": "Conecte-se a este servidor para importar agentes.",
   "mobile.server.import.count.agent": { one: "{count} agente", other: "{count} agentes" },
   "mobile.server.import.count.channel": { one: "{count} canal", other: "{count} canais" },
@@ -1487,10 +1487,10 @@ export const messages = {
   "mobile.server.import.count.file": { one: "{count} arquivo", other: "{count} arquivos" },
   "mobile.server.import.sourceTitle": "Onde estão seus agentes agora?",
   "mobile.server.import.sourceLede":
-    "O EQBots copia os agentes para este servidor. Você vê cada item antes de qualquer alteração.",
+    "O Cat copia os agentes para este servidor. Você vê cada item antes de qualquer alteração.",
   "mobile.server.import.hermesNote": "Exporte um arquivo .zip do Hermes.",
   "mobile.server.import.grokNote": "Na nuvem. Um agente de exportação lá cria um arquivo .zip.",
-  "mobile.server.import.transfer": "Outro servidor EQBots",
+  "mobile.server.import.transfer": "Outro servidor Cat",
   "mobile.server.import.transferNote": "Use Transferência para mover agentes e configurações juntos.",
   "mobile.server.import.grokLede":
     "Um agente de exportação no Grok Bot reúne nomes, instruções, avatares, habilidades, rotinas, memórias e os arquivos que você incluir em um único arquivo .zip.",
@@ -1554,7 +1554,7 @@ export const messages = {
   "mobile.server.route.transferExport": "Exportar",
   "mobile.server.route.transferImport": "Importar",
   "mobile.server.route.transferCopy": "Copiar para outro servidor",
-  "mobile.server.transfer.unsupported": "Atualize o EQBots neste servidor para transferi-lo aqui.",
+  "mobile.server.transfer.unsupported": "Atualize o Cat neste servidor para transferi-lo aqui.",
   "mobile.server.transfer.unavailable":
     "Conecte-se a este servidor como proprietário ou administrador para transferi-lo.",
   "mobile.server.transfer.title": "Mover este servidor para outro computador",
@@ -1599,8 +1599,8 @@ export const messages = {
   "mobile.server.transfer.reading": "Lendo o arquivo…",
   "mobile.server.transfer.sending": "Enviando o arquivo… {percent}%",
   "mobile.server.transfer.openFailed": "Não foi possível abrir o arquivo.",
-  "mobile.server.transfer.source": "EQBots {version} · exportado em {date}",
-  "mobile.server.transfer.sourceNoDate": "EQBots {version}",
+  "mobile.server.transfer.source": "Cat {version} · exportado em {date}",
+  "mobile.server.transfer.sourceNoDate": "Cat {version}",
   "mobile.server.transfer.importWarnings": "Antes de a importação começar",
   "mobile.server.transfer.importAgents": "Agentes no arquivo",
   "mobile.server.transfer.nameExists": "Nome já usado",

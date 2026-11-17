@@ -37,7 +37,7 @@ export const ROBINHOOD_PLUGIN_GUIDE: PluginGuide = {
     {
       question: "Does the Robinhood plugin need an API key?",
       answer:
-        "No. You sign in to your own Robinhood account in the browser. EQBots does the sign-in itself, keeps the tokens in encrypted storage, and adds the Authorization header. The plugin catalog holds no secret. To stop the access, disconnect Robinhood in EQBots or in the Robinhood app.",
+        "No. You sign in to your own Robinhood account in the browser. Cat does the sign-in itself, keeps the tokens in encrypted storage, and adds the Authorization header. The plugin catalog holds no secret. To stop the access, disconnect Robinhood in Cat or in the Robinhood app.",
     },
   ],
   sources: [

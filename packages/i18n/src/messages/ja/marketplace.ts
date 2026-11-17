@@ -26,7 +26,7 @@ export const messages = {
   "marketplace.description.agents": "独自の指示とスキルを持つ、すぐに使えるエージェント。",
   "marketplace.description.skills": "エージェントにタスクやツールの使い方を教える指示。",
 
-  "marketplace.plugins.missing": "このプラグインは EQBots のカタログにありません。",
+  "marketplace.plugins.missing": "このプラグインは Cat のカタログにありません。",
 
   "marketplace.agents.loadingDetail": "エージェントの詳細を読み込んでいます…",
   "marketplace.agents.skills": "スキル",
@@ -37,16 +37,16 @@ export const messages = {
   "marketplace.agents.yours": "自分のエージェント",
   "marketplace.agents.all": "すべてのエージェント",
   "marketplace.agents.missing": "このエージェントはマーケットプレイスにありません。",
-  "marketplace.agents.trust.reviewed": "別の EQBots ユーザーが作成しました。公開前に EQBots が確認しています。",
+  "marketplace.agents.trust.reviewed": "別の Cat ユーザーが作成しました。公開前に Cat が確認しています。",
   "marketplace.agents.trust.reviewedBeforeAdd":
-    "別の EQBots ユーザーが作成しました。公開前に EQBots が確認しています。追加すると、あなたに代わって操作できます。",
-  "marketplace.agents.trust.pending": "EQBots の確認前に作成者が共有しました。",
+    "別の Cat ユーザーが作成しました。公開前に Cat が確認しています。追加すると、あなたに代わって操作できます。",
+  "marketplace.agents.trust.pending": "Cat の確認前に作成者が共有しました。",
   "marketplace.agents.trust.pendingBeforeAdd":
-    "EQBots の確認前に作成者が共有しました。追加すると、あなたに代わって操作できます。",
+    "Cat の確認前に作成者が共有しました。追加すると、あなたに代わって操作できます。",
   "marketplace.agents.source.pending": "未確認",
 
   "marketplace.skill.loading": "スキルを読み込んでいます",
-  "marketplace.try.readFailed": "EQBots はこのエージェントのスキルを読み取れませんでした。もう一度お試しください。",
+  "marketplace.try.readFailed": "Cat はこのエージェントのスキルを読み取れませんでした。もう一度お試しください。",
   "marketplace.try.enable": "試すには、エージェントの設定でこのスキルを有効にしてください。",
   "marketplace.try.repair": "試すには、エージェントの設定でこのスキルを修復してください。",
   "marketplace.try.update": "このバージョンを試すには、スキルをアップデートしてください。",
@@ -124,25 +124,25 @@ export const messages = {
   "marketplace.app.setup.account": "ブラウザーで {name} アカウントにサインインします。",
   "marketplace.app.setup.key": "{name} アカウントの API キーが必要です。",
   "marketplace.app.setup.keySaved": "{field} は {host} に保存されています。",
-  "marketplace.app.account.removeDescription": "EQBots は {host} にあるこのアカウントのサインイン情報を削除します。",
+  "marketplace.app.account.removeDescription": "Cat は {host} にあるこのアカウントのサインイン情報を削除します。",
   "marketplace.app.setup.desktop": "{name} デスクトップアプリの {address} で動作します。",
   "marketplace.app.setup.desktopConnected": "{address} に接続済みです。",
   "marketplace.app.setup.open": "サインインもキーも不要です。",
   "marketplace.app.blocked.update":
-    "{host} の EQBots は古いバージョンのため、アプリを接続できません。{host} の EQBots をアップデートするか、オーナーにアップデートを依頼してください。",
+    "{host} の Cat は古いバージョンのため、アプリを接続できません。{host} の Cat をアップデートするか、オーナーにアップデートを依頼してください。",
   "marketplace.app.blocked.member":
-    "{host} でアプリを接続できるのはオーナーまたは管理者だけです。{name} の接続か、メンバーもアプリを接続できるよう {host} の EQBots のアップデートを依頼してください。",
+    "{host} でアプリを接続できるのはオーナーまたは管理者だけです。{name} の接続か、メンバーもアプリを接続できるよう {host} の Cat のアップデートを依頼してください。",
   "marketplace.app.connectAgain": "もう一度接続",
   "marketplace.app.automation.askOnInstall": "インストール時に macOS にアクセスを求める",
   "marketplace.app.automation.title": "Apple アプリへのアクセス",
   "marketplace.app.automation.description":
     "macOS はアプリごとに確認を表示します。閉じているアプリは一時的に開き、その後終了します。",
   "marketplace.app.automation.request": "アクセスを求める",
-  "marketplace.app.automation.allowed": "EQBots はすべての Apple アプリを操作できるようになりました。",
+  "marketplace.app.automation.allowed": "Cat はすべての Apple アプリを操作できるようになりました。",
   "marketplace.app.automation.refused":
-    "macOS は {apps} へのアクセスを許可しませんでした。システム設定 › プライバシーとセキュリティ › オートメーション で EQBots を許可してください。",
+    "macOS は {apps} へのアクセスを許可しませんでした。システム設定 › プライバシーとセキュリティ › オートメーション で Cat を許可してください。",
   "marketplace.app.automation.failed":
-    "EQBots は {apps} について macOS に確認できませんでした。もう一度お試しください。",
+    "Cat は {apps} について macOS に確認できませんでした。もう一度お試しください。",
   "marketplace.app.automation.app.calendar": "カレンダー",
   "marketplace.app.automation.app.contacts": "連絡先",
   "marketplace.app.automation.app.mail": "メール",
@@ -203,7 +203,7 @@ export const messages = {
     "今日やったことと残っていることを Cobrain にメモとして保存してください。",
   "marketplace.plugin.honcho.tagline": "AI ツールをまたぐあなたの記憶",
   "marketplace.plugin.honcho.description":
-    "Plastic Labs の Honcho は、接続した他の AI ツールとも共有できる、あなたについての長期記憶をエージェントに与えます。エージェントは学んだことを保存し、Honcho はそれをもとに推論して、あなたの好み、目標、仕事の進め方のモデルを作ります。エージェントは作業を始める前に Honcho に質問します。EQBots のエージェントにも独自の記憶があります。Honcho は他のツールでもあなたについていく記憶です。エージェントが保存したメッセージはあなたの Honcho アカウントに送られます。",
+    "Plastic Labs の Honcho は、接続した他の AI ツールとも共有できる、あなたについての長期記憶をエージェントに与えます。エージェントは学んだことを保存し、Honcho はそれをもとに推論して、あなたの好み、目標、仕事の進め方のモデルを作ります。エージェントは作業を始める前に Honcho に質問します。Cat のエージェントにも独自の記憶があります。Honcho は他のツールでもあなたについていく記憶です。エージェントが保存したメッセージはあなたの Honcho アカウントに送られます。",
   "marketplace.plugin.honcho.app": "1 つの MCP サーバーで、Honcho のワークスペースに長期記憶を保存して照会します。",
   "marketplace.plugin.honcho.prompt.recall":
     "始める前に、私の好きな仕事の進め方について Honcho が何を知っているか聞いてください。",
@@ -213,7 +213,7 @@ export const messages = {
   "marketplace.plugin.honcho.hint.apiKey": "app.honcho.dev でキーを作成してください。",
   "marketplace.plugin.hindsight.tagline": "時間とともに学ぶ記憶",
   "marketplace.plugin.hindsight.description":
-    "Vectorize の Hindsight は、Hindsight Cloud にある長期記憶をエージェントに与えます。エージェントは事実や出来事を保持し、意味、時間、エンティティで呼び出し、それを振り返ってメンタルモデルを作ります。記憶はバンクに保管され、エージェントはプロジェクトや人ごとにバンクを作れます。EQBots のエージェントにも独自の記憶があります。Hindsight は接続した他の AI ツールと共有できる記憶です。エージェントが保持した内容はあなたの Hindsight Cloud アカウントに送られます。",
+    "Vectorize の Hindsight は、Hindsight Cloud にある長期記憶をエージェントに与えます。エージェントは事実や出来事を保持し、意味、時間、エンティティで呼び出し、それを振り返ってメンタルモデルを作ります。記憶はバンクに保管され、エージェントはプロジェクトや人ごとにバンクを作れます。Cat のエージェントにも独自の記憶があります。Hindsight は接続した他の AI ツールと共有できる記憶です。エージェントが保持した内容はあなたの Hindsight Cloud アカウントに送られます。",
   "marketplace.plugin.hindsight.app":
     "1 つの MCP サーバーで、Hindsight Cloud のバンクにある記憶を保持、呼び出し、振り返ります。",
   "marketplace.plugin.hindsight.prompt.recall":
@@ -233,7 +233,7 @@ export const messages = {
   "marketplace.plugin.figma.prompt.assets": "アプリバンドル用に、マーケティングアイコンを 2x で書き出してください。",
   "marketplace.plugin.paper.tagline": "HTML と CSS で作られたデザインキャンバス",
   "marketplace.plugin.paper.description":
-    "Paper を使うと、エージェントは Paper Desktop で開いているデザインファイルを読み書きできます。アートボード、選択範囲、計算済みのスタイル、JSX、トークンを調べ、フレーム、テキスト、スタイルを作成・変更できます。Paper Desktop をインストールして一度開き、始める前にファイルを開いてください。EQBots は Paper Desktop がインストールする Paper CLI を起動します。Paper にキーは不要です。書き込みツールは開いているファイルを変更するので、承認する前に各書き込みを確認してください。",
+    "Paper を使うと、エージェントは Paper Desktop で開いているデザインファイルを読み書きできます。アートボード、選択範囲、計算済みのスタイル、JSX、トークンを調べ、フレーム、テキスト、スタイルを作成・変更できます。Paper Desktop をインストールして一度開き、始める前にファイルを開いてください。Cat は Paper Desktop がインストールする Paper CLI を起動します。Paper にキーは不要です。書き込みツールは開いているファイルを変更するので、承認する前に各書き込みを確認してください。",
   "marketplace.plugin.paper.app":
     "開いている Paper Desktop のファイルを、Paper CLI が中継するローカルの MCP サーバーで読み書きします。ファイルを開いた Paper Desktop が必要です。",
   "marketplace.plugin.paper.prompt.implement":
@@ -273,7 +273,7 @@ export const messages = {
     "サポート用音声エージェントの直近 10 件の会話を要約してください。",
   "marketplace.plugin.appleApps.tagline": "Mac のメール、カレンダーなど",
   "marketplace.plugin.appleApps.description":
-    "Apple apps を使うと、エージェントはこの Mac のメール、カレンダー、連絡先、リマインダー、メモ、メッセージ、Safari を使えます。macOS でのみ動作します。EQBots は mcp-icloud を起動します。これは Apple や EQBots が作ったものではない、コミュニティのサーバーです。サーバーはこのコンピューター上で AppleScript を使ってアプリを操作し、アカウントもキーも不要です。インストール時に、EQBots はこれらすべてのアプリへのアクセスを macOS にまとめて求めることができます。確認はアプリごとに 1 回表示されます。求めない場合は、エージェントが初めてアプリを使うときに macOS が確認します。後で変更するには、システム設定 › プライバシーとセキュリティ › オートメーション を開いてください。エージェントはメールや iMessage を送信し、イベント、連絡先、リマインダーを変更・削除できるので、承認する前に各書き込みを確認してください。ツールが読んだ内容（メールの本文など）は、エージェントのモデルプロバイダーに送られます。",
+    "Apple apps を使うと、エージェントはこの Mac のメール、カレンダー、連絡先、リマインダー、メモ、メッセージ、Safari を使えます。macOS でのみ動作します。Cat は mcp-icloud を起動します。これは Apple や Cat が作ったものではない、コミュニティのサーバーです。サーバーはこのコンピューター上で AppleScript を使ってアプリを操作し、アカウントもキーも不要です。インストール時に、Cat はこれらすべてのアプリへのアクセスを macOS にまとめて求めることができます。確認はアプリごとに 1 回表示されます。求めない場合は、エージェントが初めてアプリを使うときに macOS が確認します。後で変更するには、システム設定 › プライバシーとセキュリティ › オートメーション を開いてください。エージェントはメールや iMessage を送信し、イベント、連絡先、リマインダーを変更・削除できるので、承認する前に各書き込みを確認してください。ツールが読んだ内容（メールの本文など）は、エージェントのモデルプロバイダーに送られます。",
   "marketplace.plugin.appleApps.app":
     "メール、カレンダー、連絡先、リマインダー、メモ、メッセージ、Safari を、ローカルの mcp-icloud サーバーで操作します。macOS とオートメーションの許可が必要です。",
   "marketplace.plugin.appleApps.prompt.unread": "Apple のメールで、今日の未読メールを要約してください。",
@@ -571,8 +571,8 @@ export const messages = {
   "marketplace.skills.source.all": "すべて",
   "marketplace.skills.source.verified": "検証済み",
   "marketplace.skills.source.public": "公開",
-  "marketplace.skills.source.verifiedLong": "EQBots が検証済み",
-  "marketplace.skills.source.publicLong": "EQBots が審査済み",
+  "marketplace.skills.source.verifiedLong": "Cat が検証済み",
+  "marketplace.skills.source.publicLong": "Cat が審査済み",
   "marketplace.skills.sortLabel": "並べ替え",
   "marketplace.skills.sortName": "並べ替え: {name}",
   "marketplace.skills.sort.installs": "利用数順",
@@ -596,7 +596,7 @@ export const messages = {
   "marketplace.skills.github.search": "検索、または GitHub のリンクを貼り付け",
   "marketplace.skills.github.reading": "リポジトリ内のスキルを探しています",
   "marketplace.skills.github.trust":
-    "GitHub のスキルは EQBots が確認したものではありません。追加する前にスキルの内容を読んでください。",
+    "GitHub のスキルは Cat が確認したものではありません。追加する前にスキルの内容を読んでください。",
   "marketplace.skills.github.source": "GitHub · {repository}（コミット {commit}）",
   "marketplace.skills.github.open": "GitHub",
   "marketplace.skills.github.openName": "GitHub で {repository} を開く",

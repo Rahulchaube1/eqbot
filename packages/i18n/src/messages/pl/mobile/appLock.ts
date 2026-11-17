@@ -9,11 +9,11 @@ export const messages = {
   "mobile.appLock.method.phone": "Odblokowanie telefonu",
   "mobile.appLock.methods.title": "Odblokuj za pomocą",
   "mobile.appLock.methods.footer":
-    "Włącz PIN, {method} lub oba. EQBots zablokuje się wtedy, gdy go opuścisz, i po powrocie poprosi o jedno z nich.",
+    "Włącz PIN, {method} lub oba. Cat zablokuje się wtedy, gdy go opuścisz, i po powrocie poprosi o jedno z nich.",
   "mobile.appLock.methods.footerPinOnly":
-    "Włącz PIN. EQBots zablokuje się wtedy, gdy go opuścisz, i po powrocie poprosi o PIN.",
+    "Włącz PIN. Cat zablokuje się wtedy, gdy go opuścisz, i po powrocie poprosi o PIN.",
   "mobile.appLock.changePin": "Zmień PIN",
-  "mobile.appLock.lockAfter.title": "Blokuj EQBots",
+  "mobile.appLock.lockAfter.title": "Blokuj Cat",
   "mobile.appLock.lockAfter.immediately": "Natychmiast",
   "mobile.appLock.lockAfter.minutes": {
     one: "Po {count} minucie",
@@ -29,8 +29,8 @@ export const messages = {
   },
   "mobile.appLock.lockWithPhone": "Gdy telefon się zablokuje",
   "mobile.appLock.lockAfter.footer":
-    "Czas liczy się od opuszczenia EQBots. EQBots zawsze blokuje się po ponownym uruchomieniu.",
-  "mobile.appLock.device.turnOnPrompt": "Włącz {method} dla EQBots",
+    "Czas liczy się od opuszczenia Cat. Cat zawsze blokuje się po ponownym uruchomieniu.",
+  "mobile.appLock.device.turnOnPrompt": "Włącz {method} dla Cat",
   "mobile.appLock.device.failed": "Nie udało się potwierdzić przez {method}. Spróbuj ponownie.",
   "mobile.appLock.device.unavailable": "Najpierw ustaw kod blokady w telefonie.",
   "mobile.appLock.pinSetup.title": "Kod PIN",
@@ -38,10 +38,10 @@ export const messages = {
   "mobile.appLock.pinSetup.confirm": "Wpisz PIN ponownie",
   "mobile.appLock.pinSetup.mismatch": "Kody PIN się różnią. Spróbuj ponownie.",
   "mobile.appLock.pinSetup.saveFailed": "Nie udało się zapisać PIN-u. Spróbuj ponownie.",
-  "mobile.appLock.lock.title": "EQBots jest zablokowany",
+  "mobile.appLock.lock.title": "Cat jest zablokowany",
   "mobile.appLock.lock.confirmTitle": "Potwierdź, że to ty",
   "mobile.appLock.lock.enterPin": "Wpisz swój PIN",
-  "mobile.appLock.lock.unlockPrompt": "Odblokuj EQBots",
+  "mobile.appLock.lock.unlockPrompt": "Odblokuj Cat",
   "mobile.appLock.lock.useDevice": "Użyj: {method}",
   "mobile.appLock.lock.unlock": "Odblokuj",
   "mobile.appLock.lock.wrongPin": "Nieprawidłowy PIN.",
@@ -65,15 +65,15 @@ export const messages = {
   },
   "mobile.appLock.lock.checkFailed": "Nie udało się sprawdzić PIN-u. Spróbuj ponownie.",
   "mobile.appLock.lock.pinMissing":
-    "Ten telefon nie ma PIN-u dla EQBots. Wyloguj się, aby zresetować blokadę aplikacji.",
+    "Ten telefon nie ma PIN-u dla Cat. Wyloguj się, aby zresetować blokadę aplikacji.",
   "mobile.appLock.lock.loadFailed": "Nie udało się odczytać ustawień blokady aplikacji.",
   "mobile.appLock.lock.retry": "Ponów",
   "mobile.appLock.lock.forgotPin": "Nie pamiętasz PIN-u?",
   "mobile.appLock.lock.signOut": "Wyloguj się",
-  "mobile.appLock.lock.signOutTitle": "Wylogować się z EQBots?",
+  "mobile.appLock.lock.signOutTitle": "Wylogować się z Cat?",
   "mobile.appLock.lock.signOutBody":
-    "Spowoduje to usunięcie blokady aplikacji i wylogowanie na tym telefonie. Połącz się ponownie, skanując nowy kod z EQBots na komputerze.",
-  "mobile.appLock.lock.signedOut": "Zbyt wiele nieprawidłowych PIN-ów. EQBots wylogował cię na tym telefonie.",
+    "Spowoduje to usunięcie blokady aplikacji i wylogowanie na tym telefonie. Połącz się ponownie, skanując nowy kod z Cat na komputerze.",
+  "mobile.appLock.lock.signedOut": "Zbyt wiele nieprawidłowych PIN-ów. Cat wylogował cię na tym telefonie.",
   "mobile.appLock.lock.delete": "Usuń cyfrę",
   "mobile.appLock.lock.progress": {
     one: "Wpisano {count} z 4 cyfr",

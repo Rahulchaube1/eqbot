@@ -4,7 +4,7 @@ import { type Comparison, OPENBOT_TEXT } from "./comparison";
 // Every statement about Hermes Agent here is taken from the Hermes Agent documentation,
 // its repository or Nous Research's own pages, and each page used is in `sources`.
 // Where they state nothing, the text says so. Check them again, and move `checkedAt`,
-// whenever this file changes. Statements about EQBots follow its privacy notes and
+// whenever this file changes. Statements about Cat follow its privacy notes and
 // the remote connection that `remote/README.md` describes.
 
 const HERMES_DOCS = "https://hermes-agent.nousresearch.com/docs";
@@ -12,7 +12,7 @@ const HERMES_DOCS = "https://hermes-agent.nousresearch.com/docs";
 export const HERMES_AGENT_COMPARISON: Comparison = {
   rival: { name: "Hermes Agent", mark: "hermes-agent" },
   answer:
-    "Both apps run AI agents on your own computer. Choose EQBots if you want Codex, Claude Code, Gemini and Grok CLI to work as a team with the plans you already pay for, including Claude Pro or Max and Google AI Pro, and to reach them from iPhone and Android apps. Choose Hermes Agent if you want an open-source agent under the MIT license that learns skills over time and talks to you in messaging apps such as WhatsApp or Signal.",
+    "Both apps run AI agents on your own computer. Choose Cat if you want Codex, Claude Code, Gemini and Grok CLI to work as a team with the plans you already pay for, including Claude Pro or Max and Google AI Pro, and to reach them from iPhone and Android apps. Choose Hermes Agent if you want an open-source agent under the MIT license that learns skills over time and talks to you in messaging apps such as WhatsApp or Signal.",
   chooseOpenBot: [
     "You pay for Claude Pro or Max, or Google AI Pro or Ultra, and want your agents to use that plan.",
     "You want Codex, Claude Code, Gemini, Grok CLI, Cursor CLI, Cline, Pi and Muse Code as agents in one team, each with its own job.",
@@ -39,7 +39,7 @@ export const HERMES_AGENT_COMPARISON: Comparison = {
     {
       icon: "laptop",
       topic: "Where agents work",
-      openbot: "On the computer that runs EQBots.",
+      openbot: "On the computer that runs Cat.",
       rival:
         "On your computer, a server, or in Docker. Hermes Cloud, which Nous Research hosts, costs a daily price plus the models you use.",
     },
@@ -133,7 +133,7 @@ export const HERMES_AGENT_COMPARISON: Comparison = {
     },
   ],
   intro:
-    "EQBots and Hermes Agent are close: both run AI agents on the computer that you choose, keep your chats there, and publish their source code. The difference is what an agent is. In EQBots, each agent is a coding tool from the provider whose plan you pay for, and the agents work as a team. Hermes Agent is its own agent that calls a model through an API, learns skills as it works, and can run several named Bots.",
+    "Cat and Hermes Agent are close: both run AI agents on the computer that you choose, keep your chats there, and publish their source code. The difference is what an agent is. In Cat, each agent is a coding tool from the provider whose plan you pay for, and the agents work as a team. Hermes Agent is its own agent that calls a model through an API, learns skills as it works, and can run several named Bots.",
   sections: [
     {
       title: "Models and the plans you pay for",
@@ -165,45 +165,45 @@ export const HERMES_AGENT_COMPARISON: Comparison = {
     {
       title: "Data and privacy",
       openbot:
-        "EQBots keeps workspaces, conversations, attachments and browser data in a SQLite database on the computer that runs it. EQBots keeps no other copy. On a hosted EQBots server, the database is on that server in the EU. An account holds only your profile, team memberships, invitations, sign-in sessions and the settings that let devices find each other.",
+        "Cat keeps workspaces, conversations, attachments and browser data in a SQLite database on the computer that runs it. Cat keeps no other copy. On a hosted Cat server, the database is on that server in the EU. An account holds only your profile, team memberships, invitations, sign-in sessions and the settings that let devices find each other.",
       rival:
         "Hermes Agent keeps conversations, memory and skills in ~/.hermes on the computer that runs it, with its sessions in SQLite. Nous Research says Hermes Agent collects no telemetry, usage data or analytics, and API calls go only to the provider that you set up.",
     },
   ],
   faq: [
     {
-      question: "Is EQBots an alternative to Hermes Agent?",
+      question: "Is Cat an alternative to Hermes Agent?",
       answer:
-        "Yes. Both run AI agents on your own computer and keep your chats there. EQBots runs the coding tools of the providers you pay for, such as Codex and Claude Code, as a team. Hermes Agent is its own agent loop that calls a model through an API.",
+        "Yes. Both run AI agents on your own computer and keep your chats there. Cat runs the coding tools of the providers you pay for, such as Codex and Claude Code, as a team. Hermes Agent is its own agent loop that calls a model through an API.",
     },
     {
-      question: "What is the main difference between EQBots and Hermes Agent?",
+      question: "What is the main difference between Cat and Hermes Agent?",
       answer:
-        "What an agent is. An EQBots agent is a provider's own coding tool, such as Codex with your ChatGPT plan or Claude Code with your Claude plan, and several agents work as a team. Hermes Agent is its own agent loop over many model providers. It learns skills as it works, and it talks to you in messaging apps.",
+        "What an agent is. An Cat agent is a provider's own coding tool, such as Codex with your ChatGPT plan or Claude Code with your Claude plan, and several agents work as a team. Hermes Agent is its own agent loop over many model providers. It learns skills as it works, and it talks to you in messaging apps.",
     },
     {
       question: "Can I use my Claude subscription with Hermes Agent?",
       answer:
-        "As the model of Hermes Agent itself, only on Claude Max, and then it uses only the extra usage credits that you buy, not your plan's own usage. With Claude Pro, you need an API key. Its bundled Claude Code skill can also give coding work to Claude Code with your Pro or Max plan. In EQBots, Claude Code is the agent itself and uses your Claude plan.",
+        "As the model of Hermes Agent itself, only on Claude Max, and then it uses only the extra usage credits that you buy, not your plan's own usage. With Claude Pro, you need an API key. Its bundled Claude Code skill can also give coding work to Claude Code with your Pro or Max plan. In Cat, Claude Code is the agent itself and uses your Claude plan.",
     },
     {
-      question: "Can I use my ChatGPT, Claude or Gemini subscription with EQBots?",
+      question: "Can I use my ChatGPT, Claude or Gemini subscription with Cat?",
       answer: OPENBOT_TEXT.plansFaq,
     },
     {
       question: "Can I use local models?",
       answer:
-        "Yes, with both. In EQBots, an agent can use any OpenAI-compatible server through OpenCode, also a model on your own computer. Hermes Agent works with any OpenAI-compatible server, such as Ollama, vLLM or llama.cpp.",
+        "Yes, with both. In Cat, an agent can use any OpenAI-compatible server through OpenCode, also a model on your own computer. Hermes Agent works with any OpenAI-compatible server, such as Ollama, vLLM or llama.cpp.",
     },
     {
       question: "Is Hermes Agent open source?",
       answer:
-        "Yes. Hermes Agent is on GitHub under the MIT License, which also allows commercial use. EQBots's source code is on GitHub under the PolyForm Noncommercial License 1.0.0, and commercial use needs a separate license.",
+        "Yes. Hermes Agent is on GitHub under the MIT License, which also allows commercial use. Cat's source code is on GitHub under the PolyForm Noncommercial License 1.0.0, and commercial use needs a separate license.",
     },
     {
       question: "Does Hermes Agent have a mobile app?",
       answer:
-        "The documentation states no native iPhone or Android app. You reach Hermes Agent from your phone through messaging apps such as Telegram, WhatsApp or Signal. EQBots has apps for iPhone and Android that connect to your own computer over an encrypted connection.",
+        "The documentation states no native iPhone or Android app. You reach Hermes Agent from your phone through messaging apps such as Telegram, WhatsApp or Signal. Cat has apps for iPhone and Android that connect to your own computer over an encrypted connection.",
     },
     {
       question: "Do my chats leave my computer?",
@@ -213,12 +213,12 @@ export const HERMES_AGENT_COMPARISON: Comparison = {
     {
       question: "Do agents keep working when my laptop is closed?",
       answer:
-        "Yes, with both, when they run on a computer that stays on. With EQBots, run it on a desktop, a server or a hosted EQBots server, and connect from your laptop or phone. Hermes Agent can run on a server, or in Hermes Cloud for a daily price.",
+        "Yes, with both, when they run on a computer that stays on. With Cat, run it on a desktop, a server or a hosted Cat server, and connect from your laptop or phone. Hermes Agent can run on a server, or in Hermes Cloud for a daily price.",
     },
     {
-      question: "How much do EQBots and Hermes Agent cost?",
+      question: "How much do Cat and Hermes Agent cost?",
       answer:
-        "Both apps are free. EQBots is free for noncommercial use, and commercial use needs a separate license. Hermes Agent is free under the MIT License. With both, you pay your model provider. Hermes Cloud costs from $0.56 a day for a running Medium instance, plus the models and tools it uses.",
+        "Both apps are free. Cat is free for noncommercial use, and commercial use needs a separate license. Hermes Agent is free under the MIT License. With both, you pay your model provider. Hermes Cloud costs from $0.56 a day for a running Medium instance, plus the models and tools it uses.",
     },
   ],
   sources: [
@@ -251,8 +251,8 @@ export const HERMES_AGENT_COMPARISON: Comparison = {
       label: "Hermes Agent voice mode",
       url: "https://hermes-agent.nousresearch.com/docs/user-guide/features/voice-mode",
     },
-    { label: "EQBots privacy notes", url: OPENBOT_LINKS.privacy },
-    { label: "EQBots source code", url: OPENBOT_LINKS.repository },
+    { label: "Cat privacy notes", url: OPENBOT_LINKS.privacy },
+    { label: "Cat source code", url: OPENBOT_LINKS.repository },
   ],
   checkedAt: "2026-10-02",
 };

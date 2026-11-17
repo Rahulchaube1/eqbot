@@ -13,12 +13,12 @@ import { isDynamicRecord } from "@openbot/contracts/runtime-values";
 import { OPENBOT_SITE_URL, OPENBOT_X_HANDLE, type PageSocialImage, pageSocialImageMeta } from "./site-metadata";
 
 export const CHANGELOG_ROUTE = "/changelog";
-const CHANGELOG_TITLE = "EQBots Changelog: Release Notes for Every Version";
+const CHANGELOG_TITLE = "Cat Changelog: Release Notes for Every Version";
 export const CHANGELOG_DESCRIPTION =
-  "Every EQBots release, newest first: new features, improvements and fixes, with what to do after you upgrade.";
+  "Every Cat release, newest first: new features, improvements and fixes, with what to do after you upgrade.";
 const CHANGELOG_SOCIAL_IMAGE: PageSocialImage = {
   path: "/social/changelog.jpg",
-  alt: "Good things in the making. EQBots agents around a paper sun",
+  alt: "Good things in the making. Cat agents around a paper sun",
 };
 
 /** The app a changelog covers. The web client ships with the desktop app, so it has no own list. */
@@ -272,7 +272,7 @@ export function changelogHead(siteUrl: string, platform: ChangelogPlatform = "de
       { title: CHANGELOG_TITLE },
       { name: "description", content: CHANGELOG_DESCRIPTION },
       { property: "og:type", content: "website" },
-      { property: "og:site_name", content: "EQBots" },
+      { property: "og:site_name", content: "Cat" },
       { property: "og:locale", content: "en_US" },
       { property: "og:url", content: url },
       { property: "og:title", content: CHANGELOG_TITLE },

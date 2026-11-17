@@ -7,45 +7,45 @@ export function ImportGrokBotAgents() {
   return (
     <>
       <p>
-        You can bring your Grok Bot agents into EQBots without rebuilding their setup one by one. An export agent in
-        Grok Bot packs the agents you choose into a ZIP file. EQBots reads that file, shows a preview and creates the
+        You can bring your Grok Bot agents into Cat without rebuilding their setup one by one. An export agent in
+        Grok Bot packs the agents you choose into a ZIP file. Cat reads that file, shows a preview and creates the
         selected agents.
       </p>
 
       <p>
         The import can carry instructions, avatars, skills, routines, memories and optional workspace files. Group chats
-        can become EQBots channels. Original chat transcripts are not transferred: the export agent saves important
+        can become Cat channels. Original chat transcripts are not transferred: the export agent saves important
         facts from them as memories instead.
       </p>
 
       <h2>Before you start</h2>
 
       <p>
-        Update EQBots and decide where the agents should live: on this computer or on an EQBots server you have joined.
+        Update Cat and decide where the agents should live: on this computer or on an Cat server you have joined.
         The import goes into the server whose settings you open.
       </p>
 
       <p>
         You will also need access to your agents in Grok Bot and somewhere to save the export file. You can keep using
-        the originals while you check the copies in EQBots.
+        the originals while you check the copies in Cat.
       </p>
 
-      <h2>1. Open Import in EQBots</h2>
+      <h2>1. Open Import in Cat</h2>
 
       <p>
         Open <strong>Server settings → Import</strong>, then choose <strong>Grok Bot</strong>.
       </p>
       <ArticleImage
         src={importSource}
-        alt="EQBots Import settings showing Grok Bot as an import source."
+        alt="Cat Import settings showing Grok Bot as an import source."
         width={1184}
         height={737}
-        caption="Choose Grok Bot as the import source in EQBots."
+        caption="Choose Grok Bot as the import source in Cat."
       />
 
       <p>
-        The page shows the export instructions and a card for <strong>EQBots export</strong>. Select{" "}
-        <strong>Open the export agent</strong>. This opens the Grok Bot page for <strong>Migrator by EQBots</strong>,
+        The page shows the export instructions and a card for <strong>Cat export</strong>. Select{" "}
+        <strong>Open the export agent</strong>. This opens the Grok Bot page for <strong>Migrator by Cat</strong>,
         the agent prepared for this job.
       </p>
 
@@ -55,10 +55,10 @@ export function ImportGrokBotAgents() {
       </p>
       <ArticleImage
         src={addMigrator}
-        alt="Migrator by EQBots in Grok Bot, with the Add Bot button."
+        alt="Migrator by Cat in Grok Bot, with the Add Bot button."
         width={880}
         height={962}
-        caption="Add Migrator by EQBots to Grok Bot."
+        caption="Add Migrator by Cat to Grok Bot."
       />
 
       <h2>2. Ask the export agent to prepare your agents</h2>
@@ -66,14 +66,14 @@ export function ImportGrokBotAgents() {
       <p>Send this message in the export agent's Grok Bot conversation:</p>
 
       <blockquote>
-        <p>Export my agents for EQBots</p>
+        <p>Export my agents for Cat</p>
       </blockquote>
       <ArticleImage
         src={exportInstructions}
-        alt="EQBots instructions for adding the Grok Bot export agent, requesting an export and choosing the ZIP file."
+        alt="Cat instructions for adding the Grok Bot export agent, requesting an export and choosing the ZIP file."
         width={1184}
         height={1127}
-        caption="Use the export message shown in EQBots, then return with the completed ZIP file."
+        caption="Use the export message shown in Cat, then return with the completed ZIP file."
       />
 
       <p>
@@ -106,14 +106,14 @@ export function ImportGrokBotAgents() {
         file is missing, ask it to correct the export before continuing.
       </p>
 
-      <h2>4. Review the export in EQBots</h2>
+      <h2>4. Review the export in Cat</h2>
 
       <p>
         Return to <strong>Server settings → Import → Grok Bot</strong> and select <strong>Choose export file</strong>.
       </p>
 
       <p>
-        EQBots shows the agents before importing them, with counts for items such as skills, routines, memories and
+        Cat shows the agents before importing them, with counts for items such as skills, routines, memories and
         files. If the export includes group chats, review the channels too. A channel needs at least one of its agents
         selected to be imported.
       </p>
@@ -124,7 +124,7 @@ export function ImportGrokBotAgents() {
       </p>
 
       <p>
-        If a matching agent name already exists, EQBots asks you to confirm the duplicate. A ZIP import creates a
+        If a matching agent name already exists, Cat asks you to confirm the duplicate. A ZIP import creates a
         separate agent; it does not update the existing one.
       </p>
 
@@ -136,13 +136,13 @@ export function ImportGrokBotAgents() {
       </p>
 
       <p>
-        Workspace files included in the export are placed in an <code>imported/</code> folder inside that agent's EQBots
+        Workspace files included in the export are placed in an <code>imported/</code> folder inside that agent's Cat
         workspace. If the original instructions were long, the export may keep a short version in the instructions and
         put the full text in <code>imported/INSTRUCTIONS.md</code>.
       </p>
 
       <p>
-        Choose the provider and model you want to use in EQBots, and complete any sign-in it requires. Moving an agent's
+        Choose the provider and model you want to use in Cat, and complete any sign-in it requires. Moving an agent's
         setup does not transfer a Grok Bot subscription or sign-in session.
       </p>
 
@@ -166,13 +166,13 @@ export function ImportGrokBotAgents() {
       </p>
 
       <p>
-        The original conversations do not become EQBots chat history. Memories are a summary of selected facts, so check
+        The original conversations do not become Cat chat history. Memories are a summary of selected facts, so check
         that the preferences, decisions and unfinished work you care about are represented correctly. Provider access
         and external services may need to be connected again.
       </p>
 
       <p>
-        For an import into this computer, EQBots reads the ZIP locally. For a joined server, the ZIP is sent through the
+        For an import into this computer, Cat reads the ZIP locally. For a joined server, the ZIP is sent through the
         encrypted host connection to the computer running that server. If a remote export is too large, try fewer agents
         or leave workspace files out.
       </p>
@@ -180,12 +180,12 @@ export function ImportGrokBotAgents() {
       <h2>If the import does not work</h2>
 
       <p>
-        If you cannot find the Grok Bot source, check that EQBots is up to date and that you opened the settings of the
+        If you cannot find the Grok Bot source, check that Cat is up to date and that you opened the settings of the
         intended server.
       </p>
 
       <p>
-        If the ZIP is rejected, ask the export agent to rebuild it using the EQBots export skill. It needs the EQBots
+        If the ZIP is rejected, ask the export agent to rebuild it using the Cat export skill. It needs the Cat
         import format; a general backup of the Grok Bot workspace is not the same file.
       </p>
 
@@ -203,11 +203,11 @@ export function ImportGrokBotAgents() {
 
       <p>
         <strong>Can I move only one agent?</strong> Yes. Choose it when preparing the export or select only that agent
-        in EQBots's preview.
+        in Cat's preview.
       </p>
 
       <p>
-        <strong>What if I cannot install the ready export agent?</strong> EQBots also offers{" "}
+        <strong>What if I cannot install the ready export agent?</strong> Cat also offers{" "}
         <strong>Set it up yourself</strong>. Copy or save the supplied <code>SKILL.md</code>, add it to a separate
         export agent in Grok Bot, then send the same export message.
       </p>

@@ -64,11 +64,11 @@ export const messages = {
   "mobile.marketplace.facts.accessNone": "Senza account",
   "mobile.marketplace.permission.admin": "Solo proprietari e amministratori possono installare dal Marketplace.",
   "mobile.marketplace.permission.unavailable":
-    "Questo server è offline, oppure il suo EQBots è troppo vecchio per questo. Aggiorna EQBots sul computer che lo esegue.",
-  "mobile.marketplace.error.agentUnsupported": "Aggiorna EQBots sul server per aggiungere agenti dal Marketplace.",
+    "Questo server è offline, oppure il suo Cat è troppo vecchio per questo. Aggiorna Cat sul computer che lo esegue.",
+  "mobile.marketplace.error.agentUnsupported": "Aggiorna Cat sul server per aggiungere agenti dal Marketplace.",
   "mobile.marketplace.error.agentUpdateUnsupported":
-    "Aggiorna EQBots sul server per aggiornare gli agenti dal Marketplace.",
-  "mobile.marketplace.error.signInUnsupported": "Aggiorna EQBots sul server per accedere alle app dal telefono.",
+    "Aggiorna Cat sul server per aggiornare gli agenti dal Marketplace.",
+  "mobile.marketplace.error.signInUnsupported": "Aggiorna Cat sul server per accedere alle app dal telefono.",
   "mobile.marketplace.agent.add": "Aggiungi agente",
   "mobile.marketplace.agent.adding": "Aggiunta agente",
   "mobile.marketplace.agent.update": "Aggiorna agente",
@@ -111,9 +111,9 @@ export const messages = {
   "mobile.marketplace.app.connectFailed": "Impossibile connettere l’app.",
   "mobile.marketplace.app.linkInvalid": "Usa un link https su {hostname}.",
   "mobile.marketplace.app.docs": "Ottieni chiave",
-  "mobile.marketplace.app.local": "Questa app funziona sul computer con EQBots. Configurala su quel computer.",
+  "mobile.marketplace.app.local": "Questa app funziona sul computer con Cat. Configurala su quel computer.",
   "mobile.marketplace.app.relayUnsupported":
-    "Questa app chiede l’accesso nel browser. Aggiorna EQBots sul server oppure connetti l’app sul computer.",
+    "Questa app chiede l’accesso nel browser. Aggiorna Cat sul server oppure connetti l’app sul computer.",
   "mobile.marketplace.app.waiting": "In attesa della pagina di accesso…",
   "mobile.marketplace.app.openAgain": "Riapri la pagina di accesso",
   "mobile.marketplace.app.pasteHint":

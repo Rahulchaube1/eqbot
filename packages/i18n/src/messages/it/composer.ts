@@ -60,10 +60,10 @@ export const messages = {
   "composer.voice.transcribing": "Trascrizione del prompt vocale",
   "composer.voice.start": "Crea un prompt con la voce",
   "composer.voice.blocked":
-    "L'accesso al microfono è bloccato. Consenti a EQBots di usare il microfono nelle impostazioni di sistema.",
+    "L'accesso al microfono è bloccato. Consenti a Cat di usare il microfono nelle impostazioni di sistema.",
   "composer.voice.noMicrophone": "Nessun microfono disponibile.",
-  "composer.voice.startFailed": "EQBots non è riuscito ad avviare la registrazione vocale.",
-  "composer.voice.transcribeFailed": "EQBots non è riuscito a trascrivere questa registrazione.",
+  "composer.voice.startFailed": "Cat non è riuscito ad avviare la registrazione vocale.",
+  "composer.voice.transcribeFailed": "Cat non è riuscito a trascrivere questa registrazione.",
   "composer.reply.toYou": "Risposta al tuo messaggio",
   "composer.reply.toAgent": "Risposta all'agente",
   "composer.reply.attachment": "Allegato",

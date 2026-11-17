@@ -64,10 +64,10 @@ export const messages = {
   "mobile.marketplace.facts.accessNone": "ללא התחברות",
   "mobile.marketplace.permission.admin": "רק בעלים ומנהלים יכולים להתקין מהחנות.",
   "mobile.marketplace.permission.unavailable":
-    "השרת הזה לא מקוון, או שגרסת EQBots שלו ישנה מדי לכך. יש לעדכן את EQBots במחשב שמריץ אותו.",
-  "mobile.marketplace.error.agentUnsupported": "יש לעדכן את EQBots בשרת כדי להוסיף סוכנים מהחנות.",
-  "mobile.marketplace.error.agentUpdateUnsupported": "יש לעדכן את EQBots בשרת כדי לעדכן סוכנים מהחנות.",
-  "mobile.marketplace.error.signInUnsupported": "יש לעדכן את EQBots בשרת כדי להתחבר לאפליקציות מהטלפון.",
+    "השרת הזה לא מקוון, או שגרסת Cat שלו ישנה מדי לכך. יש לעדכן את Cat במחשב שמריץ אותו.",
+  "mobile.marketplace.error.agentUnsupported": "יש לעדכן את Cat בשרת כדי להוסיף סוכנים מהחנות.",
+  "mobile.marketplace.error.agentUpdateUnsupported": "יש לעדכן את Cat בשרת כדי לעדכן סוכנים מהחנות.",
+  "mobile.marketplace.error.signInUnsupported": "יש לעדכן את Cat בשרת כדי להתחבר לאפליקציות מהטלפון.",
   "mobile.marketplace.agent.add": "הוספת סוכן",
   "mobile.marketplace.agent.adding": "מוסיף סוכן",
   "mobile.marketplace.agent.update": "עדכון הסוכן",
@@ -108,9 +108,9 @@ export const messages = {
   "mobile.marketplace.app.connectFailed": "האפליקציה לא התחברה.",
   "mobile.marketplace.app.linkInvalid": "יש להשתמש בקישור https ב-{hostname}.",
   "mobile.marketplace.app.docs": "קבלת מפתח",
-  "mobile.marketplace.app.local": "האפליקציה הזו פועלת במחשב עם EQBots. יש להגדיר אותה באותו מחשב.",
+  "mobile.marketplace.app.local": "האפליקציה הזו פועלת במחשב עם Cat. יש להגדיר אותה באותו מחשב.",
   "mobile.marketplace.app.relayUnsupported":
-    "האפליקציה הזו דורשת התחברות בדפדפן. יש לעדכן את EQBots בשרת, או לחבר את האפליקציה במחשב.",
+    "האפליקציה הזו דורשת התחברות בדפדפן. יש לעדכן את Cat בשרת, או לחבר את האפליקציה במחשב.",
   "mobile.marketplace.app.waiting": "ממתין לדף ההתחברות…",
   "mobile.marketplace.app.openAgain": "פתיחת דף ההתחברות שוב",
   "mobile.marketplace.app.pasteHint":

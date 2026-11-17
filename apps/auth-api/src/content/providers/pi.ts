@@ -10,9 +10,9 @@ export const PI_PROVIDER: ProviderPage = {
   provider: "pi",
   name: "Pi",
   answer:
-    "EQBots runs Pi as one agent of a team, on macOS, Windows or Linux, with the providers that you sign in to in Pi. You get shared channels with agents on other providers, and an app on your phone.",
+    "Cat runs Pi as one agent of a team, on macOS, Windows or Linux, with the providers that you sign in to in Pi. You get shared channels with agents on other providers, and an app on your phone.",
   connect:
-    "Choose Pi, and EQBots downloads and pins its own copy of Pi. To sign in, run `/login` in Pi on the computer that runs EQBots, connect a subscription or an API key, and close Pi. EQBots shows Pi as connected soon after.",
+    "Choose Pi, and Cat downloads and pins its own copy of Pi. To sign in, run `/login` in Pi on the computer that runs Cat, connect a subscription or an API key, and close Pi. Cat shows Pi as connected soon after.",
   adds: [
     {
       icon: "cpu",
@@ -43,22 +43,22 @@ export const PI_PROVIDER: ProviderPage = {
     {
       question: "Is there a GUI for Pi?",
       answer:
-        "Pi has no official desktop or web app: it works in the terminal. EQBots is a desktop app that runs Pi as one agent of a team, with agents on other providers and an app on your phone.",
+        "Pi has no official desktop or web app: it works in the terminal. Cat is a desktop app that runs Pi as one agent of a team, with agents on other providers and an app on your phone.",
     },
     {
-      question: "How do I sign in to Pi in EQBots?",
+      question: "How do I sign in to Pi in Cat?",
       answer:
-        "Run /login in Pi on the computer that runs EQBots, and connect a subscription or an API key. Then close Pi, and EQBots shows Pi as connected.",
+        "Run /login in Pi on the computer that runs Cat, and connect a subscription or an API key. Then close Pi, and Cat shows Pi as connected.",
     },
     {
       question: "Is Pi free?",
       answer:
-        "Pi is open source under the MIT license, and EQBots downloads it for you. You pay the providers that you sign in to.",
+        "Pi is open source under the MIT license, and Cat downloads it for you. You pay the providers that you sign in to.",
     },
     {
       question: "Does Pi run Inception's Mercury models?",
       answer:
-        "Yes. In EQBots, Inception runs in the copy of Pi that EQBots downloads, with an Inception API key that EQBots keeps encrypted. Pi's own settings do not change.",
+        "Yes. In Cat, Inception runs in the copy of Pi that Cat downloads, with an Inception API key that Cat keeps encrypted. Pi's own settings do not change.",
     },
   ],
   sources: [

@@ -511,7 +511,7 @@ function createMimeMessage(from: string, message: PreparedEmailMessage): string 
   const boundary = `openbot-${crypto.randomUUID()}`;
   return dotStuff(
     [
-      `From: EQBots <${from}>`,
+      `From: Cat <${from}>`,
       `To: <${message.email}>`,
       ...(message.replyTo ? [`Reply-To: <${message.replyTo}>`] : []),
       `Subject: ${encodeHeaderValue(message.content.subject)}`,

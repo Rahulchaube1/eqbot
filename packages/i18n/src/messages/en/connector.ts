@@ -16,11 +16,11 @@ export const messages = defineMessages("connector", {
   "connector.github.connectedAs": "Connected as @{login}",
   "connector.github.repositoriesTitle": "Repositories",
   "connector.github.repositoriesDescription":
-    "Agents can use only the repositories where the EQBots GitHub App is installed.",
+    "Agents can use only the repositories where the Cat GitHub App is installed.",
   "connector.github.chooseRepositories": "Choose repositories",
   "connector.github.repositoriesLoading": "Reading the repositories from GitHub",
-  "connector.github.repositoriesFailed": "EQBots could not read the repositories from GitHub.",
-  "connector.github.noRepositories": "The EQBots GitHub App is not installed on a repository yet.",
+  "connector.github.repositoriesFailed": "Cat could not read the repositories from GitHub.",
+  "connector.github.noRepositories": "The Cat GitHub App is not installed on a repository yet.",
   // {count} is a number, such as 12.
   "connector.github.moreRepositories": { one: "And {count} more repository", other: "And {count} more repositories" },
   // A badge next to a repository that only its members can see.
@@ -31,7 +31,7 @@ export const messages = defineMessages("connector", {
   "connector.github.expiredTitle": "The GitHub connection expired",
   "connector.github.expiredDescription": "Connect again as @{login} to give agents GitHub again.",
   "connector.github.reconnect": "Reconnect",
-  "connector.github.actionFailed": "EQBots could not change the GitHub connection.",
+  "connector.github.actionFailed": "Cat could not change the GitHub connection.",
   // The status next to the name at the top of the GitHub page.
   "connector.github.statusConnected": "Connected",
   "connector.github.statusConnecting": "Connecting",
@@ -45,7 +45,7 @@ export const messages = defineMessages("connector", {
   // The connect dialog. The steps show as numbers; screen readers read the names.
   "connector.github.stepSignIn": "Sign in",
   "connector.github.stepConnected": "Connected",
-  "connector.github.requestingCode": "EQBots asks GitHub for a code.",
+  "connector.github.requestingCode": "Cat asks GitHub for a code.",
   // {code} is the code to type on GitHub, such as WDJB-MJHT.
   "connector.github.codeLabel": "Code {code}",
   "connector.github.failedTitle": "GitHub did not connect",
@@ -61,7 +61,7 @@ export const messages = defineMessages("connector", {
   "connector.github.disconnectConfirmTitle": "Disconnect GitHub?",
   "connector.github.disconnectConfirmDescription": "Disconnect removes the sign-in of @{login} from this computer.",
   "connector.github.disconnectEffectTools": "Every agent loses the GitHub tools, gh and git.",
-  "connector.github.disconnectEffectRevoke": "Then GitHub opens, where you can revoke EQBots.",
+  "connector.github.disconnectEffectRevoke": "Then GitHub opens, where you can revoke Cat.",
   "connector.github.disconnectEffectKept": "Chats, files and agent memory stay on this computer.",
   // The same text for the connection of a joined server. {host} is the server name, such as Studio.
   "connector.github.descriptionHost":
@@ -77,13 +77,13 @@ export const messages = defineMessages("connector", {
   // The last section of an integration page, with the action that removes it.
   "connector.dangerZone": "Danger zone",
   "connector.statusUnknown": "Unknown",
-  "connector.readFailed": "EQBots could not read the state of this connection.",
+  "connector.readFailed": "Cat could not read the state of this connection.",
 
   // Marketplace > Apps > Slack: a workspace installs the one OpenBot app, and the Slack
   // Orchestrator agent receives each request, asks the team and answers.
   "connector.slack.title": "Slack",
   "connector.slack.description":
-    "People mention @EQBots in Slack or send it a direct message. The Slack Orchestrator asks the right agent and answers.",
+    "People mention @Cat in Slack or send it a direct message. The Slack Orchestrator asks the right agent and answers.",
   "connector.slack.statusConnected": "Connected",
   "connector.slack.statusAttention": "Needs attention",
   // {workspace} is the Slack workspace name.
@@ -98,16 +98,16 @@ export const messages = defineMessages("connector", {
   "connector.slack.addAgent": "Add agent",
   "connector.slack.actionFailed": "Slack did not accept the change",
   "connector.slack.workspaceTitle": "Workspaces",
-  "connector.slack.workspaceDescription": "People mention @EQBots or send it a direct message.",
+  "connector.slack.workspaceDescription": "People mention @Cat or send it a direct message.",
   "connector.slack.disconnectWorkspace": "Disconnect",
   "connector.slack.disconnectAllTitle": "Disconnect Slack",
   "connector.slack.disconnectAllSummary":
-    "Every workspace disconnects. People can no longer reach your agents through @EQBots.",
+    "Every workspace disconnects. People can no longer reach your agents through @Cat.",
   "connector.slack.disconnectAllSummaryOrchestrator":
-    "Every workspace disconnects. The Slack Orchestrator and its conversations are deleted from EQBots.",
+    "Every workspace disconnects. The Slack Orchestrator and its conversations are deleted from Cat.",
   "connector.slack.missingScopes":
-    "EQBots does not have these permissions in Slack: {scopes}. Disconnect the workspace, then connect it again.",
-  "connector.slack.retryAt": "Slack asked EQBots to wait. It tries again at {time}.",
+    "Cat does not have these permissions in Slack: {scopes}. Disconnect the workspace, then connect it again.",
+  "connector.slack.retryAt": "Slack asked Cat to wait. It tries again at {time}.",
   "connector.slack.reconnect": "Reconnect",
   "connector.slack.pause": "Pause",
   "connector.slack.resume": "Resume",
@@ -119,13 +119,13 @@ export const messages = defineMessages("connector", {
   "connector.slack.orchestratorNone": "No agent answers yet",
   "connector.slack.orchestratorNoneDescription": "Add the Slack Orchestrator, or Slack gets no answer.",
   "connector.slack.inviteNote":
-    "EQBots joins every public channel by itself, and each new one. For a private channel, invite it: /invite @EQBots.",
+    "Cat joins every public channel by itself, and each new one. For a private channel, invite it: /invite @Cat.",
   // The connect dialog. The steps show as numbers; screen readers read the names.
   "connector.slack.stepWorkspace": "Workspace",
   "connector.slack.stepAgent": "Agent",
   "connector.slack.connectTitle": "Connect a Slack workspace",
   "connector.slack.connectDescription":
-    "EQBots installs one app in the workspace, named EQBots, and it joins every public channel.",
+    "Cat installs one app in the workspace, named Cat, and it joins every public channel.",
   "connector.slack.connectStepBrowser": "Slack opens in your browser",
   "connector.slack.connectStepAllow": "Select the workspace in the top-right corner, then Allow",
   "connector.slack.connectStepReturn": "This dialog continues when Slack is done",
@@ -134,24 +134,24 @@ export const messages = defineMessages("connector", {
   "connector.slack.agentStepTitle": "Add the Slack Orchestrator",
   // {workspace} is the Slack workspace name.
   "connector.slack.agentStepDescription":
-    "This new agent answers everything that people send to @EQBots in {workspace}.",
+    "This new agent answers everything that people send to @Cat in {workspace}.",
   "connector.slack.orchestratorName": "Slack Orchestrator",
   "connector.slack.orchestratorRole": "Answers in Slack and asks the team",
   "connector.slack.orchestratorDoesReceive": "Receives every Slack request first",
   "connector.slack.orchestratorDoesDelegate": "Gives each task to the agent that fits best",
   "connector.slack.orchestratorDoesAnswer": "Posts the answer in the Slack thread",
   "connector.slack.orchestratorModel": "Model",
-  "connector.slack.doneTitle": "EQBots is in {workspace}",
-  "connector.slack.doneDescription": "Mention @EQBots in any public channel, or send it a direct message.",
+  "connector.slack.doneTitle": "Cat is in {workspace}",
+  "connector.slack.doneDescription": "Mention @Cat in any public channel, or send it a direct message.",
   "connector.slack.done": "Done",
   "connector.slack.disconnectTitle": "Disconnect {workspace}?",
   "connector.slack.disconnectDescription":
-    "EQBots stops answering in {workspace} and removes its Slack token from this computer.",
+    "Cat stops answering in {workspace} and removes its Slack token from this computer.",
   "connector.slack.disconnectDescriptionHost":
-    "EQBots stops answering in {workspace} and removes its Slack token from {host}.",
-  "connector.slack.disconnectEffect": "People in {workspace} can no longer reach your agents through @EQBots.",
-  "connector.slack.removeEffectKept": "The conversations and the Slack Orchestrator stay in EQBots.",
-  "connector.slack.removeEffectDeleted": "The Slack Orchestrator and its conversations are deleted from EQBots.",
+    "Cat stops answering in {workspace} and removes its Slack token from {host}.",
+  "connector.slack.disconnectEffect": "People in {workspace} can no longer reach your agents through @Cat.",
+  "connector.slack.removeEffectKept": "The conversations and the Slack Orchestrator stay in Cat.",
+  "connector.slack.removeEffectDeleted": "The Slack Orchestrator and its conversations are deleted from Cat.",
   "connector.slack.keep": "Keep connected",
   "connector.slack.close": "Close",
   "connector.slack.addWorkspace": "Add workspace",
@@ -171,7 +171,7 @@ export const messages = defineMessages("connector", {
   // "Discord server": "server" alone is an OpenBot server.
   "connector.discord.title": "Discord",
   "connector.discord.description":
-    "People mention @EQBots in a channel of a Discord server. The Discord Orchestrator asks the right agent and answers.",
+    "People mention @Cat in a channel of a Discord server. The Discord Orchestrator asks the right agent and answers.",
   "connector.discord.statusConnected": "Connected",
   "connector.discord.statusAttention": "Needs attention",
   // {workspace} is the Discord server name.
@@ -186,16 +186,16 @@ export const messages = defineMessages("connector", {
   "connector.discord.addAgent": "Add agent",
   "connector.discord.actionFailed": "Discord did not accept the change",
   "connector.discord.workspaceTitle": "Discord servers",
-  "connector.discord.workspaceDescription": "Mention @EQBots in a channel. Reply to EQBots to continue.",
+  "connector.discord.workspaceDescription": "Mention @Cat in a channel. Reply to Cat to continue.",
   "connector.discord.disconnectWorkspace": "Disconnect",
   "connector.discord.disconnectAllTitle": "Disconnect Discord",
   "connector.discord.disconnectAllSummary":
-    "Every server disconnects. People can no longer reach your agents through @EQBots.",
+    "Every server disconnects. People can no longer reach your agents through @Cat.",
   "connector.discord.disconnectAllSummaryOrchestrator":
-    "Every server disconnects. The Discord Orchestrator and its conversations are deleted from EQBots.",
+    "Every server disconnects. The Discord Orchestrator and its conversations are deleted from Cat.",
   "connector.discord.missingScopes":
-    "EQBots does not have these permissions in Discord: {scopes}. Disconnect the Discord server, then connect it again.",
-  "connector.discord.retryAt": "Discord asked EQBots to wait. It tries again at {time}.",
+    "Cat does not have these permissions in Discord: {scopes}. Disconnect the Discord server, then connect it again.",
+  "connector.discord.retryAt": "Discord asked Cat to wait. It tries again at {time}.",
   "connector.discord.reconnect": "Reconnect",
   "connector.discord.pause": "Pause",
   "connector.discord.resume": "Resume",
@@ -206,12 +206,12 @@ export const messages = defineMessages("connector", {
     "This agent receives every request from Discord. It answers short ones itself, gives other work to the right agent, and replies with the answer in the channel.",
   "connector.discord.orchestratorNone": "No agent answers yet",
   "connector.discord.orchestratorNoneDescription": "Add the Discord Orchestrator, or Discord gets no answer.",
-  "connector.discord.channelsNote": "EQBots sees the channels that its role can view.",
+  "connector.discord.channelsNote": "Cat sees the channels that its role can view.",
   // The connect dialog. The steps show as numbers; screen readers read the names.
   "connector.discord.stepWorkspace": "Discord server",
   "connector.discord.stepAgent": "Agent",
   "connector.discord.connectTitle": "Connect a Discord server",
-  "connector.discord.connectDescription": "EQBots adds one bot, named EQBots, to the Discord server.",
+  "connector.discord.connectDescription": "Cat adds one bot, named Cat, to the Discord server.",
   "connector.discord.connectStepBrowser": "Discord opens in your browser",
   "connector.discord.connectStepAllow": "Select the server, then Authorize",
   "connector.discord.connectStepReturn": "This dialog continues when Discord is done",
@@ -220,24 +220,24 @@ export const messages = defineMessages("connector", {
   "connector.discord.agentStepTitle": "Add the Discord Orchestrator",
   // {workspace} is the Discord server name.
   "connector.discord.agentStepDescription":
-    "This new agent answers everything that people send to @EQBots in {workspace}.",
+    "This new agent answers everything that people send to @Cat in {workspace}.",
   "connector.discord.orchestratorName": "Discord Orchestrator",
   "connector.discord.orchestratorRole": "Answers in Discord and asks the team",
   "connector.discord.orchestratorDoesReceive": "Receives every Discord request first",
   "connector.discord.orchestratorDoesDelegate": "Gives each task to the agent that fits best",
   "connector.discord.orchestratorDoesAnswer": "Replies with the answer in the Discord channel",
   "connector.discord.orchestratorModel": "Model",
-  "connector.discord.doneTitle": "EQBots is in {workspace}",
-  "connector.discord.doneDescription": "Mention @EQBots in a channel. Reply to EQBots to continue.",
+  "connector.discord.doneTitle": "Cat is in {workspace}",
+  "connector.discord.doneDescription": "Mention @Cat in a channel. Reply to Cat to continue.",
   "connector.discord.done": "Done",
   "connector.discord.disconnectTitle": "Disconnect {workspace}?",
   "connector.discord.disconnectDescription":
-    "EQBots stops answering in {workspace} and removes the Discord connection from this computer.",
+    "Cat stops answering in {workspace} and removes the Discord connection from this computer.",
   "connector.discord.disconnectDescriptionHost":
-    "EQBots stops answering in {workspace} and removes the Discord connection from {host}.",
-  "connector.discord.disconnectEffect": "People in {workspace} can no longer reach your agents through @EQBots.",
-  "connector.discord.removeEffectKept": "The conversations and the Discord Orchestrator stay in EQBots.",
-  "connector.discord.removeEffectDeleted": "The Discord Orchestrator and its conversations are deleted from EQBots.",
+    "Cat stops answering in {workspace} and removes the Discord connection from {host}.",
+  "connector.discord.disconnectEffect": "People in {workspace} can no longer reach your agents through @Cat.",
+  "connector.discord.removeEffectKept": "The conversations and the Discord Orchestrator stay in Cat.",
+  "connector.discord.removeEffectDeleted": "The Discord Orchestrator and its conversations are deleted from Cat.",
   "connector.discord.keep": "Keep connected",
   "connector.discord.close": "Close",
   "connector.discord.addWorkspace": "Add Discord server",
@@ -251,16 +251,16 @@ export const messages = defineMessages("connector", {
     other: "{count} Discord servers · Discord Orchestrator answers",
   },
   // Who can use OpenBot in one Discord server: the members with one of the chosen Discord roles.
-  "connector.discord.accessTitle": "Who can use EQBots",
-  "connector.discord.accessDescription": "EQBots answers only these people. It ignores mentions from others.",
+  "connector.discord.accessTitle": "Who can use Cat",
+  "connector.discord.accessDescription": "Cat answers only these people. It ignores mentions from others.",
   "connector.discord.accessEveryone": "Everyone in the server",
-  "connector.discord.accessEveryoneDescription": "Anyone who can post in a channel that EQBots sees can mention it.",
+  "connector.discord.accessEveryoneDescription": "Anyone who can post in a channel that Cat sees can mention it.",
   // {roles} is a list of Discord role names, such as "Admin and Moderator".
   "connector.discord.accessRoles": "Members with {roles}",
   "connector.discord.accessChoose": "Choose roles",
   // {workspace} is the Discord server name.
-  "connector.discord.accessDialogTitle": "Who can use EQBots in {workspace}?",
-  "connector.discord.accessDialogDescription": "With no role selected, everyone can mention EQBots.",
+  "connector.discord.accessDialogTitle": "Who can use Cat in {workspace}?",
+  "connector.discord.accessDialogDescription": "With no role selected, everyone can mention Cat.",
   "connector.discord.accessLoading": "Loading roles…",
   "connector.discord.accessLoadFailed": "Discord roles did not load",
   "connector.discord.accessNoRoles": "This server has no roles to pick.",
@@ -268,13 +268,13 @@ export const messages = defineMessages("connector", {
   "connector.discord.accessRoleDeleted": "{role} (deleted)",
   "connector.discord.accessSave": "Save",
   // {host} is the joined server's name.
-  "connector.discord.accessHostUpdate": "Update EQBots on {host} to choose roles.",
+  "connector.discord.accessHostUpdate": "Update Cat on {host} to choose roles.",
 
   // Marketplace > Apps > Telegram: each chat adds the one OpenBot bot, and the Telegram
   // Orchestrator agent receives the messages of all chats, asks the team and answers.
   "connector.telegram.title": "Telegram",
   "connector.telegram.description":
-    "Add the EQBots bot to a Telegram group or open a direct chat with it. The Telegram Orchestrator asks the right agent and answers.",
+    "Add the Cat bot to a Telegram group or open a direct chat with it. The Telegram Orchestrator asks the right agent and answers.",
   "connector.telegram.statusConnected": "Connected",
   "connector.telegram.statusAttention": "Needs attention",
   // {count} is the number of linked Telegram chats.
@@ -298,23 +298,23 @@ export const messages = defineMessages("connector", {
   "connector.telegram.groupDescription": "People mention the bot or reply to its messages.",
   "connector.telegram.directDescription": "Every message in this chat goes to the Telegram Orchestrator.",
   "connector.telegram.helpRemoved":
-    "The EQBots bot is no longer in this chat. Disconnect the chat, then add the bot again.",
+    "The Cat bot is no longer in this chat. Disconnect the chat, then add the bot again.",
   "connector.telegram.helpRelayUnavailable":
-    "EQBots cannot receive Telegram messages on this computer. Sign in, give this computer a name in Server settings, and keep EQBots open.",
+    "Cat cannot receive Telegram messages on this computer. Sign in, give this computer a name in Server settings, and keep Cat open.",
   "connector.telegram.helpRelayUnavailableHost":
-    "EQBots on {host} cannot receive Telegram messages. On {host}, sign in, give the server a name in Server settings, and keep EQBots open.",
-  "connector.telegram.helpError": "EQBots cannot reach this chat. Reconnect, or disconnect the chat.",
+    "Cat on {host} cannot receive Telegram messages. On {host}, sign in, give the server a name in Server settings, and keep Cat open.",
+  "connector.telegram.helpError": "Cat cannot reach this chat. Reconnect, or disconnect the chat.",
   "connector.telegram.helpNotLinked": "This chat is not linked to this server. Select Reconnect to link it.",
-  "connector.telegram.retryAt": "Telegram asked EQBots to wait. It tries again at {time}.",
+  "connector.telegram.retryAt": "Telegram asked Cat to wait. It tries again at {time}.",
   "connector.telegram.pause": "Pause",
   "connector.telegram.resume": "Resume",
   "connector.telegram.reconnect": "Reconnect",
   "connector.telegram.disconnectChat": "Disconnect",
   "connector.telegram.disconnectAllTitle": "Disconnect Telegram",
   "connector.telegram.disconnectAllSummary":
-    "Every chat disconnects. People can no longer reach your agents through the EQBots bot.",
+    "Every chat disconnects. People can no longer reach your agents through the Cat bot.",
   "connector.telegram.disconnectAllSummaryOrchestrator":
-    "Every chat disconnects. The Telegram Orchestrator and its conversations are deleted from EQBots.",
+    "Every chat disconnects. The Telegram Orchestrator and its conversations are deleted from Cat.",
   // {action} is a button, such as Pause; {name} is the chat name.
   "connector.telegram.rowAction": "{action}: {name}",
   "connector.telegram.linkChat": "Link a chat",
@@ -322,7 +322,7 @@ export const messages = defineMessages("connector", {
   "connector.telegram.openDirectChat": "Open a direct chat",
   "connector.telegram.orchestratorTitle": "Telegram Orchestrator",
   "connector.telegram.orchestratorDescription":
-    "This agent receives the messages for EQBots from all your Telegram chats. It answers short ones itself, gives other work to the right agent, and posts the answer in the chat.",
+    "This agent receives the messages for Cat from all your Telegram chats. It answers short ones itself, gives other work to the right agent, and posts the answer in the chat.",
   "connector.telegram.orchestratorNone": "No agent answers yet",
   "connector.telegram.orchestratorNoneDescription": "Add the Telegram Orchestrator, or Telegram gets no answer.",
   "connector.telegram.mentionNote":
@@ -332,7 +332,7 @@ export const messages = defineMessages("connector", {
   "connector.telegram.stepAgent": "Agent",
   "connector.telegram.connectTitle": "Link a Telegram chat",
   "connector.telegram.connectDescription":
-    "Add the EQBots bot to a group, or open a direct chat with it. One bot serves all your chats.",
+    "Add the Cat bot to a group, or open a direct chat with it. One bot serves all your chats.",
   "connector.telegram.connectStepBrowser": "Telegram opens in your browser",
   "connector.telegram.connectStepPick": "Select the group, or press Start in the direct chat",
   "connector.telegram.connectStepReturn": "This dialog continues when the chat is linked",
@@ -340,21 +340,21 @@ export const messages = defineMessages("connector", {
   "connector.telegram.agentStepTitle": "Add the Telegram Orchestrator",
   // {chat} is the Telegram chat name.
   "connector.telegram.agentStepDescription":
-    "This new agent answers the messages for EQBots in {chat} and in each chat that you link later.",
+    "This new agent answers the messages for Cat in {chat} and in each chat that you link later.",
   "connector.telegram.orchestratorName": "Telegram Orchestrator",
   "connector.telegram.orchestratorRole": "Answers in Telegram and asks the team",
-  "connector.telegram.orchestratorDoesReceive": "Receives every Telegram message for EQBots first",
+  "connector.telegram.orchestratorDoesReceive": "Receives every Telegram message for Cat first",
   "connector.telegram.orchestratorDoesDelegate": "Gives each task to the agent that fits best",
   "connector.telegram.orchestratorDoesAnswer": "Posts the answer in the Telegram chat",
   "connector.telegram.orchestratorModel": "Model",
-  "connector.telegram.doneTitle": "EQBots is in {chat}",
+  "connector.telegram.doneTitle": "Cat is in {chat}",
   "connector.telegram.done": "Done",
   "connector.telegram.disconnectTitle": "Disconnect {chat}?",
-  "connector.telegram.leaveDescription": "The EQBots bot leaves {chat}, and EQBots stops answering there.",
-  "connector.telegram.disconnectEffect": "People in {chat} can no longer reach your agents through the EQBots bot.",
-  "connector.telegram.removeEffectKept": "The conversations and the Telegram Orchestrator stay in EQBots.",
+  "connector.telegram.leaveDescription": "The Cat bot leaves {chat}, and Cat stops answering there.",
+  "connector.telegram.disconnectEffect": "People in {chat} can no longer reach your agents through the Cat bot.",
+  "connector.telegram.removeEffectKept": "The conversations and the Telegram Orchestrator stay in Cat.",
   "connector.telegram.removeEffectDeleted":
-    "This is the last chat, so the Telegram Orchestrator and its conversations are deleted from EQBots.",
+    "This is the last chat, so the Telegram Orchestrator and its conversations are deleted from Cat.",
   "connector.telegram.keep": "Keep connected",
   "connector.telegram.close": "Close",
   // Marketplace > Apps > WhatsApp: a WhatsApp number links this computer as a device, and the
@@ -385,13 +385,13 @@ export const messages = defineMessages("connector", {
   "connector.whatsapp.actionFailed": "WhatsApp did not accept the change",
   "connector.whatsapp.numbersTitle": "Numbers",
   "connector.whatsapp.linkNumber": "Link a number",
-  "connector.whatsapp.ownNumberNote": "Your “Message yourself” chat and the people you allow reach EQBots.",
-  "connector.whatsapp.dedicatedNote": "The people you allow reach EQBots. Other people get a code to give you.",
+  "connector.whatsapp.ownNumberNote": "Your “Message yourself” chat and the people you allow reach Cat.",
+  "connector.whatsapp.dedicatedNote": "The people you allow reach Cat. Other people get a code to give you.",
   "connector.whatsapp.helpLoggedOut": "WhatsApp removed this computer from the linked devices. Link the number again.",
   "connector.whatsapp.helpLoggedOutHost":
     "WhatsApp removed this server from the linked devices. Link the number again.",
-  "connector.whatsapp.helpError": "EQBots cannot reach WhatsApp on this number. Reconnect, or disconnect the number.",
-  "connector.whatsapp.retryAt": "WhatsApp asked EQBots to wait. It tries again at {time}.",
+  "connector.whatsapp.helpError": "Cat cannot reach WhatsApp on this number. Reconnect, or disconnect the number.",
+  "connector.whatsapp.retryAt": "WhatsApp asked Cat to wait. It tries again at {time}.",
   "connector.whatsapp.pause": "Pause",
   "connector.whatsapp.resume": "Resume",
   "connector.whatsapp.reconnect": "Reconnect",
@@ -401,18 +401,18 @@ export const messages = defineMessages("connector", {
   "connector.whatsapp.disconnectAllSummary":
     "Every number disconnects. People can no longer reach your agents through WhatsApp.",
   "connector.whatsapp.disconnectAllSummaryOrchestrator":
-    "Every number disconnects. The WhatsApp Orchestrator and its conversations are deleted from EQBots.",
+    "Every number disconnects. The WhatsApp Orchestrator and its conversations are deleted from Cat.",
   // {action} is a button, such as Pause; {name} is the WhatsApp number or a person's name.
   "connector.whatsapp.rowAction": "{action}: {name}",
   "connector.whatsapp.ownNumber": "Personal number",
   "connector.whatsapp.ownNumberDescription":
-    "Only your “Message yourself” chat and the people you allow can write. Turn off for a number only for EQBots.",
+    "Only your “Message yourself” chat and the people you allow can write. Turn off for a number only for Cat.",
   "connector.whatsapp.workingMessage": "“Working on it…” message",
   "connector.whatsapp.workingMessageDescription":
-    "EQBots posts it while the agent works, then replaces it with the answer. Turn off to post only the answer.",
+    "Cat posts it while the agent works, then replaces it with the answer. Turn off to post only the answer.",
   "connector.whatsapp.orchestratorTitle": "WhatsApp Orchestrator",
   "connector.whatsapp.orchestratorDescription":
-    "This agent receives the messages for EQBots from all your linked numbers. It answers short ones itself, gives other work to the right agent, and answers in WhatsApp.",
+    "This agent receives the messages for Cat from all your linked numbers. It answers short ones itself, gives other work to the right agent, and answers in WhatsApp.",
   "connector.whatsapp.orchestratorNone": "No agent answers yet",
   "connector.whatsapp.orchestratorNoneDescription": "Add the WhatsApp Orchestrator, or WhatsApp gets no answer.",
   "connector.whatsapp.note":
@@ -426,8 +426,8 @@ export const messages = defineMessages("connector", {
   "connector.whatsapp.kindLabel": "Number",
   "connector.whatsapp.kindPersonal": "My personal number",
   "connector.whatsapp.kindPersonalDescription":
-    "EQBots answers only your “Message yourself” chat and the people you allow.",
-  "connector.whatsapp.kindDedicated": "A number only for EQBots",
+    "Cat answers only your “Message yourself” chat and the people you allow.",
+  "connector.whatsapp.kindDedicated": "A number only for Cat",
   "connector.whatsapp.kindDedicatedDescription": "Unknown people get a code to give you. You approve them here.",
   "connector.whatsapp.methodLabel": "How to link",
   "connector.whatsapp.methodQr": "QR code",
@@ -454,27 +454,27 @@ export const messages = defineMessages("connector", {
   "connector.whatsapp.failedTimeout": "The code expired before the phone used it.",
   "connector.whatsapp.failedRefused": "WhatsApp refused the link. Wait a few minutes, then try again.",
   "connector.whatsapp.failedBusy": "Another link is running. Wait for it to end, then try again.",
-  "connector.whatsapp.failedUnavailable": "EQBots cannot reach WhatsApp. Check the internet connection.",
+  "connector.whatsapp.failedUnavailable": "Cat cannot reach WhatsApp. Check the internet connection.",
   "connector.whatsapp.tryAgain": "Try again",
   "connector.whatsapp.agentStepTitle": "Add the WhatsApp Orchestrator",
   // {number} is the WhatsApp number or its name.
   "connector.whatsapp.agentStepDescription":
-    "This new agent answers the messages for EQBots on {number} and on each number that you link later.",
+    "This new agent answers the messages for Cat on {number} and on each number that you link later.",
   "connector.whatsapp.orchestratorName": "WhatsApp Orchestrator",
   "connector.whatsapp.orchestratorRole": "Answers in WhatsApp and asks the team",
-  "connector.whatsapp.orchestratorDoesReceive": "Receives every WhatsApp message for EQBots first",
+  "connector.whatsapp.orchestratorDoesReceive": "Receives every WhatsApp message for Cat first",
   "connector.whatsapp.orchestratorDoesDelegate": "Gives each task to the agent that fits best",
   "connector.whatsapp.orchestratorDoesAnswer": "Answers in the WhatsApp chat",
   "connector.whatsapp.orchestratorModel": "Model",
-  "connector.whatsapp.doneTitle": "EQBots is linked to {number}",
+  "connector.whatsapp.doneTitle": "Cat is linked to {number}",
   "connector.whatsapp.done": "Done",
   "connector.whatsapp.disconnectTitle": "Disconnect {number}?",
   "connector.whatsapp.disconnectDescription":
-    "EQBots logs out of WhatsApp on {number}. If EQBots was off, also remove the device in WhatsApp > Linked devices.",
+    "Cat logs out of WhatsApp on {number}. If Cat was off, also remove the device in WhatsApp > Linked devices.",
   "connector.whatsapp.disconnectEffect": "People can no longer reach your agents through {number}.",
-  "connector.whatsapp.removeEffectKept": "The conversations and the WhatsApp Orchestrator stay in EQBots.",
+  "connector.whatsapp.removeEffectKept": "The conversations and the WhatsApp Orchestrator stay in Cat.",
   "connector.whatsapp.removeEffectDeleted":
-    "This is the last number, so the WhatsApp Orchestrator and its conversations are deleted from EQBots.",
+    "This is the last number, so the WhatsApp Orchestrator and its conversations are deleted from Cat.",
   "connector.whatsapp.keep": "Keep linked",
   "connector.whatsapp.close": "Close",
   // Who can give work through one number: contacts by phone number, and groups.
@@ -495,7 +495,7 @@ export const messages = defineMessages("connector", {
   "connector.whatsapp.groupDescription": "People in this group can give work to your agents.",
   "connector.whatsapp.groupSearch": "Search groups",
   "connector.whatsapp.groupsLoading": "Reading the groups…",
-  "connector.whatsapp.groupsLoadFailed": "EQBots could not read the groups",
+  "connector.whatsapp.groupsLoadFailed": "Cat could not read the groups",
   "connector.whatsapp.groupsEmpty": "This number is in no group.",
   "connector.whatsapp.groupsNoMatch": "No group has this name.",
   "connector.whatsapp.groupAdded": "Added",
@@ -511,9 +511,9 @@ export const messages = defineMessages("connector", {
   // Marketplace > 1Password: a vault that the user shares with OpenBot through a service account.
   "connector.onePassword.title": "1Password",
   "connector.onePassword.description":
-    "Share a dedicated 1Password vault with EQBots through a service account, so agents can sign in to sites in the EQBots browser.",
+    "Share a dedicated 1Password vault with Cat through a service account, so agents can sign in to sites in the Cat browser.",
   "connector.onePassword.howItWorks":
-    "Connecting sets up a “Shared with EQBots” vault in your 1Password account and a service account that can read only that vault. EQBots fills saved logins in its browser on this computer, so only the items you move into that vault are ever shared. Agents never see a password.",
+    "Connecting sets up a “Shared with Cat” vault in your 1Password account and a service account that can read only that vault. Cat fills saved logins in its browser on this computer, so only the items you move into that vault are ever shared. Agents never see a password.",
   "connector.onePassword.connect": "Connect 1Password",
   // The three setup steps before a connection, each with the one button it needs.
   "connector.onePassword.setupTitle": "Set up",
@@ -523,20 +523,20 @@ export const messages = defineMessages("connector", {
   // {version} is a version number, such as 2.39.0.
   "connector.onePassword.stepCliReady": "Version {version} is installed.",
   "connector.onePassword.stepCliMissing":
-    "EQBots downloads it from 1Password into its own folder. It needs no administrator password.",
+    "Cat downloads it from 1Password into its own folder. It needs no administrator password.",
   "connector.onePassword.stepCliManual":
-    "EQBots cannot install it on this computer. Install it from 1Password, then come back to this page.",
+    "Cat cannot install it on this computer. Install it from 1Password, then come back to this page.",
   "connector.onePassword.installCli": "Install",
   "connector.onePassword.stepAppTitle": "Turn on the CLI integration",
   "connector.onePassword.stepAppDescription":
     "In the 1Password app, open Settings > Developer and turn on “Integrate with 1Password CLI”.",
   "connector.onePassword.stepAppReady": "The 1Password app lets the CLI create the shared vault.",
   "connector.onePassword.openApp": "Open 1Password",
-  "connector.onePassword.openAppFailed": "EQBots could not open 1Password.",
+  "connector.onePassword.openAppFailed": "Cat could not open 1Password.",
   "connector.onePassword.checkAgain": "Check again",
   "connector.onePassword.stepVaultTitle": "Create the shared vault",
   "connector.onePassword.stepVaultDescription":
-    "EQBots creates the vault “Shared with EQBots” and a service account that can only read it. 1Password asks you to approve.",
+    "Cat creates the vault “Shared with Cat” and a service account that can only read it. 1Password asks you to approve.",
   // The last row of the setup steps: the other way to connect, without the CLI.
   "connector.onePassword.useTokenDescription":
     "Instead of these steps, paste a service account token from 1Password.com.",
@@ -547,7 +547,7 @@ export const messages = defineMessages("connector", {
   "connector.onePassword.approveInApp": "Approve the request in the 1Password app",
   "connector.onePassword.cancel": "Cancel",
   "connector.onePassword.chooseAccountTitle": "Choose an account",
-  "connector.onePassword.chooseAccountDescription": "EQBots creates the shared vault in the account you choose.",
+  "connector.onePassword.chooseAccountDescription": "Cat creates the shared vault in the account you choose.",
   "connector.onePassword.useAccount": "Use this account",
   "connector.onePassword.vaultTitle": "Shared vault",
   "connector.onePassword.vaultDescription":
@@ -558,40 +558,40 @@ export const messages = defineMessages("connector", {
   "connector.onePassword.disconnect": "Disconnect",
   "connector.onePassword.disconnectTitle": "Disconnect 1Password",
   "connector.onePassword.disconnectSummary":
-    "EQBots forgets the token. The vault and the service account stay in 1Password; remove them there if you no longer need them.",
-  "connector.onePassword.actionFailed": "EQBots could not change the 1Password connection.",
+    "Cat forgets the token. The vault and the service account stay in 1Password; remove them there if you no longer need them.",
+  "connector.onePassword.actionFailed": "Cat could not change the 1Password connection.",
   "connector.onePassword.statusConnected": "Connected",
   "connector.onePassword.statusConnecting": "Connecting",
   // The same page for the connection of a joined server. {host} is the server name, such as Studio.
   "connector.onePassword.descriptionHost":
-    "Share a dedicated 1Password vault with EQBots on {host} through a service account, so agents on {host} can sign in to sites in its browser.",
+    "Share a dedicated 1Password vault with Cat on {host} through a service account, so agents on {host} can sign in to sites in its browser.",
   "connector.onePassword.howItWorksHost":
-    "{host} connects with a service account token. On 1Password.com, create a service account that can read only the vault you share with EQBots, then paste its token here. {host} checks the token and keeps it; this computer does not. Agents never see a password.",
+    "{host} connects with a service account token. On 1Password.com, create a service account that can read only the vault you share with Cat, then paste its token here. {host} checks the token and keeps it; this computer does not. Agents never see a password.",
   "connector.onePassword.disconnectSummaryHost":
     "{host} forgets the token. The vault and the service account stay in 1Password; remove them there if you no longer need them.",
   "connector.bitwarden.title": "Bitwarden",
   "connector.bitwarden.description": "Fill browser logins from Bitwarden.",
   "connector.bitwarden.setup":
-    "Install the Bitwarden CLI and sign in with bw login. Create a folder named Shared with EQBots and put only the logins that agents may use in it. Run bw unlock --raw and paste the session key below. Do not paste your master password.",
+    "Install the Bitwarden CLI and sign in with bw login. Create a folder named Shared with Cat and put only the logins that agents may use in it. Run bw unlock --raw and paste the session key below. Do not paste your master password.",
   "connector.bitwarden.scope":
-    "All agents on this computer can use matching logins in Shared with EQBots. EQBots uses exact HTTPS origins. It does not use items that require a master password prompt or a custom URI match rule.",
+    "All agents on this computer can use matching logins in Shared with Cat. Cat uses exact HTTPS origins. It does not use items that require a master password prompt or a custom URI match rule.",
   "connector.bitwarden.session":
-    "The session key stays in memory. Connect again after 8 hours without vault use or after EQBots exits. Disconnect stops EQBots access; it does not lock other Bitwarden clients.",
+    "The session key stays in memory. Connect again after 8 hours without vault use or after Cat exits. Disconnect stops Cat access; it does not lock other Bitwarden clients.",
   "connector.bitwarden.sessionKey": "Bitwarden session key",
   "connector.bitwarden.connect": "Connect Bitwarden",
   "connector.bitwarden.disconnect": "Disconnect Bitwarden",
   "connector.bitwarden.disconnectAction": "Disconnect",
   "connector.bitwarden.disconnectSummary":
-    "EQBots forgets the session key. Agents can no longer fill logins from Bitwarden. Other Bitwarden clients stay unlocked.",
+    "Cat forgets the session key. Agents can no longer fill logins from Bitwarden. Other Bitwarden clients stay unlocked.",
   "connector.bitwarden.disconnectSummaryHost":
     "{host} removes the API key and the master password. Agents on {host} can no longer fill logins from Bitwarden.",
   "connector.bitwarden.connected": "Connected",
-  "connector.bitwarden.actionFailed": "EQBots could not change the Bitwarden connection.",
+  "connector.bitwarden.actionFailed": "Cat could not change the Bitwarden connection.",
   "connector.bitwarden.descriptionHost": "Fill browser logins on {host} from Bitwarden or Vaultwarden.",
   "connector.bitwarden.setupHost":
-    "{host} signs in with its own Bitwarden CLI. In your vault, create a folder named Shared with EQBots and put only the logins that agents may use in it. In the web vault, open Settings › Security › Keys and view your API key. Enter the server address, client_id, client_secret and your master password below.",
+    "{host} signs in with its own Bitwarden CLI. In your vault, create a folder named Shared with Cat and put only the logins that agents may use in it. In the web vault, open Settings › Security › Keys and view your API key. Enter the server address, client_id, client_secret and your master password below.",
   "connector.bitwarden.scopeHost":
-    "All agents on {host} can use matching logins in Shared with EQBots. EQBots uses exact HTTPS origins. It does not use items that require a master password prompt or a custom URI match rule.",
+    "All agents on {host} can use matching logins in Shared with Cat. Cat uses exact HTTPS origins. It does not use items that require a master password prompt or a custom URI match rule.",
   "connector.bitwarden.sessionHost":
     "{host} keeps the API key and the master password encrypted, so it can unlock again after a restart. This computer does not keep them. Disconnect removes them from {host}. {host} must reach the server address over HTTPS.",
   "connector.bitwarden.serverUrl": "Server address",
@@ -599,7 +599,7 @@ export const messages = defineMessages("connector", {
   "connector.bitwarden.folderDescription":
     "Move a login into this folder in Bitwarden to let agents sign in with it. Remove it to stop.",
   // The exact folder name that OpenBot looks for in the vault. Keep it in English.
-  "connector.bitwarden.folderName": "Shared with EQBots",
+  "connector.bitwarden.folderName": "Shared with Cat",
   "connector.bitwarden.folderKind": "Folder in Bitwarden",
   "connector.bitwarden.clientId": "API key client_id",
   "connector.bitwarden.clientSecret": "API key client_secret",
@@ -617,19 +617,19 @@ export const messages = defineMessages("connector", {
   "connector.protonPass.keyPlaceholder": "pst_…",
   "connector.protonPass.setupTitle": "Set up",
   "connector.protonPass.setupDescription":
-    "Connect opens the Proton sign-in in your browser. Then EQBots makes the shared vault and keeps only a read-only key for it.",
+    "Connect opens the Proton sign-in in your browser. Then Cat makes the shared vault and keeps only a read-only key for it.",
   "connector.protonPass.setupDescriptionHost":
     "Connect opens the Proton sign-in in your browser. Then {host} makes the shared vault and keeps only a read-only key for it.",
   // The exact vault name that OpenBot makes in Proton Pass. Keep it in English.
-  "connector.protonPass.vaultName": "Shared with EQBots",
-  "connector.protonPass.vaultSetup": "EQBots makes this vault when you connect. Move logins into it to share them.",
+  "connector.protonPass.vaultName": "Shared with Cat",
+  "connector.protonPass.vaultSetup": "Cat makes this vault when you connect. Move logins into it to share them.",
   "connector.protonPass.showSteps": "Show steps",
   "connector.protonPass.stepsLabel": "Connect steps",
   "connector.protonPass.stepSignIn": "Sign in",
   "connector.protonPass.stepVault": "Make the shared vault",
   "connector.protonPass.stepDone": "Done",
   "connector.protonPass.signInTitle": "Sign in to Proton",
-  "connector.protonPass.signInStarting": "EQBots starts the sign-in. The Proton page opens in your browser.",
+  "connector.protonPass.signInStarting": "Cat starts the sign-in. The Proton page opens in your browser.",
   "connector.protonPass.signInDescription":
     "The sign-in is open in your browser. Proton asks for your password and your second factor.",
   "connector.protonPass.signInDescriptionHost":
@@ -640,7 +640,7 @@ export const messages = defineMessages("connector", {
   "connector.protonPass.continue": "Continue",
   "connector.protonPass.setupStepTitle": "Making the shared vault",
   "connector.protonPass.setupStepDescription":
-    "EQBots makes the vault “{vault}” and a read-only key for it. Then it signs out of your Proton session.",
+    "Cat makes the vault “{vault}” and a read-only key for it. Then it signs out of your Proton session.",
   "connector.protonPass.doneTitle": "Proton Pass is connected",
   "connector.protonPass.doneDescription": "Move logins into “{vault}” to let agents sign in with them.",
   "connector.protonPass.failedTitle": "Proton Pass did not connect",
@@ -668,9 +668,9 @@ export const messages = defineMessages("connector", {
   "connector.protonPass.keyNoExpiry": "Read only. Does not expire.",
   "connector.protonPass.disconnectTitle": "Disconnect Proton Pass",
   "connector.protonPass.disconnectSummary":
-    "EQBots deletes its access key on this computer. The vault and its logins stay in your Proton account.",
+    "Cat deletes its access key on this computer. The vault and its logins stay in your Proton account.",
   "connector.protonPass.disconnectSummaryHost":
-    "EQBots deletes its access key on {host}. The vault and its logins stay in your Proton account.",
+    "Cat deletes its access key on {host}. The vault and its logins stay in your Proton account.",
   "connector.protonPass.disconnect": "Disconnect",
-  "connector.protonPass.actionFailed": "EQBots could not change the Proton Pass connection.",
+  "connector.protonPass.actionFailed": "Cat could not change the Proton Pass connection.",
 });

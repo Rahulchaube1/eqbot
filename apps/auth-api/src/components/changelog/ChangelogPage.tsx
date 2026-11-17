@@ -36,8 +36,8 @@ interface ReleaseMonth {
 
 /** The name of the app in each release title. */
 const PRODUCT_NAMES: Record<ChangelogPlatform, string> = {
-  desktop: "EQBots",
-  mobile: "EQBots Mobile",
+  desktop: "Cat",
+  mobile: "Cat Mobile",
 };
 
 /** The index in months, so 57 rows read as a few short runs rather than one column of numbers. */
@@ -149,7 +149,7 @@ export function ChangelogPage(props: ChangelogPageProps) {
             <div class="changelog-hero-copy" data-enter="post-copy">
               <p class="changelog-eyebrow">Changelog</p>
               <h1 class="changelog-title" id="changelog-title">
-                What's new in EQBots
+                What's new in Cat
               </h1>
               <p class="changelog-lede">
                 New providers, new ways to work as a team, and the fixes that make each release steadier. Every release

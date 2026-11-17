@@ -81,20 +81,20 @@ const DEFAULT_DESKTOP_VERSION = "0.70.0";
 function defaultInstallerFileName(platform: AvailableDownloadPlatform, architecture: DownloadArchitecture): string {
   if (platform === "macos") {
     return architecture === "x64"
-      ? `EQBots-${DEFAULT_DESKTOP_VERSION}-x64.dmg`
-      : `EQBots-${DEFAULT_DESKTOP_VERSION}-arm64.dmg`;
+      ? `Cat-${DEFAULT_DESKTOP_VERSION}-x64.dmg`
+      : `Cat-${DEFAULT_DESKTOP_VERSION}-arm64.dmg`;
   }
   if (platform === "linux") {
     return architecture === "arm64"
-      ? `EQBots-${DEFAULT_DESKTOP_VERSION}-arm64.AppImage`
-      : `EQBots-${DEFAULT_DESKTOP_VERSION}-x86_64.AppImage`;
+      ? `Cat-${DEFAULT_DESKTOP_VERSION}-arm64.AppImage`
+      : `Cat-${DEFAULT_DESKTOP_VERSION}-x86_64.AppImage`;
   }
-  return `EQBots-${DEFAULT_DESKTOP_VERSION}-x64.exe`;
+  return `Cat-${DEFAULT_DESKTOP_VERSION}-x64.exe`;
 }
 
 function installerAttachmentResponse(fileName: string, label: string): Response {
   const payload = new TextEncoder().encode(
-    `EQBots (by EverestQai) v${DEFAULT_DESKTOP_VERSION} installer package for ${label} (${fileName})\nhttps://www.everestqai.com\n`,
+    `Cat (by EverestQai) v${DEFAULT_DESKTOP_VERSION} installer package for ${label} (${fileName})\nhttps://www.everestqai.com\n`,
   );
   return new Response(payload, {
     status: 200,
@@ -109,7 +109,7 @@ function installerAttachmentResponse(fileName: string, label: string): Response 
 
 /**
  * The APK of the newest Android version. Serves a direct attachment download response for the
- * EQBots Android APK.
+ * Cat Android APK.
  */
 export function androidApkResponse(): Response {
   const version = androidApkVersion() ?? DEFAULT_DESKTOP_VERSION;
@@ -118,14 +118,14 @@ export function androidApkResponse(): Response {
 }
 
 /**
- * Serves a direct attachment download response for the EQBots iOS package.
+ * Serves a direct attachment download response for the Cat iOS package.
  */
 export function iosDownloadResponse(): Response {
-  return installerAttachmentResponse(`EQBots-${DEFAULT_DESKTOP_VERSION}-ios.ipa`, "iOS (iPhone / iPad)");
+  return installerAttachmentResponse(`Cat-${DEFAULT_DESKTOP_VERSION}-ios.ipa`, "iOS (iPhone / iPad)");
 }
 
 /**
- * When the GitHub release manifest is unavailable, serve the direct EQBots installer package for
+ * When the GitHub release manifest is unavailable, serve the direct Cat installer package for
  * the requested platform and architecture.
  */
 function fallbackToReleases(
@@ -133,7 +133,7 @@ function fallbackToReleases(
   architecture: DownloadArchitecture,
   reason: string,
 ): Response {
-  console.warn(`latest-download: serving direct EQBots installer for ${platform} (${architecture}: ${reason})`);
+  console.warn(`latest-download: serving direct Cat installer for ${platform} (${architecture}: ${reason})`);
   const fileName = defaultInstallerFileName(platform, architecture);
   return installerAttachmentResponse(fileName, `${platform} (${architecture})`);
 }

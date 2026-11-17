@@ -104,21 +104,21 @@ export function WhatAreAIAgents() {
         action.
       </p>
 
-      <h2>AI Agents in EQBots</h2>
+      <h2>AI Agents in Cat</h2>
       <p>
-        EQBots gives each agent a role, workspace, and conversation. Agents can hand work and files to one another while
-        the project stays together. EQBots organizes the work around the connected provider; that provider still handles
+        Cat gives each agent a role, workspace, and conversation. Agents can hand work and files to one another while
+        the project stays together. Cat organizes the work around the connected provider; that provider still handles
         the model requests.
       </p>
       <p>
-        EQBots is local-first, but that does not necessarily mean the model runs on your computer. The workspace can be
+        Cat is local-first, but that does not necessarily mean the model runs on your computer. The workspace can be
         local while a connected provider handles the requests. For a closer look, see{" "}
         <Link to="/guides/$slug" params={{ slug: "openbot-101" }}>
-          How to Use EQBots
+          How to Use Cat
         </Link>
         . To see how this differs from an agent app that runs in the cloud, read{" "}
         <Link to="/compare/$slug" params={{ slug: "grok-bot" }}>
-          EQBots vs Grok Bot
+          Cat vs Grok Bot
         </Link>
         .
       </p>

@@ -33,7 +33,7 @@ export function BrandPage() {
             <div class="brand-hero-text">
               <h1 class="post-article-title brand-hero-title">Brand</h1>
               <p class="post-article-standfirst brand-hero-intro">
-                The EQBots and EverestQai logos in each shape and color. Right-click a logo to save or copy it.
+                The Cat and EverestQai logos in each shape and color. Right-click a logo to save or copy it.
               </p>
             </div>
             <DownloadAllButton />
@@ -174,7 +174,7 @@ function BrandAssetCard(props: { asset: BrandAsset }) {
         <img
           class="brand-card-image"
           src={brandAssetPath(props.asset)}
-          alt={`EQBots ${props.asset.label}`}
+          alt={`Cat ${props.asset.label}`}
           width={props.asset.width}
           height={props.asset.height}
         />

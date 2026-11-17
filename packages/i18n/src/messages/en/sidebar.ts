@@ -120,7 +120,7 @@ export const messages = defineMessages("sidebar", {
   "sidebar.delete.pending": "Deleting…",
   "sidebar.delete.title": "Delete {name}?",
   "sidebar.delete.agentDescription":
-    "This removes the agent and its EQBots conversation from the app. Its queue, memories, routines, and workspace are deleted. History stored separately by the connected CLI provider is not deleted.",
+    "This removes the agent and its Cat conversation from the app. Its queue, memories, routines, and workspace are deleted. History stored separately by the connected CLI provider is not deleted.",
   "sidebar.delete.channelDescription":
     "This stops the channel. Its history stays in Deleted channels for preview only. You can restore it from there. Member agents are kept.",
   "sidebar.delete.sectionDescription":
@@ -134,7 +134,7 @@ export const messages = defineMessages("sidebar", {
   "sidebar.announce.movedPinned": "Moved pinned chat to position {position} of {total}.",
   "sidebar.announce.personFallback": "person",
   "sidebar.announce.chatFallback": "chat",
-  "sidebar.mobileApp.title": "EQBots for mobile",
+  "sidebar.mobileApp.title": "Cat for mobile",
   "sidebar.mobileApp.body": "The app is now on iPhone and Android.",
   "sidebar.mobileApp.howToInstall": "How to install",
   "sidebar.mobileApp.dismiss": "Dismiss the mobile app announcement",
@@ -159,6 +159,6 @@ export const messages = defineMessages("sidebar", {
   "sidebar.community.title": "Pull up a chair.",
   "sidebar.community.body": "There’s a place for you in the AI future. Join the community on Discord and X.",
   "sidebar.community.joinDiscord": "Join the Discord",
-  "sidebar.community.followX": "Follow EQBots on X",
+  "sidebar.community.followX": "Follow Cat on X",
   "sidebar.community.dismiss": "Dismiss the community invitation",
 });

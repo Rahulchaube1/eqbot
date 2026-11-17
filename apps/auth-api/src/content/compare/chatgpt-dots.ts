@@ -12,7 +12,7 @@ const OPENAI_HELP = "https://help.openai.com/en/articles";
 export const CHATGPT_DOTS_COMPARISON: Comparison = {
   rival: { name: "ChatGPT dots", mark: "chatgpt-dots" },
   answer:
-    "Choose EQBots if you want a team of agents on your own computer, in any country, with your ChatGPT plan and the other AI plans you already pay for, such as Claude, Gemini or Grok: the app is free. Choose ChatGPT dots if you pay for ChatGPT Pro or Business Premium, and you want one always-on agent in OpenAI's cloud.",
+    "Choose Cat if you want a team of agents on your own computer, in any country, with your ChatGPT plan and the other AI plans you already pay for, such as Claude, Gemini or Grok: the app is free. Choose ChatGPT dots if you pay for ChatGPT Pro or Business Premium, and you want one always-on agent in OpenAI's cloud.",
   chooseOpenBot: [
     "You live in the European Economic Area, Switzerland or the UK, where ChatGPT Pro does not include dots.",
     "You want ChatGPT, Claude, Gemini, Grok, Cursor, Cline, Muse Code and Pi agents in one team, or your own model.",
@@ -37,7 +37,7 @@ export const CHATGPT_DOTS_COMPARISON: Comparison = {
     {
       icon: "laptop",
       topic: "Where agents work",
-      openbot: "On the computer that runs EQBots.",
+      openbot: "On the computer that runs Cat.",
       rival:
         "On a cloud computer that OpenAI runs for each dot, with Linux and Chrome. If you allow it in the ChatGPT desktop app, a dot can also use your computer.",
       better: "openbot",
@@ -136,7 +136,7 @@ export const CHATGPT_DOTS_COMPARISON: Comparison = {
     },
   ],
   intro:
-    "OpenAI started dots, its always-on agents in ChatGPT, on 29 September 2026. Each dot runs on GPT-6 Astra, has its own cloud computer, learns from your feedback, and works toward your goals around the clock, with more than 4,000 apps through plugins. EQBots also works with your ChatGPT plan: Codex is one of its agents. The difference is where the agents run, how many work together, and where you can use them. A dot is one agent in OpenAI's cloud, and ChatGPT Pro does not include it in the European Economic Area, Switzerland or the UK. EQBots runs a team of agents on your own computer, in any country, with ChatGPT and the other AI plans you choose.",
+    "OpenAI started dots, its always-on agents in ChatGPT, on 29 September 2026. Each dot runs on GPT-6 Astra, has its own cloud computer, learns from your feedback, and works toward your goals around the clock, with more than 4,000 apps through plugins. Cat also works with your ChatGPT plan: Codex is one of its agents. The difference is where the agents run, how many work together, and where you can use them. A dot is one agent in OpenAI's cloud, and ChatGPT Pro does not include it in the European Economic Area, Switzerland or the UK. Cat runs a team of agents on your own computer, in any country, with ChatGPT and the other AI plans you choose.",
   sections: [
     {
       title: "Models and the plans you pay for",
@@ -154,7 +154,7 @@ export const CHATGPT_DOTS_COMPARISON: Comparison = {
     },
     {
       title: "Where you can use it",
-      openbot: `EQBots has no region lock: download it and run it in any country. The interface is in ${OPENBOT_LANGUAGE_COUNT} languages. Hosted EQBots servers run in the EU, and you can pay for them in euros, US dollars or Polish złoty. Each AI provider decides where its own plan works, so check that your provider is available in your country.`,
+      openbot: `Cat has no region lock: download it and run it in any country. The interface is in ${OPENBOT_LANGUAGE_COUNT} languages. Hosted Cat servers run in the EU, and you can pay for them in euros, US dollars or Polish złoty. Each AI provider decides where its own plan works, so check that your provider is available in your country.`,
       rival:
         "On ChatGPT Pro, dots started in the ChatGPT markets except the European Economic Area, Switzerland and the UK, and OpenAI gives no date for them. On Business Premium, dots are in all the countries where ChatGPT is available. You must be 18 or older, and access can take several days to reach your account. Texting a dot is a beta for Pro users in the US only.",
       better: "openbot",
@@ -175,7 +175,7 @@ export const CHATGPT_DOTS_COMPARISON: Comparison = {
     {
       title: "Data and privacy",
       openbot:
-        "EQBots keeps workspaces, conversations, attachments and browser data in a SQLite database on the computer that runs it. EQBots keeps no other copy. On a hosted EQBots server, the database is on that server in the EU. An account holds your profile, team memberships, invitations, sign-in sessions, the settings that let devices find each other, and any agent templates that you publish. Product analytics, which never include chat content, are on by default and linked to your account when you sign in; you can turn them off in Settings.",
+        "Cat keeps workspaces, conversations, attachments and browser data in a SQLite database on the computer that runs it. Cat keeps no other copy. On a hosted Cat server, the database is on that server in the EU. An account holds your profile, team memberships, invitations, sign-in sessions, the settings that let devices find each other, and any agent templates that you publish. Product analytics, which never include chat content, are on by default and linked to your account when you sign in; you can turn them off in Settings.",
       rival:
         "A dot keeps what it learns from chats and connected apps for as long as you keep the dot. You cannot see, change or delete a single memory: only a reset of the dot deletes them, and the files and chats that it made stay. A dot shares memory with ChatGPT. On Business, Enterprise and Edu plans, OpenAI does not train on your data by default; on personal plans, the training setting also covers what a dot does. People at OpenAI can review content even with training off.",
       better: "openbot",
@@ -183,39 +183,39 @@ export const CHATGPT_DOTS_COMPARISON: Comparison = {
   ],
   faq: [
     {
-      question: "Is EQBots an alternative to ChatGPT dots?",
+      question: "Is Cat an alternative to ChatGPT dots?",
       answer:
-        "Yes, if you want your agents on your own computer. Both give you agents that keep working on your goals, and both work with your ChatGPT plan. EQBots runs a team of agents on your computer, with Codex and the other providers you choose. A dot is one OpenAI agent on a cloud computer at OpenAI.",
+        "Yes, if you want your agents on your own computer. Both give you agents that keep working on your goals, and both work with your ChatGPT plan. Cat runs a team of agents on your computer, with Codex and the other providers you choose. A dot is one OpenAI agent on a cloud computer at OpenAI.",
     },
     {
       question: "Can I use ChatGPT dots in the EU or the UK?",
       answer:
-        "Not with ChatGPT Pro, for now. Dots started for Pro in the ChatGPT markets except the European Economic Area, Switzerland and the UK, and OpenAI gives no date for them. Business Premium includes dots in all ChatGPT countries. EQBots has no region lock: it runs on your own computer in any country, and hosted EQBots servers run in the EU.",
+        "Not with ChatGPT Pro, for now. Dots started for Pro in the ChatGPT markets except the European Economic Area, Switzerland and the UK, and OpenAI gives no date for them. Business Premium includes dots in all ChatGPT countries. Cat has no region lock: it runs on your own computer in any country, and hosted Cat servers run in the EU.",
     },
     {
-      question: "Can I use my ChatGPT plan with EQBots?",
+      question: "Can I use my ChatGPT plan with Cat?",
       answer:
-        "Yes. EQBots runs Codex with your own ChatGPT plan, so the ChatGPT plan that you pay for works in EQBots too. Next to it, Claude Code uses your Claude plan, Gemini a Google AI Pro or Ultra plan, Grok CLI your Grok account or an xAI API key, Cursor CLI your Cursor plan, Cline your Cline account, and Muse Code your Meta account. When a plan reaches its limit, an agent can move to a backup model on another provider. EQBots adds no charge of its own.",
+        "Yes. Cat runs Codex with your own ChatGPT plan, so the ChatGPT plan that you pay for works in Cat too. Next to it, Claude Code uses your Claude plan, Gemini a Google AI Pro or Ultra plan, Grok CLI your Grok account or an xAI API key, Cursor CLI your Cursor plan, Cline your Cline account, and Muse Code your Meta account. When a plan reaches its limit, an agent can move to a backup model on another provider. Cat adds no charge of its own.",
     },
     {
       question: "How much does ChatGPT dots cost?",
       answer:
-        "Your first dot is included in ChatGPT Pro, which costs $100, $200 or $500 a month, or in Business Premium, which costs $125 a seat a month, or $100 with annual billing, for 2 seats or more. OpenAI says that you can add more dots later, but gives no price. EQBots is free for noncommercial use, and it uses the plans you already pay for.",
+        "Your first dot is included in ChatGPT Pro, which costs $100, $200 or $500 a month, or in Business Premium, which costs $125 a seat a month, or $100 with annual billing, for 2 seats or more. OpenAI says that you can add more dots later, but gives no price. Cat is free for noncommercial use, and it uses the plans you already pay for.",
     },
     {
       question: "Does a dot run on my computer?",
       answer:
-        "No. Each dot works on its own cloud computer at OpenAI. Access to your computer is off at the start; you can allow it in the ChatGPT desktop app, and revoke it there. EQBots agents work on your computer, or on a hosted EQBots server that you choose.",
+        "No. Each dot works on its own cloud computer at OpenAI. Access to your computer is off at the start; you can allow it in the ChatGPT desktop app, and revoke it there. Cat agents work on your computer, or on a hosted Cat server that you choose.",
     },
     {
       question: "Do agents keep working when my laptop is closed?",
       answer:
-        "Yes, with both. A dot works on OpenAI's cloud computer, so no computer of yours must stay on. EQBots agents work on the computer or server that runs EQBots: keep that computer on, or use a hosted EQBots server, and connect from your laptop or phone.",
+        "Yes, with both. A dot works on OpenAI's cloud computer, so no computer of yours must stay on. Cat agents work on the computer or server that runs Cat: keep that computer on, or use a hosted Cat server, and connect from your laptop or phone.",
     },
     {
       question: "Is ChatGPT dots open source?",
       answer:
-        "No. Dots are a closed service that runs only in OpenAI's cloud. The auto-review rules that check a dot's actions are in the open-source Codex repository. EQBots's source code is on GitHub under the PolyForm Noncommercial License 1.0.0.",
+        "No. Dots are a closed service that runs only in OpenAI's cloud. The auto-review rules that check a dot's actions are in the open-source Codex repository. Cat's source code is on GitHub under the PolyForm Noncommercial License 1.0.0.",
     },
   ],
   sources: [
@@ -236,8 +236,8 @@ export const CHATGPT_DOTS_COMPARISON: Comparison = {
     { label: "ChatGPT supported countries", url: `${OPENAI_HELP}/7947663-chatgpt-supported-countries` },
     { label: "DevDay 2026 recap", url: "https://openai.com/index/devday-2026-recap/" },
     { label: "Codex auto-review", url: "https://learn.chatgpt.com/docs/sandboxing/auto-review" },
-    { label: "EQBots privacy notes", url: OPENBOT_LINKS.privacy },
-    { label: "EQBots source code", url: OPENBOT_LINKS.repository },
+    { label: "Cat privacy notes", url: OPENBOT_LINKS.privacy },
+    { label: "Cat source code", url: OPENBOT_LINKS.repository },
   ],
   checkedAt: "2026-10-02",
 };

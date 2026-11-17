@@ -48,7 +48,7 @@ export function LandingFooter() {
               aria-label={chrome().text.home}
             >
               <AppLogo variant="production" class="landing-footer-logo" />
-              <span>EQBots</span>
+              <span>Cat</span>
             </Link>
 
             <p class="landing-footer-description">{text().description}</p>
@@ -85,7 +85,7 @@ export function LandingFooter() {
                   "border-radius": "4px",
                 }}
               />
-              <span>EQBots is a product of EverestQai</span>
+              <span>Cat is a product of EverestQai</span>
             </a>
 
             <Link class="landing-footer-cta" to="/download">

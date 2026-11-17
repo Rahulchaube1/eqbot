@@ -475,7 +475,7 @@ export const messages = {
   "chat.suggestion.detailsNamed": "{name} uygulamasını Pazaryerinde aç",
   "chat.suggestion.dismissed": "{name} önerisi kapatıldı.",
   "chat.suggestion.undo": "Geri al",
-  "chat.suggestion.localOnly": "{name} bağlantısını kendi bilgisayarınızdaki EQBots'ta kurun.",
+  "chat.suggestion.localOnly": "{name} bağlantısını kendi bilgisayarınızdaki Cat'ta kurun.",
   "chat.suggestion.unavailable": "Bu sunucu {name} uygulamasını bağlayamaz.",
   "chat.serverInstall.title": "Yeni sunucu",
   "chat.serverInstall.expired": "Komutun süresi doldu. Ajandan yenisini isteyin.",
@@ -490,6 +490,6 @@ export const messages = {
   "chat.reference.open.thread": "{name} mesaj dizisini aç",
   "chat.feedbackSent.title": "Geri bildirimin için teşekkürler 🙏",
   "chat.feedbackSent.badge": "Gönderildi",
-  "chat.feedbackSent.body": "EQBots ekibi okuyup ilgilenecek 💜",
+  "chat.feedbackSent.body": "Cat ekibi okuyup ilgilenecek 💜",
   "chat.feedbackSent.openNamed": "GitHub'da #{number} numaralı issue'yu aç",
 } as const satisfies PartialTranslation<typeof source>;

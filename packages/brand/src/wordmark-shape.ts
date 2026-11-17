@@ -1,4 +1,4 @@
-// The name in the EQBots logo as plain outlines, so a logo file looks the same on a computer that
+// The name in the Cat logo as plain outlines, so a logo file looks the same on a computer that
 // does not have Inter. Use it with the mark in `app-logo-shape.ts`, as the brand page does.
 //
 // The outlines are "EQ" in Inter Regular and "Bots" in Inter Medium, set in the same 215-unit

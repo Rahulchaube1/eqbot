@@ -6,28 +6,28 @@ export function OpenBotHostedServers() {
   return (
     <>
       <p>
-        Running EQBots for a team on your own computer or VPS gives you control, but you’re also responsible for
-        maintaining that machine. An EQBots hosted server gives your team a Linux machine to work on, without requiring
+        Running Cat for a team on your own computer or VPS gives you control, but you’re also responsible for
+        maintaining that machine. An Cat hosted server gives your team a Linux machine to work on, without requiring
         you to set up a VPS yourself. This guide covers the available plans, how to get started, and when self-hosting
         might make more sense.
       </p>
 
-      <h2>What Is an EQBots Hosted Server?</h2>
+      <h2>What Is an Cat Hosted Server?</h2>
       <p>
-        An EQBots hosted server is a Linux machine where your team’s EQBots runs. EQBots sets it up for you, so you
+        An Cat hosted server is a Linux machine where your team’s Cat runs. Cat sets it up for you, so you
         don’t need to prepare your own computer or VPS. Your agents’ workspaces, conversations, and files stay on the
         server, and you can connect to your team from another device. Hosted servers run in the EU.
       </p>
       <p>
-        The server provides a place for EQBots to run; it doesn’t include AI model access. You connect a provider
+        The server provides a place for Cat to run; it doesn’t include AI model access. You connect a provider
         separately, and your agents use the models available through that provider.
       </p>
       <p>
-        Prefer a Mac as your server? That’s an option too. We can run EQBots on a dedicated Mac mini. Get in touch, and
+        Prefer a Mac as your server? That’s an option too. We can run Cat on a dedicated Mac mini. Get in touch, and
         we can work out the details together.
       </p>
 
-      <h2>EQBots Hosted Server Plans</h2>
+      <h2>Cat Hosted Server Plans</h2>
       <p>
         The plans differ mainly in how many team members can join, how much storage is available, and how quickly the
         server runs—not in the number of agents you can create.
@@ -53,7 +53,7 @@ export function OpenBotHostedServers() {
       </p>
       <ArticleImage
         src={pricing}
-        alt="EQBots hosted server pricing with Starter, Standard, and Pro plans. The yearly billing option is selected, showing member limits, storage, and speed for each plan."
+        alt="Cat hosted server pricing with Starter, Standard, and Pro plans. The yearly billing option is selected, showing member limits, storage, and speed for each plan."
         width={1528}
         height={1232}
         caption="The hosted server plans differ in team size, storage, and speed. Yearly billing saves 20%."
@@ -61,11 +61,11 @@ export function OpenBotHostedServers() {
 
       <h2>Getting Started with a Hosted Server</h2>
       <p>
-        Once you choose a plan and complete payment, EQBots provisions a Linux server and connects it to your app. It
+        Once you choose a plan and complete payment, Cat provisions a Linux server and connects it to your app. It
         then takes you straight to provider setup, so you don’t need to look for it in Server settings.
       </p>
       <p>
-        Connect an AI provider before creating your first agent. The server plan covers the machine EQBots runs on;
+        Connect an AI provider before creating your first agent. The server plan covers the machine Cat runs on;
         model access comes from the provider you connect. After that, you can set up agents for your team and invite
         teammates to join.
       </p>
@@ -77,7 +77,7 @@ export function OpenBotHostedServers() {
         routine runs at the right time.
       </p>
       <p>
-        Messages and webhooks wake it too. When someone mentions EQBots or messages it in Slack, Discord or Telegram,
+        Messages and webhooks wake it too. When someone mentions Cat or messages it in Slack, Discord or Telegram,
         the server starts and answers once it is back online. A webhook routine works the same way: the first delivery
         gets a “try again later” answer and starts the server, which takes a few minutes. A later try reaches it. Most
         webhook senders, such as Shopify and Stripe, try again on their own for hours.
@@ -85,16 +85,16 @@ export function OpenBotHostedServers() {
 
       <h2>Hosted Server or Self-Hosting?</h2>
       <p>
-        Many teams wonder whether to use an EQBots hosted server or run one themselves. The main difference is who
+        Many teams wonder whether to use an Cat hosted server or run one themselves. The main difference is who
         provides and looks after the machine. Here’s what to consider when choosing between the two.
       </p>
       <p>
-        With a hosted server, EQBots provides the Linux machine, so your team doesn’t need to set up or maintain its own
-        server computer. If you self-host, EQBots runs on a machine you control. You have more control over the
+        With a hosted server, Cat provides the Linux machine, so your team doesn’t need to set up or maintain its own
+        server computer. If you self-host, Cat runs on a machine you control. You have more control over the
         hardware, but keeping it available and maintaining it are up to you.
       </p>
       <p>
-        A hosted server suits teams that want to use EQBots without looking after a machine. Self-hosting makes more
+        A hosted server suits teams that want to use Cat without looking after a machine. Self-hosting makes more
         sense if you already have suitable hardware and want to manage the setup yourself. See our guide to{" "}
         <Link to="/news/$slug" params={{ slug: "run-the-team-server-yourself" }}>
           running the team server yourself
@@ -104,7 +104,7 @@ export function OpenBotHostedServers() {
 
       <h2>In Short</h2>
       <p>
-        If you want a team server without setting up and maintaining the machine yourself, an EQBots hosted server
+        If you want a team server without setting up and maintaining the machine yourself, an Cat hosted server
         handles that part. If you’d rather use hardware you control and manage the setup, self-hosting is another
         option.
       </p>

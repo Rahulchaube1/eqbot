@@ -7,7 +7,7 @@
   "redirects": [
     {
       "source": "/download/windows/latest",
-      "destination": "https://github.com/Rahulchaube1/eqbot/releases/download/eqbots-windows-v0.70.0/EQBots-0.70.0-x64.exe",
+      "destination": "https://github.com/Rahulchaube1/eqbot/releases/download/eqbots-windows-v0.70.0/Cat-0.70.0-x64.exe",
       "permanent": false
     },
     {

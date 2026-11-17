@@ -9,7 +9,7 @@ export const messages = {
   "remoteDesktop.workspaceLabel": "Zdalne sterowanie",
   "remoteDesktop.displayLabel": "Zdalny ekran",
   "remoteDesktop.selectDisplay": "Wybierz ekran",
-  "remoteDesktop.backToOpenBot": "Wróć do EQBots",
+  "remoteDesktop.backToOpenBot": "Wróć do Cat",
   "remoteDesktop.disconnect": "Rozłącz",
   "remoteDesktop.viewerTitle": "Zdalny pulpit Sunshine",
   "remoteDesktop.viewerLoadFailed": "Nie udało się wczytać podglądu Moonlight.",
@@ -20,7 +20,7 @@ export const messages = {
   "remoteDesktop.openFailed": "Nie udało się otworzyć pulpitu",
   "remoteDesktop.notSharingTitle": "{name} nie udostępnia ekranu",
   "remoteDesktop.notSharingDescription":
-    "Serwer blokuje EQBots przed nagrywaniem ekranu. Na tamtym serwerze otwórz Ustawienia systemowe → Prywatność i ochrona → Nagrywanie ekranu, włącz EQBots, a potem spróbuj ponownie tutaj.",
+    "Serwer blokuje Cat przed nagrywaniem ekranu. Na tamtym serwerze otwórz Ustawienia systemowe → Prywatność i ochrona → Nagrywanie ekranu, włącz Cat, a potem spróbuj ponownie tutaj.",
   "remoteDesktop.setup.check.screenRecording": "Nagrywanie ekranu",
   "remoteDesktop.setup.check.accessibility": "Dostępność",
   "remoteDesktop.setup.check.service": "Usługa Sunshine",
@@ -40,7 +40,7 @@ export const messages = {
   "remoteDesktop.setup.startFailed": "Nie udało się uruchomić testu zdalnego pulpitu.",
   "remoteDesktop.setup.connectionLost": "Utracono połączenie testowe.",
   "remoteDesktop.setup.hostUpdateRequired":
-    "Zaktualizuj EQBots na serwerze, aby sprawdzić uprawnienia i przetestować zdalny pulpit.",
+    "Zaktualizuj Cat na serwerze, aby sprawdzić uprawnienia i przetestować zdalny pulpit.",
   "remoteDesktop.setup.permissions": "Uprawnienia",
   "remoteDesktop.setup.checked": "Sprawdzono",
   "remoteDesktop.setup.checkAgain": "Sprawdź ponownie",
@@ -75,12 +75,12 @@ export const messages = {
   "remoteDesktop.setup.finishTest": "Zakończ test",
   "remoteDesktop.host.questionTitle": "{name} chce sterować tym komputerem",
   "remoteDesktop.host.questionDetail":
-    "{name} zobaczy twój ekran i uzyska dostęp do myszy i klawiatury. Jeśli nie odpowiesz w ciągu 30 sekund, EQBots odrzuci prośbę.",
+    "{name} zobaczy twój ekran i uzyska dostęp do myszy i klawiatury. Jeśli nie odpowiesz w ciągu 30 sekund, Cat odrzuci prośbę.",
   "remoteDesktop.host.allow": "Zezwól",
   "remoteDesktop.host.deny": "Odrzuć",
   "remoteDesktop.host.startedTitle": "Rozpoczęto zdalne sterowanie",
   "remoteDesktop.host.startedBody": "{name} steruje teraz tym komputerem.",
-  "remoteDesktop.host.trayTooltip": "EQBots: zdalne sterowanie jest włączone",
+  "remoteDesktop.host.trayTooltip": "Cat: zdalne sterowanie jest włączone",
   "remoteDesktop.host.trayControlledBy": "{name} steruje tym komputerem",
   "remoteDesktop.host.stopAll": "Zatrzymaj całe zdalne sterowanie",
 } as const satisfies PartialTranslation<typeof source>;

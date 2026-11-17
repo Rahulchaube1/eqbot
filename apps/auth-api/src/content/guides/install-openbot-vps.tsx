@@ -5,25 +5,25 @@ export function InstallOpenBotVPS() {
   return (
     <>
       <p>
-        Installing EQBots on a VPS gives your agents a computer that can stay running when you close your laptop. Their
-        files, conversations and tools live on the server, and you connect from the EQBots app or your browser.
+        Installing Cat on a VPS gives your agents a computer that can stay running when you close your laptop. Their
+        files, conversations and tools live on the server, and you connect from the Cat app or your browser.
       </p>
 
       <p>
-        You can install EQBots directly on Ubuntu or run the official Docker image. Both methods connect the server to
-        your EQBots account. Choose one, then follow the same steps to open the server and set up your first agent.
+        You can install Cat directly on Ubuntu or run the official Docker image. Both methods connect the server to
+        your Cat account. Choose one, then follow the same steps to open the server and set up your first agent.
       </p>
 
       <h2>What you need</h2>
 
       <p>
         For the Ubuntu method, use a 64-bit VPS running <strong>Ubuntu 24.04 LTS</strong>, with <strong>systemd</strong>{" "}
-        and access to <strong>sudo</strong>. EQBots provides builds for x86_64 and arm64. Ubuntu 24.04 is the baseline
+        and access to <strong>sudo</strong>. Cat provides builds for x86_64 and arm64. Ubuntu 24.04 is the baseline
         used for the full installation tests in the project's documentation.
       </p>
 
       <p>
-        Have your SSH login details ready, plus access to the email address you use for EQBots. You will also need
+        Have your SSH login details ready, plus access to the email address you use for Cat. You will also need
         access to an AI provider when you create an agent. The server installation does not include an AI subscription.
       </p>
 
@@ -66,20 +66,20 @@ export function InstallOpenBotVPS() {
             <td>
               <strong>Ubuntu installer</strong>
             </td>
-            <td>You want EQBots to run as a system service on the VPS.</td>
+            <td>You want Cat to run as a system service on the VPS.</td>
           </tr>
           <tr>
             <td>
               <strong>Docker Compose</strong>
             </td>
-            <td>You already manage services with Docker, or prefer to keep EQBots in a container.</td>
+            <td>You already manage services with Docker, or prefer to keep Cat in a container.</td>
           </tr>
         </tbody>
       </table>
 
       <h3>Option A: Install directly on Ubuntu</h3>
 
-      <p>Run the official EQBots server installer:</p>
+      <p>Run the official Cat server installer:</p>
 
       <pre>
         <code>
@@ -90,19 +90,19 @@ export function InstallOpenBotVPS() {
       </pre>
 
       <p>
-        The installer downloads the latest released Linux build, verifies its checksum and sets up the EQBots service.
-        On a fresh installation, it creates a separate <code>openbot</code> service user and starts EQBots in the
+        The installer downloads the latest released Linux build, verifies its checksum and sets up the Cat service.
+        On a fresh installation, it creates a separate <code>openbot</code> service user and starts Cat in the
         background.
       </p>
 
       <p>Sign in and give the server a name you will recognize in the app:</p>
 
       <pre>
-        <code>{'sudo openbot login --name "EQBots VPS"'}</code>
+        <code>{'sudo openbot login --name "Cat VPS"'}</code>
       </pre>
 
       <p>
-        Enter the email address for your EQBots account, then the code sent to it. Use the same account when you open
+        Enter the email address for your Cat account, then the code sent to it. Use the same account when you open
         the app later.
       </p>
 
@@ -113,13 +113,13 @@ export function InstallOpenBotVPS() {
       </pre>
 
       <p>
-        Look for your installed version, account and server state. If the command cannot reach EQBots yet, check the
+        Look for your installed version, account and server state. If the command cannot reach Cat yet, check the
         service log using the troubleshooting section below.
       </p>
 
-      <p>EQBots runs as a system service, so closing the SSH session does not stop it. Continue to step 3.</p>
+      <p>Cat runs as a system service, so closing the SSH session does not stop it. Continue to step 3.</p>
 
-      <h3>Option B: Run EQBots with Docker Compose</h3>
+      <h3>Option B: Run Cat with Docker Compose</h3>
 
       <p>
         This option needs Docker Engine and the Docker Compose plugin on the VPS. If they are not installed, follow the{" "}
@@ -151,18 +151,18 @@ export function InstallOpenBotVPS() {
         agents to use.
       </p>
 
-      <p>Sign in to EQBots and check the server:</p>
+      <p>Sign in to Cat and check the server:</p>
 
       <pre>
         <code>
           {
-            'sudo docker compose exec openbot openbot login --name "EQBots VPS"\nsudo docker compose exec openbot openbot status'
+            'sudo docker compose exec openbot openbot login --name "Cat VPS"\nsudo docker compose exec openbot openbot status'
           }
         </code>
       </pre>
 
       <p>
-        Enter your EQBots account email and its sign-in code. Run later Compose commands from this same deployment
+        Enter your Cat account email and its sign-in code. Run later Compose commands from this same deployment
         folder.
       </p>
 
@@ -171,16 +171,16 @@ export function InstallOpenBotVPS() {
         step 3.
       </p>
 
-      <h2>3. Open the server in EQBots</h2>
+      <h2>3. Open the server in Cat</h2>
 
       <p>
-        Open the EQBots desktop app or <Link to="/app">EQBots in your browser</Link> and sign in to the same account.
-        Find <strong>EQBots VPS</strong> in the server list and select it.
+        Open the Cat desktop app or <Link to="/app">Cat in your browser</Link> and sign in to the same account.
+        Find <strong>Cat VPS</strong> in the server list and select it.
       </p>
 
       <p>
-        The standard setup connects through EQBots's existing account and remote-access services. You use the app to
-        reach the VPS; the EQBots container publishes no web port of its own.
+        The standard setup connects through Cat's existing account and remote-access services. You use the app to
+        reach the VPS; the Cat container publishes no web port of its own.
       </p>
 
       <p>
@@ -191,12 +191,12 @@ export function InstallOpenBotVPS() {
       <h2>4. Connect a provider and create an agent</h2>
 
       <p>
-        Choose the provider you want to use on the server and follow its sign-in or API-key flow in EQBots. A provider
+        Choose the provider you want to use on the server and follow its sign-in or API-key flow in Cat. A provider
         connection on your laptop is not automatically a working connection on the VPS.
       </p>
 
       <p>
-        If this is a new server with no agents, EQBots offers provider setup before the first-agent form. Once
+        If this is a new server with no agents, Cat offers provider setup before the first-agent form. Once
         connected, create an agent, give it clear instructions and start with a small task.
       </p>
 
@@ -225,7 +225,7 @@ export function InstallOpenBotVPS() {
       <h3>Use Hermes Agent on the server</h3>
 
       <p>
-        Open the server's provider settings and select Download on the Hermes row. EQBots installs Hermes Agent for its
+        Open the server's provider settings and select Download on the Hermes row. Cat installs Hermes Agent for its
         service user, then the row shows Connect.
       </p>
 
@@ -282,7 +282,7 @@ export function InstallOpenBotVPS() {
             </td>
           </tr>
           <tr>
-            <td>Restart EQBots</td>
+            <td>Restart Cat</td>
             <td>
               <code>sudo openbot restart</code>
             </td>
@@ -297,7 +297,7 @@ export function InstallOpenBotVPS() {
       </table>
 
       <p>
-        An update restarts EQBots, so run it when an interruption is acceptable. Back up the server data first. The
+        An update restarts Cat, so run it when an interruption is acceptable. Back up the server data first. The
         native service also checks for updates and can stage them for installation; <code>openbot status</code> shows a
         staged update.
       </p>
@@ -323,7 +323,7 @@ export function InstallOpenBotVPS() {
       </p>
 
       <p>
-        EQBots can migrate its database during an upgrade. Use a compatible release with your backup when recovering;
+        Cat can migrate its database during an upgrade. Use a compatible release with your backup when recovering;
         switching an upgraded live volume to an older image is not a safe rollback.
       </p>
 
@@ -335,7 +335,7 @@ export function InstallOpenBotVPS() {
         another service user, back up that user's actual home instead.
       </p>
 
-      <p>Stop EQBots before making a consistent copy, then start it again when the copy is complete:</p>
+      <p>Stop Cat before making a consistent copy, then start it again when the copy is complete:</p>
 
       <pre>
         <code>{"sudo openbot stop"}</code>
@@ -388,17 +388,17 @@ export function InstallOpenBotVPS() {
       <h2>Frequently asked questions</h2>
 
       <p>
-        <strong>Will agents keep working when I close my laptop?</strong> Yes, while EQBots is running on the VPS and
+        <strong>Will agents keep working when I close my laptop?</strong> Yes, while Cat is running on the VPS and
         the required services remain available. Your laptop is the client; the VPS runs the agents.
       </p>
 
       <p>
-        <strong>Do I need a domain for this setup?</strong> The standard setup uses EQBots's existing account services
+        <strong>Do I need a domain for this setup?</strong> The standard setup uses Cat's existing account services
         and app. A custom domain is not required for this installation.
       </p>
 
       <p>
-        <strong>Does the VPS include model access?</strong> You connect a provider in EQBots. VPS costs and provider
+        <strong>Does the VPS include model access?</strong> You connect a provider in Cat. VPS costs and provider
         access are separate.
       </p>
 

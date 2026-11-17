@@ -8,7 +8,7 @@ export const messages = defineMessages("remoteDesktop", {
   "remoteDesktop.workspaceLabel": "Remote control",
   "remoteDesktop.displayLabel": "Remote display",
   "remoteDesktop.selectDisplay": "Select display",
-  "remoteDesktop.backToOpenBot": "Back to EQBots",
+  "remoteDesktop.backToOpenBot": "Back to Cat",
   "remoteDesktop.disconnect": "Disconnect",
   "remoteDesktop.viewerTitle": "Sunshine remote desktop",
   "remoteDesktop.viewerLoadFailed": "The Moonlight viewer could not load.",
@@ -19,7 +19,7 @@ export const messages = defineMessages("remoteDesktop", {
   "remoteDesktop.openFailed": "Could not open the desktop",
   "remoteDesktop.notSharingTitle": "{name} is not sharing its screen",
   "remoteDesktop.notSharingDescription":
-    "The server blocks EQBots from recording its screen. On that server, open System Settings → Privacy & Security → Screen Recording, turn on EQBots, then try again here.",
+    "The server blocks Cat from recording its screen. On that server, open System Settings → Privacy & Security → Screen Recording, turn on Cat, then try again here.",
   "remoteDesktop.setup.check.screenRecording": "Screen Recording",
   "remoteDesktop.setup.check.accessibility": "Accessibility",
   "remoteDesktop.setup.check.service": "Sunshine service",
@@ -38,7 +38,7 @@ export const messages = defineMessages("remoteDesktop", {
   "remoteDesktop.setup.endSessionFirst": "End this computer's remote desktop session before you start a test.",
   "remoteDesktop.setup.startFailed": "Could not start the remote desktop test.",
   "remoteDesktop.setup.connectionLost": "The test connection was lost.",
-  "remoteDesktop.setup.hostUpdateRequired": "Update EQBots on the server to check permissions and test remote desktop.",
+  "remoteDesktop.setup.hostUpdateRequired": "Update Cat on the server to check permissions and test remote desktop.",
   "remoteDesktop.setup.permissions": "Permissions",
   "remoteDesktop.setup.checked": "Checked",
   "remoteDesktop.setup.checkAgain": "Check again",
@@ -73,14 +73,14 @@ export const messages = defineMessages("remoteDesktop", {
   // The native question on the host computer when a member asks to control it.
   "remoteDesktop.host.questionTitle": "{name} wants to control this computer",
   "remoteDesktop.host.questionDetail":
-    "{name} will see your screen and can use your mouse and keyboard. If you do not answer in 30 seconds, EQBots refuses the request.",
+    "{name} will see your screen and can use your mouse and keyboard. If you do not answer in 30 seconds, Cat refuses the request.",
   "remoteDesktop.host.allow": "Allow",
   "remoteDesktop.host.deny": "Deny",
   // The system notification on the host computer when a member's remote desktop stream starts.
   "remoteDesktop.host.startedTitle": "Remote control started",
   "remoteDesktop.host.startedBody": "{name} controls this computer now.",
   // The tray or menu bar icon while a member controls the host computer.
-  "remoteDesktop.host.trayTooltip": "EQBots: remote control is on",
+  "remoteDesktop.host.trayTooltip": "Cat: remote control is on",
   "remoteDesktop.host.trayControlledBy": "{name} controls this computer",
   "remoteDesktop.host.stopAll": "Stop all remote control",
 });

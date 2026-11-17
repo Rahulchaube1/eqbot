@@ -17,11 +17,11 @@ export const messages = {
   "connector.github.connectedAs": "מחובר בתור @{login}",
   "connector.github.repositoriesTitle": "מאגרים",
   "connector.github.repositoriesDescription":
-    "סוכנים יכולים להשתמש רק במאגרים שבהם מותקנת אפליקציית EQBots GitHub App.",
+    "סוכנים יכולים להשתמש רק במאגרים שבהם מותקנת אפליקציית Cat GitHub App.",
   "connector.github.chooseRepositories": "בחירת מאגרים",
   "connector.github.repositoriesLoading": "קורא את המאגרים מ-GitHub",
-  "connector.github.repositoriesFailed": "EQBots לא הצליח לקרוא את המאגרים מ-GitHub.",
-  "connector.github.noRepositories": "אפליקציית EQBots GitHub App עדיין לא מותקנת באף מאגר.",
+  "connector.github.repositoriesFailed": "Cat לא הצליח לקרוא את המאגרים מ-GitHub.",
+  "connector.github.noRepositories": "אפליקציית Cat GitHub App עדיין לא מותקנת באף מאגר.",
   // {count} is a number, such as 12.
   "connector.github.moreRepositories": { one: "ועוד מאגר אחד", two: "ועוד שני מאגרים", other: "ועוד {count} מאגרים" },
   // A badge next to a repository that only its members can see.
@@ -32,7 +32,7 @@ export const messages = {
   "connector.github.expiredTitle": "החיבור ל-GitHub פג תוקף",
   "connector.github.expiredDescription": "יש להתחבר שוב בתור @{login} כדי לתת לסוכנים גישה ל-GitHub מחדש.",
   "connector.github.reconnect": "חיבור מחדש",
-  "connector.github.actionFailed": "EQBots לא הצליח לשנות את החיבור ל-GitHub.",
+  "connector.github.actionFailed": "Cat לא הצליח לשנות את החיבור ל-GitHub.",
   // The status next to the name at the top of the GitHub page.
   "connector.github.statusConnected": "מחובר",
   "connector.github.statusConnecting": "מתחבר",
@@ -50,7 +50,7 @@ export const messages = {
   // The connect dialog. The steps show as numbers; screen readers read the names.
   "connector.github.stepSignIn": "התחברות",
   "connector.github.stepConnected": "מחובר",
-  "connector.github.requestingCode": "EQBots מבקש קוד מ-GitHub.",
+  "connector.github.requestingCode": "Cat מבקש קוד מ-GitHub.",
   // {code} is the code to type on GitHub, such as WDJB-MJHT.
   "connector.github.codeLabel": "קוד {code}",
   "connector.github.failedTitle": "החיבור ל-GitHub נכשל",
@@ -67,7 +67,7 @@ export const messages = {
   "connector.github.disconnectConfirmTitle": "לנתק את GitHub?",
   "connector.github.disconnectConfirmDescription": "הניתוק מסיר את ההתחברות של @{login} מהמחשב הזה.",
   "connector.github.disconnectEffectTools": "כל סוכן מאבד את הכלים של GitHub, את gh ואת git.",
-  "connector.github.disconnectEffectRevoke": "לאחר מכן GitHub נפתח, ושם אפשר לבטל את הגישה של EQBots.",
+  "connector.github.disconnectEffectRevoke": "לאחר מכן GitHub נפתח, ושם אפשר לבטל את הגישה של Cat.",
   "connector.github.disconnectEffectKept": "הצ'אטים, הקבצים והזיכרון של הסוכנים נשארים במחשב הזה.",
   // The same text for the connection of a joined server. {host} is the server name, such as Studio.
   "connector.github.descriptionHost":
@@ -84,13 +84,13 @@ export const messages = {
   // The last section of an integration page, with the action that removes it.
   "connector.dangerZone": "אזור מסוכן",
   "connector.statusUnknown": "לא ידוע",
-  "connector.readFailed": "EQBots לא הצליח לקרוא את מצב החיבור הזה.",
+  "connector.readFailed": "Cat לא הצליח לקרוא את מצב החיבור הזה.",
 
   // Marketplace > Apps > Slack: a workspace installs the one OpenBot app, and the Slack
   // Orchestrator agent receives each request, asks the team and answers.
   "connector.slack.title": "Slack",
   "connector.slack.description":
-    "אפשר לתייג את @EQBots ב-Slack או לשלוח לו הודעה ישירה. מתזמר Slack פונה לסוכן המתאים ועונה.",
+    "אפשר לתייג את @Cat ב-Slack או לשלוח לו הודעה ישירה. מתזמר Slack פונה לסוכן המתאים ועונה.",
   "connector.slack.statusConnected": "מחובר",
   "connector.slack.statusAttention": "דורש תשומת לב",
   // {workspace} is the Slack workspace name.
@@ -106,15 +106,15 @@ export const messages = {
   "connector.slack.addAgent": "הוספת סוכן",
   "connector.slack.actionFailed": "Slack לא קיבל את השינוי",
   "connector.slack.workspaceTitle": "סביבות עבודה",
-  "connector.slack.workspaceDescription": "אפשר לתייג את @EQBots או לשלוח לו הודעה ישירה.",
+  "connector.slack.workspaceDescription": "אפשר לתייג את @Cat או לשלוח לו הודעה ישירה.",
   "connector.slack.disconnectWorkspace": "ניתוק",
   "connector.slack.disconnectAllTitle": "ניתוק Slack",
-  "connector.slack.disconnectAllSummary": "כל סביבות העבודה מתנתקות. אי אפשר עוד להגיע לסוכנים שלך דרך @EQBots.",
+  "connector.slack.disconnectAllSummary": "כל סביבות העבודה מתנתקות. אי אפשר עוד להגיע לסוכנים שלך דרך @Cat.",
   "connector.slack.disconnectAllSummaryOrchestrator":
-    "כל סביבות העבודה מתנתקות. מתזמר Slack והשיחות שלו נמחקים מ-EQBots.",
+    "כל סביבות העבודה מתנתקות. מתזמר Slack והשיחות שלו נמחקים מ-Cat.",
   "connector.slack.missingScopes":
-    "אין ל-EQBots את ההרשאות האלה ב-Slack: {scopes}. יש לנתק את סביבת העבודה ולחבר אותה שוב.",
-  "connector.slack.retryAt": "Slack ביקש מ-EQBots להמתין. הוא ינסה שוב ב-{time}.",
+    "אין ל-Cat את ההרשאות האלה ב-Slack: {scopes}. יש לנתק את סביבת העבודה ולחבר אותה שוב.",
+  "connector.slack.retryAt": "Slack ביקש מ-Cat להמתין. הוא ינסה שוב ב-{time}.",
   "connector.slack.reconnect": "חיבור מחדש",
   "connector.slack.pause": "השהיה",
   "connector.slack.resume": "המשך",
@@ -126,13 +126,13 @@ export const messages = {
   "connector.slack.orchestratorNone": "אין עדיין סוכן שעונה",
   "connector.slack.orchestratorNoneDescription": "יש להוסיף את מתזמר Slack, אחרת Slack לא יקבל תשובה.",
   "connector.slack.inviteNote":
-    "EQBots מצטרף בעצמו לכל ערוץ ציבורי, וגם לכל ערוץ חדש. לערוץ פרטי יש להזמין אותו: /invite @EQBots.",
+    "Cat מצטרף בעצמו לכל ערוץ ציבורי, וגם לכל ערוץ חדש. לערוץ פרטי יש להזמין אותו: /invite @Cat.",
   // The connect dialog. The steps show as numbers; screen readers read the names.
   "connector.slack.stepWorkspace": "סביבת עבודה",
   "connector.slack.stepAgent": "סוכן",
   "connector.slack.connectTitle": "חיבור סביבת עבודה של Slack",
   "connector.slack.connectDescription":
-    "EQBots מתקין אפליקציה אחת בסביבת העבודה, בשם EQBots, והיא מצטרפת לכל ערוץ ציבורי.",
+    "Cat מתקין אפליקציה אחת בסביבת העבודה, בשם Cat, והיא מצטרפת לכל ערוץ ציבורי.",
   "connector.slack.connectStepBrowser": "Slack נפתח בדפדפן",
   "connector.slack.connectStepAllow": "יש לבחור את סביבת העבודה בפינה הימנית העליונה ואז באפשר (Allow)",
   "connector.slack.connectStepReturn": "החלון הזה ממשיך כש-Slack מסיים",
@@ -140,22 +140,22 @@ export const messages = {
   "connector.slack.connectWaiting": "ממתין ל-Slack. יש לסיים את ההתקנה בדפדפן.",
   "connector.slack.agentStepTitle": "הוספת מתזמר Slack",
   // {workspace} is the Slack workspace name.
-  "connector.slack.agentStepDescription": "הסוכן החדש הזה עונה על כל מה שנשלח אל @EQBots ב-{workspace}.",
+  "connector.slack.agentStepDescription": "הסוכן החדש הזה עונה על כל מה שנשלח אל @Cat ב-{workspace}.",
   "connector.slack.orchestratorName": "מתזמר Slack",
   "connector.slack.orchestratorRole": "עונה ב-Slack ופונה לצוות",
   "connector.slack.orchestratorDoesReceive": "מקבל קודם כל בקשה מ-Slack",
   "connector.slack.orchestratorDoesDelegate": "מעביר כל משימה לסוכן המתאים ביותר",
   "connector.slack.orchestratorDoesAnswer": "מפרסם את התשובה בשרשור ב-Slack",
   "connector.slack.orchestratorModel": "מודל",
-  "connector.slack.doneTitle": "EQBots נמצא ב-{workspace}",
-  "connector.slack.doneDescription": "אפשר לתייג את @EQBots בכל ערוץ ציבורי או לשלוח לו הודעה ישירה.",
+  "connector.slack.doneTitle": "Cat נמצא ב-{workspace}",
+  "connector.slack.doneDescription": "אפשר לתייג את @Cat בכל ערוץ ציבורי או לשלוח לו הודעה ישירה.",
   "connector.slack.done": "סיום",
   "connector.slack.disconnectTitle": "לנתק את {workspace}?",
-  "connector.slack.disconnectDescription": "EQBots מפסיק לענות ב-{workspace} ומסיר את אסימון Slack שלו מהמחשב הזה.",
-  "connector.slack.disconnectDescriptionHost": "EQBots מפסיק לענות ב-{workspace} ומסיר את אסימון Slack שלו מ-{host}.",
-  "connector.slack.disconnectEffect": "אנשים ב-{workspace} לא יוכלו עוד להגיע לסוכנים שלך דרך @EQBots.",
-  "connector.slack.removeEffectKept": "השיחות ומתזמר Slack נשארים ב-EQBots.",
-  "connector.slack.removeEffectDeleted": "מתזמר Slack והשיחות שלו נמחקים מ-EQBots.",
+  "connector.slack.disconnectDescription": "Cat מפסיק לענות ב-{workspace} ומסיר את אסימון Slack שלו מהמחשב הזה.",
+  "connector.slack.disconnectDescriptionHost": "Cat מפסיק לענות ב-{workspace} ומסיר את אסימון Slack שלו מ-{host}.",
+  "connector.slack.disconnectEffect": "אנשים ב-{workspace} לא יוכלו עוד להגיע לסוכנים שלך דרך @Cat.",
+  "connector.slack.removeEffectKept": "השיחות ומתזמר Slack נשארים ב-Cat.",
+  "connector.slack.removeEffectDeleted": "מתזמר Slack והשיחות שלו נמחקים מ-Cat.",
   "connector.slack.keep": "השארת החיבור",
   "connector.slack.close": "סגירה",
   "connector.slack.addWorkspace": "הוספת סביבת עבודה",
@@ -176,7 +176,7 @@ export const messages = {
   // the Discord Orchestrator agent receives each request, asks the team and answers. Always write
   // "Discord server": "server" alone is an OpenBot server.
   "connector.discord.title": "Discord",
-  "connector.discord.description": "אפשר לתייג את @EQBots בערוץ של שרת Discord. מתזמר Discord פונה לסוכן המתאים ועונה.",
+  "connector.discord.description": "אפשר לתייג את @Cat בערוץ של שרת Discord. מתזמר Discord פונה לסוכן המתאים ועונה.",
   "connector.discord.statusConnected": "מחובר",
   "connector.discord.statusAttention": "דורש תשומת לב",
   // {workspace} is the Discord server name.
@@ -192,14 +192,14 @@ export const messages = {
   "connector.discord.addAgent": "הוספת סוכן",
   "connector.discord.actionFailed": "Discord לא קיבל את השינוי",
   "connector.discord.workspaceTitle": "שרתי Discord",
-  "connector.discord.workspaceDescription": "אפשר לתייג את @EQBots בערוץ. כדי להמשיך יש להשיב ל-EQBots.",
+  "connector.discord.workspaceDescription": "אפשר לתייג את @Cat בערוץ. כדי להמשיך יש להשיב ל-Cat.",
   "connector.discord.disconnectWorkspace": "ניתוק",
   "connector.discord.disconnectAllTitle": "ניתוק Discord",
-  "connector.discord.disconnectAllSummary": "כל השרתים מתנתקים. אי אפשר עוד להגיע לסוכנים שלך דרך @EQBots.",
-  "connector.discord.disconnectAllSummaryOrchestrator": "כל השרתים מתנתקים. מתזמר Discord והשיחות שלו נמחקים מ-EQBots.",
+  "connector.discord.disconnectAllSummary": "כל השרתים מתנתקים. אי אפשר עוד להגיע לסוכנים שלך דרך @Cat.",
+  "connector.discord.disconnectAllSummaryOrchestrator": "כל השרתים מתנתקים. מתזמר Discord והשיחות שלו נמחקים מ-Cat.",
   "connector.discord.missingScopes":
-    "אין ל-EQBots את ההרשאות האלה ב-Discord: {scopes}. יש לנתק את שרת Discord ולחבר אותו שוב.",
-  "connector.discord.retryAt": "Discord ביקש מ-EQBots להמתין. הוא ינסה שוב ב-{time}.",
+    "אין ל-Cat את ההרשאות האלה ב-Discord: {scopes}. יש לנתק את שרת Discord ולחבר אותו שוב.",
+  "connector.discord.retryAt": "Discord ביקש מ-Cat להמתין. הוא ינסה שוב ב-{time}.",
   "connector.discord.reconnect": "חיבור מחדש",
   "connector.discord.pause": "השהיה",
   "connector.discord.resume": "המשך",
@@ -210,12 +210,12 @@ export const messages = {
     "הסוכן הזה מקבל כל בקשה מ-Discord. הוא עונה בעצמו על בקשות קצרות, מעביר עבודה אחרת לסוכן המתאים ומשיב בערוץ עם התשובה.",
   "connector.discord.orchestratorNone": "אין עדיין סוכן שעונה",
   "connector.discord.orchestratorNoneDescription": "יש להוסיף את מתזמר Discord, אחרת Discord לא יקבל תשובה.",
-  "connector.discord.channelsNote": "EQBots רואה את הערוצים שהתפקיד שלו יכול לראות.",
+  "connector.discord.channelsNote": "Cat רואה את הערוצים שהתפקיד שלו יכול לראות.",
   // The connect dialog. The steps show as numbers; screen readers read the names.
   "connector.discord.stepWorkspace": "שרת Discord",
   "connector.discord.stepAgent": "סוכן",
   "connector.discord.connectTitle": "חיבור שרת Discord",
-  "connector.discord.connectDescription": "EQBots מוסיף בוט אחד, בשם EQBots, לשרת Discord.",
+  "connector.discord.connectDescription": "Cat מוסיף בוט אחד, בשם Cat, לשרת Discord.",
   "connector.discord.connectStepBrowser": "Discord נפתח בדפדפן",
   "connector.discord.connectStepAllow": "יש לבחור את השרת ואז באישור (Authorize)",
   "connector.discord.connectStepReturn": "החלון הזה ממשיך כש-Discord מסיים",
@@ -223,22 +223,22 @@ export const messages = {
   "connector.discord.connectWaiting": "ממתין ל-Discord. יש לסיים את האישור בדפדפן.",
   "connector.discord.agentStepTitle": "הוספת מתזמר Discord",
   // {workspace} is the Discord server name.
-  "connector.discord.agentStepDescription": "הסוכן החדש הזה עונה על כל מה שנשלח אל @EQBots ב-{workspace}.",
+  "connector.discord.agentStepDescription": "הסוכן החדש הזה עונה על כל מה שנשלח אל @Cat ב-{workspace}.",
   "connector.discord.orchestratorName": "מתזמר Discord",
   "connector.discord.orchestratorRole": "עונה ב-Discord ופונה לצוות",
   "connector.discord.orchestratorDoesReceive": "מקבל קודם כל בקשה מ-Discord",
   "connector.discord.orchestratorDoesDelegate": "מעביר כל משימה לסוכן המתאים ביותר",
   "connector.discord.orchestratorDoesAnswer": "משיב עם התשובה בערוץ ב-Discord",
   "connector.discord.orchestratorModel": "מודל",
-  "connector.discord.doneTitle": "EQBots נמצא ב-{workspace}",
-  "connector.discord.doneDescription": "אפשר לתייג את @EQBots בערוץ. כדי להמשיך יש להשיב ל-EQBots.",
+  "connector.discord.doneTitle": "Cat נמצא ב-{workspace}",
+  "connector.discord.doneDescription": "אפשר לתייג את @Cat בערוץ. כדי להמשיך יש להשיב ל-Cat.",
   "connector.discord.done": "סיום",
   "connector.discord.disconnectTitle": "לנתק את {workspace}?",
-  "connector.discord.disconnectDescription": "EQBots מפסיק לענות ב-{workspace} ומסיר את החיבור ל-Discord מהמחשב הזה.",
-  "connector.discord.disconnectDescriptionHost": "EQBots מפסיק לענות ב-{workspace} ומסיר את החיבור ל-Discord מ-{host}.",
-  "connector.discord.disconnectEffect": "אנשים ב-{workspace} לא יוכלו עוד להגיע לסוכנים שלך דרך @EQBots.",
-  "connector.discord.removeEffectKept": "השיחות ומתזמר Discord נשארים ב-EQBots.",
-  "connector.discord.removeEffectDeleted": "מתזמר Discord והשיחות שלו נמחקים מ-EQBots.",
+  "connector.discord.disconnectDescription": "Cat מפסיק לענות ב-{workspace} ומסיר את החיבור ל-Discord מהמחשב הזה.",
+  "connector.discord.disconnectDescriptionHost": "Cat מפסיק לענות ב-{workspace} ומסיר את החיבור ל-Discord מ-{host}.",
+  "connector.discord.disconnectEffect": "אנשים ב-{workspace} לא יוכלו עוד להגיע לסוכנים שלך דרך @Cat.",
+  "connector.discord.removeEffectKept": "השיחות ומתזמר Discord נשארים ב-Cat.",
+  "connector.discord.removeEffectDeleted": "מתזמר Discord והשיחות שלו נמחקים מ-Cat.",
   "connector.discord.keep": "השארת החיבור",
   "connector.discord.close": "סגירה",
   "connector.discord.addWorkspace": "הוספת שרת Discord",
@@ -254,16 +254,16 @@ export const messages = {
     other: "{count} שרתי Discord · מתזמר Discord עונה",
   },
   // Who can use OpenBot in one Discord server: the members with one of the chosen Discord roles.
-  "connector.discord.accessTitle": "מי יכול להשתמש ב-EQBots",
-  "connector.discord.accessDescription": "EQBots עונה רק לאנשים האלה. הוא מתעלם מתיוגים של אחרים.",
+  "connector.discord.accessTitle": "מי יכול להשתמש ב-Cat",
+  "connector.discord.accessDescription": "Cat עונה רק לאנשים האלה. הוא מתעלם מתיוגים של אחרים.",
   "connector.discord.accessEveryone": "כל אחד בשרת",
-  "connector.discord.accessEveryoneDescription": "כל מי שיכול לכתוב בערוץ ש-EQBots רואה יכול לתייג אותו.",
+  "connector.discord.accessEveryoneDescription": "כל מי שיכול לכתוב בערוץ ש-Cat רואה יכול לתייג אותו.",
   // {roles} is a list of Discord role names, such as "Admin and Moderator".
   "connector.discord.accessRoles": "חברים עם {roles}",
   "connector.discord.accessChoose": "בחירת תפקידים",
   // {workspace} is the Discord server name.
-  "connector.discord.accessDialogTitle": "מי יכול להשתמש ב-EQBots ב-{workspace}?",
-  "connector.discord.accessDialogDescription": "אם לא נבחר תפקיד, כל אחד יכול לתייג את EQBots.",
+  "connector.discord.accessDialogTitle": "מי יכול להשתמש ב-Cat ב-{workspace}?",
+  "connector.discord.accessDialogDescription": "אם לא נבחר תפקיד, כל אחד יכול לתייג את Cat.",
   "connector.discord.accessLoading": "טוען תפקידים…",
   "connector.discord.accessLoadFailed": "תפקידי Discord לא נטענו",
   "connector.discord.accessNoRoles": "אין בשרת הזה תפקידים לבחירה.",
@@ -271,13 +271,13 @@ export const messages = {
   "connector.discord.accessRoleDeleted": "{role} (נמחק)",
   "connector.discord.accessSave": "שמירה",
   // {host} is the joined server's name.
-  "connector.discord.accessHostUpdate": "יש לעדכן את EQBots ב-{host} כדי לבחור תפקידים.",
+  "connector.discord.accessHostUpdate": "יש לעדכן את Cat ב-{host} כדי לבחור תפקידים.",
 
   // Marketplace > Apps > Telegram: each chat adds the one OpenBot bot, and the Telegram
   // Orchestrator agent receives the messages of all chats, asks the team and answers.
   "connector.telegram.title": "Telegram",
   "connector.telegram.description":
-    "אפשר להוסיף את הבוט של EQBots לקבוצה ב-Telegram או לפתוח איתו צ'אט ישיר. מתזמר Telegram פונה לסוכן המתאים ועונה.",
+    "אפשר להוסיף את הבוט של Cat לקבוצה ב-Telegram או לפתוח איתו צ'אט ישיר. מתזמר Telegram פונה לסוכן המתאים ועונה.",
   "connector.telegram.statusConnected": "מחובר",
   "connector.telegram.statusAttention": "דורש תשומת לב",
   // {count} is the number of linked Telegram chats.
@@ -303,22 +303,22 @@ export const messages = {
   "connector.telegram.chatsTitle": "צ'אטים",
   "connector.telegram.groupDescription": "אפשר לתייג את הבוט או להשיב להודעות שלו.",
   "connector.telegram.directDescription": "כל הודעה בצ'אט הזה עוברת למתזמר Telegram.",
-  "connector.telegram.helpRemoved": "הבוט של EQBots כבר לא נמצא בצ'אט הזה. יש לנתק את הצ'אט ולהוסיף את הבוט שוב.",
+  "connector.telegram.helpRemoved": "הבוט של Cat כבר לא נמצא בצ'אט הזה. יש לנתק את הצ'אט ולהוסיף את הבוט שוב.",
   "connector.telegram.helpRelayUnavailable":
-    "EQBots לא יכול לקבל הודעות Telegram במחשב הזה. יש להתחבר, לתת למחשב הזה שם בהגדרות השרת ולהשאיר את EQBots פתוח.",
+    "Cat לא יכול לקבל הודעות Telegram במחשב הזה. יש להתחבר, לתת למחשב הזה שם בהגדרות השרת ולהשאיר את Cat פתוח.",
   "connector.telegram.helpRelayUnavailableHost":
-    "EQBots ב-{host} לא יכול לקבל הודעות Telegram. ב-{host} יש להתחבר, לתת לשרת שם בהגדרות השרת ולהשאיר את EQBots פתוח.",
-  "connector.telegram.helpError": "EQBots לא מצליח להגיע לצ'אט הזה. יש לחבר מחדש או לנתק את הצ'אט.",
+    "Cat ב-{host} לא יכול לקבל הודעות Telegram. ב-{host} יש להתחבר, לתת לשרת שם בהגדרות השרת ולהשאיר את Cat פתוח.",
+  "connector.telegram.helpError": "Cat לא מצליח להגיע לצ'אט הזה. יש לחבר מחדש או לנתק את הצ'אט.",
   "connector.telegram.helpNotLinked": 'הצ\'אט הזה לא מקושר לשרת הזה. בחרו "חיבור מחדש" כדי לקשר אותו.',
-  "connector.telegram.retryAt": "Telegram ביקש מ-EQBots להמתין. הוא ינסה שוב ב-{time}.",
+  "connector.telegram.retryAt": "Telegram ביקש מ-Cat להמתין. הוא ינסה שוב ב-{time}.",
   "connector.telegram.pause": "השהיה",
   "connector.telegram.resume": "המשך",
   "connector.telegram.reconnect": "חיבור מחדש",
   "connector.telegram.disconnectChat": "ניתוק",
   "connector.telegram.disconnectAllTitle": "ניתוק Telegram",
-  "connector.telegram.disconnectAllSummary": "כל הצ'אטים מתנתקים. אי אפשר עוד להגיע לסוכנים שלך דרך הבוט של EQBots.",
+  "connector.telegram.disconnectAllSummary": "כל הצ'אטים מתנתקים. אי אפשר עוד להגיע לסוכנים שלך דרך הבוט של Cat.",
   "connector.telegram.disconnectAllSummaryOrchestrator":
-    "כל הצ'אטים מתנתקים. מתזמר Telegram והשיחות שלו נמחקים מ-EQBots.",
+    "כל הצ'אטים מתנתקים. מתזמר Telegram והשיחות שלו נמחקים מ-Cat.",
   // {action} is a button, such as Pause; {name} is the chat name.
   "connector.telegram.rowAction": "{action}: {name}",
   "connector.telegram.linkChat": "קישור צ'אט",
@@ -326,7 +326,7 @@ export const messages = {
   "connector.telegram.openDirectChat": "פתיחת צ'אט ישיר",
   "connector.telegram.orchestratorTitle": "מתזמר Telegram",
   "connector.telegram.orchestratorDescription":
-    "הסוכן הזה מקבל את ההודעות ל-EQBots מכל הצ'אטים שלך ב-Telegram. הוא עונה בעצמו על הודעות קצרות, מעביר עבודה אחרת לסוכן המתאים ומפרסם את התשובה בצ'אט.",
+    "הסוכן הזה מקבל את ההודעות ל-Cat מכל הצ'אטים שלך ב-Telegram. הוא עונה בעצמו על הודעות קצרות, מעביר עבודה אחרת לסוכן המתאים ומפרסם את התשובה בצ'אט.",
   "connector.telegram.orchestratorNone": "אין עדיין סוכן שעונה",
   "connector.telegram.orchestratorNoneDescription": "יש להוסיף את מתזמר Telegram, אחרת Telegram לא יקבל תשובה.",
   "connector.telegram.mentionNote": "בקבוצה יש לתייג את הבוט או להשיב להודעות שלו. בצ'אט ישיר כל הודעה עוברת לבוט.",
@@ -335,27 +335,27 @@ export const messages = {
   "connector.telegram.stepAgent": "סוכן",
   "connector.telegram.connectTitle": "קישור צ'אט של Telegram",
   "connector.telegram.connectDescription":
-    "אפשר להוסיף את הבוט של EQBots לקבוצה או לפתוח איתו צ'אט ישיר. בוט אחד משרת את כל הצ'אטים שלך.",
+    "אפשר להוסיף את הבוט של Cat לקבוצה או לפתוח איתו צ'אט ישיר. בוט אחד משרת את כל הצ'אטים שלך.",
   "connector.telegram.connectStepBrowser": "Telegram נפתח בדפדפן",
   "connector.telegram.connectStepPick": "יש לבחור את הקבוצה, או ללחוץ על התחלה (Start) בצ'אט הישיר",
   "connector.telegram.connectStepReturn": "החלון הזה ממשיך כשהצ'אט מקושר",
   "connector.telegram.connectWaiting": "ממתין ל-Telegram. יש לבחור את הצ'אט ב-Telegram.",
   "connector.telegram.agentStepTitle": "הוספת מתזמר Telegram",
   // {chat} is the Telegram chat name.
-  "connector.telegram.agentStepDescription": "הסוכן החדש הזה עונה על ההודעות ל-EQBots ב-{chat} ובכל צ'אט שיקושר בהמשך.",
+  "connector.telegram.agentStepDescription": "הסוכן החדש הזה עונה על ההודעות ל-Cat ב-{chat} ובכל צ'אט שיקושר בהמשך.",
   "connector.telegram.orchestratorName": "מתזמר Telegram",
   "connector.telegram.orchestratorRole": "עונה ב-Telegram ופונה לצוות",
-  "connector.telegram.orchestratorDoesReceive": "מקבל קודם כל הודעה ל-EQBots מ-Telegram",
+  "connector.telegram.orchestratorDoesReceive": "מקבל קודם כל הודעה ל-Cat מ-Telegram",
   "connector.telegram.orchestratorDoesDelegate": "מעביר כל משימה לסוכן המתאים ביותר",
   "connector.telegram.orchestratorDoesAnswer": "מפרסם את התשובה בצ'אט ב-Telegram",
   "connector.telegram.orchestratorModel": "מודל",
-  "connector.telegram.doneTitle": "EQBots נמצא ב-{chat}",
+  "connector.telegram.doneTitle": "Cat נמצא ב-{chat}",
   "connector.telegram.done": "סיום",
   "connector.telegram.disconnectTitle": "לנתק את {chat}?",
-  "connector.telegram.leaveDescription": "הבוט של EQBots עוזב את {chat}, ו-EQBots מפסיק לענות שם.",
-  "connector.telegram.disconnectEffect": "אנשים ב-{chat} לא יוכלו עוד להגיע לסוכנים שלך דרך הבוט של EQBots.",
-  "connector.telegram.removeEffectKept": "השיחות ומתזמר Telegram נשארים ב-EQBots.",
-  "connector.telegram.removeEffectDeleted": "זה הצ'אט האחרון, ולכן מתזמר Telegram והשיחות שלו נמחקים מ-EQBots.",
+  "connector.telegram.leaveDescription": "הבוט של Cat עוזב את {chat}, ו-Cat מפסיק לענות שם.",
+  "connector.telegram.disconnectEffect": "אנשים ב-{chat} לא יוכלו עוד להגיע לסוכנים שלך דרך הבוט של Cat.",
+  "connector.telegram.removeEffectKept": "השיחות ומתזמר Telegram נשארים ב-Cat.",
+  "connector.telegram.removeEffectDeleted": "זה הצ'אט האחרון, ולכן מתזמר Telegram והשיחות שלו נמחקים מ-Cat.",
   "connector.telegram.keep": "השארת החיבור",
   "connector.telegram.close": "סגירה",
   // Marketplace > Apps > WhatsApp: a WhatsApp number links this computer as a device, and the
@@ -387,12 +387,12 @@ export const messages = {
   "connector.whatsapp.actionFailed": "WhatsApp לא קיבל את השינוי",
   "connector.whatsapp.numbersTitle": "מספרים",
   "connector.whatsapp.linkNumber": "קישור מספר",
-  "connector.whatsapp.ownNumberNote": "הצ'אט ״הודעה לעצמך״ והאנשים שאישרת יכולים להגיע ל-EQBots.",
-  "connector.whatsapp.dedicatedNote": "האנשים שאישרת יכולים להגיע ל-EQBots. אנשים אחרים מקבלים קוד שיש למסור לך.",
+  "connector.whatsapp.ownNumberNote": "הצ'אט ״הודעה לעצמך״ והאנשים שאישרת יכולים להגיע ל-Cat.",
+  "connector.whatsapp.dedicatedNote": "האנשים שאישרת יכולים להגיע ל-Cat. אנשים אחרים מקבלים קוד שיש למסור לך.",
   "connector.whatsapp.helpLoggedOut": "WhatsApp הסיר את המחשב הזה מהמכשירים המקושרים. יש לקשר את המספר שוב.",
   "connector.whatsapp.helpLoggedOutHost": "WhatsApp הסיר את השרת הזה מהמכשירים המקושרים. יש לקשר את המספר שוב.",
-  "connector.whatsapp.helpError": "EQBots לא מצליח להגיע ל-WhatsApp במספר הזה. יש לחבר מחדש או לנתק את המספר.",
-  "connector.whatsapp.retryAt": "WhatsApp ביקש מ-EQBots להמתין. הוא ינסה שוב ב-{time}.",
+  "connector.whatsapp.helpError": "Cat לא מצליח להגיע ל-WhatsApp במספר הזה. יש לחבר מחדש או לנתק את המספר.",
+  "connector.whatsapp.retryAt": "WhatsApp ביקש מ-Cat להמתין. הוא ינסה שוב ב-{time}.",
   "connector.whatsapp.pause": "השהיה",
   "connector.whatsapp.resume": "המשך",
   "connector.whatsapp.reconnect": "חיבור מחדש",
@@ -401,18 +401,18 @@ export const messages = {
   "connector.whatsapp.disconnectAllTitle": "ניתוק WhatsApp",
   "connector.whatsapp.disconnectAllSummary": "כל המספרים מתנתקים. אי אפשר עוד להגיע לסוכנים שלך דרך WhatsApp.",
   "connector.whatsapp.disconnectAllSummaryOrchestrator":
-    "כל המספרים מתנתקים. מתזמר WhatsApp והשיחות שלו נמחקים מ-EQBots.",
+    "כל המספרים מתנתקים. מתזמר WhatsApp והשיחות שלו נמחקים מ-Cat.",
   // {action} is a button, such as Pause; {name} is the WhatsApp number or a person's name.
   "connector.whatsapp.rowAction": "{action}: {name}",
   "connector.whatsapp.ownNumber": "מספר אישי",
   "connector.whatsapp.ownNumberDescription":
-    "רק הצ'אט ״הודעה לעצמך״ והאנשים שאישרת יכולים לכתוב. יש לכבות עבור מספר שמיועד רק ל-EQBots.",
+    "רק הצ'אט ״הודעה לעצמך״ והאנשים שאישרת יכולים לכתוב. יש לכבות עבור מספר שמיועד רק ל-Cat.",
   "connector.whatsapp.workingMessage": "הודעת ״עובד על זה…״",
   "connector.whatsapp.workingMessageDescription":
-    "EQBots שולח אותה בזמן שהסוכן עובד, ואז מחליף אותה בתשובה. יש לכבות כדי לשלוח רק את התשובה.",
+    "Cat שולח אותה בזמן שהסוכן עובד, ואז מחליף אותה בתשובה. יש לכבות כדי לשלוח רק את התשובה.",
   "connector.whatsapp.orchestratorTitle": "מתזמר WhatsApp",
   "connector.whatsapp.orchestratorDescription":
-    "הסוכן הזה מקבל את ההודעות ל-EQBots מכל המספרים המקושרים שלך. הוא עונה בעצמו על הודעות קצרות, מעביר עבודה אחרת לסוכן המתאים ועונה ב-WhatsApp.",
+    "הסוכן הזה מקבל את ההודעות ל-Cat מכל המספרים המקושרים שלך. הוא עונה בעצמו על הודעות קצרות, מעביר עבודה אחרת לסוכן המתאים ועונה ב-WhatsApp.",
   "connector.whatsapp.orchestratorNone": "אין עדיין סוכן שעונה",
   "connector.whatsapp.orchestratorNoneDescription": "יש להוסיף את מתזמר WhatsApp, אחרת WhatsApp לא יקבל תשובה.",
   "connector.whatsapp.note": "במספר האישי שלך יש לכתוב בצ'אט ״הודעה לעצמך״. האנשים שאישרת כותבים למספר.",
@@ -424,8 +424,8 @@ export const messages = {
   "connector.whatsapp.connectDescriptionHost": "יש לבחור את המספר ואז לקשר את השרת הזה מ-WhatsApp בטלפון.",
   "connector.whatsapp.kindLabel": "מספר",
   "connector.whatsapp.kindPersonal": "המספר האישי שלי",
-  "connector.whatsapp.kindPersonalDescription": "EQBots עונה רק בצ'אט ״הודעה לעצמך״ ולאנשים שאישרת.",
-  "connector.whatsapp.kindDedicated": "מספר רק עבור EQBots",
+  "connector.whatsapp.kindPersonalDescription": "Cat עונה רק בצ'אט ״הודעה לעצמך״ ולאנשים שאישרת.",
+  "connector.whatsapp.kindDedicated": "מספר רק עבור Cat",
   "connector.whatsapp.kindDedicatedDescription": "אנשים לא מוכרים מקבלים קוד שיש למסור לך. את האישור נותנים כאן.",
   "connector.whatsapp.methodLabel": "אופן הקישור",
   "connector.whatsapp.methodQr": "קוד QR",
@@ -452,26 +452,26 @@ export const messages = {
   "connector.whatsapp.failedTimeout": "תוקף הקוד פג לפני שהטלפון השתמש בו.",
   "connector.whatsapp.failedRefused": "WhatsApp דחה את הקישור. יש להמתין כמה דקות ולנסות שוב.",
   "connector.whatsapp.failedBusy": "קישור אחר מתבצע. יש להמתין לסיומו ולנסות שוב.",
-  "connector.whatsapp.failedUnavailable": "EQBots לא מצליח להגיע ל-WhatsApp. יש לבדוק את החיבור לאינטרנט.",
+  "connector.whatsapp.failedUnavailable": "Cat לא מצליח להגיע ל-WhatsApp. יש לבדוק את החיבור לאינטרנט.",
   "connector.whatsapp.tryAgain": "ניסיון חוזר",
   "connector.whatsapp.agentStepTitle": "הוספת מתזמר WhatsApp",
   // {number} is the WhatsApp number or its name.
   "connector.whatsapp.agentStepDescription":
-    "הסוכן החדש הזה עונה על ההודעות ל-EQBots ב-{number} ובכל מספר שיקושר בהמשך.",
+    "הסוכן החדש הזה עונה על ההודעות ל-Cat ב-{number} ובכל מספר שיקושר בהמשך.",
   "connector.whatsapp.orchestratorName": "מתזמר WhatsApp",
   "connector.whatsapp.orchestratorRole": "עונה ב-WhatsApp ופונה לצוות",
-  "connector.whatsapp.orchestratorDoesReceive": "מקבל קודם כל הודעה ל-EQBots מ-WhatsApp",
+  "connector.whatsapp.orchestratorDoesReceive": "מקבל קודם כל הודעה ל-Cat מ-WhatsApp",
   "connector.whatsapp.orchestratorDoesDelegate": "מעביר כל משימה לסוכן המתאים ביותר",
   "connector.whatsapp.orchestratorDoesAnswer": "עונה בצ'אט ב-WhatsApp",
   "connector.whatsapp.orchestratorModel": "מודל",
-  "connector.whatsapp.doneTitle": "EQBots מקושר ל-{number}",
+  "connector.whatsapp.doneTitle": "Cat מקושר ל-{number}",
   "connector.whatsapp.done": "סיום",
   "connector.whatsapp.disconnectTitle": "לנתק את {number}?",
   "connector.whatsapp.disconnectDescription":
-    "EQBots מתנתק מ-WhatsApp ב-{number}. אם EQBots היה כבוי, יש להסיר את המכשיר גם ב-WhatsApp > מכשירים מקושרים.",
+    "Cat מתנתק מ-WhatsApp ב-{number}. אם Cat היה כבוי, יש להסיר את המכשיר גם ב-WhatsApp > מכשירים מקושרים.",
   "connector.whatsapp.disconnectEffect": "אי אפשר עוד להגיע לסוכנים שלך דרך {number}.",
-  "connector.whatsapp.removeEffectKept": "השיחות ומתזמר WhatsApp נשארים ב-EQBots.",
-  "connector.whatsapp.removeEffectDeleted": "זה המספר האחרון, ולכן מתזמר WhatsApp והשיחות שלו נמחקים מ-EQBots.",
+  "connector.whatsapp.removeEffectKept": "השיחות ומתזמר WhatsApp נשארים ב-Cat.",
+  "connector.whatsapp.removeEffectDeleted": "זה המספר האחרון, ולכן מתזמר WhatsApp והשיחות שלו נמחקים מ-Cat.",
   "connector.whatsapp.keep": "השארת הקישור",
   "connector.whatsapp.close": "סגירה",
   // Who can give work through one number: contacts by phone number, and groups.
@@ -492,7 +492,7 @@ export const messages = {
   "connector.whatsapp.groupDescription": "אנשים בקבוצה הזו יכולים לתת עבודה לסוכנים שלך.",
   "connector.whatsapp.groupSearch": "חיפוש קבוצות",
   "connector.whatsapp.groupsLoading": "קורא את הקבוצות…",
-  "connector.whatsapp.groupsLoadFailed": "EQBots לא הצליח לקרוא את הקבוצות",
+  "connector.whatsapp.groupsLoadFailed": "Cat לא הצליח לקרוא את הקבוצות",
   "connector.whatsapp.groupsEmpty": "המספר הזה לא נמצא באף קבוצה.",
   "connector.whatsapp.groupsNoMatch": "אין קבוצה בשם הזה.",
   "connector.whatsapp.groupAdded": "נוספה",
@@ -507,9 +507,9 @@ export const messages = {
   // Marketplace > 1Password: a vault that the user shares with OpenBot through a service account.
   "connector.onePassword.title": "1Password",
   "connector.onePassword.description":
-    "אפשר לשתף עם EQBots כספת ייעודית של 1Password דרך חשבון שירות, כדי שסוכנים יוכלו להתחבר לאתרים בדפדפן של EQBots.",
+    "אפשר לשתף עם Cat כספת ייעודית של 1Password דרך חשבון שירות, כדי שסוכנים יוכלו להתחבר לאתרים בדפדפן של Cat.",
   "connector.onePassword.howItWorks":
-    "החיבור מגדיר כספת בשם ״Shared with EQBots״ בחשבון 1Password שלך וחשבון שירות שיכול לקרוא רק את הכספת הזו. EQBots ממלא פרטי כניסה שמורים בדפדפן שלו במחשב הזה, ולכן משותפים רק הפריטים שהעברת לכספת הזו. סוכנים אף פעם לא רואים סיסמה.",
+    "החיבור מגדיר כספת בשם ״Shared with Cat״ בחשבון 1Password שלך וחשבון שירות שיכול לקרוא רק את הכספת הזו. Cat ממלא פרטי כניסה שמורים בדפדפן שלו במחשב הזה, ולכן משותפים רק הפריטים שהעברת לכספת הזו. סוכנים אף פעם לא רואים סיסמה.",
   "connector.onePassword.connect": "חיבור 1Password",
   // The three setup steps before a connection, each with the one button it needs.
   "connector.onePassword.setupTitle": "הגדרה",
@@ -518,20 +518,20 @@ export const messages = {
   "connector.onePassword.stepCliInstalling": "מוריד את 1Password CLI מ-1Password",
   // {version} is a version number, such as 2.39.0.
   "connector.onePassword.stepCliReady": "גרסה {version} מותקנת.",
-  "connector.onePassword.stepCliMissing": "EQBots מוריד אותו מ-1Password לתיקייה משלו. אין צורך בסיסמת מנהל.",
+  "connector.onePassword.stepCliMissing": "Cat מוריד אותו מ-1Password לתיקייה משלו. אין צורך בסיסמת מנהל.",
   "connector.onePassword.stepCliManual":
-    "EQBots לא יכול להתקין אותו במחשב הזה. יש להתקין אותו מ-1Password ואז לחזור לדף הזה.",
+    "Cat לא יכול להתקין אותו במחשב הזה. יש להתקין אותו מ-1Password ואז לחזור לדף הזה.",
   "connector.onePassword.installCli": "התקנה",
   "connector.onePassword.stepAppTitle": "הפעלת שילוב ה-CLI",
   "connector.onePassword.stepAppDescription":
     "באפליקציית 1Password יש לפתוח הגדרות > מפתחים ולהפעיל את ״Integrate with 1Password CLI״.",
   "connector.onePassword.stepAppReady": "אפליקציית 1Password מאפשרת ל-CLI ליצור את הכספת המשותפת.",
   "connector.onePassword.openApp": "פתיחת 1Password",
-  "connector.onePassword.openAppFailed": "EQBots לא הצליח לפתוח את 1Password.",
+  "connector.onePassword.openAppFailed": "Cat לא הצליח לפתוח את 1Password.",
   "connector.onePassword.checkAgain": "בדיקה חוזרת",
   "connector.onePassword.stepVaultTitle": "יצירת הכספת המשותפת",
   "connector.onePassword.stepVaultDescription":
-    "EQBots יוצר את הכספת ״Shared with EQBots״ וחשבון שירות שיכול רק לקרוא אותה. 1Password מבקש ממך לאשר.",
+    "Cat יוצר את הכספת ״Shared with Cat״ וחשבון שירות שיכול רק לקרוא אותה. 1Password מבקש ממך לאשר.",
   // The last row of the setup steps: the other way to connect, without the CLI.
   "connector.onePassword.useTokenDescription": "במקום השלבים האלה, אפשר להדביק אסימון של חשבון שירות מ-1Password.com.",
   "connector.onePassword.useTokenAction": "שימוש באסימון",
@@ -541,7 +541,7 @@ export const messages = {
   "connector.onePassword.approveInApp": "יש לאשר את הבקשה באפליקציית 1Password",
   "connector.onePassword.cancel": "ביטול",
   "connector.onePassword.chooseAccountTitle": "בחירת חשבון",
-  "connector.onePassword.chooseAccountDescription": "EQBots יוצר את הכספת המשותפת בחשבון שייבחר.",
+  "connector.onePassword.chooseAccountDescription": "Cat יוצר את הכספת המשותפת בחשבון שייבחר.",
   "connector.onePassword.useAccount": "שימוש בחשבון הזה",
   "connector.onePassword.vaultTitle": "כספת משותפת",
   "connector.onePassword.vaultDescription":
@@ -552,40 +552,40 @@ export const messages = {
   "connector.onePassword.disconnect": "ניתוק",
   "connector.onePassword.disconnectTitle": "ניתוק 1Password",
   "connector.onePassword.disconnectSummary":
-    "EQBots שוכח את האסימון. הכספת וחשבון השירות נשארים ב-1Password; אם אין בהם צורך, יש להסיר אותם שם.",
-  "connector.onePassword.actionFailed": "EQBots לא הצליח לשנות את החיבור ל-1Password.",
+    "Cat שוכח את האסימון. הכספת וחשבון השירות נשארים ב-1Password; אם אין בהם צורך, יש להסיר אותם שם.",
+  "connector.onePassword.actionFailed": "Cat לא הצליח לשנות את החיבור ל-1Password.",
   "connector.onePassword.statusConnected": "מחובר",
   "connector.onePassword.statusConnecting": "מתחבר",
   // The same page for the connection of a joined server. {host} is the server name, such as Studio.
   "connector.onePassword.descriptionHost":
-    "אפשר לשתף עם EQBots ב-{host} כספת ייעודית של 1Password דרך חשבון שירות, כדי שסוכנים ב-{host} יוכלו להתחבר לאתרים בדפדפן שלו.",
+    "אפשר לשתף עם Cat ב-{host} כספת ייעודית של 1Password דרך חשבון שירות, כדי שסוכנים ב-{host} יוכלו להתחבר לאתרים בדפדפן שלו.",
   "connector.onePassword.howItWorksHost":
-    "{host} מתחבר באמצעות אסימון של חשבון שירות. ב-1Password.com יש ליצור חשבון שירות שיכול לקרוא רק את הכספת ששיתפת עם EQBots, ולהדביק כאן את האסימון שלו. {host} בודק את האסימון ושומר אותו; המחשב הזה לא. סוכנים אף פעם לא רואים סיסמה.",
+    "{host} מתחבר באמצעות אסימון של חשבון שירות. ב-1Password.com יש ליצור חשבון שירות שיכול לקרוא רק את הכספת ששיתפת עם Cat, ולהדביק כאן את האסימון שלו. {host} בודק את האסימון ושומר אותו; המחשב הזה לא. סוכנים אף פעם לא רואים סיסמה.",
   "connector.onePassword.disconnectSummaryHost":
     "{host} שוכח את האסימון. הכספת וחשבון השירות נשארים ב-1Password; אם אין בהם צורך, יש להסיר אותם שם.",
   "connector.bitwarden.title": "Bitwarden",
   "connector.bitwarden.description": "מילוי פרטי כניסה בדפדפן מ-Bitwarden.",
   "connector.bitwarden.setup":
-    "יש להתקין את Bitwarden CLI ולהתחבר עם bw login. יש ליצור תיקייה בשם Shared with EQBots ולהכניס אליה רק את פרטי הכניסה שסוכנים רשאים להשתמש בהם. יש להריץ bw unlock --raw ולהדביק למטה את מפתח הסשן. אין להדביק את הסיסמה הראשית.",
+    "יש להתקין את Bitwarden CLI ולהתחבר עם bw login. יש ליצור תיקייה בשם Shared with Cat ולהכניס אליה רק את פרטי הכניסה שסוכנים רשאים להשתמש בהם. יש להריץ bw unlock --raw ולהדביק למטה את מפתח הסשן. אין להדביק את הסיסמה הראשית.",
   "connector.bitwarden.scope":
-    "כל הסוכנים במחשב הזה יכולים להשתמש בפרטי כניסה תואמים בתיקייה Shared with EQBots. EQBots משתמש במקורות HTTPS מדויקים. הוא לא משתמש בפריטים שדורשים בקשת סיסמה ראשית או כלל התאמת URI מותאם אישית.",
+    "כל הסוכנים במחשב הזה יכולים להשתמש בפרטי כניסה תואמים בתיקייה Shared with Cat. Cat משתמש במקורות HTTPS מדויקים. הוא לא משתמש בפריטים שדורשים בקשת סיסמה ראשית או כלל התאמת URI מותאם אישית.",
   "connector.bitwarden.session":
-    "מפתח הסשן נשאר בזיכרון. יש להתחבר שוב אחרי 8 שעות בלי שימוש בכספת או אחרי ש-EQBots נסגר. הניתוק עוצר את הגישה של EQBots; הוא לא נועל לקוחות Bitwarden אחרים.",
+    "מפתח הסשן נשאר בזיכרון. יש להתחבר שוב אחרי 8 שעות בלי שימוש בכספת או אחרי ש-Cat נסגר. הניתוק עוצר את הגישה של Cat; הוא לא נועל לקוחות Bitwarden אחרים.",
   "connector.bitwarden.sessionKey": "מפתח סשן של Bitwarden",
   "connector.bitwarden.connect": "חיבור Bitwarden",
   "connector.bitwarden.disconnect": "ניתוק Bitwarden",
   "connector.bitwarden.disconnectAction": "ניתוק",
   "connector.bitwarden.disconnectSummary":
-    "EQBots שוכח את מפתח הסשן. סוכנים לא יכולים עוד למלא פרטי כניסה מ-Bitwarden. לקוחות Bitwarden אחרים נשארים פתוחים.",
+    "Cat שוכח את מפתח הסשן. סוכנים לא יכולים עוד למלא פרטי כניסה מ-Bitwarden. לקוחות Bitwarden אחרים נשארים פתוחים.",
   "connector.bitwarden.disconnectSummaryHost":
     "{host} מסיר את מפתח ה-API ואת הסיסמה הראשית. סוכנים ב-{host} לא יכולים עוד למלא פרטי כניסה מ-Bitwarden.",
   "connector.bitwarden.connected": "מחובר",
-  "connector.bitwarden.actionFailed": "EQBots לא הצליח לשנות את החיבור ל-Bitwarden.",
+  "connector.bitwarden.actionFailed": "Cat לא הצליח לשנות את החיבור ל-Bitwarden.",
   "connector.bitwarden.descriptionHost": "מילוי פרטי כניסה בדפדפן ב-{host} מ-Bitwarden או מ-Vaultwarden.",
   "connector.bitwarden.setupHost":
-    "{host} מתחבר עם Bitwarden CLI משלו. בכספת שלך יש ליצור תיקייה בשם Shared with EQBots ולהכניס אליה רק את פרטי הכניסה שסוכנים רשאים להשתמש בהם. בכספת באינטרנט יש לפתוח הגדרות › אבטחה › מפתחות ולהציג את מפתח ה-API. יש להזין למטה את כתובת השרת, client_id, client_secret ואת הסיסמה הראשית.",
+    "{host} מתחבר עם Bitwarden CLI משלו. בכספת שלך יש ליצור תיקייה בשם Shared with Cat ולהכניס אליה רק את פרטי הכניסה שסוכנים רשאים להשתמש בהם. בכספת באינטרנט יש לפתוח הגדרות › אבטחה › מפתחות ולהציג את מפתח ה-API. יש להזין למטה את כתובת השרת, client_id, client_secret ואת הסיסמה הראשית.",
   "connector.bitwarden.scopeHost":
-    "כל הסוכנים ב-{host} יכולים להשתמש בפרטי כניסה תואמים בתיקייה Shared with EQBots. EQBots משתמש במקורות HTTPS מדויקים. הוא לא משתמש בפריטים שדורשים בקשת סיסמה ראשית או כלל התאמת URI מותאם אישית.",
+    "כל הסוכנים ב-{host} יכולים להשתמש בפרטי כניסה תואמים בתיקייה Shared with Cat. Cat משתמש במקורות HTTPS מדויקים. הוא לא משתמש בפריטים שדורשים בקשת סיסמה ראשית או כלל התאמת URI מותאם אישית.",
   "connector.bitwarden.sessionHost":
     "{host} שומר את מפתח ה-API ואת הסיסמה הראשית מוצפנים, כדי שיוכל לבטל את הנעילה שוב אחרי הפעלה מחדש. המחשב הזה לא שומר אותם. הניתוק מסיר אותם מ-{host}. {host} חייב להגיע לכתובת השרת דרך HTTPS.",
   "connector.bitwarden.serverUrl": "כתובת השרת",
@@ -593,7 +593,7 @@ export const messages = {
   "connector.bitwarden.folderDescription":
     "כדי לאפשר לסוכנים להתחבר עם פרטי כניסה, יש להעביר אותם לתיקייה הזו ב-Bitwarden. כדי להפסיק, יש להסיר אותם.",
   // The exact folder name that OpenBot looks for in the vault. Keep it in English.
-  "connector.bitwarden.folderName": "Shared with EQBots",
+  "connector.bitwarden.folderName": "Shared with Cat",
   "connector.bitwarden.folderKind": "תיקייה ב-Bitwarden",
   "connector.bitwarden.clientId": "client_id של מפתח ה-API",
   "connector.bitwarden.clientSecret": "client_secret של מפתח ה-API",
@@ -611,19 +611,19 @@ export const messages = {
   "connector.protonPass.keyPlaceholder": "pst_…",
   "connector.protonPass.setupTitle": "הגדרה",
   "connector.protonPass.setupDescription":
-    "החיבור פותח את ההתחברות של Proton בדפדפן. לאחר מכן EQBots יוצר את הכספת המשותפת ושומר רק מפתח לקריאה בלבד עבורה.",
+    "החיבור פותח את ההתחברות של Proton בדפדפן. לאחר מכן Cat יוצר את הכספת המשותפת ושומר רק מפתח לקריאה בלבד עבורה.",
   "connector.protonPass.setupDescriptionHost":
     "החיבור פותח את ההתחברות של Proton בדפדפן. לאחר מכן {host} יוצר את הכספת המשותפת ושומר רק מפתח לקריאה בלבד עבורה.",
   // The exact vault name that OpenBot makes in Proton Pass. Keep it in English.
-  "connector.protonPass.vaultName": "Shared with EQBots",
-  "connector.protonPass.vaultSetup": "EQBots יוצר את הכספת הזו בעת החיבור. כדי לשתף פרטי כניסה, יש להעביר אותם אליה.",
+  "connector.protonPass.vaultName": "Shared with Cat",
+  "connector.protonPass.vaultSetup": "Cat יוצר את הכספת הזו בעת החיבור. כדי לשתף פרטי כניסה, יש להעביר אותם אליה.",
   "connector.protonPass.showSteps": "הצגת השלבים",
   "connector.protonPass.stepsLabel": "שלבי החיבור",
   "connector.protonPass.stepSignIn": "התחברות",
   "connector.protonPass.stepVault": "יצירת הכספת המשותפת",
   "connector.protonPass.stepDone": "סיום",
   "connector.protonPass.signInTitle": "התחברות ל-Proton",
-  "connector.protonPass.signInStarting": "EQBots מתחיל את ההתחברות. הדף של Proton נפתח בדפדפן.",
+  "connector.protonPass.signInStarting": "Cat מתחיל את ההתחברות. הדף של Proton נפתח בדפדפן.",
   "connector.protonPass.signInDescription": "ההתחברות פתוחה בדפדפן. Proton מבקש את הסיסמה שלך ואת הגורם השני לאימות.",
   "connector.protonPass.signInDescriptionHost":
     "ההתחברות של {host} פתוחה בדפדפן. Proton מבקש את הסיסמה שלך ואת הגורם השני לאימות.",
@@ -633,7 +633,7 @@ export const messages = {
   "connector.protonPass.continue": "המשך",
   "connector.protonPass.setupStepTitle": "יוצר את הכספת המשותפת",
   "connector.protonPass.setupStepDescription":
-    "EQBots יוצר את הכספת ״{vault}״ ומפתח לקריאה בלבד עבורה. לאחר מכן הוא מתנתק מהסשן שלך ב-Proton.",
+    "Cat יוצר את הכספת ״{vault}״ ומפתח לקריאה בלבד עבורה. לאחר מכן הוא מתנתק מהסשן שלך ב-Proton.",
   "connector.protonPass.doneTitle": "Proton Pass מחובר",
   "connector.protonPass.doneDescription": "כדי לאפשר לסוכנים להתחבר עם פרטי כניסה, יש להעביר אותם אל ״{vault}״.",
   "connector.protonPass.failedTitle": "החיבור ל-Proton Pass נכשל",
@@ -661,9 +661,9 @@ export const messages = {
   "connector.protonPass.keyNoExpiry": "לקריאה בלבד. ללא תפוגה.",
   "connector.protonPass.disconnectTitle": "ניתוק Proton Pass",
   "connector.protonPass.disconnectSummary":
-    "EQBots מוחק את מפתח הגישה שלו במחשב הזה. הכספת ופרטי הכניסה שבה נשארים בחשבון Proton שלך.",
+    "Cat מוחק את מפתח הגישה שלו במחשב הזה. הכספת ופרטי הכניסה שבה נשארים בחשבון Proton שלך.",
   "connector.protonPass.disconnectSummaryHost":
-    "EQBots מוחק את מפתח הגישה שלו ב-{host}. הכספת ופרטי הכניסה שבה נשארים בחשבון Proton שלך.",
+    "Cat מוחק את מפתח הגישה שלו ב-{host}. הכספת ופרטי הכניסה שבה נשארים בחשבון Proton שלך.",
   "connector.protonPass.disconnect": "ניתוק",
-  "connector.protonPass.actionFailed": "EQBots לא הצליח לשנות את החיבור ל-Proton Pass.",
+  "connector.protonPass.actionFailed": "Cat לא הצליח לשנות את החיבור ל-Proton Pass.",
 } as const satisfies PartialTranslation<typeof source>;

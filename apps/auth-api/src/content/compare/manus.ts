@@ -12,7 +12,7 @@ const MANUS_HELP = "https://help.manus.im/en/articles";
 export const MANUS_COMPARISON: Comparison = {
   rival: { name: "Manus", mark: "manus" },
   answer:
-    "Choose EQBots if you want your agents on your own computer, with the AI plans you already pay for, such as ChatGPT, Claude, Gemini or Grok: the app is free. Choose Manus if you want a general agent that works in its own cloud computer, keeps working with no computer of yours on, and chooses the model for you.",
+    "Choose Cat if you want your agents on your own computer, with the AI plans you already pay for, such as ChatGPT, Claude, Gemini or Grok: the app is free. Choose Manus if you want a general agent that works in its own cloud computer, keeps working with no computer of yours on, and chooses the model for you.",
   chooseOpenBot: [
     "You already pay for ChatGPT, Claude, Gemini, Grok, Cursor, Cline or Muse Code, or you run your own model.",
     "Your files and chats must stay on your own computer, not in a cloud in the US or Singapore.",
@@ -38,7 +38,7 @@ export const MANUS_COMPARISON: Comparison = {
     {
       icon: "laptop",
       topic: "Where agents work",
-      openbot: "On the computer that runs EQBots.",
+      openbot: "On the computer that runs Cat.",
       rival:
         "In a cloud sandbox that Manus runs, by default. With the desktop app, Manus can also run commands in the folders that you allow on your Mac or Windows PC.",
       better: "openbot",
@@ -134,7 +134,7 @@ export const MANUS_COMPARISON: Comparison = {
     },
   ],
   intro:
-    "Manus is a general AI agent from Butterfly Effect, a company in Singapore. Meta acquired Manus in December 2025, and Manus resumed independent operations on 1 September 2026. Both products give you agents that do the work, not only answers. The difference is where the agents run and which model does the thinking. Manus works in its own cloud computer and chooses the model for you. EQBots runs a team of agents on your own computer, with the AI plans you choose.",
+    "Manus is a general AI agent from Butterfly Effect, a company in Singapore. Meta acquired Manus in December 2025, and Manus resumed independent operations on 1 September 2026. Both products give you agents that do the work, not only answers. The difference is where the agents run and which model does the thinking. Manus works in its own cloud computer and chooses the model for you. Cat runs a team of agents on your own computer, with the AI plans you choose.",
   sections: [
     {
       title: "Models and the plans you pay for",
@@ -165,7 +165,7 @@ export const MANUS_COMPARISON: Comparison = {
     {
       title: "Data and privacy",
       openbot:
-        "EQBots keeps workspaces, conversations, attachments and browser data in a SQLite database on the computer that runs it. EQBots keeps no other copy. On a hosted EQBots server, the database is on that server in the EU. An account holds your profile, team memberships, invitations, sign-in sessions, the settings that let devices find each other, and any agent templates that you publish. Product analytics, which never include chat content, are on by default and linked to your account when you sign in; you can turn them off in Settings.",
+        "Cat keeps workspaces, conversations, attachments and browser data in a SQLite database on the computer that runs it. Cat keeps no other copy. On a hosted Cat server, the database is on that server in the EU. An account holds your profile, team memberships, invitations, sign-in sessions, the settings that let devices find each other, and any agent templates that you publish. Product analytics, which never include chat content, are on by default and linked to your account when you sign in; you can turn them off in Settings.",
       rival:
         "Manus stores your data in the US and Singapore. Its privacy policy says that it collects the files of each task, the shell commands the agent runs and their output, and the code. Manus says its model providers do not train on your data. For individual plans, it states no training opt-out, and its terms give Manus a permanent license to use your content, in aggregate, to improve the service. The Team plan says Manus does not train models on your data.",
       better: "openbot",
@@ -173,17 +173,17 @@ export const MANUS_COMPARISON: Comparison = {
   ],
   faq: [
     {
-      question: "Is EQBots an alternative to Manus?",
+      question: "Is Cat an alternative to Manus?",
       answer:
-        "Yes, if you want your agents on your own computer. Both give you AI agents that do the work. EQBots runs a team of agents on your computer with the AI plans you choose. Manus is a general agent that works in a cloud computer that Manus runs, with models that Manus chooses.",
+        "Yes, if you want your agents on your own computer. Both give you AI agents that do the work. Cat runs a team of agents on your computer with the AI plans you choose. Manus is a general agent that works in a cloud computer that Manus runs, with models that Manus chooses.",
     },
     {
-      question: "Why choose EQBots over Manus?",
+      question: "Why choose Cat over Manus?",
       answer:
-        "Your agents use the AI plans you already pay for, such as ChatGPT, Claude, Gemini or Grok, or your own model. EQBots keeps your workspaces, chats and files on your own computer, it runs a team of coding agents, and it has desktop apps for macOS, Windows and Linux. The app is free, and its source code is on GitHub. Manus is the better fit when you want an agent with no computer of yours to keep on.",
+        "Your agents use the AI plans you already pay for, such as ChatGPT, Claude, Gemini or Grok, or your own model. Cat keeps your workspaces, chats and files on your own computer, it runs a team of coding agents, and it has desktop apps for macOS, Windows and Linux. The app is free, and its source code is on GitHub. Manus is the better fit when you want an agent with no computer of yours to keep on.",
     },
     {
-      question: "Can I use my ChatGPT, Claude or Gemini subscription with EQBots?",
+      question: "Can I use my ChatGPT, Claude or Gemini subscription with Cat?",
       answer: OPENBOT_TEXT.plansFaq,
     },
     {
@@ -209,12 +209,12 @@ export const MANUS_COMPARISON: Comparison = {
     {
       question: "Do agents keep working when my laptop is closed?",
       answer:
-        "Yes, with both. Manus works in its cloud, so no computer of yours must stay on. EQBots agents work on the computer or server that runs EQBots: keep that computer on, or use a hosted EQBots server, and connect from your laptop or phone.",
+        "Yes, with both. Manus works in its cloud, so no computer of yours must stay on. Cat agents work on the computer or server that runs Cat: keep that computer on, or use a hosted Cat server, and connect from your laptop or phone.",
     },
     {
-      question: "How much do EQBots and Manus cost?",
+      question: "How much do Cat and Manus cost?",
       answer:
-        "EQBots is free for noncommercial use, commercial use needs a separate license, and your agents use the plans you already pay for. Manus is free with 300 credits a day; Pro plans cost $20 to $200 a month and the Team plan starts at $20 a seat. Manus payments are not refundable.",
+        "Cat is free for noncommercial use, commercial use needs a separate license, and your agents use the plans you already pay for. Manus is free with 300 credits a day; Pro plans cost $20 to $200 a month and the Team plan starts at $20 a seat. Manus payments are not refundable.",
     },
   ],
   sources: [
@@ -270,8 +270,8 @@ export const MANUS_COMPARISON: Comparison = {
       label: "Cue messaging apps",
       url: "https://help.manus.im/en/articles/14178640-can-i-connect-multiple-messaging-agents-at-once-in-cue",
     },
-    { label: "EQBots privacy notes", url: OPENBOT_LINKS.privacy },
-    { label: "EQBots source code", url: OPENBOT_LINKS.repository },
+    { label: "Cat privacy notes", url: OPENBOT_LINKS.privacy },
+    { label: "Cat source code", url: OPENBOT_LINKS.repository },
   ],
   checkedAt: "2026-10-02",
 };

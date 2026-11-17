@@ -31,7 +31,7 @@ export const messages = {
   "provider.status.checking": "Verificando",
   "provider.status.off": "Desligado",
   "provider.gemini.hostSignIn":
-    "Para conectar o Gemini, abra o EQBots no computador anfitrião e selecione Conectar em Configurações do servidor > Provedores. O login do Google precisa de um navegador nesse computador anfitrião. Login remoto não é suportado.",
+    "Para conectar o Gemini, abra o Cat no computador anfitrião e selecione Conectar em Configurações do servidor > Provedores. O login do Google precisa de um navegador nesse computador anfitrião. Login remoto não é suportado.",
   "provider.key.free": "Grátis",
   "provider.action.connect": "Conectar",
   "provider.action.reconnect": "Reconectar",
@@ -57,19 +57,19 @@ export const messages = {
   "provider.aria.cancelSignIn": "Cancelar o login em {name}",
   "provider.aria.apiKey": "Chave de API do {name}",
   "provider.connecting.browserHint": "Conclua o login se uma página do navegador abrir.",
-  "provider.connecting.cancelFailed": "O EQBots não conseguiu cancelar o login em {name}. Tente novamente.",
+  "provider.connecting.cancelFailed": "O Cat não conseguiu cancelar o login em {name}. Tente novamente.",
   "provider.aria.install": "Instalar {name}",
   "provider.aria.signIn": "Entrar em {name}",
   "provider.aria.codeFallback": "Entrar em {name} com um código",
   "provider.aria.moreActions": "Mais ações para {name}",
-  "provider.aria.use": "Usar {name} no EQBots",
+  "provider.aria.use": "Usar {name} no Cat",
   "provider.use.inUseOne": "{agent} usa {name}. Mude o modelo deste agente e depois desligue {name}.",
   "provider.use.inUse": {
     one: "{count} agente usa {name}. Mude o modelo deste agente e depois desligue {name}.",
     other: "{count} agentes usam {name}. Mude o modelo destes agentes e depois desligue {name}.",
   },
   "provider.codeLogin.title": "Entrar em {name} com um código",
-  "provider.codeLogin.description": "Conclua no celular ou em outro navegador. O EQBots aguarda aqui.",
+  "provider.codeLogin.description": "Conclua no celular ou em outro navegador. O Cat aguarda aqui.",
   "provider.codeLogin.starting": "Obtendo um código de {name}…",
   "provider.codeLogin.qrLabel": "Código QR da página de login de {name}",
   "provider.codeLogin.open": "Abrir",
@@ -90,12 +90,12 @@ export const messages = {
   "provider.codeLogin.pageDescription": "Esta página está aberta no navegador de {host}. Entre aqui.",
   "provider.codeLogin.relayStarting": "Iniciando o login de {name} em {host}…",
   "provider.codeLogin.pageOpening": "Abrindo a página de login de {name} em {host}…",
-  "provider.codeLogin.linkStep": "Entre em {name}. O EQBots continua sozinho.",
+  "provider.codeLogin.linkStep": "Entre em {name}. O Cat continua sozinho.",
   "provider.codeLogin.chatgptDeviceSetting":
     "No ChatGPT em um computador, abra as configurações de segurança e ative o login com código de dispositivo para o Codex. Em uma conta de trabalho, o administrador do workspace ativa isso.",
-  "provider.useApp.title": "Conecte {name} no app EQBots",
+  "provider.useApp.title": "Conecte {name} no app Cat",
   "provider.useApp.description":
-    "O login em {name} volta para o computador que o iniciou, e uma aba do navegador não consegue recebê-lo. Conecte {name} no app EQBots. O app conclui o login sozinho.",
+    "O login em {name} volta para o computador que o iniciou, e uma aba do navegador não consegue recebê-lo. Conecte {name} no app Cat. O app conclui o login sozinho.",
   "provider.useApp.download": "Baixar o app",
   "provider.picker.noEndpoints": "Nenhum endpoint ainda",
   "provider.picker.customCounts": "{endpoints} · {agents}",
@@ -105,7 +105,7 @@ export const messages = {
   "provider.picker.providers": "Provedores de modelos",
   "provider.picker.downloading": "Baixando {percent}",
   "provider.picker.unavailable": "{name} está indisponível.",
-  "provider.picker.updateToUse": "Atualize o EQBots para usar {name}",
+  "provider.picker.updateToUse": "Atualize o Cat para usar {name}",
   "provider.picker.models": "Modelos de {name}",
   "provider.picker.addProvider": "Adicionar provedor",
   "provider.picker.download": "Download de {name}",
@@ -175,21 +175,21 @@ export const messages = {
   "provider.cursorKey.label": "Chave de API do Cursor",
   "provider.inceptionKey.title": "Chave de API da Inception",
   "provider.inceptionKey.description":
-    "Salve uma chave de API da Inception neste computador para usar os modelos Mercury. O EQBots os executa na CLI do Pi que ele baixa.",
+    "Salve uma chave de API da Inception neste computador para usar os modelos Mercury. O Cat os executa na CLI do Pi que ele baixa.",
   "provider.inceptionKey.descriptionHost":
-    "Salve uma chave de API da Inception no host para usar os modelos Mercury. O EQBots os executa na CLI do Pi que ele baixa.",
+    "Salve uma chave de API da Inception no host para usar os modelos Mercury. O Cat os executa na CLI do Pi que ele baixa.",
   "provider.inceptionKey.label": "Chave de API da Inception",
   "provider.deepseekKey.title": "Chave de API da DeepSeek",
   "provider.deepseekKey.description":
-    "Salve uma chave de API da DeepSeek neste computador para usar os modelos da DeepSeek. O EQBots os executa na CLI do Pi que ele baixa.",
+    "Salve uma chave de API da DeepSeek neste computador para usar os modelos da DeepSeek. O Cat os executa na CLI do Pi que ele baixa.",
   "provider.deepseekKey.descriptionHost":
-    "Salve uma chave de API da DeepSeek no host para usar os modelos da DeepSeek. O EQBots os executa na CLI do Pi que ele baixa.",
+    "Salve uma chave de API da DeepSeek no host para usar os modelos da DeepSeek. O Cat os executa na CLI do Pi que ele baixa.",
   "provider.deepseekKey.label": "Chave de API da DeepSeek",
   "provider.openrouterKey.title": "Chave de API do OpenRouter",
   "provider.openrouterKey.description":
-    "Salve uma chave de API do OpenRouter neste computador para usar os modelos do OpenRouter. O EQBots os executa na CLI do Pi que ele baixa.",
+    "Salve uma chave de API do OpenRouter neste computador para usar os modelos do OpenRouter. O Cat os executa na CLI do Pi que ele baixa.",
   "provider.openrouterKey.descriptionHost":
-    "Salve uma chave de API do OpenRouter no host para usar os modelos do OpenRouter. O EQBots os executa na CLI do Pi que ele baixa.",
+    "Salve uma chave de API do OpenRouter no host para usar os modelos do OpenRouter. O Cat os executa na CLI do Pi que ele baixa.",
   "provider.openrouterKey.label": "Chave de API do OpenRouter",
   "provider.openCodeKey.title": "Entrar no OpenCode Go",
   "provider.openCodeKey.description":
@@ -248,16 +248,16 @@ export const messages = {
   "provider.settings.disconnectOthers":
     "As outras contas do {provider} esperam até você conectar o {provider} de novo.",
   "provider.settings.disconnectLocal":
-    "O EQBots sai do {provider} neste computador. A CLI do {provider} no seu terminal também sai.",
-  "provider.settings.disconnectHost": "O EQBots sai do {provider} no servidor.",
+    "O Cat sai do {provider} neste computador. A CLI do {provider} no seu terminal também sai.",
+  "provider.settings.disconnectHost": "O Cat sai do {provider} no servidor.",
   "provider.settings.geminiKeyReplacesAccount":
     "Uma chave de API do Gemini salva é usada no lugar de um login do Google. Para usar um plano do Google e os modelos dele, remova a chave.",
   "provider.settings.versionInstalledByUser": "{version} · instalada por você",
-  "provider.settings.versionDownloaded": "{version} · baixada pelo EQBots",
+  "provider.settings.versionDownloaded": "{version} · baixada pelo Cat",
   "provider.settings.otherVersionInstalledByUser": "Sem uso: {version} · instalada por você",
-  "provider.settings.otherVersionDownloaded": "Sem uso: {version} · baixada pelo EQBots",
+  "provider.settings.otherVersionDownloaded": "Sem uso: {version} · baixada pelo Cat",
   "provider.settings.useInstalledVersion": "Usar a instalada",
-  "provider.settings.useDownloadedVersion": "Usar a do EQBots",
+  "provider.settings.useDownloadedVersion": "Usar a do Cat",
   "provider.settings.cache": "Cache",
   "provider.settings.promptCache": "Cache de prompts",
   "provider.settings.promptCacheDescription":
@@ -293,10 +293,10 @@ export const messages = {
   "provider.settings.modelsLoadFailed": "Não foi possível carregar os modelos deste servidor.",
   "provider.settings.deleteTitle": "Excluir {name}",
   "provider.settings.deleteOn":
-    "Desativa {name} e exclui a CLI que o EQBots baixou. Contas, logins e agentes continuam.",
+    "Desativa {name} e exclui a CLI que o Cat baixou. Contas, logins e agentes continuam.",
   "provider.settings.deleteOff":
-    "Exclui a CLI que o EQBots baixou para {name} ({size}). Contas, logins e agentes continuam.",
+    "Exclui a CLI que o Cat baixou para {name} ({size}). Contas, logins e agentes continuam.",
   "provider.settings.removeDownloadFailed": "Não foi possível remover o download.",
   "provider.settings.disconnectLocalOnly":
-    "O EQBots desconecta o {provider} neste computador. A CLI do {provider} no seu terminal mantém o próprio login.",
+    "O Cat desconecta o {provider} neste computador. A CLI do {provider} no seu terminal mantém o próprio login.",
 } as const satisfies PartialTranslation<typeof source>;

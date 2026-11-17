@@ -47,12 +47,12 @@ export function createStaticAvatarSvg(
   const svg = host.querySelector("svg");
   if (!svg) {
     dispose();
-    throw new Error("EQBots did not render an SVG avatar.");
+    throw new Error("Cat did not render an SVG avatar.");
   }
   const result = svg.cloneNode(true);
   if (!(result instanceof SVGSVGElement)) {
     dispose();
-    throw new Error("EQBots did not clone an SVG avatar.");
+    throw new Error("Cat did not clone an SVG avatar.");
   }
   dispose();
   return result;
@@ -82,7 +82,7 @@ function mountStaticAvatar(
   const svg = host.querySelector("svg");
   if (!svg) {
     dispose();
-    throw new Error("EQBots did not render an SVG avatar.");
+    throw new Error("Cat did not render an SVG avatar.");
   }
   svg.removeAttribute("role");
   svg.removeAttribute("aria-label");

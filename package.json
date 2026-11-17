@@ -1,9 +1,9 @@
 {
   "name": "openbot",
-  "productName": "EQBots",
+  "productName": "Cat",
   "desktopName": "openbot.desktop",
-  "version": "0.70.0",
-  "description": "EQBots by EverestQai — A local-first multi-agent desktop workspace for Codex, Claude, and Grok.",
+  "version": "0.70.1",
+  "description": "Cat by EverestQai — A local-first multi-agent desktop workspace for Codex, Claude, and Grok.",
   "author": {
     "name": "EverestQai",
     "url": "https://www.everestqai.com"

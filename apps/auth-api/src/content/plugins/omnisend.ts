@@ -32,7 +32,7 @@ export const OMNISEND_PLUGIN_GUIDE: PluginGuide = {
     {
       question: "Does the Omnisend plugin need an API key?",
       answer:
-        "No. Each user signs in to their own Omnisend account through the browser and selects the access level on the consent screen. EQBots registers itself with Omnisend, does the sign-in, keeps the tokens in encrypted storage, and adds the Authorization header. The plugin catalog holds no secret. The account needs the Owner, Admin, Manager or Partner role.",
+        "No. Each user signs in to their own Omnisend account through the browser and selects the access level on the consent screen. Cat registers itself with Omnisend, does the sign-in, keeps the tokens in encrypted storage, and adds the Authorization header. The plugin catalog holds no secret. The account needs the Owner, Admin, Manager or Partner role.",
     },
     {
       question: "Can I give the agent read-only access?",
@@ -47,7 +47,7 @@ export const OMNISEND_PLUGIN_GUIDE: PluginGuide = {
     {
       question: "What data does Omnisend get?",
       answer:
-        "Your workspaces, conversations and files stay on the computer that runs EQBots. Omnisend gets the requests that the agent sends, such as a report query or a campaign update. The tools work on the brand that you sign in to.",
+        "Your workspaces, conversations and files stay on the computer that runs Cat. Omnisend gets the requests that the agent sends, such as a report query or a campaign update. The tools work on the brand that you sign in to.",
     },
   ],
   sources: [

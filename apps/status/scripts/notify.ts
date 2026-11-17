@@ -398,7 +398,7 @@ function message(event: WebhookEvent): { headline: string; lines: string[]; link
       link: SITE_URL,
     };
   }
-  return { headline: "Test event from the EQBots status page", lines: ["The webhook works."], link: SITE_URL };
+  return { headline: "Test event from the Cat status page", lines: ["The webhook works."], link: SITE_URL };
 }
 
 const slackText = (text: string) => text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");

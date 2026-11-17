@@ -4,7 +4,7 @@ import type { messages as source } from "../../en/mobile/chat";
 export const messages = {
   "mobile.chat.dictation.microphoneOffTitle": "Mikrofonzugriff ist deaktiviert",
   "mobile.chat.dictation.microphoneOffMessage":
-    "Um eine Nachricht zu diktieren, erlaube EQBots in den Einstellungen, das Mikrofon und die Spracherkennung zu verwenden.",
+    "Um eine Nachricht zu diktieren, erlaube Cat in den Einstellungen, das Mikrofon und die Spracherkennung zu verwenden.",
   "mobile.chat.dictation.stopped": "Diktat gestoppt",
   "mobile.chat.dictation.tryAgain": "Versuche es erneut.",
   "mobile.chat.dictation.unavailable": "Diktat ist nicht verfügbar",
@@ -120,7 +120,7 @@ export const messages = {
   "mobile.chat.attachment.openFailed": "Anhang konnte nicht geöffnet werden",
   "mobile.chat.attachment.photosNeedUpdate": "Zum Speichern von Fotos wird die neueste Version der App benötigt.",
   "mobile.chat.attachment.photosPermission":
-    "Erlaube EQBots in den Einstellungen, Fotos hinzuzufügen, um dieses Bild zu speichern.",
+    "Erlaube Cat in den Einstellungen, Fotos hinzuzufügen, um dieses Bild zu speichern.",
   "mobile.chat.attachment.imageUnavailable": "Das Bild ist nicht verfügbar. Versuche es erneut.",
   "mobile.chat.attachment.saveImageFailed": "Bild konnte nicht gespeichert werden",
   "mobile.chat.attachment.copyImageFailed": "Bild konnte nicht kopiert werden",
@@ -152,9 +152,9 @@ export const messages = {
   "mobile.chat.attachment.unsupported":
     "{name}: Wähle Bilder, MP3-Audio, MOV- oder MP4-Video, ZIP-Archive, PDF, Office-Dokumente, EML, Text, Markdown, Daten- oder Quelltextdateien.",
   "mobile.chat.attachment.hostRejectsType":
-    "{name}: Der Host-Computer akzeptiert keine {type}-Dateien. Aktualisiere EQBots dort, um sie anzuhängen.",
+    "{name}: Der Host-Computer akzeptiert keine {type}-Dateien. Aktualisiere Cat dort, um sie anzuhängen.",
   "mobile.chat.attachment.hostRejects":
-    "{name}: Der Host-Computer akzeptiert diese Dateien nicht. Aktualisiere EQBots dort, um sie anzuhängen.",
+    "{name}: Der Host-Computer akzeptiert diese Dateien nicht. Aktualisiere Cat dort, um sie anzuhängen.",
   "mobile.chat.attachment.nameTooLong": "Wähle eine Datei mit einem kürzeren Namen.",
   "mobile.chat.attachment.damaged": "Der Anhang ist beschädigt. Wähle ihn erneut aus.",
   "mobile.chat.attachment.tooLarge": "{name} ist größer als 10 MB.",
@@ -204,12 +204,12 @@ export const messages = {
   "mobile.chat.liveVoice.voiceServerFailed":
     "Dein Sprachserver konnte die Antwort nicht vorlesen. Prüfe ihn unter Einstellungen > Sprache.",
   "mobile.chat.liveVoice.gptUnsupported":
-    "Dieser Server unterstützt GPT Live Voice nicht. Aktualisiere EQBots auf dem Computer, auf dem er läuft.",
+    "Dieser Server unterstützt GPT Live Voice nicht. Aktualisiere Cat auf dem Computer, auf dem er läuft.",
   "mobile.chat.liveVoice.gptFailed":
     "GPT Live Voice konnte nicht starten. Hebe die Stummschaltung auf, um es erneut zu versuchen.",
   "mobile.chat.liveVoice.gptEnded": "GPT Live Voice wurde beendet. Hebe die Stummschaltung auf, um es neu zu starten.",
   "mobile.chat.liveVoice.gptMicrophoneOff":
-    "Erlaube EQBots in den Einstellungen, das Mikrofon zu verwenden. Hebe dann die Stummschaltung auf.",
+    "Erlaube Cat in den Einstellungen, das Mikrofon zu verwenden. Hebe dann die Stummschaltung auf.",
   "mobile.chat.composer.addAttachment": "Anhang hinzufügen",
   "mobile.chat.composer.ask": "{name} fragen",
   "mobile.chat.composer.stopFailed": "Der Agent konnte nicht gestoppt werden. Möglicherweise ist er bereits fertig.",
@@ -230,7 +230,7 @@ export const messages = {
   "mobile.chat.pins.unpin": "Lösen",
   "mobile.chat.pins.failed": "Die Anheftung wurde nicht geändert.",
   "mobile.chat.pins.loadFailed": "Die angehefteten Nachrichten konnten nicht geladen werden.",
-  "mobile.chat.pins.unsupported": "Dieser Host kann keine Nachrichten anheften. Aktualisiere EQBots auf dem Host.",
+  "mobile.chat.pins.unsupported": "Dieser Host kann keine Nachrichten anheften. Aktualisiere Cat auf dem Host.",
   "mobile.chat.pins.mainChat": "Hauptchat",
   "mobile.chat.pins.thread": "Nebenthread",
   "mobile.chat.pins.pinnedBy": "Angeheftet von {name}",
@@ -322,7 +322,7 @@ export const messages = {
   "mobile.chat.imageGallery.saved": "In Fotos gespeichert",
   "mobile.chat.imageGallery.shareAll": "Alle teilen",
   "mobile.chat.imageGallery.photosPermission":
-    "Erlaube EQBots in den Einstellungen, Fotos hinzuzufügen, um diese Bilder zu speichern.",
+    "Erlaube Cat in den Einstellungen, Fotos hinzuzufügen, um diese Bilder zu speichern.",
   "mobile.chat.imageGallery.saveFailed": "Bilder konnten nicht gespeichert werden",
   "mobile.chat.imageGallery.shareFailed": "Bilder konnten nicht geteilt werden",
   "mobile.chat.imageGallery.shareNeedsUpdate": "Zum Teilen mehrerer Bilder wird die neueste Version der App benötigt.",
@@ -331,7 +331,7 @@ export const messages = {
   "mobile.chat.video.share": "{name} teilen",
   "mobile.chat.video.save": "{name} in Fotos sichern",
   "mobile.chat.video.photosPermission":
-    "Erlaube EQBots in den Einstellungen, Fotos hinzuzufügen, um dieses Video zu sichern.",
+    "Erlaube Cat in den Einstellungen, Fotos hinzuzufügen, um dieses Video zu sichern.",
   "mobile.chat.video.saveFailed": "Video konnte nicht gespeichert werden",
   "mobile.chat.audio.play": "{name} abspielen",
   "mobile.chat.audio.pause": "{name} pausieren",
@@ -346,7 +346,7 @@ export const messages = {
   "mobile.chat.browserSecret.oneTimeCode": "Einmalcode",
   "mobile.chat.browserSecret.takeoverTitle": "Browserübernahme",
   "mobile.chat.browserSecret.takeoverBody":
-    "Schließe diesen Schritt im Browser auf dem Computer ab, auf dem EQBots läuft.",
+    "Schließe diesen Schritt im Browser auf dem Computer ab, auf dem Cat läuft.",
   "mobile.chat.browserSecret.takeoverReload": "Lade dann die Seite neu, bevor du „Fertig“ wählst.",
   "mobile.chat.browserSecret.takeoverFailed": "Die Anfrage konnte nicht abgeschlossen werden.",
   "mobile.chat.browserSecret.done": "Fertig",
@@ -422,7 +422,7 @@ export const messages = {
   "mobile.chat.approval.effect.permissions":
     "Mit „Erlauben“ erhält {name} diese Berechtigungen auf {server}. Mit „Ablehnen“ bleiben die aktuellen Berechtigungen.",
   "mobile.chat.approval.partial":
-    "{server} sendet nur den Anfang dieser Anfrage an das Telefon. Um sie zu erlauben, aktualisiere EQBots auf {server} oder öffne diesen Chat in der EQBots-Desktop-App. Ablehnen kannst du sie hier.",
+    "{server} sendet nur den Anfang dieser Anfrage an das Telefon. Um sie zu erlauben, aktualisiere Cat auf {server} oder öffne diesen Chat in der Cat-Desktop-App. Ablehnen kannst du sie hier.",
   "mobile.chat.approval.loading": "Vollständige Anfrage wird geladen …",
   "mobile.chat.approval.loadFailed":
     "Die vollständige Anfrage konnte nicht geladen werden. Ablehnen kannst du sie hier.",
@@ -430,7 +430,7 @@ export const messages = {
   "mobile.chat.approval.report.bugHeadline": "Einen Fehler gefunden? Lass ihn uns beheben.",
   "mobile.chat.approval.report.ideaHeadline": "Eine Idee? Lass sie uns umsetzen.",
   "mobile.chat.approval.report.dontSend": "Nicht jetzt",
-  "mobile.chat.approval.report.send": "An das EQBots-Team senden",
+  "mobile.chat.approval.report.send": "An das Cat-Team senden",
   "mobile.chat.approval.allow": "Erlauben",
   "mobile.chat.approval.deny": "Ablehnen",
   "mobile.chat.approval.reconnect": "Verbinde dich mit {server}, um diese Anfrage zu beantworten.",
@@ -511,7 +511,7 @@ export const messages = {
   "mobile.chat.queue.steerNeedsTurn": "Steuern braucht einen laufenden Durchlauf.",
   "mobile.chat.queue.stillHoldingTitle": "Nachricht wird noch angehalten",
   "mobile.chat.queue.stillHoldingMessage":
-    "EQBots konnte diese Nachricht nicht freigeben, daher wartet der Agent weiter auf sie. Versuche es erneut, sobald das Telefon wieder verbunden ist.",
+    "Cat konnte diese Nachricht nicht freigeben, daher wartet der Agent weiter auf sie. Versuche es erneut, sobald das Telefon wieder verbunden ist.",
   "mobile.chat.queue.keepEditing": "Weiter bearbeiten",
   "mobile.chat.queue.leaveAnyway": "Trotzdem verlassen",
   "mobile.chat.queue.discardTitle": "Änderungen verwerfen?",
@@ -520,7 +520,7 @@ export const messages = {
   "mobile.chat.queue.alreadyReceived":
     "Der Agent hat diese Nachricht bereits erhalten, daher kann sie nicht mehr geändert werden.",
   "mobile.chat.queue.holding": "Die Nachricht wird für dich angehalten…",
-  "mobile.chat.queue.holdFailed": "EQBots konnte diese Nachricht nicht zur Bearbeitung anhalten.",
+  "mobile.chat.queue.holdFailed": "Cat konnte diese Nachricht nicht zur Bearbeitung anhalten.",
   "mobile.chat.queue.messageLabel": "Nachricht",
   "mobile.chat.queue.messagePlaceholder": "Nachrichtentext",
   "mobile.chat.queue.save": "Nachricht in der Warteschlange speichern",
@@ -552,15 +552,15 @@ export const messages = {
   "mobile.chat.threads.renameSave": "Sichern",
   "mobile.chat.threads.name": "Thread-Name",
   "mobile.chat.threads.renameUnavailable":
-    "Du kannst diesen Thread jetzt nicht umbenennen. Verbinde dich mit dem Server oder aktualisiere EQBots auf dem Host.",
+    "Du kannst diesen Thread jetzt nicht umbenennen. Verbinde dich mit dem Server oder aktualisiere Cat auf dem Host.",
   "mobile.chat.threads.delete.action": "Löschen",
   "mobile.chat.threads.delete.title": "Diesen Thread löschen?",
   "mobile.chat.threads.delete.body":
-    "EQBots löscht den Thread, seine Nachrichten und seine Dateien endgültig. Der Haupt-Chat bleibt, wie er ist.",
+    "Cat löscht den Thread, seine Nachrichten und seine Dateien endgültig. Der Haupt-Chat bleibt, wie er ist.",
   "mobile.chat.threads.filesUnsupported":
-    "Dieser Host kann keine Dateien in einem Thread annehmen. Aktualisiere EQBots auf dem Host.",
+    "Dieser Host kann keine Dateien in einem Thread annehmen. Aktualisiere Cat auf dem Host.",
   "mobile.chat.threads.unsupported":
-    "Dieser Host kann Threads nicht umbenennen oder löschen. Aktualisiere EQBots auf dem Host.",
+    "Dieser Host kann Threads nicht umbenennen oder löschen. Aktualisiere Cat auf dem Host.",
   "mobile.chat.threads.error.rename": "Der Thread konnte nicht umbenannt werden.",
   "mobile.chat.threads.error.delete": "Der Thread konnte nicht gelöscht werden.",
   "mobile.chat.channelWork.working": "Arbeitet in {channel}",

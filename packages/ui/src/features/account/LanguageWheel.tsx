@@ -21,7 +21,7 @@ interface WheelEntry {
   option: AppLanguageOption;
 }
 
-const PRODUCT_NAME = "EQBots";
+const PRODUCT_NAME = "Cat";
 const TITLE_ID = "language-wheel-title";
 
 /** The catalog languages in selector order. "System default" is not a row: the wheel opens on it. */

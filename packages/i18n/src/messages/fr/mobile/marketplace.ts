@@ -65,13 +65,13 @@ export const messages = {
   "mobile.marketplace.permission.admin":
     "Seuls les propriétaires et les administrateurs peuvent installer depuis la Marketplace.",
   "mobile.marketplace.permission.unavailable":
-    "Ce serveur est hors ligne, ou son EQBots est trop ancien pour cela. Mettez à jour EQBots sur l’ordinateur qui l’exécute.",
+    "Ce serveur est hors ligne, ou son Cat est trop ancien pour cela. Mettez à jour Cat sur l’ordinateur qui l’exécute.",
   "mobile.marketplace.error.agentUnsupported":
-    "Mettez à jour EQBots sur le serveur pour ajouter des agents depuis la Marketplace.",
+    "Mettez à jour Cat sur le serveur pour ajouter des agents depuis la Marketplace.",
   "mobile.marketplace.error.agentUpdateUnsupported":
-    "Mettez à jour EQBots sur le serveur pour mettre à jour les agents du Marketplace.",
+    "Mettez à jour Cat sur le serveur pour mettre à jour les agents du Marketplace.",
   "mobile.marketplace.error.signInUnsupported":
-    "Mettez à jour EQBots sur le serveur pour vous connecter aux apps depuis le téléphone.",
+    "Mettez à jour Cat sur le serveur pour vous connecter aux apps depuis le téléphone.",
   "mobile.marketplace.agent.add": "Ajouter l’agent",
   "mobile.marketplace.agent.adding": "Ajout de l’agent",
   "mobile.marketplace.agent.update": "Mettre à jour",
@@ -114,9 +114,9 @@ export const messages = {
   "mobile.marketplace.app.connectFailed": "Impossible de connecter l’app.",
   "mobile.marketplace.app.linkInvalid": "Utilisez un lien https sur {hostname}.",
   "mobile.marketplace.app.docs": "Obtenir une clé",
-  "mobile.marketplace.app.local": "Cette app s’exécute sur l’ordinateur avec EQBots. Configurez-la sur cet ordinateur.",
+  "mobile.marketplace.app.local": "Cette app s’exécute sur l’ordinateur avec Cat. Configurez-la sur cet ordinateur.",
   "mobile.marketplace.app.relayUnsupported":
-    "Cette app demande une connexion dans le navigateur. Mettez à jour EQBots sur le serveur ou connectez l’app sur l’ordinateur.",
+    "Cette app demande une connexion dans le navigateur. Mettez à jour Cat sur le serveur ou connectez l’app sur l’ordinateur.",
   "mobile.marketplace.app.waiting": "En attente de la page de connexion…",
   "mobile.marketplace.app.openAgain": "Rouvrir la page de connexion",
   "mobile.marketplace.app.pasteHint":

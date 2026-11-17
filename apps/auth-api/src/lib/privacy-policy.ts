@@ -8,7 +8,7 @@ export const PRIVACY_POLICY_ROUTE = "/privacy-policy";
 export const PRIVACY_POLICY_UPDATED_AT = "2026-11-06";
 
 export const PRIVACY_POLICY_META = {
-  title: "EQBots Privacy Policy",
+  title: "Cat Privacy Policy",
   description:
-    "How EverestQai processes personal data when you use EQBots: what we collect, why, who receives it, how long we keep it, and your rights.",
+    "How EverestQai processes personal data when you use Cat: what we collect, why, who receives it, how long we keep it, and your rights.",
 } as const;

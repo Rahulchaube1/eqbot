@@ -17,7 +17,7 @@ export const messages = {
   "dialog.saveExportSkill": "Сохранить навык экспорта",
   "dialog.saveTransfer": "Сохранение файла переноса",
   "dialog.chooseTransfer": "Выбор файла переноса",
-  "dialog.filter.transfer": "Файлы переноса EQBots",
+  "dialog.filter.transfer": "Файлы переноса Cat",
   "dialog.chooseExternalLinkApp": "Выберите браузер",
   "dialog.filter.applications": "Приложения",
 } as const satisfies PartialTranslation<typeof source>;

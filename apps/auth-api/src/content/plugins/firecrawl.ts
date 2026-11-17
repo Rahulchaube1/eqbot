@@ -27,12 +27,12 @@ export const FIRECRAWL_PLUGIN_GUIDE: PluginGuide = {
     {
       question: "Is the Firecrawl MCP server official?",
       answer:
-        "Yes. Firecrawl publishes the firecrawl-mcp package in its own GitHub organization, and the repository calls it the official Firecrawl MCP server. It has the MIT license. EQBots starts this package on the computer that runs EQBots.",
+        "Yes. Firecrawl publishes the firecrawl-mcp package in its own GitHub organization, and the repository calls it the official Firecrawl MCP server. It has the MIT license. Cat starts this package on the computer that runs Cat.",
     },
     {
       question: "Does the Firecrawl plugin need an API key?",
       answer:
-        "Yes. Make an API key in the Firecrawl dashboard, then type it in the connect dialog in EQBots. EQBots gives the key to the local server as the FIRECRAWL_API_KEY environment variable. The plugin catalog holds no secret.",
+        "Yes. Make an API key in the Firecrawl dashboard, then type it in the connect dialog in Cat. Cat gives the key to the local server as the FIRECRAWL_API_KEY environment variable. The plugin catalog holds no secret.",
     },
     {
       question: "Does Firecrawl cost anything?",
@@ -42,7 +42,7 @@ export const FIRECRAWL_PLUGIN_GUIDE: PluginGuide = {
     {
       question: "What data does Firecrawl get?",
       answer:
-        "Firecrawl gets the requests that the agent sends, such as URLs, search queries and extraction schemas. The local server sends them to the Firecrawl API with your key. Your workspaces, conversations and files stay on the computer that runs EQBots.",
+        "Firecrawl gets the requests that the agent sends, such as URLs, search queries and extraction schemas. The local server sends them to the Firecrawl API with your key. Your workspaces, conversations and files stay on the computer that runs Cat.",
     },
   ],
   sources: [

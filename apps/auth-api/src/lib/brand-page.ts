@@ -9,6 +9,6 @@ export const BRAND_ROUTE = "/brand";
 export const BRAND_PAGE_UPDATED_AT = "2026-10-26";
 
 export const BRAND_PAGE_META = {
-  title: "EQBots brand",
-  description: "Download the EQBots and EverestQai logos as SVG or PNG, in each shape and color.",
+  title: "Cat brand",
+  description: "Download the Cat and EverestQai logos as SVG or PNG, in each shape and color.",
 } as const;

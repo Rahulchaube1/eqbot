@@ -10,10 +10,10 @@ export const messages = {
   "mcp.connect.useKey": "代わりに API キーを使う",
   "mcp.connect.useSignIn": "代わりにサインインする",
   "mcp.connect.keyDescription":
-    "{name} アカウントの認証情報を貼り付けてください。EQBots はそれを使って接続し、{host} に保存します。",
+    "{name} アカウントの認証情報を貼り付けてください。Cat はそれを使って接続し、{host} に保存します。",
   "mcp.connect.thisComputer": "このコンピューター",
   "mcp.connect.noCredentialDescription":
-    "{name} は認証情報を必要としません。EQBots は一度接続して、提供されるツールを確認します。",
+    "{name} は認証情報を必要としません。Cat は一度接続して、提供されるツールを確認します。",
   "mcp.connect.connect": "接続",
   "mcp.connect.required": "必須です。",
   "mcp.connect.keptOn": "{host} に保存されます。",
@@ -24,7 +24,7 @@ export const messages = {
   "mcp.local.address": "アドレス",
   "mcp.local.docs": "セットアップガイド",
   "mcp.signIn.description":
-    "{name} アカウントにサインインしてください。EQBots はそのアカウントで使えるツールを取得し、パスワードは取得しません。",
+    "{name} アカウントにサインインしてください。Cat はそのアカウントで使えるツールを取得し、パスワードは取得しません。",
   "mcp.signIn.waiting": "ブラウザーを待機中…",
   "mcp.signIn.continue": "{name} に進む",
   "mcp.signIn.pageDescription": "このページは {host} のブラウザーで開いています。ここでサインインしてください。",
@@ -62,7 +62,7 @@ export const messages = {
   "mcp.panel.empty": "MCP サーバーはまだありません。",
   "mcp.panel.enable": "{name} を有効にする",
   "mcp.panel.detailsTitle": "詳細",
-  "mcp.panel.detailsDescription": "このサーバーに名前を付け、EQBots の接続方法を選んでください。",
+  "mcp.panel.detailsDescription": "このサーバーに名前を付け、Cat の接続方法を選んでください。",
   "mcp.panel.transport": "トランスポート",
   "mcp.panel.name": "名前",
   "mcp.panel.namePlaceholder": "MCP サーバー名",
@@ -111,14 +111,14 @@ export const messages = {
   "mcp.panel.signInTo": "{name} にサインイン",
   "mcp.panel.cancelSignInTo": "{name} へのサインインをキャンセル",
   "mcp.panel.signInWaiting": {
-    other: "ブラウザーでサインインを完了してください。EQBots は {count} 分後に待機をやめます。",
+    other: "ブラウザーでサインインを完了してください。Cat は {count} 分後に待機をやめます。",
   },
   "mcp.panel.signInWaitingOn": {
-    other: "{host} でサインインページを開いています。EQBots は {count} 分後に待機をやめます。",
+    other: "{host} でサインインページを開いています。Cat は {count} 分後に待機をやめます。",
   },
   "mcp.panel.appTitle": "サインインアプリ",
   "mcp.panel.appDescription":
-    "サーバーのプロバイダーに登録した OAuth アプリを使います。サーバーが EQBots を自動で登録できない場合に EQBots がこのアプリを使います。EQBots に自動で登録させる場合は空のままにしてください。",
+    "サーバーのプロバイダーに登録した OAuth アプリを使います。サーバーが Cat を自動で登録できない場合に Cat がこのアプリを使います。Cat に自動で登録させる場合は空のままにしてください。",
   "mcp.panel.appSaveFirst": "まずこのサーバーを保存してください。その後でサインインアプリを追加できます。",
   "mcp.panel.appUrlChanged": "まず新しいサーバー URL を保存してください。サインインアプリは保存済みの URL に属します。",
   "mcp.panel.appLoadFailed": "サインインアプリを読み込めませんでした。",
@@ -141,18 +141,18 @@ export const messages = {
   "mcp.panel.appSaved": "アプリを保存しました。使用するにはサインインしてください。",
   "mcp.panel.appRemoved": "アプリを削除しました。",
   "mcp.signIn.relayDescription":
-    "ブラウザーで {page} にサインインしてください。完了すると、EQBots がサインインを {host} に送信します。",
+    "ブラウザーで {page} にサインインしてください。完了すると、Cat がサインインを {host} に送信します。",
   "mcp.signIn.relayOpenDescription":
-    "ブラウザーで {page} にサインインしてください。完了したら、ブラウザーに表示されたアドレスをここに貼り付けてください。その後、EQBots がサインインを {host} に送信します。",
+    "ブラウザーで {page} にサインインしてください。完了したら、ブラウザーに表示されたアドレスをここに貼り付けてください。その後、Cat がサインインを {host} に送信します。",
   "mcp.signIn.relayDeviceDescription":
     "ブラウザーで {page} にサインインし、そこで完了してください。{host} はサインインを自動で検出します。",
   "mcp.signIn.relayOpen": "サインインページを開く",
   "mcp.signIn.relayPasteHint":
-    "ブラウザーが EQBots に戻らない場合は、表示されているアドレスをコピーしてここに貼り付けてください。",
+    "ブラウザーが Cat に戻らない場合は、表示されているアドレスをコピーしてここに貼り付けてください。",
   "mcp.signIn.relayPasteRequired":
-    "EQBots はブラウザーからサインインを自動で受け取れません。完了したら、ブラウザーに表示されたアドレスをコピーしてここに貼り付けてください。",
+    "Cat はブラウザーからサインインを自動で受け取れません。完了したら、ブラウザーに表示されたアドレスをコピーしてここに貼り付けてください。",
   "mcp.signIn.relayAddress": "ブラウザーのアドレス",
   "mcp.signIn.relaySend": "送信",
   "mcp.panel.callbackUrlRelayed":
-    "サインインページはお使いのブラウザーで開き、このコンピューターの EQBots がサインインを {host} に送信します。この URL をそのまま、アプリで許可するリダイレクト URL に追加してください。",
+    "サインインページはお使いのブラウザーで開き、このコンピューターの Cat がサインインを {host} に送信します。この URL をそのまま、アプリで許可するリダイレクト URL に追加してください。",
 } as const satisfies PartialTranslation<typeof source>;

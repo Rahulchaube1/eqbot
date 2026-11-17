@@ -26,11 +26,11 @@ export const messages = {
   "prompt.approval.alwaysAllow": "Toujours autoriser",
   "prompt.approval.deny": "Refuser",
   "prompt.approval.cut":
-    "Cette carte n’affiche que le début de la demande : elle propose donc seulement Refuser. Si Autoriser n’apparaît pas bientôt, mettez à jour EQBots sur le serveur.",
+    "Cette carte n’affiche que le début de la demande : elle propose donc seulement Refuser. Si Autoriser n’apparaît pas bientôt, mettez à jour Cat sur le serveur.",
   "prompt.approval.report.bugHeadline": "Un bug ? Corrigeons-le.",
   "prompt.approval.report.ideaHeadline": "Une idée ? Concrétisons-la.",
   "prompt.approval.report.dontSend": "Pas maintenant",
-  "prompt.approval.report.send": "Envoyer à l'équipe EQBots",
+  "prompt.approval.report.send": "Envoyer à l'équipe Cat",
   "prompt.approval.title.command": "Exécuter une commande",
   "prompt.approval.title.fileChange": "Modifier des fichiers",
   "prompt.approval.title.permissions": "Accorder des autorisations",
@@ -55,7 +55,7 @@ export const messages = {
   "prompt.browser.signInBlocked.title": "{host} a bloqué la connexion depuis {server}",
   "prompt.browser.signInBlocked.cancelledTitle": "Connexion à {host} annulée",
   "prompt.browser.signInBlocked.body":
-    "Connectez-vous sur cet ordinateur. EQBots envoie uniquement la connexion à {host} vers {server}, et {name} continue.",
+    "Connectez-vous sur cet ordinateur. Cat envoie uniquement la connexion à {host} vers {server}, et {name} continue.",
   "prompt.browser.signInBlocked.cancelledBody": "La connexion a été annulée.",
   "prompt.browser.signInBlocked.waiting": "En attente de la connexion",
   "prompt.browser.signInBlocked.waitingButton": "En attente de la connexion…",

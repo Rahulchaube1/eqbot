@@ -10,18 +10,18 @@ export function OpenBot101() {
   return (
     <>
       <p>
-        I built EQBots because I wanted teammates, not chats. A chat window forgets. A teammate keeps the folder it
+        I built Cat because I wanted teammates, not chats. A chat window forgets. A teammate keeps the folder it
         works in, the history of what it did, and a name you can call it by. Tomorrow morning it is still those things,
         on a different model, after a restart.
       </p>
       <p>
-        This is the page I would send someone who has never opened the app. It covers what EQBots is, what an agent
+        This is the page I would send someone who has never opened the app. It covers what Cat is, what an agent
         actually owns, and how to get one doing work you can check.
       </p>
 
-      <h2>What EQBots is</h2>
+      <h2>What Cat is</h2>
       <p>
-        EQBots is a desktop workspace for AI teammates that live on your computer. It runs the coding command-line tools
+        Cat is a desktop workspace for AI teammates that live on your computer. It runs the coding command-line tools
         you already use as processes on that machine:{" "}
         <a href={OPENBOT_LINKS.codex} target="_blank" rel={EXTERNAL_LINK_REL}>
           the Codex App Server
@@ -35,7 +35,7 @@ export function OpenBot101() {
       <p>
         Your work sits in a SQLite database called <code>openbot.db</code>, in the application's data folder. That file
         is the source of truth. Workspaces, conversations, attachments, browser data and team data stay on the computer
-        that runs EQBots.
+        that runs Cat.
       </p>
       <p>
         <strong>Local-first is not the same as offline.</strong> Codex still talks to OpenAI, Claude to Anthropic, Grok
@@ -70,13 +70,13 @@ export function OpenBot101() {
         alt="An agent thread. Chief answers a launch question with a table of workstreams, owners and status, links the two working documents it read, and ends with a shell block."
         width={2400}
         height={1064}
-        mountOn="How to Use EQBots: Set Up Your First AI Agent"
+        mountOn="How to Use Cat: Set Up Your First AI Agent"
         caption="A thread is the answer and the work behind it: mentions of other agents, the files that were read, and the command it wants run next."
       />
 
       <h2>Install it, then connect a provider</h2>
       <p>
-        EQBots runs on macOS 13 or newer on Apple silicon or Intel, Windows 10 or newer on x64, and x64 or arm64 Linux
+        Cat runs on macOS 13 or newer on Apple silicon or Intel, Windows 10 or newer on x64, and x64 or arm64 Linux
         as an AppImage. Grab the installer from{" "}
         <a href={OPENBOT_LINKS.releases} target="_blank" rel={EXTERNAL_LINK_REL}>
           GitHub Releases
@@ -91,11 +91,11 @@ export function OpenBot101() {
       </p>
       <p>
         Then pick a provider. In onboarding, in Settings or in the model picker, select one and press{" "}
-        <strong>Download</strong>. EQBots installs and pins its own managed copy of that command-line tool. If you
-        already installed the tool yourself and there is no managed copy, EQBots uses yours.
+        <strong>Download</strong>. Cat installs and pins its own managed copy of that command-line tool. If you
+        already installed the tool yourself and there is no managed copy, Cat uses yours.
       </p>
       <p>
-        <strong>EQBots uses the login the command-line tool already has.</strong> It does not copy your provider
+        <strong>Cat uses the login the command-line tool already has.</strong> It does not copy your provider
         credentials. If <code>codex</code> or <code>claude</code> works in your terminal, it works here.
       </p>
       <ArticleImage
@@ -103,7 +103,7 @@ export function OpenBot101() {
         alt="The model picker open on the ChatGPT tab, showing the installed Codex CLI version, a list of GPT models, and a reasoning effort control."
         width={1440}
         height={1484}
-        mountOn="How to Use EQBots: Set Up Your First AI Agent"
+        mountOn="How to Use Cat: Set Up Your First AI Agent"
         caption="The picker names the command-line tool and its version, so you can see which binary an answer came from."
       />
 
@@ -150,7 +150,7 @@ export function OpenBot101() {
         alt="A channel called Launch room. Chief assigns the release note to Launch, Research reports which performance claims it could verify, and Launch posts the finished draft as a linked file."
         width={2400}
         height={1090}
-        mountOn="How to Use EQBots: Set Up Your First AI Agent"
+        mountOn="How to Use Cat: Set Up Your First AI Agent"
         caption="One room, one task owner. The handover is a message, so you can read who took the work and why."
       />
 
@@ -168,13 +168,13 @@ export function OpenBot101() {
         alt="A routine in a thread. Two invoked routine markers sit above their instructions, and a side panel shows the schedule, on weekdays at 9:00 AM, with a successful run yesterday."
         width={1696}
         height={664}
-        mountOn="How to Use EQBots: Set Up Your First AI Agent"
+        mountOn="How to Use Cat: Set Up Your First AI Agent"
         caption="The thread marks which turns a routine started, so a scheduled answer never reads as one you asked for."
       />
 
       <h2>Your team, on your own computer</h2>
       <p>
-        You can invite people to your EQBots instead of copying it. Publishing never starts a second instance. The Team
+        You can invite people to your Cat instead of copying it. Publishing never starts a second instance. The Team
         API stays on loopback, and a hidden sandboxed page connects invited clients over WebRTC. Signal only carries the
         connection setup.
       </p>

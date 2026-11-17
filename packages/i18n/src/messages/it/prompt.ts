@@ -26,11 +26,11 @@ export const messages = {
   "prompt.approval.alwaysAllow": "Consenti sempre",
   "prompt.approval.deny": "Nega",
   "prompt.approval.cut":
-    "Questa scheda mostra solo l’inizio della richiesta, quindi offre solo Rifiuta. Se Consenti non appare a breve, aggiorna EQBots sul server.",
+    "Questa scheda mostra solo l’inizio della richiesta, quindi offre solo Rifiuta. Se Consenti non appare a breve, aggiorna Cat sul server.",
   "prompt.approval.report.bugHeadline": "Hai trovato un bug? Risolviamolo.",
   "prompt.approval.report.ideaHeadline": "Hai un'idea? Realizziamola.",
   "prompt.approval.report.dontSend": "Non ora",
-  "prompt.approval.report.send": "Invia al team di EQBots",
+  "prompt.approval.report.send": "Invia al team di Cat",
   "prompt.approval.title.command": "Esegui un comando",
   "prompt.approval.title.fileChange": "Modifica file",
   "prompt.approval.title.permissions": "Concedi permessi",
@@ -55,7 +55,7 @@ export const messages = {
   "prompt.browser.signInBlocked.title": "{host} ha bloccato l’accesso da {server}",
   "prompt.browser.signInBlocked.cancelledTitle": "Accesso a {host} annullato",
   "prompt.browser.signInBlocked.body":
-    "Accedi su questo computer. EQBots invia solo l’accesso a {host} a {server}, e {name} continua.",
+    "Accedi su questo computer. Cat invia solo l’accesso a {host} a {server}, e {name} continua.",
   "prompt.browser.signInBlocked.cancelledBody": "L’accesso è stato annullato.",
   "prompt.browser.signInBlocked.waiting": "In attesa dell’accesso",
   "prompt.browser.signInBlocked.waitingButton": "In attesa dell’accesso…",

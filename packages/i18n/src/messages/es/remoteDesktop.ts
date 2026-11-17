@@ -9,7 +9,7 @@ export const messages = {
   "remoteDesktop.workspaceLabel": "Control remoto",
   "remoteDesktop.displayLabel": "Pantalla remota",
   "remoteDesktop.selectDisplay": "Seleccionar pantalla",
-  "remoteDesktop.backToOpenBot": "Volver a EQBots",
+  "remoteDesktop.backToOpenBot": "Volver a Cat",
   "remoteDesktop.disconnect": "Desconectar",
   "remoteDesktop.viewerTitle": "Escritorio remoto de Sunshine",
   "remoteDesktop.viewerLoadFailed": "No se pudo cargar el visor de Moonlight.",
@@ -20,7 +20,7 @@ export const messages = {
   "remoteDesktop.openFailed": "No se pudo abrir el escritorio",
   "remoteDesktop.notSharingTitle": "{name} no comparte su pantalla",
   "remoteDesktop.notSharingDescription":
-    "El servidor impide que EQBots grabe su pantalla. En ese servidor, abre Ajustes del Sistema → Privacidad y seguridad → Grabación de pantalla, activa EQBots y vuelve a intentarlo aquí.",
+    "El servidor impide que Cat grabe su pantalla. En ese servidor, abre Ajustes del Sistema → Privacidad y seguridad → Grabación de pantalla, activa Cat y vuelve a intentarlo aquí.",
   "remoteDesktop.setup.check.screenRecording": "Grabación de pantalla",
   "remoteDesktop.setup.check.accessibility": "Accesibilidad",
   "remoteDesktop.setup.check.service": "Servicio de Sunshine",
@@ -41,7 +41,7 @@ export const messages = {
   "remoteDesktop.setup.startFailed": "No se pudo iniciar la prueba del escritorio remoto.",
   "remoteDesktop.setup.connectionLost": "Se perdió la conexión de prueba.",
   "remoteDesktop.setup.hostUpdateRequired":
-    "Actualiza EQBots en el servidor para comprobar los permisos y probar el escritorio remoto.",
+    "Actualiza Cat en el servidor para comprobar los permisos y probar el escritorio remoto.",
   "remoteDesktop.setup.permissions": "Permisos",
   "remoteDesktop.setup.checked": "Comprobado",
   "remoteDesktop.setup.checkAgain": "Comprobar",
@@ -76,12 +76,12 @@ export const messages = {
   "remoteDesktop.setup.finishTest": "Finalizar prueba",
   "remoteDesktop.host.questionTitle": "{name} quiere controlar este equipo",
   "remoteDesktop.host.questionDetail":
-    "{name} verá tu pantalla y podrá usar el cursor y el teclado. Si no respondes en 30 segundos, EQBots rechazará la solicitud.",
+    "{name} verá tu pantalla y podrá usar el cursor y el teclado. Si no respondes en 30 segundos, Cat rechazará la solicitud.",
   "remoteDesktop.host.allow": "Permitir",
   "remoteDesktop.host.deny": "Denegar",
   "remoteDesktop.host.startedTitle": "Control remoto iniciado",
   "remoteDesktop.host.startedBody": "{name} controla este equipo ahora.",
-  "remoteDesktop.host.trayTooltip": "EQBots: control remoto activo",
+  "remoteDesktop.host.trayTooltip": "Cat: control remoto activo",
   "remoteDesktop.host.trayControlledBy": "{name} controla este equipo",
   "remoteDesktop.host.stopAll": "Detener todo el control remoto",
 } as const satisfies PartialTranslation<typeof source>;

@@ -61,10 +61,10 @@ export const messages = {
   "composer.voice.transcribing": "Transcrevendo instrução por voz",
   "composer.voice.start": "Criar instrução por voz",
   "composer.voice.blocked":
-    "O acesso ao microfone está bloqueado. Permita que o EQBots use o microfone nas configurações do sistema.",
+    "O acesso ao microfone está bloqueado. Permita que o Cat use o microfone nas configurações do sistema.",
   "composer.voice.noMicrophone": "Nenhum microfone disponível.",
-  "composer.voice.startFailed": "O EQBots não conseguiu iniciar a gravação de voz.",
-  "composer.voice.transcribeFailed": "O EQBots não conseguiu transcrever esta gravação.",
+  "composer.voice.startFailed": "O Cat não conseguiu iniciar a gravação de voz.",
+  "composer.voice.transcribeFailed": "O Cat não conseguiu transcrever esta gravação.",
   "composer.reply.toYou": "Respondendo à sua mensagem",
   "composer.reply.toAgent": "Respondendo ao agente",
   "composer.reply.attachment": "Anexo",

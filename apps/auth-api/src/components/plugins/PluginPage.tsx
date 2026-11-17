@@ -95,7 +95,7 @@ function PluginConnectStep(props: { step: SitePluginConnectStep; appCount: numbe
       <Show when={props.step.kind === "link"}>
         <h3 class="provider-step-title">{prefix()}Sign in</h3>
         <p class="provider-step-text">
-          Press Connect and finish the sign-in in your browser. EQBots keeps the token on the computer that runs EQBots.
+          Press Connect and finish the sign-in in your browser. Cat keeps the token on the computer that runs Cat.
           You can disconnect at any time.
         </p>
       </Show>
@@ -106,8 +106,8 @@ function PluginConnectStep(props: { step: SitePluginConnectStep; appCount: numbe
               {prefix()}Add your {step().fields.length > 1 ? "details" : step().fields[0]?.label}
             </h3>
             <p class="provider-step-text">
-              Press Connect and enter {step().fields.length > 1 ? "these values" : "this value"}. EQBots keeps{" "}
-              {step().fields.length > 1 ? "them" : "it"} on the computer that runs EQBots.
+              Press Connect and enter {step().fields.length > 1 ? "these values" : "this value"}. Cat keeps{" "}
+              {step().fields.length > 1 ? "them" : "it"} on the computer that runs Cat.
             </p>
             <ul class="plugin-connect-fields">
               <For each={step().fields}>
@@ -131,7 +131,7 @@ function PluginConnectStep(props: { step: SitePluginConnectStep; appCount: numbe
               {prefix()}Set up the {step().label}
             </h3>
             <p class="provider-step-text">
-              The server runs on the computer that runs EQBots, so it needs the {step().label} first.
+              The server runs on the computer that runs Cat, so it needs the {step().label} first.
             </p>
             <ol class="plugin-connect-fields">
               <For each={step().steps}>{(line) => <li>{line}</li>}</For>
@@ -216,8 +216,8 @@ export function PluginPage(props: PluginPageProps) {
               <PluginOpenButtons
                 href={createOpenBotPluginUrl(props.plugin.slug)}
                 browserHref={createWebAppPluginPath(props.plugin.slug)}
-                label="Open in EQBots"
-                downloadCopy={`${props.plugin.name} installs from inside EQBots. Get the app, then open this plugin from its Apps tab.`}
+                label="Open in Cat"
+                downloadCopy={`${props.plugin.name} installs from inside Cat. Get the app, then open this plugin from its Apps tab.`}
               />
             </div>
           </header>
@@ -252,12 +252,12 @@ export function PluginPage(props: PluginPageProps) {
 
             {/* Built from the catalog's sign-in entries only, so it says what the install will ask.
                 The server address stays out, for the reason the comment on this component gives. */}
-            <PluginTextSection id="plugin-connect-title" title={`How to connect ${props.plugin.name} to EQBots`}>
+            <PluginTextSection id="plugin-connect-title" title={`How to connect ${props.plugin.name} to Cat`}>
               <ol class="provider-steps plugin-connect">
                 <li class="provider-step">
-                  <h3 class="provider-step-title">Open {props.plugin.name} in EQBots</h3>
+                  <h3 class="provider-step-title">Open {props.plugin.name} in Cat</h3>
                   <p class="provider-step-text">
-                    Press Open in EQBots on this page, or find {props.plugin.name} in the app's Apps tab. Get the app
+                    Press Open in Cat on this page, or find {props.plugin.name} in the app's Apps tab. Get the app
                     first if it is not on this computer.
                   </p>
                 </li>
@@ -267,7 +267,7 @@ export function PluginPage(props: PluginPageProps) {
                 <li class="provider-step">
                   <h3 class="provider-step-title">Give an agent a task</h3>
                   <p class="provider-step-text">
-                    {connectSteps().length === 0 ? `EQBots asks for no sign-in or key for ${props.plugin.name}. ` : ""}
+                    {connectSteps().length === 0 ? `Cat asks for no sign-in or key for ${props.plugin.name}. ` : ""}
                     Ask an agent for work that needs {props.plugin.name}
                     {props.plugin.prompts.length > 0 ? ", such as one of the example prompts below" : ""}. The agent
                     uses the plugin's tools to do it.

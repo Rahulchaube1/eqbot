@@ -35,7 +35,7 @@ export const TRYPOST_PLUGIN_GUIDE: PluginGuide = {
     {
       question: "How do I connect TryPost?",
       answer:
-        "Sign in to your TryPost account through the browser, and choose the workspace that the connection can use. EQBots keeps the token in encrypted storage. The plugin catalog holds no secret.",
+        "Sign in to your TryPost account through the browser, and choose the workspace that the connection can use. Cat keeps the token in encrypted storage. The plugin catalog holds no secret.",
     },
     {
       question: "Does the TryPost MCP server cost anything?",
@@ -45,12 +45,12 @@ export const TRYPOST_PLUGIN_GUIDE: PluginGuide = {
     {
       question: "Can an agent publish without asking?",
       answer:
-        "The create-post-tool and publish-post-tool tools can publish a post immediately. Whether the agent asks first depends on its permission mode in EQBots, so review each post before you approve it.",
+        "The create-post-tool and publish-post-tool tools can publish a post immediately. Whether the agent asks first depends on its permission mode in Cat, so review each post before you approve it.",
     },
     {
       question: "What data does TryPost get?",
       answer:
-        "TryPost gets the requests that the agent sends: the text and media of your posts and the questions about your channels. TryPost stores your posts and media. Your workspaces, conversations and files stay on the computer that runs EQBots.",
+        "TryPost gets the requests that the agent sends: the text and media of your posts and the questions about your channels. TryPost stores your posts and media. Your workspaces, conversations and files stay on the computer that runs Cat.",
     },
   ],
   sources: [

@@ -23,7 +23,7 @@ function pageMeta(url: string, text: MarketplaceHeadText) {
     { title: text.title },
     { name: "description", content: text.description },
     { property: "og:type", content: "website" },
-    { property: "og:site_name", content: "EQBots" },
+    { property: "og:site_name", content: "Cat" },
     { property: "og:url", content: url },
     { property: "og:title", content: text.title },
     { property: "og:description", content: text.description },
@@ -37,7 +37,7 @@ function pageMeta(url: string, text: MarketplaceHeadText) {
 /** The social card of the three index tabs. A listing has its own card. */
 const MARKETPLACE_SOCIAL_IMAGE: PageSocialImage = {
   path: "/social/marketplace.jpg",
-  alt: "Your kind of team. Four EQBots agents in front of a rainbow",
+  alt: "Your kind of team. Four Cat agents in front of a rainbow",
 };
 
 /** `/marketplace`, `/marketplace/skills` and `/marketplace/apps`, with the Marketplace card. */

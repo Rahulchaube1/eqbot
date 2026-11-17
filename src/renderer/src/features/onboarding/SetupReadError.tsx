@@ -4,7 +4,7 @@ import { useText } from "@openbot/ui/text";
 import { usePlatform } from "../../platform";
 import { useSetup } from "./onboarding-context";
 
-const PRODUCT_NAME = "EQBots";
+const PRODUCT_NAME = "Cat";
 
 /**
  * Shown in place of first-run setup when the saved setup could not be read. A configured user

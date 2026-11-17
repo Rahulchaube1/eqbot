@@ -9,7 +9,7 @@ import { type Comparison, OPENBOT_LANGUAGE_COUNT, OPENBOT_TEXT } from "./compari
 export const VIKTOR_COMPARISON: Comparison = {
   rival: { name: "Viktor", mark: "viktor" },
   answer:
-    "Choose EQBots if you want a team of AI agents on your own computer, with your data in a database that you hold and the AI plans you already pay for: the app is free, and there are no credits to buy. Choose Viktor if you want one AI coworker in Slack or Microsoft Teams that runs in the cloud, connects to thousands of business apps, and comes with a SOC 2 report.",
+    "Choose Cat if you want a team of AI agents on your own computer, with your data in a database that you hold and the AI plans you already pay for: the app is free, and there are no credits to buy. Choose Viktor if you want one AI coworker in Slack or Microsoft Teams that runs in the cloud, connects to thousands of business apps, and comes with a SOC 2 report.",
   chooseOpenBot: [
     "Your chats, files and company data must stay on your own computer, not on a service's servers in the US.",
     "You already pay for ChatGPT, Claude, Gemini, Grok, Cursor, Cline or Muse Code, and you do not want to pay for each task again in credits.",
@@ -45,7 +45,7 @@ export const VIKTOR_COMPARISON: Comparison = {
     {
       icon: "laptop",
       topic: "Where agents work",
-      openbot: "On the computer that runs EQBots, or on a hosted EQBots server in the EU.",
+      openbot: "On the computer that runs Cat, or on a hosted Cat server in the EU.",
       rival: "On Viktor's own cloud computer for your workspace, in the US.",
       better: "openbot",
     },
@@ -77,7 +77,7 @@ export const VIKTOR_COMPARISON: Comparison = {
     {
       icon: "puzzle",
       topic: "Integrations",
-      openbot: "Agents use MCP servers, plugins from the EQBots catalog, and the command-line tools on your computer.",
+      openbot: "Agents use MCP servers, plugins from the Cat catalog, and the command-line tools on your computer.",
       rival: "More than 9,800 apps, such as Salesforce, HubSpot, Linear, Notion, Stripe and Google Ads.",
       better: "rival",
     },
@@ -114,7 +114,7 @@ export const VIKTOR_COMPARISON: Comparison = {
     {
       icon: "globe",
       topic: "Who can use it",
-      openbot: `Anyone, in any country: EQBots has no region lock. Each AI provider sets the countries for its own plan. The desktop app is in ${OPENBOT_LANGUAGE_COUNT} languages, and hosted servers run in the EU.`,
+      openbot: `Anyone, in any country: Cat has no region lock. Each AI provider sets the countries for its own plan. The desktop app is in ${OPENBOT_LANGUAGE_COUNT} languages, and hosted servers run in the EU.`,
       rival: "Businesses only: its terms say that the service is not for consumers.",
       better: "openbot",
     },
@@ -127,11 +127,11 @@ export const VIKTOR_COMPARISON: Comparison = {
     },
   ],
   intro:
-    "Viktor is an AI coworker that lives in Slack and Microsoft Teams. Anyone on the team mentions it, and it does the work on its own cloud computer: reports, ad campaigns, bug triage, internal apps and invoices, with more than 9,800 connected apps. EQBots also gives you AI agents that do real work. The difference is where they run, who holds your data, and how you pay. Viktor runs in the US, can read the channels it joins, and bills each task in credits. EQBots runs a team of agents on your own computer, keeps your data there, and uses the AI plans you already pay for.",
+    "Viktor is an AI coworker that lives in Slack and Microsoft Teams. Anyone on the team mentions it, and it does the work on its own cloud computer: reports, ad campaigns, bug triage, internal apps and invoices, with more than 9,800 connected apps. Cat also gives you AI agents that do real work. The difference is where they run, who holds your data, and how you pay. Viktor runs in the US, can read the channels it joins, and bills each task in credits. Cat runs a team of agents on your own computer, keeps your data there, and uses the AI plans you already pay for.",
   sections: [
     {
       title: "Models and what you pay",
-      openbot: `${OPENBOT_TEXT.plansList} EQBots is free for noncommercial use, so a busy month does not cost more.`,
+      openbot: `${OPENBOT_TEXT.plansList} Cat is free for noncommercial use, so a busy month does not cost more.`,
       rival:
         "Viktor offers models from OpenAI, Anthropic, Google and xAI, and an admin sets the default model for the workspace. You can also connect your own OpenRouter key; those models are billed to your OpenRouter account. You cannot use a ChatGPT or Claude plan that you already pay for. You pay in credits, shared by the whole workspace. You start with up to $100 in free credits. The Team plan starts at $50 a month for 20,000 credits and goes up to $50,000 a month for 20 million credits; Enterprise has custom prices. Viktor says that a quick Slack question uses about 50 to 100 credits, a deep research report 500 to 2,000, and a full project 2,000 to 5,000. Scheduled tasks use credits each time they run, and unused credits roll over for one month only.",
       better: "openbot",
@@ -146,7 +146,7 @@ export const VIKTOR_COMPARISON: Comparison = {
     {
       title: "What it reads, and who holds your data",
       openbot:
-        "EQBots keeps workspaces, conversations, attachments and browser data in a SQLite database on the computer that runs it. EQBots keeps no other copy. On a hosted EQBots server, the database is on that server in the EU. An account holds your profile, team memberships, invitations, sign-in sessions, the settings that let devices find each other, and any agent templates that you publish. Product analytics, which never include chat content, are on by default and linked to your account when you sign in; you can turn them off in Settings.",
+        "Cat keeps workspaces, conversations, attachments and browser data in a SQLite database on the computer that runs it. Cat keeps no other copy. On a hosted Cat server, the database is on that server in the EU. An account holds your profile, team memberships, invitations, sign-in sessions, the settings that let devices find each other, and any agent templates that you publish. Product analytics, which never include chat content, are on by default and linked to your account when you sign in; you can turn them off in Settings.",
       rival:
         "Viktor's privacy policy says that it reads all messages in the Slack channels it joins, not only the messages that mention it, and that it can get up to about 90 days of earlier history when it joins. A user can give it wider search access, which can include private channels and direct messages. Data is stored with cloud providers in US regions, and the policy names more than 30 other services that process it. Viktor says that it does not train foundation models on your data, but it can use your data for small internal models, such as one that chooses the model for a task.",
       better: "openbot",
@@ -154,7 +154,7 @@ export const VIKTOR_COMPARISON: Comparison = {
     {
       title: "How agents work as a team",
       openbot:
-        "In EQBots, each agent is a full coding agent: Codex, Claude Code, Gemini, Grok CLI, Cursor CLI, Cline, OpenCode, Pi, Muse Code or an agent of your own, each with its own job, model and workspace. A lead agent can give parts of a task to other agents in a shared channel. You follow their work and step in when a decision needs you. When you move an agent to a different provider, it keeps its role, workspace and conversation. For a team of people, one computer runs the host and the others join it; the chats and files stay on the host. Roles set which agents each member can view, chat with or manage.",
+        "In Cat, each agent is a full coding agent: Codex, Claude Code, Gemini, Grok CLI, Cursor CLI, Cline, OpenCode, Pi, Muse Code or an agent of your own, each with its own job, model and workspace. A lead agent can give parts of a task to other agents in a shared channel. You follow their work and step in when a decision needs you. When you move an agent to a different provider, it keeps its role, workspace and conversation. For a team of people, one computer runs the host and the others join it; the chats and files stay on the host. Roles set which agents each member can view, chat with or manage.",
       rival:
         "Viktor is one AI coworker for the whole workspace. Everyone on the team mentions the same Viktor, it keeps one shared memory of the team, and every request uses the same pool of credits.",
       better: "openbot",
@@ -162,14 +162,14 @@ export const VIKTOR_COMPARISON: Comparison = {
     {
       title: "Approvals and responsibility",
       openbot:
-        "EQBots agents show a draft before they send a message for you. They send it after you approve it, or when you or a routine that you set up tells them to send. Before a payment, an agent reads back the item, price and total and asks you to confirm. A new agent has Full access: it does not ask before it runs a command. Set an agent to Ask first, and that agent asks you first; you answer in the chat or from a notification on your phone.",
+        "Cat agents show a draft before they send a message for you. They send it after you approve it, or when you or a routine that you set up tells them to send. Before a payment, an agent reads back the item, price and total and asks you to confirm. A new agent has Full access: it does not ask before it runs a command. Set an agent to Ask first, and that agent asks you first; you answer in the chat or from a notification on your phone.",
       rival:
         "Some built-in actions, such as joining a Slack channel, always need approval in Viktor. For each integration tool, an admin chooses if it runs on its own, needs approval, or never runs, and a user who can edit that tool can click Always approve (not in Microsoft Teams). Viktor's terms make you responsible for all messages and actions sent or taken through your account, and you must defend Viktor against third-party claims that come from any action it takes through a connected app under the permissions you set.",
     },
     {
       title: "Integrations and company controls",
       openbot:
-        "EQBots agents use MCP servers, plugins from the EQBots catalog, and the tools on the computer that runs them. They can also answer in Slack, Discord and Telegram. EQBots has no SOC 2 report. On your own computer, your own security controls apply to your data.",
+        "Cat agents use MCP servers, plugins from the Cat catalog, and the tools on the computer that runs them. They can also answer in Slack, Discord and Telegram. Cat has no SOC 2 report. On your own computer, your own security controls apply to your data.",
       rival:
         "Viktor connects to more than 9,800 apps and builds a custom integration for one it does not have. It has a SOC 2 Type 1 report; SOC 2 Type 2 and ISO 27001 are in progress. Enterprise adds SAML single sign-on, role-based access, audit logs and a DPA.",
       better: "rival",
@@ -177,39 +177,39 @@ export const VIKTOR_COMPARISON: Comparison = {
   ],
   faq: [
     {
-      question: "Is EQBots an alternative to Viktor?",
+      question: "Is Cat an alternative to Viktor?",
       answer:
-        "Yes, if you want your agents and your data on your own computer. Both give you AI agents that do work for your team. EQBots runs a team of agents on your computer, with the AI plans you already pay for. Viktor is one AI coworker in Slack or Microsoft Teams that runs in the US and bills each task in credits.",
+        "Yes, if you want your agents and your data on your own computer. Both give you AI agents that do work for your team. Cat runs a team of agents on your computer, with the AI plans you already pay for. Viktor is one AI coworker in Slack or Microsoft Teams that runs in the US and bills each task in credits.",
     },
     {
       question: "How much does Viktor cost?",
       answer:
-        "Viktor gives up to $100 in free credits. Then the Team plan starts at $50 a month for 20,000 credits; Viktor says that 40,000 credits are about 80 to 400 tasks. Enterprise has custom prices. EQBots is free for noncommercial use, and it uses the AI plans you already pay for, with no credits.",
+        "Viktor gives up to $100 in free credits. Then the Team plan starts at $50 a month for 20,000 credits; Viktor says that 40,000 credits are about 80 to 400 tasks. Enterprise has custom prices. Cat is free for noncommercial use, and it uses the AI plans you already pay for, with no credits.",
     },
     {
       question: "Can I use my ChatGPT or Claude plan with Viktor?",
       answer:
-        "No. Viktor bills its models in credits, or you connect your own OpenRouter key. EQBots runs Codex with your ChatGPT plan, Claude Code with your Claude plan, and Gemini, Grok, Cursor, Cline and Muse Code with your own accounts.",
+        "No. Viktor bills its models in credits, or you connect your own OpenRouter key. Cat runs Codex with your ChatGPT plan, Claude Code with your Claude plan, and Gemini, Grok, Cursor, Cline and Muse Code with your own accounts.",
     },
     {
       question: "Does Viktor read all my Slack messages?",
       answer:
-        "Viktor's privacy policy says that it reads all messages in the channels it joins, not only those that mention it, and up to about 90 days of earlier history. A user can give it wider access, which can include private channels and direct messages. EQBots keeps your workspaces, chats and files in a database on your own computer.",
+        "Viktor's privacy policy says that it reads all messages in the channels it joins, not only those that mention it, and up to about 90 days of earlier history. A user can give it wider access, which can include private channels and direct messages. Cat keeps your workspaces, chats and files in a database on your own computer.",
     },
     {
       question: "Where does Viktor store my data?",
       answer:
-        "In the US: Viktor is hosted on AWS in us-east-1, and EU data residency is only on Enterprise contracts. EQBots keeps your data on your computer, or on a hosted EQBots server in the EU that you choose.",
+        "In the US: Viktor is hosted on AWS in us-east-1, and EU data residency is only on Enterprise contracts. Cat keeps your data on your computer, or on a hosted Cat server in the EU that you choose.",
     },
     {
       question: "Do agents keep working when my laptop is closed?",
       answer:
-        "Yes, with both. Viktor works on its own cloud computer, so no computer of yours must stay on. EQBots agents work on the computer or server that runs EQBots: keep that computer on, or use a hosted EQBots server, and connect from your laptop or phone.",
+        "Yes, with both. Viktor works on its own cloud computer, so no computer of yours must stay on. Cat agents work on the computer or server that runs Cat: keep that computer on, or use a hosted Cat server, and connect from your laptop or phone.",
     },
     {
       question: "Is Viktor open source?",
       answer:
-        "No. Viktor is a closed service. EQBots's source code is on GitHub under the PolyForm Noncommercial License 1.0.0.",
+        "No. Viktor is a closed service. Cat's source code is on GitHub under the PolyForm Noncommercial License 1.0.0.",
     },
   ],
   sources: [
@@ -226,8 +226,8 @@ export const VIKTOR_COMPARISON: Comparison = {
     { label: "Viktor settings", url: "https://viktor.com/docs/settings-overview" },
     { label: "Viktor: running out of credits", url: "https://viktor.com/docs/running-out-of-credits" },
     { label: "Viktor: what Viktor can do", url: "https://viktor.com/docs/what-viktor-can-do" },
-    { label: "EQBots privacy notes", url: OPENBOT_LINKS.privacy },
-    { label: "EQBots source code", url: OPENBOT_LINKS.repository },
+    { label: "Cat privacy notes", url: OPENBOT_LINKS.privacy },
+    { label: "Cat source code", url: OPENBOT_LINKS.repository },
   ],
   checkedAt: "2026-10-23",
 };

@@ -14,7 +14,7 @@ function mcpClientMetadataResponse(): Response {
   return Response.json(
     {
       client_id: CLIENT_ID,
-      client_name: "EQBots",
+      client_name: "Cat",
       client_uri: "https://openbot.run",
       logo_uri: "https://openbot.run/icon-512x512.png",
       redirect_uris: ["http://127.0.0.1:28417/mcp-auth"],

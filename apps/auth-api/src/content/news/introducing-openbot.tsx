@@ -3,13 +3,13 @@ export function IntroducingOpenBot() {
     <>
       <p>
         Many of us already use an AI tool every day. It might be ChatGPT or Claude on our computers, or an AI search
-        feature in a browser. These models are useful, but they usually work as one assistant at a time. EQBots is built
+        feature in a browser. These models are useful, but they usually work as one assistant at a time. Cat is built
         around a different idea: several agents can work together in one shared space, each with its own role.
       </p>
 
-      <h2>What Is EQBots?</h2>
+      <h2>What Is Cat?</h2>
       <p>
-        EQBots is a free, source-available, local-first alternative to Grok Bot. It does not train its own AI model.
+        Cat is a free, source-available, local-first alternative to Grok Bot. It does not train its own AI model.
         Instead, it brings the models you already use into one desktop workspace.
       </p>
       <p>
@@ -22,14 +22,14 @@ export function IntroducingOpenBot() {
         forward instead of starting from a blank chat every time.
       </p>
       <p>
-        EQBots does not replace the models behind the agents. It gives them one place to work together — and alongside
+        Cat does not replace the models behind the agents. It gives them one place to work together — and alongside
         the people on your team.
       </p>
 
       <h2>From Single-Player to Multiplayer</h2>
       <p>
         Many AI tools are built around one person working with one assistant at a time. You open a chat, ask a question,
-        and work with the answer on your own. EQBots is built around a different idea: people and AI agents can work in
+        and work with the answer on your own. Cat is built around a different idea: people and AI agents can work in
         the same workspace.
       </p>
       <p>
@@ -41,7 +41,7 @@ export function IntroducingOpenBot() {
 
       <h2>How It Works</h2>
       <p>
-        Using EQBots starts with three steps: create an agent, give it a job, and let it keep working in its own
+        Using Cat starts with three steps: create an agent, give it a job, and let it keep working in its own
         workspace and context. You give it a role and instructions, then return to the same conversation instead of
         rebuilding the setup every time.
       </p>
@@ -50,9 +50,9 @@ export function IntroducingOpenBot() {
         talk to the agents, see the shared conversations, and exchange files as the task moves forward.
       </p>
 
-      <h2>What Can You Do With EQBots?</h2>
+      <h2>What Can You Do With Cat?</h2>
       <p>
-        EQBots is not built around one specific workflow. You can create agents for different kinds of work, including:
+        Cat is not built around one specific workflow. You can create agents for different kinds of work, including:
       </p>
       <ul>
         <li>Research and monitoring</li>
@@ -67,19 +67,19 @@ export function IntroducingOpenBot() {
         work between several agents with different roles.
       </p>
 
-      <h2>Why Run EQBots Locally?</h2>
+      <h2>Why Run Cat Locally?</h2>
       <p>
-        One advantage of running EQBots locally is that it stays close to your files, tools, and everyday workspace. You
+        One advantage of running Cat locally is that it stays close to your files, tools, and everyday workspace. You
         can host it on a Mac mini, leave it running, and access the same space from other devices.
       </p>
       <p>
-        That keeps your agents and projects in one place while still letting you check in from elsewhere. EQBots's
+        That keeps your agents and projects in one place while still letting you check in from elsewhere. Cat's
         source code is public as well, so anyone can inspect the project and contribute to it.
       </p>
 
       <h2>Working With Multiple Agents</h2>
       <p>
-        EQBots brings the models you already use into one workspace. You can give different agents different roles, keep
+        Cat brings the models you already use into one workspace. You can give different agents different roles, keep
         their context with the project, and let them pass work to one another instead of starting a new chat for every
         task.
       </p>

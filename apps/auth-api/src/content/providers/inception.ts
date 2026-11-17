@@ -1,7 +1,7 @@
 import type { ProviderPage } from "./provider-page";
 
 // Every statement about Inception and Mercury here is taken from inceptionlabs.ai and
-// Inception's documentation. Each page used is in `sources`. EQBots runs Mercury in its own
+// Inception's documentation. Each page used is in `sources`. Cat runs Mercury in its own
 // copy of Pi (`src/backend/pi-key-providers.ts`). Check the sources again, and move `checkedAt`,
 // whenever this file changes.
 
@@ -11,9 +11,9 @@ export const INCEPTION_PROVIDER: ProviderPage = {
   provider: "inception",
   name: "Inception",
   answer:
-    "EQBots runs Inception's Mercury models as one agent of a team, on macOS, Windows or Linux, with an Inception API key. You get shared channels with agents on other providers.",
+    "Cat runs Inception's Mercury models as one agent of a team, on macOS, Windows or Linux, with an Inception API key. You get shared channels with agents on other providers.",
   connect:
-    "Download Pi in EQBots first: Mercury runs in EQBots's copy of Pi. Then select Connect on the Inception row and paste an Inception API key. EQBots keeps the key encrypted and does not change Pi's own settings.",
+    "Download Pi in Cat first: Mercury runs in Cat's copy of Pi. Then select Connect on the Inception row and paste an Inception API key. Cat keeps the key encrypted and does not change Pi's own settings.",
   adds: [
     {
       icon: "cpu",
@@ -22,8 +22,8 @@ export const INCEPTION_PROVIDER: ProviderPage = {
     },
     {
       icon: "lock",
-      title: "Your key stays in EQBots",
-      text: "EQBots keeps the Inception API key in its encrypted store, not in Pi's settings files.",
+      title: "Your key stays in Cat",
+      text: "Cat keeps the Inception API key in its encrypted store, not in Pi's settings files.",
     },
   ],
   vendor: "Inception",
@@ -54,7 +54,7 @@ export const INCEPTION_PROVIDER: ProviderPage = {
     {
       question: "Why does Inception need Pi?",
       answer:
-        "EQBots runs Mercury in its own copy of Pi. Download Pi once in EQBots, and Inception agents then use it with your Inception API key.",
+        "Cat runs Mercury in its own copy of Pi. Download Pi once in Cat, and Inception agents then use it with your Inception API key.",
     },
     {
       question: "Can I use Inception agents from my phone or share them with a team?",

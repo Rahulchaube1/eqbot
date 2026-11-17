@@ -92,7 +92,7 @@ const PLAN_NAMES: Record<BillingPlanId, string> = { starter: "Starter", standard
 const LICENSE_TIER_NAMES: Record<LicenseTier, string> = { starter: "Starter", team: "Team" };
 const LOGO_URL = `${SITE_URL}/icon-192x192.png`;
 const FOOTER_LINKS = [
-  { label: "EQBots", href: SITE_URL },
+  { label: "Cat", href: SITE_URL },
   { label: "GitHub", href: OPENBOT_LINKS.repository },
 ] as const;
 const FONT_STACK = "-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, Helvetica, Arial, sans-serif";
@@ -115,14 +115,14 @@ const COLOR = {
 
 export function renderSignInCodeEmail(input: SignInCodeEmailInput): RenderedEmail {
   const minutes = `${input.expiresInMinutes} minute${input.expiresInMinutes === 1 ? "" : "s"}`;
-  const subject = "Your EQBots sign-in code";
-  const preheader = `${input.code} is your EQBots sign-in code. It expires in ${minutes}.`;
+  const subject = "Your Cat sign-in code";
+  const preheader = `${input.code} is your Cat sign-in code. It expires in ${minutes}.`;
   const footer = "If you did not request this code, you can ignore this email. Nobody can sign in without it.";
   return {
     subject,
     preheader,
     text: textBody(
-      ["Use this code to sign in to EQBots:", "", input.code, "", `This code expires in ${minutes} and works once.`],
+      ["Use this code to sign in to Cat:", "", input.code, "", `This code expires in ${minutes} and works once.`],
       footer,
     ),
     html: renderLayout({
@@ -130,7 +130,7 @@ export function renderSignInCodeEmail(input: SignInCodeEmailInput): RenderedEmai
       preheader,
       body: [
         heading("Your sign-in code"),
-        paragraph("Enter this code in EQBots to finish signing in."),
+        paragraph("Enter this code in Cat to finish signing in."),
         codeBlock(input.code),
         paragraph(`The code expires in ${minutes} and works once.`, { muted: true, last: true }),
       ].join(""),
@@ -142,7 +142,7 @@ export function renderSignInCodeEmail(input: SignInCodeEmailInput): RenderedEmai
 export function renderTeamInviteEmail(input: TeamInviteEmailInput): RenderedEmail {
   const serverName = input.serverName.trim();
   const access = input.role === "admin" ? "Admin" : "Member";
-  const subject = `Join ${serverName} on EQBots`;
+  const subject = `Join ${serverName} on Cat`;
   const preheader = `${input.inviterEmail} invited you to join ${serverName}.`;
   const footer = "If you did not expect this invitation, you can ignore this email.";
   return {
@@ -150,7 +150,7 @@ export function renderTeamInviteEmail(input: TeamInviteEmailInput): RenderedEmai
     preheader,
     text: textBody(
       [
-        `${input.inviterEmail} invited you to join ${serverName} on EQBots.`,
+        `${input.inviterEmail} invited you to join ${serverName} on Cat.`,
         "",
         `Access: ${access}`,
         "",
@@ -167,7 +167,7 @@ export function renderTeamInviteEmail(input: TeamInviteEmailInput): RenderedEmai
       body: [
         heading(`Join ${escapeHtml(serverName)}`),
         paragraph(
-          `<strong style="color:${COLOR.text};font-weight:600;">${escapeHtml(input.inviterEmail)}</strong> invited you to a team on EQBots.`,
+          `<strong style="color:${COLOR.text};font-weight:600;">${escapeHtml(input.inviterEmail)}</strong> invited you to a team on Cat.`,
         ),
         detailRow("Access", access),
         button("Accept invitation", input.inviteUrl),
@@ -221,20 +221,20 @@ export function renderContactMessageEmail(input: ContactMessageEmailInput): Rend
 export function renderWelcomeEmail(input: WelcomeEmailInput): RenderedEmail {
   const serverName = input.serverName.trim();
   const planName = PLAN_NAMES[input.plan];
-  const subject = "Welcome to EQBots!";
-  const thanks = "Thank you for choosing EQBots to build and run your AI Coworkers.";
+  const subject = "Welcome to Cat!";
+  const thanks = "Thank you for choosing Cat to build and run your AI Coworkers.";
   const reachOut =
     "I just wanted to personally say hello and let you know that if you run into any issues or have any feedback or suggestions - feel free to reach out to me directly by replying to this email.";
   const feedback =
     "Every piece of feedback is incredibly valuable to us. We ship updates almost every day, and your feedback shapes what comes next.";
-  const footer = "You receive this email because you started an EQBots subscription.";
+  const footer = "You receive this email because you started an Cat subscription.";
   return {
     subject,
     preheader: thanks,
     text: textBody(
       [
         "Hi,",
-        "Welcome to EQBots!",
+        "Welcome to Cat!",
         thanks,
         "",
         `Plan: ${planName}`,
@@ -254,7 +254,7 @@ export function renderWelcomeEmail(input: WelcomeEmailInput): RenderedEmail {
       title: subject,
       preheader: thanks,
       body: [
-        heading("Welcome to EQBots!", { gap: 16 }),
+        heading("Welcome to Cat!", { gap: 16 }),
         paragraph("Hi,", { gap: 16 }),
         paragraph(thanks, { gap: 16 }),
         detailRows([
@@ -288,16 +288,16 @@ export function renderLicenseEmail(input: LicenseEmailInput): RenderedEmail {
 function renderLicenseWelcome(input: LicenseWelcomeEmailInput): RenderedEmail {
   const tierName = LICENSE_TIER_NAMES[input.plan.tier];
   const seats = `${input.users} seat${input.users === 1 ? "" : "s"}`;
-  const subject = `Your EQBots ${tierName} license is active`;
-  const preheader = `Thank you for buying EQBots. Your license covers ${seats}.`;
-  const active = "Your license is active. You can use EQBots for work now.";
+  const subject = `Your Cat ${tierName} license is active`;
+  const preheader = `Thank you for buying Cat. Your license covers ${seats}.`;
+  const active = "Your license is active. You can use Cat for work now.";
   const team =
     input.plan.tier === "team"
       ? "Invite your teammates from your server’s Members settings. The license counts each person once."
       : "Your license covers you. Change to the Team license when you invite teammates.";
-  const devices = `Each user can use EQBots on up to ${LICENSE_DEVICES_PER_USER} devices.`;
+  const devices = `Each user can use Cat on up to ${LICENSE_DEVICES_PER_USER} devices.`;
   const reply = "If something does not work, or you have an idea, reply to this email. I read every reply.";
-  const footer = "You receive this email because you bought an EQBots license.";
+  const footer = "You receive this email because you bought an Cat license.";
   const rows = licenseRows(input.plan, input.users);
   if (input.amount !== null)
     rows.push(["Price", `${formatAmount(input.amount, input.currency)} / ${input.plan.interval}`]);
@@ -309,14 +309,14 @@ function renderLicenseWelcome(input: LicenseWelcomeEmailInput): RenderedEmail {
       [
         "Hi,",
         "",
-        "Thank you for buying EQBots.",
+        "Thank you for buying Cat.",
         active,
         "",
         ...rows.map(([label, value]) => `${label}: ${value}`),
         "",
         team,
         devices,
-        `Download EQBots: ${DOWNLOAD_URL}`,
+        `Download Cat: ${DOWNLOAD_URL}`,
         "",
         reply,
         ...SIGNATURE_TEXT,
@@ -327,12 +327,12 @@ function renderLicenseWelcome(input: LicenseWelcomeEmailInput): RenderedEmail {
       title: subject,
       preheader,
       body: [
-        heading("Thank you for buying EQBots", { gap: 16 }),
+        heading("Thank you for buying Cat", { gap: 16 }),
         paragraph("Hi,", { gap: 16 }),
         paragraph(active, { gap: 16 }),
         detailRows(rows),
         paragraph(`${escapeHtml(team)} ${devices}`, { gap: 16 }),
-        button("Download EQBots", DOWNLOAD_URL),
+        button("Download Cat", DOWNLOAD_URL),
         paragraph(reply, { gap: 24 }),
         SIGNATURE_HTML,
       ].join(""),
@@ -345,20 +345,20 @@ function renderLicenseWelcome(input: LicenseWelcomeEmailInput): RenderedEmail {
 // the license stays active until the last try fails.
 function renderLicensePaymentFailed(input: LicensePaymentFailedEmailInput): RenderedEmail {
   const tierName = LICENSE_TIER_NAMES[input.plan.tier];
-  const subject = `Payment failed for your EQBots ${tierName} license`;
+  const subject = `Payment failed for your Cat ${tierName} license`;
   const preheader = "Pay the invoice to keep your license active.";
-  const failed = "The payment for your EQBots license did not go through.";
+  const failed = "The payment for your Cat license did not go through.";
   const retry =
     input.nextAttemptAt === null
       ? "This was the last try. If the invoice stays unpaid, your license ends."
       : `Your license stays active while we try again on ${formatDate(input.nextAttemptAt)}. If no payment goes through, your license ends.`;
   const action = input.invoiceUrl
     ? "Pay the invoice now. You can use a different card."
-    : "Open Billing in the EQBots settings to pay the invoice.";
-  const buttonLabel = input.invoiceUrl ? "Pay the invoice" : "Open EQBots";
+    : "Open Billing in the Cat settings to pay the invoice.";
+  const buttonLabel = input.invoiceUrl ? "Pay the invoice" : "Open Cat";
   const url = input.invoiceUrl ?? WEB_APP_URL;
   const reply = "If you have a question, reply to this email.";
-  const footer = "You receive this email because you have an EQBots license.";
+  const footer = "You receive this email because you have an Cat license.";
   const rows = licenseRows(input.plan, input.users);
   rows.push(["Amount due", formatAmount(input.amount, input.currency)]);
   if (input.nextAttemptAt !== null) rows.push(["Next try", formatDate(input.nextAttemptAt)]);
@@ -403,16 +403,16 @@ function renderLicensePaymentFailed(input: LicensePaymentFailedEmailInput): Rend
 // Sent once when a license that had a payment ends. A trial that ends before its first payment gets none.
 function renderLicenseEnded(input: LicenseEndedEmailInput): RenderedEmail {
   const tierName = LICENSE_TIER_NAMES[input.plan.tier];
-  const subject = `Your EQBots ${tierName} license has ended`;
+  const subject = `Your Cat ${tierName} license has ended`;
   const ended =
     input.reason === "unpaid"
-      ? "We could not take the payment for your EQBots license, so it has ended."
-      : "Your EQBots license was canceled, and it has ended.";
+      ? "We could not take the payment for your Cat license, so it has ended."
+      : "Your Cat license was canceled, and it has ended.";
   const preheader = ended;
   const data = "Your workspaces, chats, and files stay on your computer.";
-  const again = "To use EQBots for work again, buy a new license at any time.";
+  const again = "To use Cat for work again, buy a new license at any time.";
   const reply = "If this is a mistake, or you have a question, reply to this email.";
-  const footer = "You receive this email because you had an EQBots license.";
+  const footer = "You receive this email because you had an Cat license.";
   const rows = licenseRows(input.plan, input.users);
   return {
     subject,
@@ -479,7 +479,7 @@ function textBody(lines: string[], footer: string): string {
     footer,
     "",
     "-- ",
-    `EQBots · ${SITE_URL}`,
+    `Cat · ${SITE_URL}`,
     FOOTER_LINKS.slice(1)
       .map((link) => `${link.label}: ${link.href}`)
       .join(" · "),
@@ -545,7 +545,7 @@ function renderLayout(input: LayoutInput): string {
         <tr>
           <td style="padding:0 4px 20px;">
             <a href="${SITE_URL}" style="text-decoration:none;">
-              <img src="${LOGO_URL}" width="32" height="32" alt="EQBots" style="display:block;border:0;outline:none;border-radius:8px;font-family:${FONT_STACK};font-size:15px;font-weight:600;line-height:32px;color:${COLOR.text};">
+              <img src="${LOGO_URL}" width="32" height="32" alt="Cat" style="display:block;border:0;outline:none;border-radius:8px;font-family:${FONT_STACK};font-size:15px;font-weight:600;line-height:32px;color:${COLOR.text};">
             </a>
           </td>
         </tr>

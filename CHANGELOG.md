@@ -6,6 +6,12 @@ All notable changes to OpenBot will be documented here. The project follows
 
 ## [Unreleased]
 
+## [0.70.1] - 2026-11-18
+
+### Changed
+
+- Renamed the desktop app to Cat and kept the existing local workspace and cat icon.
+
 ## [0.70.0] - 2026-11-13
 
 ### Added

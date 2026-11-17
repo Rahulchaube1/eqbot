@@ -65,7 +65,7 @@ export function ProviderArticlePage(props: ProviderArticlePageProps) {
       <RevealSection class="provider-setup" titleId="provider-setup-title" title="How to set it up">
         <ol class="provider-steps">
           <li class="provider-step">
-            <h3 class="provider-step-title">Download EQBots</h3>
+            <h3 class="provider-step-title">Download Cat</h3>
             <p class="provider-step-text">
               For macOS 13 or later on Apple silicon or Intel, Windows 10 or later on x64, or x64 or arm64 Linux.
             </p>
@@ -89,14 +89,14 @@ export function ProviderArticlePage(props: ProviderArticlePageProps) {
           <li class="provider-step">
             <h3 class="provider-step-title">Give your agent a job</h3>
             <p class="provider-step-text">
-              Create an agent on {props.page.name}, choose its model, and give it a task. EQBots makes a workspace
+              Create an agent on {props.page.name}, choose its model, and give it a task. Cat makes a workspace
               folder for it. When the work grows, add agents on other providers to the same channel.
             </p>
           </li>
         </ol>
       </RevealSection>
 
-      <RevealSection class="provider-adds" titleId="provider-adds-title" title="What EQBots adds">
+      <RevealSection class="provider-adds" titleId="provider-adds-title" title="What Cat adds">
         <ul class="provider-adds-grid">
           <For each={adds()}>
             {(add, index) => (
@@ -112,7 +112,7 @@ export function ProviderArticlePage(props: ProviderArticlePageProps) {
 
       <RevealSection class="provider-official" titleId="provider-official-title" title="Official apps">
         <p class="compare-plans-lead">
-          The apps from {props.page.vendor}, and where they run. EQBots runs the same agent, so you can use both.
+          The apps from {props.page.vendor}, and where they run. Cat runs the same agent, so you can use both.
         </p>
         <div class="compare-table-frame">
           <table class="compare-table provider-table">

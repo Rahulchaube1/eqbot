@@ -6,7 +6,7 @@ export const DPA_ROUTE = "/dpa";
 export const DPA_UPDATED_AT = "2026-10-29";
 
 export const DPA_META = {
-  title: "EQBots Data Processing Addendum",
+  title: "Cat Data Processing Addendum",
   description:
-    "How EverestQai processes personal data on behalf of customers of EQBots hosted servers: instructions, security, sub-processors, transfers, breaches, audits and deletion.",
+    "How EverestQai processes personal data on behalf of customers of Cat hosted servers: instructions, security, sub-processors, transfers, breaches, audits and deletion.",
 } as const;

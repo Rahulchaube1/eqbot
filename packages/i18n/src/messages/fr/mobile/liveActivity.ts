@@ -2,7 +2,7 @@ import type { PartialTranslation } from "../../../message";
 import type { messages as source } from "../../en/mobile/liveActivity";
 
 export const messages = {
-  "mobile.liveActivity.appName": "EQBots",
+  "mobile.liveActivity.appName": "Cat",
   "mobile.liveActivity.badge.working": "En cours",
   "mobile.liveActivity.badge.message": "Message",
   "mobile.liveActivity.badge.question": "Questions",
@@ -21,7 +21,7 @@ export const messages = {
   "mobile.liveActivity.button.approve": "Approuver",
   "mobile.liveActivity.button.openDetails": "Voir les détails",
   "mobile.liveActivity.stale.label": "Pas à jour",
-  "mobile.liveActivity.stale.detail": "Ouvrez EQBots pour voir l’état actuel.",
+  "mobile.liveActivity.stale.detail": "Ouvrez Cat pour voir l’état actuel.",
   "mobile.liveActivity.confirm.title": "Approuver cette commande ?",
   "mobile.liveActivity.confirm.cancel": "Annuler",
   "mobile.liveActivity.confirm.approve": "Approuver",
@@ -36,7 +36,7 @@ export const messages = {
   "mobile.liveActivity.error.decisionFallback": "Ouvrez la demande sur l’ordinateur.",
   "mobile.liveActivity.island.taskWorking": "Traitement de votre demande",
   "mobile.liveActivity.island.questionHeader": "Question de votre agent",
-  "mobile.liveActivity.island.questionText": "Ouvrez EQBots pour répondre à cette question.",
+  "mobile.liveActivity.island.questionText": "Ouvrez Cat pour répondre à cette question.",
   "mobile.liveActivity.island.optionFallback": "Option {number}",
   "mobile.liveActivity.island.takeoverTitle": "Une étape du navigateur vous attend",
   "mobile.liveActivity.island.takeoverDetail":

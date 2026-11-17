@@ -3,7 +3,7 @@ import { Link } from "@tanstack/solid-router";
 export function RunTheTeamServerYourself() {
   return (
     <>
-      <p>EQBots keeps your agents, threads, workspaces and files on your own computer.</p>
+      <p>Cat keeps your agents, threads, workspaces and files on your own computer.</p>
 
       <h2>What a team adds</h2>
       <p>
@@ -20,10 +20,10 @@ export function RunTheTeamServerYourself() {
       </p>
       <p>
         The account service is separate from the team server. With self-hosting, the host and your work run on hardware
-        you control. With an EQBots hosted server, EQBots provides the Linux machine and your team's work stays there
+        you control. With an Cat hosted server, Cat provides the Linux machine and your team's work stays there
         instead of on your own computer. The account service still handles memberships and invitations. See our{" "}
         <Link to="/guides/$slug" params={{ slug: "openbot-hosted-servers" }}>
-          guide to EQBots hosted servers
+          guide to Cat hosted servers
         </Link>{" "}
         for the plans and setup.
       </p>

@@ -13,7 +13,7 @@ import {
 } from "@/features/settings/components/settings-content";
 import { useText } from "@/shared/lib/text";
 
-const PRODUCT_NAME = "EQBots";
+const PRODUCT_NAME = "Cat";
 
 export function AboutSettingsScreen() {
   const { t } = useText();

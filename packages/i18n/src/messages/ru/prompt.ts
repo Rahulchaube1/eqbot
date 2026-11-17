@@ -26,11 +26,11 @@ export const messages = {
   "prompt.approval.alwaysAllow": "Всегда разрешать",
   "prompt.approval.deny": "Отклонить",
   "prompt.approval.cut":
-    "На этой карточке только начало запроса, поэтому его можно только отклонить. Если кнопка «Разрешить» скоро не появится, обновите EQBots на сервере.",
+    "На этой карточке только начало запроса, поэтому его можно только отклонить. Если кнопка «Разрешить» скоро не появится, обновите Cat на сервере.",
   "prompt.approval.report.bugHeadline": "Нашли ошибку? Давайте исправим.",
   "prompt.approval.report.ideaHeadline": "Есть идея? Давайте воплотим.",
   "prompt.approval.report.dontSend": "Не сейчас",
-  "prompt.approval.report.send": "Отправить команде EQBots",
+  "prompt.approval.report.send": "Отправить команде Cat",
   "prompt.approval.title.command": "Выполнить команду",
   "prompt.approval.title.fileChange": "Изменить файлы",
   "prompt.approval.title.permissions": "Предоставить разрешения",
@@ -55,7 +55,7 @@ export const messages = {
   "prompt.browser.signInBlocked.title": "{host} заблокировал вход с {server}",
   "prompt.browser.signInBlocked.cancelledTitle": "Вход в {host} отменён",
   "prompt.browser.signInBlocked.body":
-    "Войдите на этом компьютере. EQBots отправит на {server} только вход в {host}, и {name} продолжит работу.",
+    "Войдите на этом компьютере. Cat отправит на {server} только вход в {host}, и {name} продолжит работу.",
   "prompt.browser.signInBlocked.cancelledBody": "Вход отменён.",
   "prompt.browser.signInBlocked.waiting": "Ожидание входа",
   "prompt.browser.signInBlocked.waitingButton": "Ожидание входа…",

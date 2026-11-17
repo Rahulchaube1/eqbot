@@ -5,7 +5,7 @@ import { OPENBOT_X_HANDLE, type PageSocialImage, pageSocialImageMeta } from "../
 
 const COMMERCIAL_LICENSE_SOCIAL_IMAGE: PageSocialImage = {
   path: "/social/commercial-license.jpg",
-  alt: "Send the work. Your team delivers. EQBots agents in a paper boat",
+  alt: "Send the work. Your team delivers. Cat agents in a paper boat",
 };
 
 export const Route = createFileRoute("/commercial-license")({
@@ -18,7 +18,7 @@ export const Route = createFileRoute("/commercial-license")({
         { title },
         { name: "description", content: description },
         { property: "og:type", content: "website" },
-        { property: "og:site_name", content: "EQBots" },
+        { property: "og:site_name", content: "Cat" },
         { property: "og:locale", content: "en_US" },
         { property: "og:url", content: url },
         { property: "og:title", content: title },

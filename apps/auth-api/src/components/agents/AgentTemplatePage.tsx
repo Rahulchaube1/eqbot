@@ -132,19 +132,19 @@ export function AgentTemplatePage(props: AgentTemplatePageProps) {
             </Show>
 
             <hr class="agent-share-divider" />
-            <p class="agent-share-notice">Made by another EQBots user. It can act on your behalf once added.</p>
+            <p class="agent-share-notice">Made by another Cat user. It can act on your behalf once added.</p>
             <div class="agent-share-action">
               <PluginOpenButtons
                 href={openUrl()}
-                label="Add to EQBots"
-                downloadCopy={`${props.template.name} is added from inside EQBots. Get the app, then open this link again.`}
+                label="Add to Cat"
+                downloadCopy={`${props.template.name} is added from inside Cat. Get the app, then open this link again.`}
               />
             </div>
           </div>
         </article>
 
         <p class="agent-share-fallback">
-          EQBots didn't open? <Link to="/download">Download it</Link>, <a href={openUrl()}>open the app</a>, or{" "}
+          Cat didn't open? <Link to="/download">Download it</Link>, <a href={openUrl()}>open the app</a>, or{" "}
           <a href={createWebAppAgentTemplatePath(props.template.id)}>open in browser</a>.
         </p>
       </main>

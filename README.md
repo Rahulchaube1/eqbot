@@ -1,6 +1,6 @@
 <div align="center">
-  <img src="build/icon.png" alt="EQBots Logo" width="120" height="120" />
-  <h1>EQBots</h1>
+  <img src="build/icon.png" alt="Cat Logo" width="120" height="120" />
+  <h1>Cat</h1>
   <p><strong>A product of <a href="https://www.everestqai.com">EverestQai</a></strong></p>
   <p>
     <a href="https://www.everestqai.com">
@@ -22,9 +22,9 @@
 
 ---
 
-# EQBots by EverestQai
+# Cat by EverestQai
 
-**EQBots** (a product of **[EverestQai](https://www.everestqai.com)**) is a local-first workspace for persistent AI teammates across **macOS**, **Windows**, **Linux**, **iOS**, **Android**, and the **Web** (`https://eqbot.everestqai.com`).
+**Cat** (a product of **[EverestQai](https://www.everestqai.com)**) is a local-first workspace for persistent AI teammates across **macOS**, **Windows**, **Linux**, **iOS**, **Android**, and the **Web** (`https://eqbot.everestqai.com`).
 
 It supports the local [Codex App Server](https://learn.chatgpt.com/docs/app-server) and
 [Claude Code](https://code.claude.com/docs/en/overview), plus [Grok CLI](https://docs.x.ai/build/overview),
@@ -33,7 +33,7 @@ OpenCode, Gemini, [Cursor CLI](https://cursor.com/cli), [Cline CLI](https://clin
 conversation, and provides local queues, file transfers, an embedded browser, and agent-to-agent
 messaging in one unified app.
 
-EQBots is ready for production use and hosted at **[eqbot.everestqai.com](https://eqbot.everestqai.com)**.
+Cat is ready for production use and hosted at **[eqbot.everestqai.com](https://eqbot.everestqai.com)**.
 
 > [!WARNING]
 > Agents run with `danger-full-access` and `approvalPolicy: never`. They can read and modify files,
@@ -44,33 +44,33 @@ EQBots is ready for production use and hosted at **[eqbot.everestqai.com](https:
 ## Product Screenshots
 
 ### 1. Landing Page & Interactive Hero (`https://eqbot.everestqai.com/`)
-![EQBots by EverestQai Landing Page](docs/screenshots/landing-home.png)
+![Cat by EverestQai Landing Page](docs/screenshots/landing-home.png)
 
-### 2. EQBots Web Workspace (`https://eqbot.everestqai.com/app-preview`)
-![EQBots Interactive Workspace](docs/screenshots/web-app-preview.png)
+### 2. Cat Web Workspace (`https://eqbot.everestqai.com/app-preview`)
+![Cat Interactive Workspace](docs/screenshots/web-app-preview.png)
 
-### 3. EQBots Account Sign-In (`https://eqbot.everestqai.com/app`)
-![EQBots Sign In](docs/screenshots/web-app-signin.png)
+### 3. Cat Account Sign-In (`https://eqbot.everestqai.com/app`)
+![Cat Sign In](docs/screenshots/web-app-signin.png)
 
 ### 4. All-Platforms Download Hub (`https://eqbot.everestqai.com/download`)
-![EQBots Download Hub](docs/screenshots/downloads-hub.png)
+![Cat Download Hub](docs/screenshots/downloads-hub.png)
 
 ### 5. Platform Downloads (`macOS`, `Windows`, `Linux`, `iOS`, `Android`)
 
 | macOS (`/download/macos`) | Windows (`/download/windows`) |
 | :---: | :---: |
-| ![EQBots for Mac](docs/screenshots/download-macos.png) | ![EQBots for Windows](docs/screenshots/download-windows.png) |
+| ![Cat for Mac](docs/screenshots/download-macos.png) | ![Cat for Windows](docs/screenshots/download-windows.png) |
 
 | Linux (`/download/linux`) | iOS (`/download/ios`) |
 | :---: | :---: |
-| ![EQBots for Linux](docs/screenshots/download-linux.png) | ![EQBots for iPhone](docs/screenshots/download-ios.png) |
+| ![Cat for Linux](docs/screenshots/download-linux.png) | ![Cat for iPhone](docs/screenshots/download-ios.png) |
 
 | Android (`/download/android`) | Brand & EverestQai Media Kit (`/brand`) |
 | :---: | :---: |
-| ![EQBots for Android](docs/screenshots/download-android.png) | ![EQBots & EverestQai Brand Kit](docs/screenshots/brand-everestqai.png) |
+| ![Cat for Android](docs/screenshots/download-android.png) | ![Cat & EverestQai Brand Kit](docs/screenshots/brand-everestqai.png) |
 
-### 6. EQBots Marketplace (`https://eqbot.everestqai.com/marketplace`)
-![EQBots Marketplace](docs/screenshots/marketplace.png)
+### 6. Cat Marketplace (`https://eqbot.everestqai.com/marketplace`)
+![Cat Marketplace](docs/screenshots/marketplace.png)
 
 ---
 
@@ -84,50 +84,50 @@ EQBots is ready for production use and hosted at **[eqbot.everestqai.com](https:
 - Agent-to-agent messages, replies, reactions, images, and managed file transfers.
 - Shared desktop channel chats with one task owner, explicit delegation, shared history, and Stop, Resume, Reassign, Archive, and Restore controls.
 - A persistent embedded browser that agents can open, inspect, and control.
-- Optional Computer Use on macOS, Windows and Linux through the `cua-driver` binary in the release, which EQBots starts as its own child process and gives to every provider.
+- Optional Computer Use on macOS, Windows and Linux through the `cua-driver` binary in the release, which Cat starts as its own child process and gives to every provider.
 - Per-agent model, reasoning, profile, notification, browser, and panel state.
 - Local data and privacy-safe diagnostics exports from the account menu.
-- Optional EQBots accounts through one-time email codes.
+- Optional Cat accounts through one-time email codes.
 
-EQBots is local-first, not offline-only. Codex connects to OpenAI, Claude connects to Anthropic,
+Cat is local-first, not offline-only. Codex connects to OpenAI, Claude connects to Anthropic,
 Grok connects to xAI, Gemini connects to Google, Cursor connects to Cursor, Cline connects to Cline,
 Kimi connects to Moonshot AI, Devin connects to Cognition, GitHub Copilot connects to GitHub, Mistral connects to Mistral AI, Hermes connects to Nous Portal and to the providers you set up in Hermes,
 visited pages use the network, and installed plugins may connect to their own services.
 
 ## Install & Download (`macOS`, `Windows`, `Linux`, `iOS`, `Android`)
 
-EQBots supports **macOS 13+** (Apple silicon & Intel), **Windows 10+** (x64), **Linux** (x64 & arm64 AppImage), **iOS 16.4+** (iPhone / iPad), and **Android 7.0+** (Google Play & direct APK).
+Cat supports **macOS 13+** (Apple silicon & Intel), **Windows 10+** (x64), **Linux** (x64 & arm64 AppImage), **iOS 16.4+** (iPhone / iPad), and **Android 7.0+** (Google Play & direct APK).
 
 | Platform | Direct Installer Route | Package Filename |
 | --- | --- | --- |
-| **macOS (Apple Silicon)** | [`https://eqbot.everestqai.com/download/macos/latest`](https://eqbot.everestqai.com/download/macos/latest) | `EQBots-0.70.0-arm64.dmg` |
-| **macOS (Intel)** | [`https://eqbot.everestqai.com/download/macos/latest?arch=x64`](https://eqbot.everestqai.com/download/macos/latest?arch=x64) | `EQBots-0.70.0-x64.dmg` |
-| **Windows (x64)** | [`https://eqbot.everestqai.com/download/windows/latest`](https://eqbot.everestqai.com/download/windows/latest) | `EQBots-0.70.0-x64.exe` |
-| **Linux (x86_64)** | [`https://eqbot.everestqai.com/download/linux/latest`](https://eqbot.everestqai.com/download/linux/latest) | `EQBots-0.70.0-x86_64.AppImage` |
-| **Linux (ARM64)** | [`https://eqbot.everestqai.com/download/linux/latest?arch=arm64`](https://eqbot.everestqai.com/download/linux/latest?arch=arm64) | `EQBots-0.70.0-arm64.AppImage` |
-| **iOS (iPhone / iPad)** | [`https://eqbot.everestqai.com/download/ios/latest`](https://eqbot.everestqai.com/download/ios/latest) | `EQBots-0.70.0-ios.ipa` |
-| **Android (APK)** | [`https://eqbot.everestqai.com/download/android/latest`](https://eqbot.everestqai.com/download/android/latest) | `EQBots-0.70.0.apk` |
+| **macOS (Apple Silicon)** | [`https://eqbot.everestqai.com/download/macos/latest`](https://eqbot.everestqai.com/download/macos/latest) | `Cat-0.70.0-arm64.dmg` |
+| **macOS (Intel)** | [`https://eqbot.everestqai.com/download/macos/latest?arch=x64`](https://eqbot.everestqai.com/download/macos/latest?arch=x64) | `Cat-0.70.0-x64.dmg` |
+| **Windows (x64)** | [`https://eqbot.everestqai.com/download/windows/latest`](https://eqbot.everestqai.com/download/windows/latest) | `Cat-0.70.0-x64.exe` |
+| **Linux (x86_64)** | [`https://eqbot.everestqai.com/download/linux/latest`](https://eqbot.everestqai.com/download/linux/latest) | `Cat-0.70.0-x86_64.AppImage` |
+| **Linux (ARM64)** | [`https://eqbot.everestqai.com/download/linux/latest?arch=arm64`](https://eqbot.everestqai.com/download/linux/latest?arch=arm64) | `Cat-0.70.0-arm64.AppImage` |
+| **iOS (iPhone / iPad)** | [`https://eqbot.everestqai.com/download/ios/latest`](https://eqbot.everestqai.com/download/ios/latest) | `Cat-0.70.0-ios.ipa` |
+| **Android (APK)** | [`https://eqbot.everestqai.com/download/android/latest`](https://eqbot.everestqai.com/download/android/latest) | `Cat-0.70.0.apk` |
 
 ### macOS
 
-1. Download the latest `EQBots-*-arm64.dmg` (or `EQBots-*-x64.dmg` on an Intel Mac) from [`https://eqbot.everestqai.com/download/macos`](https://eqbot.everestqai.com/download/macos) or [GitHub Releases](https://github.com/Rahulchaube1/eqbot/releases).
-2. Drag EQBots to Applications and open it.
+1. Download the latest `Cat-*-arm64.dmg` (or `Cat-*-x64.dmg` on an Intel Mac) from [`https://eqbot.everestqai.com/download/macos`](https://eqbot.everestqai.com/download/macos) or [GitHub Releases](https://github.com/Rahulchaube1/eqbot/releases).
+2. Drag Cat to Applications and open it.
 
 ### Windows
 
-1. Download the latest `EQBots-*-x64.exe` from [`https://eqbot.everestqai.com/download/windows`](https://eqbot.everestqai.com/download/windows) or [GitHub Releases](https://github.com/Rahulchaube1/eqbot/releases).
-2. Run the installer and open EQBots.
+1. Download the latest `Cat-*-x64.exe` from [`https://eqbot.everestqai.com/download/windows`](https://eqbot.everestqai.com/download/windows) or [GitHub Releases](https://github.com/Rahulchaube1/eqbot/releases).
+2. Run the installer and open Cat.
 
 ### Linux
 
-1. Download the latest `EQBots-*-x86_64.AppImage` (or `EQBots-*-arm64.AppImage` on arm64) from [`https://eqbot.everestqai.com/download/linux`](https://eqbot.everestqai.com/download/linux) or [GitHub Releases](https://github.com/Rahulchaube1/eqbot/releases).
-2. Make it executable with `chmod +x EQBots-*.AppImage`, then run it.
+1. Download the latest `Cat-*-x86_64.AppImage` (or `Cat-*-arm64.AppImage` on arm64) from [`https://eqbot.everestqai.com/download/linux`](https://eqbot.everestqai.com/download/linux) or [GitHub Releases](https://github.com/Rahulchaube1/eqbot/releases).
+2. Make it executable with `chmod +x Cat-*.AppImage`, then run it.
 
 The AppImage does not need libfuse2, so it also runs on Arch Linux and Omarchy. It mounts itself
 with `fusermount3` from the `fuse3` package.
 
 On Ubuntu 23.10 or newer and on Debian 13, unprivileged user namespaces are restricted by AppArmor
-and EQBots exits during launch until you install an AppArmor profile:
+and Cat exits during launch until you install an AppArmor profile:
 
 ```bash
 sudo install -m 0644 build/linux/openbot.apparmor /etc/apparmor.d/openbot
@@ -136,17 +136,17 @@ sudo systemctl reload apparmor
 
 ### iOS (iPhone & iPad)
 
-1. Open [`https://eqbot.everestqai.com/download/ios`](https://eqbot.everestqai.com/download/ios) or download `EQBots-0.70.0-ios.ipa` directly from [`/download/ios/latest`](https://eqbot.everestqai.com/download/ios/latest).
-2. Sign in with the same EQBots account as your computer to chat with your agents from anywhere.
+1. Open [`https://eqbot.everestqai.com/download/ios`](https://eqbot.everestqai.com/download/ios) or download `Cat-0.70.0-ios.ipa` directly from [`/download/ios/latest`](https://eqbot.everestqai.com/download/ios/latest).
+2. Sign in with the same Cat account as your computer to chat with your agents from anywhere.
 
 ### Android
 
-1. Open [`https://eqbot.everestqai.com/download/android`](https://eqbot.everestqai.com/download/android) or download `EQBots-0.70.0.apk` directly from [`/download/android/latest`](https://eqbot.everestqai.com/download/android/latest).
+1. Open [`https://eqbot.everestqai.com/download/android`](https://eqbot.everestqai.com/download/android) or download `Cat-0.70.0.apk` directly from [`/download/android/latest`](https://eqbot.everestqai.com/download/android/latest).
 2. Open the APK on Android 7.0 or newer and sign in to connect to your computer's agents.
 
 #### Theme palette files
 
-EQBots reads each `<name>.json` file in the `themes` folder of its data folder
+Cat reads each `<name>.json` file in the `themes` folder of its data folder
 (`~/.config/OpenBot/themes/` on Linux) and lists it under Settings > General > Theme:
 
 ```json
@@ -172,7 +172,7 @@ EQBots reads each `<name>.json` file in the `themes` folder of its data folder
 
 #### Linux server with no screen
 
-To run EQBots as an always-on server of your account on a VPS or home server (Ubuntu 24.04 or
+To run Cat as an always-on server of your account on a VPS or home server (Ubuntu 24.04 or
 26.04 with systemd), install it from a terminal and sign in with an email code:
 
 ```bash
@@ -202,8 +202,8 @@ see [AWS ECS](docs/aws-ecs.md).
 
 ### Agent setup
 
-EQBots can download a supported provider runtime when you select `Download` in onboarding,
-Settings, agent setup, or the model picker. EQBots prefers its managed CLI. Explicit `OPENBOT_*_PATH` overrides take precedence; a compatible
+Cat can download a supported provider runtime when you select `Download` in onboarding,
+Settings, agent setup, or the model picker. Cat prefers its managed CLI. Explicit `OPENBOT_*_PATH` overrides take precedence; a compatible
 system CLI is used when no managed copy is available.
 
 Codex CLI on macOS:
@@ -219,10 +219,10 @@ curl -fsSL https://claude.ai/install.sh | bash
 ```
 
 Install Grok CLI following the [Grok Build documentation](https://docs.x.ai/build/overview), then
-authenticate with `grok login` or set `XAI_API_KEY` in the environment used to launch EQBots.
+authenticate with `grok login` or set `XAI_API_KEY` in the environment used to launch Cat.
 
 See [Gemini setup and download recovery](docs/architecture/providers.md#gemini) and [provider terms](docs/provider-terms.md). For setup problems, data reset, and uninstall instructions, see
-[Troubleshooting](docs/TROUBLESHOOTING.md). EQBots's data and network behavior is documented in
+[Troubleshooting](docs/TROUBLESHOOTING.md). Cat's data and network behavior is documented in
 [Privacy](PRIVACY.md).
 
 ## Development
@@ -236,7 +236,7 @@ Install the exact Bun version on macOS or Linux:
 curl -fsSL https://bun.com/install | bash -s "bun-v1.4.2"
 ```
 
-Clone and start EQBots:
+Clone and start Cat:
 
 ```bash
 git clone https://github.com/Rahulchaube1/eqbot.git
@@ -246,9 +246,9 @@ bun run dev:prepare
 bun run dev
 ```
 
-### Deploy the EQBots website and account service
+### Deploy the Cat website and account service
 
-The Vercel project serves the site at `eqbot.everestqai.com` and forwards browser account requests to the EQBots Cloudflare Worker. Build and deploy the account service from `apps/auth-api`:
+The Vercel project serves the site at `eqbot.everestqai.com` and forwards browser account requests to the Cat Cloudflare Worker. Build and deploy the account service from `apps/auth-api`:
 
 ```bash
 bun run build
@@ -262,7 +262,7 @@ Deploy the site from the repository root with `vercel deploy --prod` after linki
 
 ### Marketplace launch catalog
 
-Seed the approved EQBots team catalog locally with `bun run marketplace:seed:local`, then start or reuse `bun run dev`. Search **EQBots** in Marketplace to review its Skills and Agents. See the [catalog and publication guide](marketplace/production-catalog/README.md).
+Seed the approved Cat team catalog locally with `bun run marketplace:seed:local`, then start or reuse `bun run dev`. Search **Cat** in Marketplace to review its Skills and Agents. See the [catalog and publication guide](marketplace/production-catalog/README.md).
 
 ## Local skills
 
@@ -270,7 +270,7 @@ Ask an agent to create a skill from a reusable workflow. It prepares a folder wi
 
 ## Import agents from Grok Bot
 
-Open **Server settings → Import** on this computer, or on a joined server in the desktop app or the browser client. Add the [EQBots export agent](https://x.ai/bot/pOUBH2kQK8CKvM7nW8stG) to Grok Bot and say "Export my agents for EQBots". It saves one `.zip` file to Downloads. Choose that file in EQBots, select the agents, and import them. The export skill and its format are in [`resources/agent-import/grok-bot/SKILL.md`](resources/agent-import/grok-bot/SKILL.md).
+Open **Server settings → Import** on this computer, or on a joined server in the desktop app or the browser client. Add the [Cat export agent](https://x.ai/bot/pOUBH2kQK8CKvM7nW8stG) to Grok Bot and say "Export my agents for Cat". It saves one `.zip` file to Downloads. Choose that file in Cat, select the agents, and import them. The export skill and its format are in [`resources/agent-import/grok-bot/SKILL.md`](resources/agent-import/grok-bot/SKILL.md).
 
 ## Commands
 
@@ -340,7 +340,7 @@ See [web client delivery](docs/web-client.md) for the release gate and focused c
 | `bun run test:browser` | Run the complete local embedded-browser smoke test. |
 | `bun run test:codex` | Probe the real CLI handshake and account without starting a paid turn. |
 | `bun run test:durations` | Re-record how long each desktop test file takes. |
-| `bun run cua-driver:doctor` | Print which `cua-driver` binary EQBots uses for Computer Use. |
+| `bun run cua-driver:doctor` | Print which `cua-driver` binary Cat uses for Computer Use. |
 | `bun run prepare:cua-driver` | Write the pinned Computer Use driver to `build/cua-driver/<platform>/<arch>`. |
 | `bun run pin:cua-driver <version>` | Print a new `cuaDriver` block for `native-runtime.lock.json`. |
 | `bun run package` | Build an unpacked local application for the architecture of this Mac. |
@@ -350,7 +350,7 @@ See [web client delivery](docs/web-client.md) for the release gate and focused c
 | `bun run package:linux` | Build an unpacked local Linux x64 application on Linux. |
 | `bun run package:linux:arm64` | Build an unpacked local Linux arm64 application on arm64 Linux. |
 | `bun run package:linux:verify` | Build and verify the Linux x64 application on Linux. |
-| `bun scripts/create-github-app.ts [--org <org>]` | Create the EQBots GitHub App from `scripts/github-app/manifest.json`. |
+| `bun scripts/create-github-app.ts [--org <org>]` | Create the Cat GitHub App from `scripts/github-app/manifest.json`. |
 | `bun run release:preflight` | Verify version, Git state, and GitHub release secrets before tagging. |
 | `bun run dist:mac` | Build unsigned local DMG and ZIP update artifacts for this Mac. |
 | `bun run dist:win` | Build an unsigned Windows x64 NSIS installer on Windows. |
@@ -375,7 +375,7 @@ See [web client delivery](docs/web-client.md) for the release gate and focused c
 | `bun run test:storage-live` | **Online/manual:** verify isolated Codex and Claude turns in a temporary SQLite database. |
 
 Production mobile analytics setup and required OpenPanel credentials are documented in
-[EQBots Mobile](apps/mobile/README.md#openpanel-product-analytics).
+[Cat Mobile](apps/mobile/README.md#openpanel-product-analytics).
 
 ### macOS remote desktop permissions
 

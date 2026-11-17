@@ -39,7 +39,7 @@ export const messages = {
 
   "provider.status.off": "Désactivé",
   "provider.gemini.hostSignIn":
-    "Pour connecter Gemini, ouvrez EQBots sur l’hôte et sélectionnez « Connecter » dans Réglages du serveur > Fournisseurs. La connexion Google nécessite un navigateur sur cet hôte. La connexion à distance n’est pas prise en charge.",
+    "Pour connecter Gemini, ouvrez Cat sur l’hôte et sélectionnez « Connecter » dans Réglages du serveur > Fournisseurs. La connexion Google nécessite un navigateur sur cet hôte. La connexion à distance n’est pas prise en charge.",
   // Which account tier the OpenCode row runs on. It shows only while it adds to the runtime
   // badge: a saved key leaves the runtime "Connected" to speak for the row.
   "provider.key.free": "Gratuit",
@@ -70,20 +70,20 @@ export const messages = {
   "provider.aria.cancelSignIn": "Annuler la connexion à {name}",
   "provider.aria.apiKey": "Clé d’API {name}",
   "provider.connecting.browserHint": "Terminez la connexion si une page du navigateur s’ouvre.",
-  "provider.connecting.cancelFailed": "EQBots n’a pas pu annuler la connexion à {name}. Réessayez.",
+  "provider.connecting.cancelFailed": "Cat n’a pas pu annuler la connexion à {name}. Réessayez.",
   "provider.aria.install": "Installer {name}",
   "provider.aria.signIn": "Se connecter à {name}",
   "provider.aria.codeFallback": "Se connecter à {name} avec un code",
   "provider.aria.moreActions": "Autres actions pour {name}",
 
-  "provider.aria.use": "Utiliser {name} dans EQBots",
+  "provider.aria.use": "Utiliser {name} dans Cat",
   "provider.use.inUseOne": "{agent} utilise {name}. Changez le modèle de cet agent, puis désactivez {name}.",
   "provider.use.inUse": {
     one: "{count} agent utilise {name}. Changez le modèle de cet agent, puis désactivez {name}.",
     other: "{count} agents utilisent {name}. Changez le modèle de ces agents, puis désactivez {name}.",
   },
   "provider.codeLogin.title": "Se connecter à {name} avec un code",
-  "provider.codeLogin.description": "Terminez sur votre téléphone ou dans un autre navigateur. EQBots attend ici.",
+  "provider.codeLogin.description": "Terminez sur votre téléphone ou dans un autre navigateur. Cat attend ici.",
   "provider.codeLogin.starting": "Obtention d’un code auprès de {name}…",
   "provider.codeLogin.qrLabel": "Code QR de la page de connexion de {name}",
   "provider.codeLogin.open": "Ouvrez",
@@ -104,12 +104,12 @@ export const messages = {
   "provider.codeLogin.pageDescription": "Cette page est ouverte dans le navigateur de {host}. Connectez-vous ici.",
   "provider.codeLogin.relayStarting": "Démarrage de la connexion à {name} sur {host}…",
   "provider.codeLogin.pageOpening": "Ouverture de la page de connexion de {name} sur {host}…",
-  "provider.codeLogin.linkStep": "Connectez-vous à {name}. EQBots continue tout seul.",
+  "provider.codeLogin.linkStep": "Connectez-vous à {name}. Cat continue tout seul.",
   "provider.codeLogin.chatgptDeviceSetting":
     "Dans ChatGPT sur un ordinateur, ouvrez les paramètres de sécurité et activez la connexion par code d’appareil pour Codex. Pour un compte professionnel, l’administrateur de votre espace de travail l’active.",
-  "provider.useApp.title": "Connectez {name} dans l’app EQBots",
+  "provider.useApp.title": "Connectez {name} dans l’app Cat",
   "provider.useApp.description":
-    "La connexion à {name} revient sur l’ordinateur qui l’a lancée, et un onglet du navigateur ne peut pas la recevoir. Connectez {name} dans l’app EQBots. L’app termine la connexion toute seule.",
+    "La connexion à {name} revient sur l’ordinateur qui l’a lancée, et un onglet du navigateur ne peut pas la recevoir. Connectez {name} dans l’app Cat. L’app termine la connexion toute seule.",
   "provider.useApp.download": "Télécharger l’app",
 
   "provider.picker.noEndpoints": "Aucun point de terminaison pour l’instant",
@@ -120,7 +120,7 @@ export const messages = {
   "provider.picker.providers": "Fournisseurs de modèles",
   "provider.picker.downloading": "Téléchargement {percent}",
   "provider.picker.unavailable": "{name} n’est pas disponible.",
-  "provider.picker.updateToUse": "Mettez à jour EQBots pour utiliser {name}",
+  "provider.picker.updateToUse": "Mettez à jour Cat pour utiliser {name}",
   "provider.picker.models": "Modèles {name}",
   "provider.picker.addProvider": "Ajouter un fournisseur",
   "provider.picker.download": "Téléchargement de {name}",
@@ -191,21 +191,21 @@ export const messages = {
   "provider.cursorKey.label": "Clé d’API Cursor",
   "provider.inceptionKey.title": "Clé d’API Inception",
   "provider.inceptionKey.description":
-    "Enregistrez une clé d’API Inception sur cet ordinateur pour utiliser les modèles Mercury. EQBots les exécute dans la CLI Pi qu’il télécharge.",
+    "Enregistrez une clé d’API Inception sur cet ordinateur pour utiliser les modèles Mercury. Cat les exécute dans la CLI Pi qu’il télécharge.",
   "provider.inceptionKey.descriptionHost":
-    "Enregistrez une clé d’API Inception sur l’hôte pour utiliser les modèles Mercury. EQBots les exécute dans la CLI Pi qu’il télécharge.",
+    "Enregistrez une clé d’API Inception sur l’hôte pour utiliser les modèles Mercury. Cat les exécute dans la CLI Pi qu’il télécharge.",
   "provider.inceptionKey.label": "Clé d’API Inception",
   "provider.deepseekKey.title": "Clé d’API DeepSeek",
   "provider.deepseekKey.description":
-    "Enregistrez une clé d’API DeepSeek sur cet ordinateur pour utiliser les modèles DeepSeek. EQBots les exécute dans la CLI Pi qu’il télécharge.",
+    "Enregistrez une clé d’API DeepSeek sur cet ordinateur pour utiliser les modèles DeepSeek. Cat les exécute dans la CLI Pi qu’il télécharge.",
   "provider.deepseekKey.descriptionHost":
-    "Enregistrez une clé d’API DeepSeek sur l’hôte pour utiliser les modèles DeepSeek. EQBots les exécute dans la CLI Pi qu’il télécharge.",
+    "Enregistrez une clé d’API DeepSeek sur l’hôte pour utiliser les modèles DeepSeek. Cat les exécute dans la CLI Pi qu’il télécharge.",
   "provider.deepseekKey.label": "Clé d’API DeepSeek",
   "provider.openrouterKey.title": "Clé d’API OpenRouter",
   "provider.openrouterKey.description":
-    "Enregistrez une clé d’API OpenRouter sur cet ordinateur pour utiliser les modèles d’OpenRouter. EQBots les exécute dans la CLI Pi qu’il télécharge.",
+    "Enregistrez une clé d’API OpenRouter sur cet ordinateur pour utiliser les modèles d’OpenRouter. Cat les exécute dans la CLI Pi qu’il télécharge.",
   "provider.openrouterKey.descriptionHost":
-    "Enregistrez une clé d’API OpenRouter sur l’hôte pour utiliser les modèles d’OpenRouter. EQBots les exécute dans la CLI Pi qu’il télécharge.",
+    "Enregistrez une clé d’API OpenRouter sur l’hôte pour utiliser les modèles d’OpenRouter. Cat les exécute dans la CLI Pi qu’il télécharge.",
   "provider.openrouterKey.label": "Clé d’API OpenRouter",
   "provider.openCodeKey.title": "Se connecter à OpenCode Go",
   "provider.openCodeKey.description":
@@ -263,16 +263,16 @@ export const messages = {
   "provider.settings.disconnectTitle": "Déconnecter {name} ?",
   "provider.settings.disconnectOthers": "Les autres comptes {provider} attendent que vous reconnectiez {provider}.",
   "provider.settings.disconnectLocal":
-    "EQBots déconnecte {provider} sur cet ordinateur. La CLI {provider} de votre terminal est aussi déconnectée.",
-  "provider.settings.disconnectHost": "EQBots déconnecte {provider} sur le serveur.",
+    "Cat déconnecte {provider} sur cet ordinateur. La CLI {provider} de votre terminal est aussi déconnectée.",
+  "provider.settings.disconnectHost": "Cat déconnecte {provider} sur le serveur.",
   "provider.settings.geminiKeyReplacesAccount":
     "Une clé API Gemini enregistrée est utilisée à la place d'une connexion Google. Pour utiliser un abonnement Google et ses modèles, supprimez la clé.",
   "provider.settings.versionInstalledByUser": "{version} · installée par vous",
-  "provider.settings.versionDownloaded": "{version} · téléchargée par EQBots",
+  "provider.settings.versionDownloaded": "{version} · téléchargée par Cat",
   "provider.settings.otherVersionInstalledByUser": "Non utilisée : {version} · installée par vous",
-  "provider.settings.otherVersionDownloaded": "Non utilisée : {version} · téléchargée par EQBots",
+  "provider.settings.otherVersionDownloaded": "Non utilisée : {version} · téléchargée par Cat",
   "provider.settings.useInstalledVersion": "Utiliser l'installée",
-  "provider.settings.useDownloadedVersion": "Utiliser celle d'EQBots",
+  "provider.settings.useDownloadedVersion": "Utiliser celle d'Cat",
   "provider.settings.cache": "Cache",
   "provider.settings.promptCache": "Cache de prompt",
   "provider.settings.promptCacheDescription":
@@ -308,10 +308,10 @@ export const messages = {
   "provider.settings.modelsLoadFailed": "Impossible de charger les modèles de ce serveur.",
   "provider.settings.deleteTitle": "Supprimer {name}",
   "provider.settings.deleteOn":
-    "Désactive {name} et supprime la CLI qu'EQBots a téléchargée. Les comptes, les connexions et les agents restent.",
+    "Désactive {name} et supprime la CLI qu'Cat a téléchargée. Les comptes, les connexions et les agents restent.",
   "provider.settings.deleteOff":
-    "Supprime la CLI qu'EQBots a téléchargée pour {name} ({size}). Les comptes, les connexions et les agents restent.",
+    "Supprime la CLI qu'Cat a téléchargée pour {name} ({size}). Les comptes, les connexions et les agents restent.",
   "provider.settings.removeDownloadFailed": "Impossible de supprimer le téléchargement.",
   "provider.settings.disconnectLocalOnly":
-    "EQBots déconnecte {provider} sur cet ordinateur. La CLI {provider} de votre terminal garde sa propre connexion.",
+    "Cat déconnecte {provider} sur cet ordinateur. La CLI {provider} de votre terminal garde sa propre connexion.",
 } as const satisfies PartialTranslation<typeof source>;

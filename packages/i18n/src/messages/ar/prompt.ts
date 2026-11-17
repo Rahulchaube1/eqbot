@@ -26,11 +26,11 @@ export const messages = {
   "prompt.approval.alwaysAllow": "السماح دائمًا",
   "prompt.approval.deny": "رفض",
   "prompt.approval.cut":
-    "تعرض هذه البطاقة بداية الطلب فقط، لذلك تقدّم الرفض فقط. إذا لم يظهر زر السماح قريبًا، فحدّث EQBots على الخادم.",
+    "تعرض هذه البطاقة بداية الطلب فقط، لذلك تقدّم الرفض فقط. إذا لم يظهر زر السماح قريبًا، فحدّث Cat على الخادم.",
   "prompt.approval.report.bugHeadline": "وجدت خطأً؟ لنُصلحه.",
   "prompt.approval.report.ideaHeadline": "لديك فكرة؟ لنحققها.",
   "prompt.approval.report.dontSend": "ليس الآن",
-  "prompt.approval.report.send": "إرسال إلى فريق EQBots",
+  "prompt.approval.report.send": "إرسال إلى فريق Cat",
   "prompt.approval.title.command": "تشغيل أمر",
   "prompt.approval.title.fileChange": "تغيير ملفات",
   "prompt.approval.title.permissions": "منح الأذونات",
@@ -54,7 +54,7 @@ export const messages = {
   "prompt.browser.signInBlocked.title": "حظر {host} تسجيل الدخول من {server}",
   "prompt.browser.signInBlocked.cancelledTitle": "أُلغي تسجيل الدخول إلى {host}",
   "prompt.browser.signInBlocked.body":
-    "سجّل الدخول على هذا الحاسوب. يرسل EQBots تسجيل الدخول إلى {host} فقط إلى {server}، ويتابع {name}.",
+    "سجّل الدخول على هذا الحاسوب. يرسل Cat تسجيل الدخول إلى {host} فقط إلى {server}، ويتابع {name}.",
   "prompt.browser.signInBlocked.cancelledBody": "أُلغي تسجيل الدخول.",
   "prompt.browser.signInBlocked.waiting": "جارٍ انتظار تسجيل الدخول",
   "prompt.browser.signInBlocked.waitingButton": "جارٍ انتظار تسجيل الدخول…",
