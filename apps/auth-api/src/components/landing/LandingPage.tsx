@@ -82,15 +82,14 @@ export function LandingPage(props: { text: LandingPageText }) {
               An EverestQai product <span aria-hidden="true">↗</span>
             </a>
             <h1 id="eq-title">
-              A workspace for <em>your AI team.</em>
+              Meet <em>EQBots</em>
             </h1>
             <p>
-              Give your agents their own workspaces, assign tasks, and follow the work from first prompt to finished
-              file.
+              Bring Codex, Claude, and Grok into one workspace. Give each agent a task and follow it from the first request to the finished file.
             </p>
             <div class="eq-actions">
-              <a class="eq-button eq-button-dark" href="/app">
-                Open workspace <span aria-hidden="true">↗</span>
+              <a class="eq-button eq-button-dark" href="/download/windows/latest">
+                Download for Windows <span aria-hidden="true">↓</span>
               </a>
               <a class="eq-button eq-button-outline" href="#workspace">
                 Explore a workflow <span aria-hidden="true">↓</span>
