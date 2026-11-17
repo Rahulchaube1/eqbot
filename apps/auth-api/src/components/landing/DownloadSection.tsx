@@ -79,8 +79,6 @@ export function DownloadSection() {
             />
           </a>
 
-          {/* The hero selector already offers Linux and /download/linux/latest resolves an AppImage, so the
-              card is the same link the other two are. A non-clickable card here contradicted both. */}
         </div>
 
         {/* The cards start the download, so the pages that explain each installer get their own

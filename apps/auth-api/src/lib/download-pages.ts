@@ -7,12 +7,11 @@ import { ANDROID_APK_AVAILABLE } from "./android-apk";
 import { DOWNLOAD_PLATFORM_ORDER, type DownloadPlatform } from "./download-platforms";
 import { faqStructuredData, type LandingQuestion } from "./landing-faq";
 import {
-  OPENBOT_ALTERNATE_DOWNLOAD_LINKS,
   OPENBOT_ANDROID_APK_LINK,
   OPENBOT_DOWNLOAD_LINKS,
   OPENBOT_DOWNLOAD_PAGE_LINKS,
 } from "./landing-links";
-import { MOBILE_APP_ORDER, MOBILE_APPS, type MobilePlatform } from "./mobile-apps";
+import { MOBILE_APP_ORDER, type MobilePlatform } from "./mobile-apps";
 import { OPENBOT_SITE_URL, OPENBOT_X_HANDLE, type PageSocialImage, pageSocialImageMeta } from "./site-metadata";
 import { OPENBOT_SOFTWARE_APPLICATION } from "./software-application";
 
