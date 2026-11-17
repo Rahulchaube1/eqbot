@@ -405,6 +405,18 @@
       "detailSha256": "24b6fb850f0e7dfdff5e2ffbfac25ba0da2ecfe40eb3f7652df36d810828d741"
     },
     {
+      "slug": "microsoft-learn",
+      "version": "1.0.0",
+      "featured": false,
+      "detailSha256": "07ad95e6386adb2d2c059f79aba7ca916c3564a48356db66293e749ae2b28441"
+    },
+    {
+      "slug": "astro-docs",
+      "version": "1.0.0",
+      "featured": false,
+      "detailSha256": "e797486ebeeb181c35e1770bdb5d585bccd628dd008e2101aa962ea0a49519c2"
+    },
+    {
       "slug": "base44",
       "version": "1.0.0",
       "featured": false,
