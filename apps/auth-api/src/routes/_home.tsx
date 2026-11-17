@@ -6,7 +6,6 @@ import { LandingPage } from "../components/landing/LandingPage";
 // shows the page. A change of language then changes only the text: the page, its animations and the app
 // preview stay.
 export const Route = createFileRoute("/_home")({
-  head: () => ({ links: [{ rel: "stylesheet", href: "/eqbots-studio.css" }] }),
   component: HomeLayout,
 });
 
