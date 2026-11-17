@@ -1,0 +1,27 @@
+{
+  "slug": "microsoft-learn",
+  "name": "Microsoft Learn",
+  "tagline": "Find Microsoft docs and code samples",
+  "description": "Search official Microsoft documentation, read articles, and find code samples for Azure, .NET, and Microsoft 365.",
+  "category": "coding",
+  "creatorName": "Microsoft",
+  "iconUrl": null,
+  "version": "1.0.0",
+  "prompts": [
+    { "id": "prompt-1", "text": "Find a C# example of uploading a file to Azure Blob Storage using managed identity." },
+    { "id": "prompt-2", "text": "Check the current ASP.NET Core instructions for adding a health check." }
+  ],
+  "apps": [
+    {
+      "id": "app-microsoft-learn-mcp",
+      "name": "Microsoft Learn",
+      "description": "Search official Microsoft documentation, read articles, and find code samples for Azure, .NET, and Microsoft 365.",
+      "iconUrl": null,
+      "server": { "name": "microsoft-learn", "transport": "http", "url": "https://learn.microsoft.com/api/mcp" }
+    }
+  ],
+  "websiteUrl": "https://learn.microsoft.com",
+  "privacyPolicyUrl": null,
+  "termsUrl": null,
+  "skills": []
+}

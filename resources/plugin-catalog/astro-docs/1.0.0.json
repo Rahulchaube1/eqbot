@@ -1,0 +1,27 @@
+{
+  "slug": "astro-docs",
+  "name": "Astro Docs",
+  "tagline": "Build websites with current Astro docs",
+  "description": "Look up Astro routing, rendering, content collections, and deployment instructions while building a website.",
+  "category": "coding",
+  "creatorName": "Astro",
+  "iconUrl": null,
+  "version": "1.0.0",
+  "prompts": [
+    { "id": "prompt-1", "text": "Find the current steps to build a blog from an Astro content collection." },
+    { "id": "prompt-2", "text": "Check how to deploy an Astro site with server-rendered routes." }
+  ],
+  "apps": [
+    {
+      "id": "app-astro-docs-mcp",
+      "name": "Astro Docs",
+      "description": "Look up Astro routing, rendering, content collections, and deployment instructions while building a website.",
+      "iconUrl": null,
+      "server": { "name": "astro-docs", "transport": "http", "url": "https://mcp.docs.astro.build/mcp" }
+    }
+  ],
+  "websiteUrl": "https://docs.astro.build",
+  "privacyPolicyUrl": null,
+  "termsUrl": null,
+  "skills": []
+}

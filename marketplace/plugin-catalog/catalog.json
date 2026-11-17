@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "catalogVersion": "v1",
-  "updatedAt": "2026-11-10T00:00:00.000Z",
+  "updatedAt": "2026-11-18T00:00:00.000Z",
   "order": [
     "aave",
     "canva",
@@ -70,6 +70,8 @@
     "atlan",
     "attio",
     "aws-knowledge",
+    "microsoft-learn",
+    "astro-docs",
     "base44",
     "basecamp",
     "beehiiv",

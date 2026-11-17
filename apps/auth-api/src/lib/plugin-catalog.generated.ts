@@ -16,7 +16,7 @@ export interface PluginCatalogIndex {
 export const PLUGIN_CATALOG_INDEX: PluginCatalogIndex = {
   schemaVersion: 1,
   catalogVersion: "v1",
-  updatedAt: "2026-11-10T00:00:00.000Z",
+  updatedAt: "2026-11-18T00:00:00.000Z",
   plugins: [
     {
       slug: "aave",
@@ -419,6 +419,18 @@ export const PLUGIN_CATALOG_INDEX: PluginCatalogIndex = {
       version: "1.0.0",
       featured: false,
       detailSha256: "24b6fb850f0e7dfdff5e2ffbfac25ba0da2ecfe40eb3f7652df36d810828d741",
+    },
+    {
+      slug: "microsoft-learn",
+      version: "1.0.0",
+      featured: false,
+      detailSha256: "07ad95e6386adb2d2c059f79aba7ca916c3564a48356db66293e749ae2b28441",
+    },
+    {
+      slug: "astro-docs",
+      version: "1.0.0",
+      featured: false,
+      detailSha256: "e797486ebeeb181c35e1770bdb5d585bccd628dd008e2101aa962ea0a49519c2",
     },
     {
       slug: "base44",
@@ -1927,7 +1939,7 @@ export const PLUGIN_CATALOG_DETAILS: Record<string, PluginCatalogDetail> = {
     name: "Honcho",
     tagline: "Your memory across AI tools",
     description:
-      "Honcho by Plastic Labs gives agents a long-term memory of you that other AI tools you connect can share. Agents save what they learn, and Honcho reasons over it to build a model of your preferences, goals and ways of working. Agents ask it questions before they start. EQBots agents keep their own memory too; Honcho is the memory that follows you to other tools. Messages that agents save go to your Honcho account.",
+      "Honcho by Plastic Labs gives agents a long-term memory of you that other AI tools you connect can share. Agents save what they learn, and Honcho reasons over it to build a model of your preferences, goals and ways of working. Agents ask it questions before they start. OpenBot agents keep their own memory too; Honcho is the memory that follows you to other tools. Messages that agents save go to your Honcho account.",
     category: "productivity",
     creatorName: "Plastic Labs",
     iconUrl: "https://honcho.dev/favicon.ico",
@@ -1980,7 +1992,7 @@ export const PLUGIN_CATALOG_DETAILS: Record<string, PluginCatalogDetail> = {
     name: "Hindsight",
     tagline: "Memory that learns over time",
     description:
-      "Hindsight by Vectorize gives agents a long-term memory in Hindsight Cloud. Agents retain facts and events, recall them by meaning, time and entity, and reflect on them to form mental models. Memories are kept in banks, and agents can make a bank for each project or person. EQBots agents keep their own memory too; Hindsight is the memory that other AI tools you connect can share. What agents retain goes to your Hindsight Cloud account.",
+      "Hindsight by Vectorize gives agents a long-term memory in Hindsight Cloud. Agents retain facts and events, recall them by meaning, time and entity, and reflect on them to form mental models. Memories are kept in banks, and agents can make a bank for each project or person. OpenBot agents keep their own memory too; Hindsight is the memory that other AI tools you connect can share. What agents retain goes to your Hindsight Cloud account.",
     category: "productivity",
     creatorName: "Vectorize",
     iconUrl: "https://ui.hindsight.vectorize.io/apple-touch-icon.png",
@@ -2085,7 +2097,7 @@ export const PLUGIN_CATALOG_DETAILS: Record<string, PluginCatalogDetail> = {
     name: "Paper",
     tagline: "Design canvas built on HTML and CSS",
     description:
-      "Paper lets agents read and write the design file that is open in Paper Desktop: inspect artboards, selections, computed styles, JSX and tokens, and create or change frames, text and styles. Install Paper Desktop, open it once, and open a file before you start. EQBots starts the Paper CLI that Paper Desktop installs. Paper needs no key. Write tools change the open file, so review each write before you approve it.",
+      "Paper lets agents read and write the design file that is open in Paper Desktop: inspect artboards, selections, computed styles, JSX and tokens, and create or change frames, text and styles. Install Paper Desktop, open it once, and open a file before you start. OpenBot starts the Paper CLI that Paper Desktop installs. Paper needs no key. Write tools change the open file, so review each write before you approve it.",
     category: "design",
     creatorName: "Paper",
     iconUrl: "https://paper.design/apple-touch-icon.png",
@@ -2223,7 +2235,7 @@ export const PLUGIN_CATALOG_DETAILS: Record<string, PluginCatalogDetail> = {
     name: "Apple apps",
     tagline: "Mail, Calendar and more on your Mac",
     description:
-      "Apple apps lets agents use Mail, Calendar, Contacts, Reminders, Notes, Messages and Safari on this Mac. It works on macOS only. EQBots starts mcp-icloud, a community server that is not made by Apple or EQBots. The server controls the apps through AppleScript, on this computer, and needs no account and no key. When you install it, EQBots can ask macOS for access to all of these apps at once, with one prompt for each app. If you do not, macOS asks the first time an agent uses an app. To change this later, open System Settings › Privacy & Security › Automation. Agents can send email and iMessages, and change or delete events, contacts and reminders, so review each write before you approve it. What the tools read, such as email text, goes to the model provider of the agent.",
+      "Apple apps lets agents use Mail, Calendar, Contacts, Reminders, Notes, Messages and Safari on this Mac. It works on macOS only. OpenBot starts mcp-icloud, a community server that is not made by Apple or OpenBot. The server controls the apps through AppleScript, on this computer, and needs no account and no key. When you install it, OpenBot can ask macOS for access to all of these apps at once, with one prompt for each app. If you do not, macOS asks the first time an agent uses an app. To change this later, open System Settings › Privacy & Security › Automation. Agents can send email and iMessages, and change or delete events, contacts and reminders, so review each write before you approve it. What the tools read, such as email text, goes to the model provider of the agent.",
     category: "productivity",
     creatorName: "MrGo2",
     iconUrl: "https://www.apple.com/apple-touch-icon.png",
@@ -4081,6 +4093,64 @@ export const PLUGIN_CATALOG_DETAILS: Record<string, PluginCatalogDetail> = {
     websiteUrl: "https://aws.amazon.com",
     privacyPolicyUrl: "https://aws.amazon.com/privacy/",
     termsUrl: "https://aws.amazon.com/terms/",
+    skills: [],
+  },
+  "microsoft-learn": {
+    slug: "microsoft-learn",
+    name: "Microsoft Learn",
+    tagline: "Find Microsoft docs and code samples",
+    description:
+      "Search official Microsoft documentation, read articles, and find code samples for Azure, .NET, and Microsoft 365.",
+    category: "coding",
+    creatorName: "Microsoft",
+    iconUrl: null,
+    version: "1.0.0",
+    prompts: [
+      { id: "prompt-1", text: "Find a C# example of uploading a file to Azure Blob Storage using managed identity." },
+      { id: "prompt-2", text: "Check the current ASP.NET Core instructions for adding a health check." },
+    ],
+    apps: [
+      {
+        id: "app-microsoft-learn-mcp",
+        name: "Microsoft Learn",
+        description:
+          "Search official Microsoft documentation, read articles, and find code samples for Azure, .NET, and Microsoft 365.",
+        iconUrl: null,
+        server: { name: "microsoft-learn", transport: "http", url: "https://learn.microsoft.com/api/mcp" },
+      },
+    ],
+    websiteUrl: "https://learn.microsoft.com",
+    privacyPolicyUrl: null,
+    termsUrl: null,
+    skills: [],
+  },
+  "astro-docs": {
+    slug: "astro-docs",
+    name: "Astro Docs",
+    tagline: "Build websites with current Astro docs",
+    description:
+      "Look up Astro routing, rendering, content collections, and deployment instructions while building a website.",
+    category: "coding",
+    creatorName: "Astro",
+    iconUrl: null,
+    version: "1.0.0",
+    prompts: [
+      { id: "prompt-1", text: "Find the current steps to build a blog from an Astro content collection." },
+      { id: "prompt-2", text: "Check how to deploy an Astro site with server-rendered routes." },
+    ],
+    apps: [
+      {
+        id: "app-astro-docs-mcp",
+        name: "Astro Docs",
+        description:
+          "Look up Astro routing, rendering, content collections, and deployment instructions while building a website.",
+        iconUrl: null,
+        server: { name: "astro-docs", transport: "http", url: "https://mcp.docs.astro.build/mcp" },
+      },
+    ],
+    websiteUrl: "https://docs.astro.build",
+    privacyPolicyUrl: null,
+    termsUrl: null,
     skills: [],
   },
   base44: {

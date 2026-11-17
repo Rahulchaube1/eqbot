@@ -2447,6 +2447,60 @@ export const MOBILE_PLUGINS: readonly MobilePlugin[] = [
     ],
   },
   {
+    slug: "microsoft-learn",
+    name: "Microsoft Learn",
+    tagline: "Find Microsoft docs and code samples",
+    description:
+      "Search official Microsoft documentation, read articles, and find code samples for Azure, .NET, and Microsoft 365.",
+    category: "coding",
+    creatorName: "Microsoft",
+    version: "1.0.0",
+    prompts: [
+      { id: "prompt-1", text: "Find a C# example of uploading a file to Azure Blob Storage using managed identity." },
+      { id: "prompt-2", text: "Check the current ASP.NET Core instructions for adding a health check." },
+    ],
+    websiteUrl: "https://learn.microsoft.com",
+    privacyPolicyUrl: null,
+    termsUrl: null,
+    featured: false,
+    apps: [
+      {
+        id: "app-microsoft-learn-mcp",
+        name: "Microsoft Learn",
+        description:
+          "Search official Microsoft documentation, read articles, and find code samples for Azure, .NET, and Microsoft 365.",
+        server: { name: "microsoft-learn", transport: "http", url: "https://learn.microsoft.com/api/mcp" },
+      },
+    ],
+  },
+  {
+    slug: "astro-docs",
+    name: "Astro Docs",
+    tagline: "Build websites with current Astro docs",
+    description:
+      "Look up Astro routing, rendering, content collections, and deployment instructions while building a website.",
+    category: "coding",
+    creatorName: "Astro",
+    version: "1.0.0",
+    prompts: [
+      { id: "prompt-1", text: "Find the current steps to build a blog from an Astro content collection." },
+      { id: "prompt-2", text: "Check how to deploy an Astro site with server-rendered routes." },
+    ],
+    websiteUrl: "https://docs.astro.build",
+    privacyPolicyUrl: null,
+    termsUrl: null,
+    featured: false,
+    apps: [
+      {
+        id: "app-astro-docs-mcp",
+        name: "Astro Docs",
+        description:
+          "Look up Astro routing, rendering, content collections, and deployment instructions while building a website.",
+        server: { name: "astro-docs", transport: "http", url: "https://mcp.docs.astro.build/mcp" },
+      },
+    ],
+  },
+  {
     slug: "base44",
     name: "Base44",
     tagline: "AI app builder",
