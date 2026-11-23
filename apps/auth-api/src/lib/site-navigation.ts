@@ -93,7 +93,6 @@ export const SITE_NAVIGATION_SECTIONS: readonly SiteNavigationSection[] = [
       { id: "changelog", seed: "Changelog", icon: "refresh", to: CHANGELOG_ROUTE },
       { id: "documentation", seed: "Documentation", icon: "folder", href: OPENBOT_LINKS.documentation },
       { id: "brand", seed: "Brand", icon: "logo", to: BRAND_ROUTE },
-      { id: "status", seed: "Status", icon: "cloud", href: OPENBOT_LINKS.status },
     ],
   },
 ];

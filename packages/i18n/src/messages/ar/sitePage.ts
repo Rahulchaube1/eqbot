@@ -138,4 +138,5 @@ export const messages = {
   "sitePage.marketplace.missing.title": "غير موجود في المتجر",
   "sitePage.marketplace.missing.body": "أزاله المنشئ، أو لم يوافق عليه Cat، أو الرابط غير صحيح.",
   "sitePage.marketplace.missing.open": "فتح المتجر",
+  "sitePage.site.everestProducts": "منتجات EverestQ",
 } as const satisfies PartialTranslation<typeof source>;

@@ -1,6 +1,6 @@
 import { createIsomorphicFn } from "@tanstack/solid-start";
 import { getRequestUrl } from "@tanstack/solid-start/server";
-import { siteUrlForPage } from "./site-metadata";
+import { OPENBOT_SITE_URL, siteUrlForPage } from "./site-metadata";
 
 /**
  * The site URL for the head tags of the page being rendered. The root route reads it
@@ -13,5 +13,5 @@ import { siteUrlForPage } from "./site-metadata";
  * tests import the page routes directly.
  */
 export const servingSiteUrl = createIsomorphicFn()
-  .server(() => siteUrlForPage(getRequestUrl()))
+  .server(() => (import.meta.env.VITE_CAT_STATIC_SITE === "true" ? OPENBOT_SITE_URL : siteUrlForPage(getRequestUrl())))
   .client(() => siteUrlForPage(new URL(window.location.href)));

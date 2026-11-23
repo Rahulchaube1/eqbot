@@ -146,4 +146,5 @@ export const messages = {
   "sitePage.marketplace.missing.title": "マーケットプレイスにありません",
   "sitePage.marketplace.missing.body": "作成者が削除したか、Cat が承認しなかったか、リンクが間違っています。",
   "sitePage.marketplace.missing.open": "マーケットプレイスを開く",
+  "sitePage.site.everestProducts": "EverestQ 製品",
 } as const satisfies PartialTranslation<typeof source>;

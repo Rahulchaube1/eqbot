@@ -147,4 +147,5 @@ export const messages = {
   "sitePage.marketplace.missing.title": "Pazaryerinde yok",
   "sitePage.marketplace.missing.body": "Yapan kişi kaldırdı, Cat onaylamadı ya da bağlantı yanlış.",
   "sitePage.marketplace.missing.open": "Pazaryerini aç",
+  "sitePage.site.everestProducts": "EverestQ ürünleri",
 } as const satisfies PartialTranslation<typeof source>;

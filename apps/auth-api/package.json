@@ -22,7 +22,9 @@
     "test": "vitest run --config vitest.config.ts"
   },
   "dependencies": {
+    "@fontsource-variable/bricolage-grotesque": "5.3.0",
     "@fontsource-variable/inter": "catalog:",
+    "@fontsource-variable/newsreader": "5.3.0",
     "@kobalte/core": "catalog:",
     "@openbot/brand": "workspace:*",
     "@openbot/contracts": "workspace:*",

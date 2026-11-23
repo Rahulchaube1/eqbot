@@ -35,6 +35,7 @@ export const OPENBOT_LINKS = {
   /** The contact form page. */
   contact: "/contact",
   download: "#download",
+  everestProducts: "https://www.everestqai.com/products",
   news: "/news",
   guides: "/guides",
   marketplace: "/marketplace",
@@ -45,8 +46,6 @@ export const OPENBOT_LINKS = {
   privacy: "https://github.com/Rahulchaube1/eqbot/blob/main/PRIVACY.md",
   documentation: "https://github.com/Rahulchaube1/eqbot#readme",
   troubleshooting: "https://github.com/Rahulchaube1/eqbot/blob/main/docs/TROUBLESHOOTING.md",
-  /** GitHub Pages hosts the status page, so it stays up when Cloudflare does not. */
-  status: "https://eqbot.everestqai.com",
   selfHostedServer: "https://github.com/Rahulchaube1/eqbot/blob/main/docs/self-hosted-server.md",
   dockerDocumentation: "https://github.com/Rahulchaube1/eqbot/blob/main/docs/docker.md",
   dockerInstallUbuntu: "https://docs.docker.com/engine/install/ubuntu/",
@@ -134,7 +133,6 @@ export const FOOTER_COLUMNS: readonly FooterColumn[] = [
     links: [
       { label: { text: "documentation" }, external: true, href: OPENBOT_LINKS.documentation },
       { label: { text: "troubleshooting" }, external: true, href: OPENBOT_LINKS.troubleshooting },
-      { label: { text: "status" }, external: true, href: OPENBOT_LINKS.status },
       { label: { text: "selfHosted" }, external: true, href: OPENBOT_LINKS.selfHostedServer },
       { label: { text: "architecture" }, external: true, href: OPENBOT_LINKS.architecture },
       { label: { text: "contributing" }, external: true, href: OPENBOT_LINKS.contributing },

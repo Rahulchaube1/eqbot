@@ -137,4 +137,5 @@ export const messages = {
   "sitePage.marketplace.missing.body":
     "De maker heeft het verwijderd, Cat heeft het niet goedgekeurd, of de link klopt niet.",
   "sitePage.marketplace.missing.open": "Marktplaats openen",
+  "sitePage.site.everestProducts": "EverestQ-producten",
 } as const satisfies PartialTranslation<typeof source>;

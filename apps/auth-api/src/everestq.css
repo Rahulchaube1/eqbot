@@ -1,0 +1,123 @@
+@import "@fontsource-variable/bricolage-grotesque/wght.css";
+@import "@fontsource-variable/newsreader/wght.css";
+
+/* Only the public site has this header. The signed-in client and its preview use their own theme. */
+html:has(.landing-header) {
+  --openbot-bg-canvas: #080807;
+  --openbot-bg-sidebar: #0e0d0c;
+  --openbot-bg-surface: #141311;
+  --openbot-bg-surface-raised: #201d1a;
+  --openbot-bg-control: #201d1a;
+  --openbot-bg-control-hover: #322a24;
+  --openbot-text-primary: #f5f0eb;
+  --openbot-text-secondary: #d9cabe;
+  --openbot-text-muted: #aaa39e;
+  --openbot-accent: #c0552e;
+  --openbot-accent-text: #f2b18c;
+  --openbot-accent-strong: #e49d72;
+  --openbot-surface-light: #f2d9c4;
+  --openbot-text-on-light: #141311;
+  --openbot-font-sans: "Bricolage Grotesque Variable", "Inter Variable", system-ui, sans-serif;
+}
+
+.landing-page :is(h1, h2, h3) {
+  font-family: "Newsreader Variable", Georgia, serif;
+  font-optical-sizing: auto;
+}
+
+.landing-header,
+.landing-footer {
+  --openbot-radius-pill: 0;
+  --openbot-radius-md: 0;
+}
+
+.landing-header {
+  border-bottom: 1px solid var(--openbot-border-strong);
+}
+
+.landing-header .site-nav {
+  --site-nav-radius: 0;
+}
+
+.landing-page
+  :is(
+    .landing-button,
+    .landing-download-primary,
+    .landing-download-card,
+    .landing-availability,
+    .landing-footer-cta,
+    .landing-footer-company-badge,
+    .download-hub-card,
+    .download-installer-button,
+    .download-panel,
+    .compare-faq-item,
+    .post-card,
+    .plugin-card
+  ) {
+  border-radius: 0;
+}
+
+.site-brand-links,
+.site-family-link,
+.landing-footer-company-badge {
+  display: inline-flex;
+  align-items: center;
+}
+
+.site-brand-links {
+  justify-self: start;
+  gap: 10px;
+}
+
+.site-family-link {
+  padding-inline-start: 10px;
+  border-inline-start: 1px solid var(--openbot-border-strong);
+  color: var(--openbot-text-secondary);
+  font-size: 12px;
+  font-weight: 550;
+  line-height: 1.2;
+}
+
+.landing-footer-company-badge {
+  width: fit-content;
+  gap: 8px;
+  margin-block-start: 14px;
+  padding: 6px 10px;
+  border: 1px solid var(--openbot-border-strong);
+  color: var(--openbot-text-secondary);
+  font-size: 13px;
+}
+
+.landing-footer-company-badge svg {
+  width: 14px;
+  height: 14px;
+}
+
+.site-family-link:hover,
+.landing-footer-company-badge:hover {
+  color: var(--openbot-accent-text);
+}
+
+.site-family-link:focus-visible,
+.landing-footer-company-badge:focus-visible {
+  outline: 2px solid var(--openbot-accent-strong);
+  outline-offset: 3px;
+}
+
+@media (max-width: 520px) {
+  .site-brand-links {
+    gap: 6px;
+  }
+
+  .site-family-link {
+    max-width: 9ch;
+    padding-inline-start: 6px;
+  }
+}
+
+@media (max-width: 420px) {
+  /* The same download action is available inside the mobile menu. */
+  .site-header-actions > .landing-button-primary {
+    display: none;
+  }
+}

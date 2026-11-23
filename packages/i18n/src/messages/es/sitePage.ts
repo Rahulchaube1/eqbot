@@ -147,4 +147,5 @@ export const messages = {
   "sitePage.marketplace.missing.title": "No está en el Marketplace",
   "sitePage.marketplace.missing.body": "Su creador lo eliminó, Cat no lo aprobó o el enlace es incorrecto.",
   "sitePage.marketplace.missing.open": "Abrir el Marketplace",
+  "sitePage.site.everestProducts": "Productos de EverestQ",
 } as const satisfies PartialTranslation<typeof source>;

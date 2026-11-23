@@ -151,4 +151,5 @@ export const messages = {
   "sitePage.marketplace.missing.title": "Absent du Marketplace",
   "sitePage.marketplace.missing.body": "Son créateur l’a retiré, Cat ne l’a pas approuvé, ou le lien est incorrect.",
   "sitePage.marketplace.missing.open": "Ouvrir le Marketplace",
+  "sitePage.site.everestProducts": "Produits EverestQ",
 } as const satisfies PartialTranslation<typeof source>;

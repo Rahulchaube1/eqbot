@@ -6,6 +6,7 @@ import { createOpenBotLogger } from "@openbot/logging";
 import { BRAND_ASSETS } from "../apps/auth-api/src/lib/brand-assets";
 import { CONTENT_COLLECTIONS } from "../apps/auth-api/src/lib/content";
 import { SITE_PLUGINS } from "../apps/auth-api/src/lib/plugins";
+import { LOCALIZED_PAGE_PATHS } from "../apps/auth-api/src/lib/site-paths";
 
 const logger = createOpenBotLogger("build-vercel");
 const rootDir = resolve(dirname(fileURLToPath(import.meta.url)), "..");
@@ -41,6 +42,7 @@ const STATIC_ROUTES = [
   "/commercial-license",
   "/dpa",
   "/cla",
+  ...Object.values(LOCALIZED_PAGE_PATHS).flatMap((paths) => Object.values(paths)),
   ...CONTENT_COLLECTIONS.flatMap((collection) =>
     collection.articles.map((article) => `/${collection.id}/${article.slug}`),
   ),
@@ -51,7 +53,7 @@ async function runCommand(cmd: string, args: string[], cwd: string): Promise<voi
     const child = spawn(cmd, args, {
       cwd,
       stdio: "inherit",
-      env: { ...process.env, NODE_OPTIONS: "--max-old-space-size=6144" },
+      env: { ...process.env, NODE_OPTIONS: "--max-old-space-size=6144", VITE_CAT_STATIC_SITE: "true" },
     });
     child.on("exit", (code) => {
       if (code === 0) resolvePromise();

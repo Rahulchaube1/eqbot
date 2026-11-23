@@ -149,4 +149,5 @@ export const messages = {
   "sitePage.marketplace.missing.body":
     "Chi l’ha creato lo ha rimosso, Cat non l’ha approvato, oppure il link è sbagliato.",
   "sitePage.marketplace.missing.open": "Apri il Marketplace",
+  "sitePage.site.everestProducts": "Prodotti EverestQ",
 } as const satisfies PartialTranslation<typeof source>;

@@ -144,4 +144,5 @@ export const messages = {
   "sitePage.marketplace.missing.title": "마켓플레이스에 없어요",
   "sitePage.marketplace.missing.body": "만든 사람이 삭제했거나, Cat이 승인하지 않았거나, 링크가 잘못되었어요.",
   "sitePage.marketplace.missing.open": "마켓플레이스 열기",
+  "sitePage.site.everestProducts": "EverestQ 제품",
 } as const satisfies PartialTranslation<typeof source>;

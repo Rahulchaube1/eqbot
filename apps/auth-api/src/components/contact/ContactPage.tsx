@@ -220,6 +220,31 @@ function ContactChannel(props: { label: string; detail: string; href: string }) 
 }
 
 export function ContactPage(props: { lang: string; text: ContactPageText }) {
+  if (import.meta.env.VITE_CAT_STATIC_SITE === "true") {
+    return (
+      <div class="landing-page" lang={props.lang}>
+        <SiteHeader page="content" />
+        <main class="landing-section contact-section" aria-labelledby="contact-title">
+          <div class="landing-section-inner landing-section-heading">
+            <h1 id="contact-title">{props.text.heading}</h1>
+            <ul class="contact-channels">
+              <ContactChannel
+                label={props.text.fields.email}
+                detail="support@everestqai.com"
+                href="mailto:support@everestqai.com"
+              />
+              <ContactChannel
+                label="GitHub"
+                detail={props.text.channels.github}
+                href={`${OPENBOT_LINKS.repository}/issues`}
+              />
+            </ul>
+          </div>
+        </main>
+        <LandingFooter />
+      </div>
+    );
+  }
   const form = createContactForm(() => props.text.errors);
   const topicId = createUniqueId();
 

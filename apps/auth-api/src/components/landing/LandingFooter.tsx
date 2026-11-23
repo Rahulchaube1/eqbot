@@ -53,39 +53,10 @@ export function LandingFooter() {
 
             <p class="landing-footer-description">{text().description}</p>
 
-            <a
-              class="landing-footer-company-badge"
-              href="https://www.everestqai.com"
-              target="_blank"
-              rel={EXTERNAL_LINK_REL}
-              style={{
-                display: "inline-flex",
-                "align-items": "center",
-                gap: "8px",
-                "margin-top": "14px",
-                padding: "6px 12px",
-                "border-radius": "999px",
-                background: "rgba(255, 255, 255, 0.06)",
-                border: "1px solid rgba(255, 255, 255, 0.12)",
-                color: "var(--openbot-text-secondary, #d4d4d8)",
-                "font-size": "13px",
-                "font-weight": "500",
-                "text-decoration": "none",
-              }}
-            >
-              <img
-                src="/everestq.png"
-                alt="EverestQai"
-                width="22"
-                height="22"
-                style={{
-                  display: "inline-block",
-                  "vertical-align": "middle",
-                  "margin-right": "2px",
-                  "border-radius": "4px",
-                }}
-              />
+            <a class="landing-footer-company-badge" href={OPENBOT_LINKS.everestProducts}>
+              <img src="/everestq.png" alt="" width="22" height="22" />
               <span>Cat is a product of EverestQai</span>
+              <LandingIcon name="arrow-up-right" />
             </a>
 
             <Link class="landing-footer-cta" to="/download">

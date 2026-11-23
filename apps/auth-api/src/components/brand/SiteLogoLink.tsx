@@ -72,30 +72,6 @@ export function SiteLogoLink() {
         >
           <AppLogo variant="production" class="landing-brand-logo" />
           <span>Cat</span>
-          <span
-            class="landing-brand-company"
-            style={{
-              display: "inline-flex",
-              "align-items": "center",
-              gap: "4px",
-              "margin-left": "6px",
-              padding: "2px 6px",
-              "border-radius": "999px",
-              background: "rgba(255, 255, 255, 0.08)",
-              "font-size": "11px",
-              "font-weight": "500",
-              color: "var(--openbot-text-secondary, #a1a1aa)",
-            }}
-          >
-            <img
-              src="/everestq.png"
-              alt="EverestQai"
-              width="16"
-              height="16"
-              style={{ "border-radius": "3px", display: "block" }}
-            />
-            <span>by EverestQai</span>
-          </span>
         </Link>
       </ContextMenu.Trigger>
       <ContextMenu.Content class="site-logo-menu" aria-label={text().logo.menu}>

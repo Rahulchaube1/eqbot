@@ -66,6 +66,7 @@ export function siteText(t: AppTranslate) {
     },
     latest: t("sitePage.site.latest"),
     home: t("sitePage.site.home"),
+    everestProducts: t("sitePage.site.everestProducts"),
     logo: {
       menu: t("sitePage.site.logo.menu"),
       copyIcon: t("sitePage.site.logo.copyIcon"),

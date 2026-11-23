@@ -395,6 +395,7 @@ export const messages = {
   "sitePage.site.language.current": "Idioma: {language}",
   "sitePage.site.latest": "Recentes",
   "sitePage.site.home": "Página inicial do Cat",
+  "sitePage.site.everestProducts": "Produtos EverestQ",
   "sitePage.site.logo.menu": "Logo",
   "sitePage.site.logo.copyIcon": "Copiar logo como SVG",
   "sitePage.site.logo.copyLockup": "Copiar logo com nome como SVG",

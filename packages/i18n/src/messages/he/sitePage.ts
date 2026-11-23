@@ -382,6 +382,7 @@ export const messages = {
   "sitePage.site.language.current": "שפה: {language}",
   "sitePage.site.latest": "אחרון",
   "sitePage.site.home": "דף הבית של Cat",
+  "sitePage.site.everestProducts": "מוצרי EverestQ",
   "sitePage.site.logo.menu": "לוגו",
   "sitePage.site.logo.copyIcon": "העתקת הלוגו כ-SVG",
   "sitePage.site.logo.copyLockup": "העתקת הלוגו עם השם כ-SVG",

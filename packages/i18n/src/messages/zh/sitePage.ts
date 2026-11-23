@@ -142,4 +142,5 @@ export const messages = {
   "sitePage.marketplace.missing.title": "不在市场中",
   "sitePage.marketplace.missing.body": "创建者已将其移除、Cat 未批准，或链接有误。",
   "sitePage.marketplace.missing.open": "打开市场",
+  "sitePage.site.everestProducts": "EverestQ 产品",
 } as const satisfies PartialTranslation<typeof source>;

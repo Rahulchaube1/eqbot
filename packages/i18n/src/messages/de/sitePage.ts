@@ -153,4 +153,5 @@ export const messages = {
   "sitePage.marketplace.missing.body":
     "Die erstellende Person hat es entfernt, Cat hat es nicht freigegeben, oder der Link ist falsch.",
   "sitePage.marketplace.missing.open": "Marketplace öffnen",
+  "sitePage.site.everestProducts": "EverestQ-Produkte",
 } as const satisfies PartialTranslation<typeof source>;

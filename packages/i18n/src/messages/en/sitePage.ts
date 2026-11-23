@@ -464,6 +464,7 @@ export const messages = defineMessages("sitePage", {
   // A badge on the newest article in the menu.
   "sitePage.site.latest": "Latest",
   "sitePage.site.home": "Cat home",
+  "sitePage.site.everestProducts": "EverestQ products",
   "sitePage.site.logo.menu": "Logo",
   "sitePage.site.logo.copyIcon": "Copy logo as SVG",
   "sitePage.site.logo.copyLockup": "Copy logo with name as SVG",

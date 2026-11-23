@@ -51,7 +51,12 @@ export function SiteHeader(props: SiteHeaderProps) {
 
   return (
     <header class="landing-header" data-enter="header" lang={chrome().lang}>
-      <SiteLogoLink />
+      <div class="site-brand-links">
+        <SiteLogoLink />
+        <a class="site-family-link" href={OPENBOT_LINKS.everestProducts}>
+          {text().everestProducts}
+        </a>
+      </div>
       <SiteNavigationMenu />
       <div class="site-header-actions">
         <SiteLanguageMenu />

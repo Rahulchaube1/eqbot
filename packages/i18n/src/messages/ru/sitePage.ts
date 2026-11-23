@@ -150,4 +150,5 @@ export const messages = {
   "sitePage.marketplace.missing.title": "Нет в каталоге",
   "sitePage.marketplace.missing.body": "Автор удалил это, Cat не одобрил это, или ссылка неверна.",
   "sitePage.marketplace.missing.open": "Открыть каталог",
+  "sitePage.site.everestProducts": "Продукты EverestQ",
 } as const satisfies PartialTranslation<typeof source>;
