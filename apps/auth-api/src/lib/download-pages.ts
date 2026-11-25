@@ -276,7 +276,7 @@ export const DOWNLOAD_PAGES: Record<DownloadPagePlatform, DownloadPageContent> =
       },
       { text: "Make the AppImage executable.", code: "chmod +x Cat-*.AppImage" },
       {
-        text: "Run it. On the first start, Cat adds itself to your app launcher, so that openbot:// links open it.",
+        text: "Run Cat once to add it to your app launcher and open desktop links from the website.",
         code: "./Cat-*.AppImage",
       },
       CONNECT_STEP,

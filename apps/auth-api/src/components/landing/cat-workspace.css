@@ -1,37 +1,211 @@
-.cat-intro,.cat-handoff {display:grid;grid-template-columns:minmax(0,0.85fr) minmax(0,1.15fr);align-items:center;gap:clamp(28px,6vw,92px)}
-.cat-intro {border-block:1px solid #32444f;padding-block:clamp(28px,5vw,68px)}
-.cat-maker,.cat-model {display:inline-flex;align-items:center;gap:9px;color:#cce5e2;text-decoration:none}
-.cat-maker img,.cat-model img {width:24px;height:24px;object-fit:contain}
-.cat-signature h1 {display:flex;align-items:center;gap:.17em;font-size:clamp(70px,9vw,144px);font-weight:650;letter-spacing:-.08em;line-height:1;margin:20px 0 0}
-.cat-signature-logo {width:.84em;height:.84em;flex:none;transform:rotate(-5deg)}
-.cat-intro-description {font-size:clamp(17px,1.6vw,24px);line-height:1.52;color:#c6d3da;margin:0;text-wrap:pretty}
-.cat-actions {display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-top:22px}
-.cat-model {margin-block:16px 0;font-size:14px}
-.cat-model:hover,.cat-maker:hover {color:white;text-decoration:underline}
-.landing-hero .landing-preview {margin-top:32px}
-.cat-handoff {max-width:1220px;margin:0 auto;padding:clamp(50px,8vw,120px) clamp(20px,4vw,50px)}
-.cat-handoff-mark {object-fit:contain}
-.cat-handoff h2 {font-size:clamp(34px,4.4vw,72px);line-height:1.04;letter-spacing:-.055em;margin:18px 0;text-wrap:balance}
-.cat-handoff header p {color:#b8c7d1;line-height:1.6;max-width:42ch}
-.cat-thread {min-width:0;border:1px solid #32444f;border-radius:16px;background:#111d25;overflow:hidden}
-.cat-thread-bar {display:flex;align-items:center;gap:9px;padding:14px 20px;border-bottom:1px solid #32444f;font-weight:650}
-.cat-thread-bar span,.cat-senders time {color:#acbec7;font-weight:400}
-.cat-senders {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;padding:20px 16px}
-.cat-senders button {display:grid;justify-items:center;gap:4px;cursor:pointer;color:#e8f3f4;background:transparent;border:1px solid transparent;border-radius:12px;padding:12px 4px;font:inherit}
-.cat-senders button[aria-pressed=true] {border-color:#4e9a94;background:#183332}
-.cat-senders button:focus-visible,.cat-model:focus-visible,.cat-maker:focus-visible {outline:2px solid #9de7df;outline-offset:2px}
-.cat-portrait {width:clamp(44px,6vw,76px);aspect-ratio:1;display:grid;place-items:center}
-.cat-portrait>* {width:100%;height:100%}
-.cat-senders time {font-size:13px}
-#cat-message {border-top:1px solid #32444f;padding:20px;min-height:7.8em}
-#cat-message blockquote {margin:0;border-inline-start:3px solid #62d2c4;padding-inline-start:16px}
-#cat-message strong {color:#92dfd2}
-#cat-message p {margin:6px 0 0;line-height:1.5}
-@media (prefers-reduced-motion:no-preference) {
- .cat-signature-logo {animation:cat-greet .75s ease-out both}
- #cat-message blockquote {animation:cat-deliver .24s ease-out both}
- .cat-senders button {transition:background .2s,border-color .2s}
- @keyframes cat-greet {from{opacity:0;transform:translateY(10px) rotate(-12deg)}to{opacity:1;transform:rotate(-5deg)}}
- @keyframes cat-deliver {from{opacity:.2;transform:translateY(6px)}to{opacity:1;transform:none}}
+.cat-intro,
+.cat-handoff {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  align-items: center;
+  gap: clamp(28px, 6vw, 92px);
 }
-@media(max-width:760px) {.cat-intro,.cat-handoff{grid-template-columns:1fr;gap:24px}.cat-actions{gap:8px}.cat-handoff h2{max-width:18ch}}
+.cat-intro {
+  border-block: 1px solid #32444f;
+  padding-block: clamp(28px, 5vw, 68px);
+}
+.cat-maker,
+.cat-model {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  color: #cce5e2;
+  text-decoration: none;
+}
+.cat-maker img,
+.cat-model img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+.cat-signature h1 {
+  display: flex;
+  align-items: center;
+  gap: 0.17em;
+  font-size: clamp(70px, 9vw, 144px);
+  font-weight: 650;
+  letter-spacing: -0.08em;
+  line-height: 1;
+  margin: 20px 0 0;
+}
+.cat-signature-logo {
+  width: 0.84em;
+  height: 0.84em;
+  flex: none;
+  transform: rotate(-5deg);
+}
+.cat-intro-description {
+  font-size: clamp(17px, 1.6vw, 24px);
+  line-height: 1.52;
+  color: #c6d3da;
+  margin: 0;
+  text-wrap: pretty;
+}
+.cat-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin-top: 22px;
+}
+.cat-model {
+  margin-block: 16px 0;
+  font-size: 14px;
+}
+.cat-model:hover,
+.cat-maker:hover {
+  color: white;
+  text-decoration: underline;
+}
+.landing-hero .landing-preview {
+  margin-top: 32px;
+}
+.cat-handoff {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: clamp(50px, 8vw, 120px) clamp(20px, 4vw, 50px);
+}
+.cat-handoff-mark {
+  object-fit: contain;
+}
+.cat-handoff h2 {
+  font-size: clamp(34px, 4.4vw, 72px);
+  line-height: 1.04;
+  letter-spacing: -0.055em;
+  margin: 18px 0;
+  text-wrap: balance;
+}
+.cat-handoff header p {
+  color: #b8c7d1;
+  line-height: 1.6;
+  max-width: 42ch;
+}
+.cat-thread {
+  min-width: 0;
+  border: 1px solid #32444f;
+  border-radius: 16px;
+  background: #111d25;
+  overflow: hidden;
+}
+.cat-thread-bar {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 14px 20px;
+  border-bottom: 1px solid #32444f;
+  font-weight: 650;
+}
+.cat-thread-bar span,
+.cat-senders time {
+  color: #acbec7;
+  font-weight: 400;
+}
+.cat-senders {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  padding: 20px 16px;
+}
+.cat-senders button {
+  display: grid;
+  justify-items: center;
+  gap: 4px;
+  cursor: pointer;
+  color: #e8f3f4;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  padding: 12px 4px;
+  font: inherit;
+}
+.cat-senders button[aria-pressed="true"] {
+  border-color: #4e9a94;
+  background: #183332;
+}
+.cat-senders button:focus-visible,
+.cat-model:focus-visible,
+.cat-maker:focus-visible {
+  outline: 2px solid #9de7df;
+  outline-offset: 2px;
+}
+.cat-portrait {
+  width: clamp(44px, 6vw, 76px);
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+}
+.cat-portrait > * {
+  width: 100%;
+  height: 100%;
+}
+.cat-senders time {
+  font-size: 13px;
+}
+#cat-message {
+  border-top: 1px solid #32444f;
+  padding: 20px;
+  min-height: 7.8em;
+}
+#cat-message blockquote {
+  margin: 0;
+  border-inline-start: 3px solid #62d2c4;
+  padding-inline-start: 16px;
+}
+#cat-message strong {
+  color: #92dfd2;
+}
+#cat-message p {
+  margin: 6px 0 0;
+  line-height: 1.5;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .cat-signature-logo {
+    animation: cat-greet 0.75s ease-out both;
+  }
+  #cat-message blockquote {
+    animation: cat-deliver 0.24s ease-out both;
+  }
+  .cat-senders button {
+    transition:
+      background 0.2s,
+      border-color 0.2s;
+  }
+  @keyframes cat-greet {
+    from {
+      opacity: 0;
+      transform: translateY(10px) rotate(-12deg);
+    }
+    to {
+      opacity: 1;
+      transform: rotate(-5deg);
+    }
+  }
+  @keyframes cat-deliver {
+    from {
+      opacity: 0.2;
+      transform: translateY(6px);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+}
+@media (max-width: 760px) {
+  .cat-intro,
+  .cat-handoff {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .cat-actions {
+    gap: 8px;
+  }
+  .cat-handoff h2 {
+    max-width: 18ch;
+  }
+}

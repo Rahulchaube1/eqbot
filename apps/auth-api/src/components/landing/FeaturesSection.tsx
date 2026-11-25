@@ -199,7 +199,11 @@ export function FeaturesSection() {
                       data-provider={entry.provider}
                       aria-hidden={hiddenFromReaders(index() >= row.length)}
                     >
-                      {entry.provider === "everestq" ? <img src="/everestq.png" alt="" class="landing-provider-pill-logo" /> : <ProviderLogo provider={entry.provider} class="landing-provider-pill-logo" />}
+                      {entry.provider === "everestq" ? (
+                        <img src="/everestq.png" alt="" class="landing-provider-pill-logo" />
+                      ) : (
+                        <ProviderLogo provider={entry.provider} class="landing-provider-pill-logo" />
+                      )}
                       {entry.name}
                     </li>
                   )}

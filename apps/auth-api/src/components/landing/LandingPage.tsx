@@ -70,29 +70,36 @@ function LandingPageContent() {
         <section class="landing-hero" aria-labelledby="landing-title">
           <div class="cat-intro">
             <div class="cat-signature">
-              <a href="https://www.everestqai.com/" class="cat-maker"><img src="/everestq.png" alt="" />EverestQai</a>
-              <h1 id="landing-title"><AppLogo variant="production" animation="blink" interactive class="cat-signature-logo" /> Cat</h1>
+              <a href="https://www.everestqai.com/" class="cat-maker">
+                <img src="/everestq.png" alt="" />
+                EverestQai
+              </a>
+              <h1 id="landing-title">
+                <AppLogo variant="production" animation="blink" interactive class="cat-signature-logo" /> Cat
+              </h1>
             </div>
             <div class="cat-intro-body">
-            <p class="cat-intro-description">
-              <For each={hero().description}>{(part) => <HeroDescriptionPart part={part} />}</For>
-            </p>
+              <p class="cat-intro-description">
+                <For each={hero().description}>{(part) => <HeroDescriptionPart part={part} />}</For>
+              </p>
 
-          <a class="cat-model" href="https://engine.everestqai.com/models"><img src="/everestq.png" alt="" />EverestQ L1 <span aria-hidden="true">↗</span></a>
-            <div class="cat-actions">
-              <HeroDownloadSelector />
-              <ButtonLink
-                to={path("/contact")}
-                variant="secondary"
-                size="lg"
-                icon="contact"
-                class="landing-button-glass"
-              >
-                {hero().contact}
-              </ButtonLink>
+              <a class="cat-model" href="https://engine.everestqai.com/models">
+                <img src="/everestq.png" alt="" />
+                EverestQ L1 <span aria-hidden="true">↗</span>
+              </a>
+              <div class="cat-actions">
+                <HeroDownloadSelector />
+                <ButtonLink
+                  to={path("/contact")}
+                  variant="secondary"
+                  size="lg"
+                  icon="contact"
+                  class="landing-button-glass"
+                >
+                  {hero().contact}
+                </ButtonLink>
+              </div>
             </div>
-          </div>
-
           </div>
           <LandingAppPreview />
         </section>

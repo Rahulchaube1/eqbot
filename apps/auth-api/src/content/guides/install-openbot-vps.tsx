@@ -134,13 +134,13 @@ export function InstallOpenBotVPS() {
       <pre>
         <code>
           {
-            "mkdir openbot-vps\ncd openbot-vps\ncurl -fsSLO \\\n  https://raw.githubusercontent.com/Rahulchaube1/eqbot/main/docker/compose.yaml\ncurl -fsSLO \\\n  https://raw.githubusercontent.com/Rahulchaube1/eqbot/main/docker/seccomp.json\nsudo docker compose up -d"
+            "mkdir cat-vps\ncd cat-vps\ncurl -fsSLO \\\n  https://raw.githubusercontent.com/Rahulchaube1/eqbot/main/docker/compose.yaml\ncurl -fsSLO \\\n  https://raw.githubusercontent.com/Rahulchaube1/eqbot/main/docker/seccomp.json\nsudo docker compose up -d"
           }
         </code>
       </pre>
 
       <p>
-        Use another new folder name if <code>openbot-vps</code> already exists. The official Compose file uses the
+        Use another new folder name if <code>cat-vps</code> already exists. The official Compose file uses the
         latest release image and a persistent data volume. It also includes the security profile and shared-memory
         setting required by the container.
       </p>
