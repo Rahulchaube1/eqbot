@@ -64,7 +64,7 @@ function LandingPageContent() {
   onSettled(() => landingAnalytics.start(document, window.location.hostname));
 
   return (
-    <div class="landing-page">
+    <div class="landing-page cat-product-home">
       <SiteHeader page="landing" />
       <main>
         <section class="landing-hero" aria-labelledby="landing-title">
@@ -101,6 +101,12 @@ function LandingPageContent() {
               </div>
             </div>
           </div>
+          <nav class="cat-section-index" aria-labelledby="landing-title">
+            <a href="#features-title">{text().features.title}</a>
+            <a href="#teams">{text().teams.title}</a>
+            <a href="#faq-title">{text().faq.title}</a>
+            <a href="#download">{text().download.title}</a>
+          </nav>
           <LandingAppPreview />
         </section>
         <AgentNetworkSection />

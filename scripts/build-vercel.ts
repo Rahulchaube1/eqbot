@@ -119,6 +119,8 @@ async function main() {
 
   try {
     await waitForServer(`${previewOrigin}/`);
+    const missing = await fetch(`${previewOrigin}/404`);
+    if (missing.status === 404) writeFileSync(join(outDir, "404.html"), await missing.text(), "utf8");
     for (const route of STATIC_ROUTES) {
       const res = await fetch(`${previewOrigin}${route}`);
       if (!res.ok) {

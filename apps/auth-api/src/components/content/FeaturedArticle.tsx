@@ -43,9 +43,6 @@ export function FeaturedArticle(props: FeaturedArticleProps) {
           art={{ collection: props.collection, slug: props.article.slug, shape: "featured" }}
           mode="live"
         />
-        <span class="post-featured-art-title" aria-hidden="true">
-          {props.article.title}
-        </span>
       </div>
     </section>
   );

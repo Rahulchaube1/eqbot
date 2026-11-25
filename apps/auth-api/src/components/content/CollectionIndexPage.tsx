@@ -33,9 +33,10 @@ export function CollectionIndexPage(props: CollectionIndexPageProps) {
 
       <main class="post-main">
         <div class="post-container">
-          {/* The page reads as a wall of articles, so the title is not drawn. It stays
-              in the document for the outline a crawler and a screen reader rely on. */}
-          <h1 class="landing-visually-hidden">{props.collection.name}</h1>
+          <header class="cat-edition-masthead">
+            <h1>{props.collection.name}</h1>
+            <p>{props.collection.indexDescription}</p>
+          </header>
 
           <Show when={featured()}>
             {(article) => <FeaturedArticle collection={props.collection} article={article()} />}
@@ -48,7 +49,7 @@ export function CollectionIndexPage(props: CollectionIndexPageProps) {
               aria-labelledby="post-grid-title"
               data-revealed={revealed() ? "true" : "false"}
             >
-              <h2 class="landing-visually-hidden" id="post-grid-title">
+              <h2 class="cat-edition-section-title" id="post-grid-title">
                 {props.collection.moreTitle}
               </h2>
               <div class="post-grid">

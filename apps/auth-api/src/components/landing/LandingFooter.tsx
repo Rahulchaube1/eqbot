@@ -38,7 +38,7 @@ export function LandingFooter() {
   const revealState = () => (revealed() ? "true" : "false");
 
   return (
-    <footer ref={footerRef} class="landing-footer" data-slot="landing-footer" lang={chrome().lang}>
+    <footer ref={footerRef} class="landing-footer cat-colophon" data-slot="landing-footer" lang={chrome().lang}>
       <div class="landing-footer-inner">
         <div class="landing-footer-grid">
           <div class="landing-footer-brand" data-revealed={revealState()}>
@@ -59,26 +59,28 @@ export function LandingFooter() {
               <LandingIcon name="arrow-up-right" />
             </a>
 
-            <Link class="landing-footer-cta" to="/download">
-              <span>{text().download}</span>
-              <LandingIcon name="download" />
-            </Link>
+            <div class="cat-footer-actions">
+              <Link class="landing-footer-cta" to="/download">
+                <span>{text().download}</span>
+                <LandingIcon name="download" />
+              </Link>
 
-            <div class="landing-footer-socials">
-              <For each={SOCIALS}>
-                {(social) => (
-                  <a
-                    class="landing-footer-social"
-                    href={social.href}
-                    target="_blank"
-                    rel={EXTERNAL_LINK_REL}
-                    aria-label={social.label}
-                  >
-                    <span class="landing-visually-hidden">{social.label}</span>
-                    <social.Mark />
-                  </a>
-                )}
-              </For>
+              <div class="landing-footer-socials">
+                <For each={SOCIALS}>
+                  {(social) => (
+                    <a
+                      class="landing-footer-social"
+                      href={social.href}
+                      target="_blank"
+                      rel={EXTERNAL_LINK_REL}
+                      aria-label={social.label}
+                    >
+                      <span class="landing-visually-hidden">{social.label}</span>
+                      <social.Mark />
+                    </a>
+                  )}
+                </For>
+              </div>
             </div>
           </div>
 
@@ -105,8 +107,15 @@ export function LandingFooter() {
         <div class="landing-footer-bottom" data-revealed={revealState()}>
           <p>{text().rights}</p>
           <div class="landing-footer-meta">
-            <button class="cat-cookie-settings" type="button" onClick={() => window.dispatchEvent(new Event("cat:cookie-settings"))}>Cookie settings</button>
+            <button
+              class="cat-cookie-settings"
+              type="button"
+              onClick={() => window.dispatchEvent(new Event("cat:cookie-settings"))}
+            >
+              Cookie settings
+            </button>
             <a href="/cat-ship">Cat-Ship</a>
+            <a href="/cat-computer">Cat Computer</a>
             <Link to="/download">
               <span class="landing-footer-availability" aria-hidden="true" />
               {text().available}

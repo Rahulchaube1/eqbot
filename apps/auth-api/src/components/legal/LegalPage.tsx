@@ -1,5 +1,6 @@
 import type { JSX } from "@solidjs/web";
-import { onSettled } from "solid-js";
+import { Link } from "@tanstack/solid-router";
+import { For, onSettled } from "solid-js";
 import { type LandingScreenPath, landingAnalytics } from "../../lib/analytics";
 import { formatArticleDate } from "../../lib/content-collection";
 import { LandingFooter } from "../landing/LandingFooter";
@@ -13,12 +14,19 @@ export interface LegalPageProps {
   children: JSX.Element;
 }
 
-// The article layout without the artwork, reading progress and related links: a legal text is read, not browsed.
+const documents = [
+  { to: "/privacy-policy", title: "Privacy policy" },
+  { to: "/terms", title: "Terms" },
+  { to: "/commercial-license", title: "Commercial license" },
+  { to: "/dpa", title: "Data processing agreement" },
+  { to: "/cla", title: "Contributor agreement" },
+] as const;
+
 export function LegalPage(props: LegalPageProps) {
   onSettled(() => landingAnalytics.start(document, window.location.hostname, props.route));
 
   return (
-    <div class="landing-page post-article">
+    <div class="landing-page post-article cat-legal">
       <SiteHeader page="content" />
 
       <main class="post-main">
@@ -30,6 +38,15 @@ export function LegalPage(props: LegalPageProps) {
             </p>
           </header>
 
+          <nav class="cat-document-index" aria-label="Legal documents">
+            <For each={documents}>
+              {(document) => (
+                <Link to={document.to} aria-current={props.route === document.to ? "page" : undefined}>
+                  {document.title}
+                </Link>
+              )}
+            </For>
+          </nav>
           <div class="post-prose" data-enter="post-prose">
             {props.children}
           </div>

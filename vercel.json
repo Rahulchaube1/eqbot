@@ -59,6 +59,34 @@
     {
       "source": "/plugins",
       "destination": "/marketplace/apps/index.html"
+    },
+    {
+      "source": "/agents/:id",
+      "destination": "https://eqbots-account.artisticmap.workers.dev/agents/:id"
+    },
+    {
+      "source": "/marketplace/agents/:id",
+      "destination": "https://eqbots-account.artisticmap.workers.dev/marketplace/agents/:id"
+    },
+    {
+      "source": "/marketplace/skills/:slug",
+      "destination": "https://eqbots-account.artisticmap.workers.dev/marketplace/skills/:slug"
+    },
+    {
+      "source": "/report-site",
+      "destination": "https://eqbots-account.artisticmap.workers.dev/report-site"
+    },
+    {
+      "source": "/v1/sites/reports",
+      "destination": "https://eqbots-account.artisticmap.workers.dev/v1/sites/reports"
+    },
+    {
+      "source": "/join",
+      "destination": "https://eqbots-account.artisticmap.workers.dev/join"
+    },
+    {
+      "source": "/billing/return",
+      "destination": "https://eqbots-account.artisticmap.workers.dev/billing/return"
     }
   ]
 }

@@ -9,12 +9,6 @@ import { SiteHeader } from "./SiteHeader";
 // After this long without a pointer move, the logo stops following the pointer and looks around again.
 const IDLE_MS = 2400;
 
-const SEARCH_STEPS = [
-  { label: "Searching workspaces", result: "empty" },
-  { label: "Checking threads", result: "empty" },
-  { label: "Asking teammates", result: "no answer" },
-] as const;
-
 const SUGGESTIONS = [
   { to: "/guides", label: "Guides" },
   { to: "/news", label: "News" },
@@ -67,9 +61,6 @@ export function NotFoundPage() {
       <SiteHeader page="content" />
 
       <main class="not-found-main">
-        <div class="landing-hero-grid not-found-grid" aria-hidden="true" />
-        <div class="not-found-searchlight" aria-hidden="true" />
-
         <div ref={stage} class="not-found-stage" data-tracking={tracking() ? "true" : "false"} aria-hidden="true">
           <span class="not-found-digit">4</span>
           <span class="not-found-bot">
@@ -97,31 +88,7 @@ export function NotFoundPage() {
           </div>
         </section>
 
-        <div class="not-found-terminal">
-          <div class="not-found-terminal-bar" aria-hidden="true">
-            <i />
-            <i />
-            <i />
-          </div>
-          <ol class="not-found-terminal-lines">
-            <li class="not-found-line not-found-line-command" style={{ "--line": 0 }}>
-              <span class="not-found-prompt">$</span> openbot open{" "}
-              <span class="not-found-path">{location().pathname}</span>
-            </li>
-            <For each={SEARCH_STEPS}>
-              {(step, index) => (
-                <li class="not-found-line" style={{ "--line": index() + 1 }}>
-                  <span class="not-found-arrow">→</span> {step.label}…{" "}
-                  <span class="not-found-result">{step.result}</span>
-                </li>
-              )}
-            </For>
-            <li class="not-found-line not-found-line-error" style={{ "--line": SEARCH_STEPS.length + 1 }}>
-              <span class="not-found-cross">✕</span> 404 · Nothing lives at this address.
-              <span class="not-found-caret" aria-hidden="true" />
-            </li>
-          </ol>
-        </div>
+        <code class="cat-missing-address">{location().pathname}</code>
 
         <nav class="not-found-links" aria-label="Popular pages">
           <For each={SUGGESTIONS}>

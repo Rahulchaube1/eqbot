@@ -31,7 +31,7 @@ export function BrandPage() {
           <BrandStage />
           <div class="brand-hero-row">
             <div class="brand-hero-text">
-              <h1 class="post-article-title brand-hero-title">Brand</h1>
+              <h1 class="post-article-title brand-hero-title">Cat brand kit</h1>
               <p class="post-article-standfirst brand-hero-intro">
                 The Cat and EverestQai logos in each shape and color. Right-click a logo to save or copy it.
               </p>
@@ -90,7 +90,7 @@ function BrandAssetGroups() {
     <div class="brand-groups">
       <section class="brand-group">
         <div class="brand-group-head">
-          <h2 class="brand-group-title">EverestQai (Parent Company)</h2>
+          <h2 class="brand-group-title">EverestQai</h2>
         </div>
         <ul class="brand-cards">
           <li class="brand-card">

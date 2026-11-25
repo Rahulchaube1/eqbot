@@ -225,8 +225,11 @@ export function ContactPage(props: { lang: string; text: ContactPageText }) {
       <div class="landing-page" lang={props.lang}>
         <SiteHeader page="content" />
         <main class="landing-section contact-section" aria-labelledby="contact-title">
-          <div class="landing-section-inner landing-section-heading">
-            <h1 id="contact-title">{props.text.heading}</h1>
+          <div class="landing-section-inner cat-contact-directory">
+            <header>
+              <img src="/everestq.png" alt="EverestQai" width="40" height="40" />
+              <h1 id="contact-title">{props.text.heading}</h1>
+            </header>
             <ul class="contact-channels">
               <ContactChannel
                 label={props.text.fields.email}

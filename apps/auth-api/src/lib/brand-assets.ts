@@ -26,7 +26,7 @@ const FILL: Record<IconColor, string> = { lilac: "#26c6c2", white: "#ffffff", bl
 const BODY: Record<IconColor, string> = { lilac: "#e6e6e6", white: "#e6e6e6", black: "#2a2733" };
 const EYE: Record<IconColor, string> = { lilac: "#040007", white: "#040007", black: "#ffffff" };
 const INK: Record<Ink, string> = { dark: "#040007", light: "#ffffff" };
-const COLOR_NAME: Record<IconColor, string> = { lilac: "Lilac", white: "White", black: "Black" };
+const COLOR_NAME: Record<IconColor, string> = { lilac: "Teal", white: "White", black: "Black" };
 
 export interface BrandAsset {
   /** The file name without its extension. */

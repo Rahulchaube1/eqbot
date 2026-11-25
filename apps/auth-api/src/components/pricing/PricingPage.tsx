@@ -16,20 +16,17 @@ import { ButtonLink } from "../ui/button";
 import { CONSENT_POLICY_MARKER, CONSENT_TERMS_MARKER, type PricingPageText } from "./pricing-page-text";
 import "./PricingPage.css";
 
-/**
- * Like loot rarity in a game: a bigger order gives a rarer colour to the glow of the form. The steps are silver,
- * sky, blue, violet, pink and orange.
- */
+/** Selected plans shift the accent from mint to copper. */
 const RARITY = [
-  { rgb: "154, 163, 184" },
-  { rgb: "56, 168, 255" },
-  { rgb: "56, 71, 255" },
-  { rgb: "164, 108, 245" },
-  { rgb: "236, 72, 153" },
-  { rgb: "255, 106, 43" },
+  { rgb: "189, 219, 208" },
+  { rgb: "167, 211, 192" },
+  { rgb: "161, 203, 176" },
+  { rgb: "199, 199, 155" },
+  { rgb: "230, 181, 143" },
+  { rgb: "245, 162, 123" },
 ] as const;
 
-/** A license moves the colour: Standard with the Team license is pink, and Pro with it is orange. */
+/** Each license tier moves the accent one step. */
 const LICENSE_RARITY_STEPS: Record<LicenseTier | "none", number> = { none: 0, starter: 1, team: 2 };
 
 /** Yearly billing, the Standard server and the Team license are the default. */
@@ -162,11 +159,6 @@ export function PricingPage(props: {
     return RARITY[Math.min(RARITY.length - 1, step)] ?? RARITY[0];
   };
   // Component props get named functions, not JSX: JSX or a conditional in a prop moves the hydration keys.
-  const heading = () => (
-    <div class="landing-section-heading pricing-heading">
-      <h1 id="pricing-title">{props.text.heading}</h1>
-    </div>
-  );
   const action = (current: Accessor<OrderFormOrder>) => (
     <OrderAction order={current} consent={props.text.consent} accepted={accepted} onAccept={setAccepted} />
   );
@@ -183,7 +175,10 @@ export function PricingPage(props: {
           aria-labelledby="pricing-title"
           style={{ "--pricing-accent": rarity().rgb }}
         >
-          {/* Personal use is free. This comes first, so that nobody thinks that OpenBot needs a server or a license. */}
+          <header class="cat-pricing-heading">
+            <h1 id="pricing-title">{props.text.heading}</h1>
+            <img src="/icon-192x192.png" alt="" width="56" height="56" />
+          </header>
           <section class="pricing-enterprise pricing-personal" aria-labelledby="pricing-personal">
             <div>
               <h2 id="pricing-personal">{props.text.personal.title}</h2>
@@ -201,7 +196,6 @@ export function PricingPage(props: {
               licenseTrialEnd={props.offer.licenseTrialEnd}
               initialServer={FIRST_SERVER}
               initialLicense={FIRST_LICENSE}
-              heading={heading}
               action={action}
               contact={contact}
               onOrderChange={remember}

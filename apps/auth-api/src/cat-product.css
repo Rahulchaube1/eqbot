@@ -1,0 +1,488 @@
+/* The product pages treat each capability as a spread in the Cat field guide. */
+:is(.cat-product-home, .download-page, .teams-page, .pricing-page) {
+  --cat-product-ink: #101b20;
+  --cat-product-paper: #f2eee3;
+  --cat-product-mint: #b8e3d2;
+  --cat-product-copper: #edb18d;
+  --cat-product-rule: #41534f;
+  --cat-display: "Newsreader Variable", Georgia, serif;
+}
+
+.cat-product-home .cat-intro {
+  border: 0;
+  padding: clamp(24px, 5vw, 76px) 0;
+}
+.cat-product-home .cat-signature h1 {
+  font: 500 clamp(96px, 13vw, 184px) / 0.88 var(--cat-display);
+  letter-spacing: -0.08em;
+  gap: 0.14em;
+}
+.cat-product-home .cat-signature-logo {
+  width: 0.64em;
+  height: 0.64em;
+}
+.cat-product-home .cat-section-index {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px clamp(16px, 3vw, 46px);
+  padding-block: 8px;
+  border-block: 1px solid var(--cat-product-rule);
+}
+.cat-section-index a {
+  display: inline-flex;
+  gap: 0.65em;
+  align-items: center;
+  padding-block: 10px;
+  color: var(--cat-product-paper);
+  font-size: 0.88rem;
+}
+.cat-section-index a::after {
+  content: "↓";
+  color: var(--cat-product-copper);
+}
+.cat-product-home .landing-preview {
+  border: 1px solid var(--cat-product-rule);
+  border-radius: 12px;
+}
+.cat-product-home :is(.cat-thread, .landing-feature[data-feature]) {
+  border-radius: 10px;
+  border-color: var(--cat-product-rule);
+}
+.cat-product-home .cat-thread-bar {
+  background: #22322e;
+}
+.cat-product-home #cat-message blockquote {
+  border-color: var(--cat-product-copper);
+}
+.cat-product-home .cat-handoff h2,
+.cat-product-home .landing-section-heading h2,
+.cat-product-home .landing-download-heading h2,
+.cat-product-home .post-cta-title,
+.teams-page .teams-heading h2,
+.teams-page .teams-title,
+.pricing-page .cat-pricing-heading h1,
+.download-page .download-hub-hero h1,
+.download-page .download-panel-title {
+  font-family: var(--cat-display);
+  font-weight: 470;
+  letter-spacing: -0.045em;
+  line-height: 1.02;
+  text-wrap: balance;
+}
+.cat-product-home .landing-features-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(16px, 2.4vw, 34px);
+}
+.cat-product-home .landing-feature[data-feature] {
+  grid-column: auto;
+  grid-row: auto;
+  background: #172326;
+}
+.cat-product-home .landing-feature[data-feature="local"] {
+  background: var(--cat-product-mint);
+  color: var(--cat-product-ink);
+}
+.cat-product-home .landing-feature[data-feature="workflows"] {
+  grid-column: 1 / -1;
+}
+.cat-product-home .landing-feature[data-feature="persist"] {
+  grid-column: 1 / -1;
+}
+.cat-product-home .landing-feature-copy h3 {
+  font: 500 clamp(26px, 3vw, 44px) / 1.09 var(--cat-display);
+}
+.cat-product-home .landing-feature[data-feature="team"] .landing-feature-visual {
+  min-height: 0;
+}
+.cat-product-home .landing-section-heading {
+  text-align: start;
+}
+.cat-product-home .landing-pricing {
+  background: var(--cat-product-paper);
+  color: var(--cat-product-ink);
+}
+.cat-product-home .landing-pricing-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1fr);
+  grid-template-areas: "title facts" "price actions";
+  align-items: center;
+  gap: 22px clamp(22px, 6vw, 92px);
+  padding-block: clamp(44px, 7vw, 96px);
+  text-align: start;
+}
+.cat-product-home .landing-pricing-eyebrow {
+  grid-area: title;
+  color: #3c564f;
+}
+.cat-product-home .landing-pricing-amount {
+  grid-area: price;
+  margin: 0;
+  font: 470 clamp(88px, 14vw, 190px) / 0.85 var(--cat-display);
+  letter-spacing: -0.07em;
+  color: var(--cat-product-ink);
+  background: none;
+  -webkit-text-fill-color: currentColor;
+}
+.cat-product-home .landing-pricing-amount::before {
+  content: none;
+}
+.cat-product-home .landing-pricing-facts {
+  grid-area: facts;
+  display: grid;
+  gap: 6px;
+  color: #253831;
+}
+.cat-product-home .landing-pricing-actions {
+  grid-area: actions;
+  justify-content: start;
+  align-self: start;
+  margin: 0;
+}
+.cat-product-home .landing-pricing-actions .landing-button {
+  border: 1px solid #69877b;
+}
+.cat-product-home .landing-pricing-actions .landing-button-secondary {
+  background: transparent;
+  color: #223b31;
+}
+.cat-product-home .landing-pricing-actions .landing-button-primary {
+  background: #193d32;
+  color: #edf8ee;
+}
+
+.cat-product-home .landing-teams-layout {
+  align-items: start;
+}
+.cat-product-home .landing-teams-aside {
+  position: static;
+}
+.cat-offers {
+  border-top: 1px solid var(--cat-product-rule);
+  min-width: 0;
+}
+.cat-offers details {
+  border-bottom: 1px solid var(--cat-product-rule);
+}
+.cat-offers summary {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 16px;
+  padding: 18px 8px;
+  cursor: pointer;
+  list-style: none;
+  font-size: clamp(18px, 2vw, 26px);
+}
+.cat-offers summary::-webkit-details-marker {
+  display: none;
+}
+.cat-offers .cat-offer-icon {
+  width: 24px;
+  height: 24px;
+  color: var(--cat-product-copper);
+}
+.cat-offer-chevron {
+  width: 16px;
+  height: 16px;
+}
+.cat-offers details[open] .cat-offer-chevron {
+  rotate: 180deg;
+}
+.cat-offer-body {
+  padding: clamp(20px, 3vw, 40px);
+  margin: 0 0 18px;
+  background: var(--cat-product-mint);
+  color: #162b24;
+  border-radius: 6px;
+}
+.cat-offer-body h3 {
+  margin: 0;
+  font: 500 clamp(28px, 3.8vw, 52px) / 1.03 var(--cat-display);
+  letter-spacing: -0.035em;
+}
+.cat-offer-body p {
+  margin: 14px 0 0;
+  line-height: 1.55;
+}
+.cat-product-home .landing-faq .compare-faq-item {
+  border-radius: 0;
+  border-width: 0 0 1px;
+  border-color: var(--cat-product-rule);
+  background: transparent;
+}
+.cat-product-home .landing-faq details[open] {
+  border-color: var(--cat-product-copper);
+}
+.cat-product-home .landing-download-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 24px clamp(24px, 5vw, 68px);
+  align-items: start;
+}
+.cat-product-home .landing-download-grid {
+  display: block;
+  margin: 0;
+}
+.cat-product-home .landing-download-card[data-download-platform] {
+  min-height: 245px;
+  gap: 32px;
+  background: var(--cat-product-mint);
+  color: #152a22;
+}
+.cat-product-home .landing-download-platform-logo {
+  width: 48px;
+  height: 48px;
+}
+.cat-product-home .landing-download-pages {
+  margin: 0;
+  grid-column: 1 / -1;
+}
+.cat-product-home .post-cta {
+  border-block: 1px solid var(--cat-product-rule);
+}
+
+.pricing-page .cat-pricing-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  padding-bottom: clamp(22px, 3.5vw, 48px);
+  margin-bottom: 24px;
+  border-bottom: 1px solid var(--cat-product-rule);
+}
+.pricing-page .cat-pricing-heading h1 {
+  margin: 0;
+  font-size: clamp(44px, 6vw, 92px);
+}
+.pricing-page .cat-pricing-heading img {
+  border-radius: 14px;
+  rotate: -5deg;
+}
+.pricing-page .pricing-hero .pricing-enterprise {
+  border: 1px solid var(--cat-product-rule);
+  border-inline-start: 4px solid rgb(var(--pricing-accent));
+  border-radius: 4px;
+  background: #1d2d29;
+  box-shadow: none;
+  padding: clamp(20px, 3vw, 40px);
+}
+.pricing-page .pricing-hero .pricing-enterprise::before,
+.pricing-page .pricing-hero .pricing-enterprise::after {
+  content: none;
+}
+.pricing-page .pricing-hero .pricing-enterprise .landing-button {
+  animation: none;
+  background: var(--cat-product-mint);
+  color: #142a20;
+  box-shadow: none;
+}
+.pricing-page .pricing-hero .pricing-enterprise h2 {
+  font: 500 clamp(24px, 2.6vw, 38px) / 1.1 var(--cat-display);
+}
+.pricing-page .pricing-hero .order-form-top {
+  justify-content: flex-end;
+}
+.pricing-page .pricing-hero .order-form-frame {
+  border-color: var(--cat-product-rule);
+  border-radius: 8px;
+}
+.pricing-page .order-form-summary {
+  border-top-color: rgb(var(--pricing-accent));
+}
+
+.teams-page .teams-hero .landing-hero-copy,
+.teams-page .teams-heading-center {
+  text-align: start;
+  align-items: flex-start;
+  margin-inline: 0;
+}
+.teams-page .teams-heading-center p {
+  margin-inline: 0;
+}
+.teams-page .teams-hero .landing-actions {
+  justify-content: start;
+}
+.teams-page .teams-hero .teams-pill {
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  padding-inline: 0;
+  color: var(--cat-product-mint);
+}
+.teams-page .teams-section {
+  border-top: 1px solid var(--cat-product-rule);
+}
+.teams-page :is([data-setup="local"], [data-tile="0"], [data-cursor="0"]) {
+  --teams-color: #c2dfd1;
+}
+.teams-page :is([data-setup="managed"], [data-tile="1"], [data-cursor="1"]) {
+  --teams-color: #e4b799;
+}
+.teams-page :is([data-setup="custom"], [data-tile="2"], [data-cursor="2"]) {
+  --teams-color: #d6d2ae;
+}
+.teams-page :is([data-tile="3"], [data-cursor="3"]) {
+  --teams-color: #b2d1dc;
+}
+.teams-page .teams-setup {
+  min-height: 300px;
+  border-radius: 8px;
+}
+.teams-page .teams-setup-icon {
+  width: 48px;
+  height: 48px;
+}
+.teams-page .teams-tile {
+  border-radius: 8px;
+}
+.teams-page .teams-closing {
+  background-color: #142723;
+}
+
+.download-page .download-hub-hero {
+  align-items: flex-start;
+  text-align: start;
+  padding-inline: 0;
+  border-bottom: 1px solid var(--cat-product-rule);
+  margin-bottom: 28px;
+  padding-bottom: clamp(24px, 4vw, 54px);
+}
+.download-page .download-hub-hero :is(h1, p) {
+  margin-inline: 0;
+}
+.download-page .download-hub-hero .landing-hero-grid {
+  display: none;
+}
+.download-page .download-hub-cards {
+  grid-template-columns: minmax(0, 1fr);
+  gap: 14px;
+}
+.download-page .download-hub-card {
+  --openbot-download-card-muted: #496151;
+  display: grid;
+  grid-template-columns: 54px minmax(100px, 0.65fr) minmax(200px, 1.35fr) minmax(100px, 0.85fr);
+  grid-template-areas: "icon title specs installers" ". . specs link";
+  align-items: center;
+  column-gap: clamp(16px, 2vw, 36px);
+  row-gap: 6px;
+  min-height: 0;
+  padding: clamp(20px, 3vw, 36px);
+  border: 0;
+  border-radius: 7px;
+  background: #dde8db;
+  color: #1c2c26;
+}
+.download-page .download-hub-card-logo {
+  grid-area: icon;
+  width: 42px;
+  height: 42px;
+}
+.download-page .download-hub-card-name {
+  grid-area: title;
+  padding: 0;
+  margin: 0;
+  font: 500 clamp(30px, 3vw, 46px) / 1 var(--cat-display);
+}
+.download-page .download-hub-card-specs {
+  grid-area: specs;
+  margin: 0;
+}
+.download-page .download-hub-card-specs > div:first-child {
+  border-top: 0;
+}
+.download-page .download-hub-card-installers {
+  grid-area: installers;
+  margin: 0;
+}
+.download-page .download-hub-card-link {
+  grid-area: link;
+  margin: 8px 0 0;
+}
+.download-page .download-panel {
+  background: var(--cat-product-paper);
+  color: var(--cat-product-ink);
+  border-radius: 9px;
+}
+.download-page .download-panel-specs {
+  background: #dce6d9;
+}
+.download-page .download-row {
+  border-color: var(--cat-product-rule);
+}
+.download-page .download-row-title {
+  font: 500 clamp(25px, 2.6vw, 39px) / 1.08 var(--cat-display);
+}
+.download-page .download-command {
+  border-inline-start: 3px solid var(--cat-product-copper);
+}
+.download-page .download-system-card {
+  background: #bed8ca;
+  border-radius: 6px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .cat-section-index a::after,
+  .cat-offer-chevron {
+    transition:
+      transform 0.22s,
+      rotate 0.22s;
+  }
+  .cat-section-index a:is(:hover, :focus-visible)::after {
+    transform: translateY(3px);
+  }
+  .cat-offers details[open] .cat-offer-body,
+  .cat-product-home .compare-faq-item[open] .compare-faq-answer {
+    animation: cat-product-expand 0.24s ease-out;
+  }
+  .cat-product-home .landing-pricing-amount[data-revealed="true"] {
+    animation: cat-product-expand 0.5s ease-out;
+  }
+  .download-page .download-hub-card:focus-within {
+    box-shadow: inset 4px 0 #537c64;
+  }
+  @keyframes cat-product-expand {
+    from {
+      opacity: 0.35;
+      transform: translateY(-6px);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+}
+@media (max-width: 850px) {
+  .download-page .download-hub-card {
+    grid-template-columns: 44px minmax(0, 1fr);
+    grid-template-areas: "icon title" "specs specs" "installers installers" "link link";
+    gap: 14px;
+  }
+  .cat-product-home .landing-features-grid,
+  .cat-product-home .landing-download-inner {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .cat-product-home .landing-feature[data-feature="local"] {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .cat-product-home .landing-download-grid {
+    max-width: none;
+  }
+}
+@media (max-width: 600px) {
+  .cat-product-home .landing-pricing-inner {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas: "title" "price" "facts" "actions";
+  }
+  .cat-product-home .landing-pricing-facts {
+    align-items: start;
+  }
+  .cat-product-home .cat-signature h1 {
+    font-size: clamp(80px, 24vw, 125px);
+  }
+  .teams-page .teams-cursors {
+    display: none;
+  }
+  .cat-product-home .landing-compare-art {
+    border-radius: 6px;
+  }
+}

@@ -10,9 +10,6 @@ export interface ArticleCardProps {
   index: number;
 }
 
-// The title appears twice on purpose: once over the artwork, once below it. The
-// one over the artwork is decorative and hidden from assistive technology, so the
-// card reads as a single link with one name rather than repeating itself.
 export function ArticleCard(props: ArticleCardProps) {
   let root: HTMLAnchorElement | undefined;
 
@@ -31,9 +28,6 @@ export function ArticleCard(props: ArticleCardProps) {
           mode="hover"
           hoverTarget={() => root}
         />
-        <span class="post-card-art-title" aria-hidden="true">
-          {props.article.title}
-        </span>
       </div>
       <ArticleByline article={props.article} class="post-card-byline" />
       <h3 class="post-card-title">{props.article.title}</h3>

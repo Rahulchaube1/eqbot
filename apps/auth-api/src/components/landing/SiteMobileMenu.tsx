@@ -108,11 +108,18 @@ export function SiteMobileMenu(props: SiteMobileMenuProps) {
         <nav class="site-sheet-content" aria-label={text().siteMenu}>
           <For each={SITE_NAVIGATION_SECTIONS}>
             {(section, index) => (
-              <section class="site-sheet-section" style={{ "--site-sheet-index": index() }}>
+              <details
+                class="site-sheet-section cat-mobile-group"
+                name={sheetId}
+                style={{ "--site-sheet-index": index() }}
+              >
                 {/* Not a heading: the sheet is in every page's HTML before the page's own h1. */}
-                <p class="site-sheet-heading">{text().sections[section.id].label}</p>
+                <summary>
+                  {text().sections[section.id].label}
+                  <LandingIcon name="chevron-down" />
+                </summary>
                 <SiteNavigationPanel section={section} live={live()} />
-              </section>
+              </details>
             )}
           </For>
           <For each={SITE_NAVIGATION_LINKS}>
