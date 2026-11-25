@@ -3,8 +3,8 @@
 
 import { Link } from "@tanstack/solid-router";
 
-const CONTACT_EMAIL = "hello@openbot.run";
-const PRICING_LABEL = "http://openbot.run/pricing";
+const CONTACT_EMAIL = "support@everestqai.com";
+const PRICING_LABEL = "https://eqbot.everestqai.com/pricing";
 
 export function Terms() {
   return (

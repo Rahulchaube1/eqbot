@@ -105,6 +105,8 @@ export function LandingFooter() {
         <div class="landing-footer-bottom" data-revealed={revealState()}>
           <p>{text().rights}</p>
           <div class="landing-footer-meta">
+            <button class="cat-cookie-settings" type="button" onClick={() => window.dispatchEvent(new Event("cat:cookie-settings"))}>Cookie settings</button>
+            <a href="/cat-ship">Cat-Ship</a>
             <Link to="/download">
               <span class="landing-footer-availability" aria-hidden="true" />
               {text().available}

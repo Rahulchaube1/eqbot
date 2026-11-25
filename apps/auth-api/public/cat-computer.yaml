@@ -1,0 +1,12 @@
+services:
+  desktop:
+    image: lscr.io/linuxserver/webtop:ubuntu-xfce
+    ports:
+      - "127.0.0.1:${CAT_PORT:-3301}:3001"
+    environment:
+      TITLE: Cat Computer
+    volumes:
+      - home:/config
+    shm_size: "1gb"
+volumes:
+  home:

@@ -1,5 +1,5 @@
-import { Badge, Button, Clock3, Lock } from "@openbot/ui";
-import { ProviderModelPicker } from "@openbot/ui/components/ProviderModelPicker";
+import { Button, Lock } from "@openbot/ui";
+import type { ProviderModelPicker } from "@openbot/ui/components/ProviderModelPicker";
 import type { AgentProfile } from "@openbot/ui/data";
 import { AgentAvatar } from "@openbot/ui/features/agents/AgentAvatar";
 import { agentAccessLockLabel } from "@openbot/ui/features/agents/agent-access";
@@ -154,21 +154,6 @@ export function ConversationHeader(props: ConversationHeaderProps) {
         {props.threads}
       </div>
       <div class="conversation-header-actions no-drag">
-        <Show when={props.agent && props.pendingModel}>
-          {(change) => {
-            const detail = () => t("conversation.header.modelNextTurnDetail", change());
-            return (
-              <Badge variant="info-light" class="conversation-model-pending" role="status" title={detail()}>
-                <Clock3 aria-hidden="true" />
-                {t("conversation.header.modelNextTurn")}
-                <span class="sr-only">{detail()}</span>
-              </Badge>
-            );
-          }}
-        </Show>
-        <Show when={props.agent}>
-          <ProviderModelPicker {...props.modelPicker} />
-        </Show>
         <Show when={props.remoteControl}>
           {(control) => (
             <Button
@@ -181,7 +166,7 @@ export function ConversationHeader(props: ConversationHeaderProps) {
               onClick={(event) => control().onOpen(event.currentTarget)}
               data-cuelume-tap="open"
             >
-              <RemoteDesktopIcon />
+              <RemoteDesktopIcon /><span class="cat-computer-label">Cat Computer</span>
               <Show when={control().active}>
                 <span class="remote-desktop-button-dot" aria-hidden="true" />
               </Show>

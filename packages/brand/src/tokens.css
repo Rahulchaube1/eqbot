@@ -20,7 +20,7 @@
   --openbot-bg-native-sidebar: #141414;
   /* Grouped sheet surfaces, used by the native app. */
   --openbot-bg-sheet: #141414;
-  --openbot-bg-grouped: #212121;
+  --openbot-bg-grouped: #161b22;
   --openbot-text-grouped-secondary: #96969b;
   --openbot-border-grouped: #333335;
   --openbot-radius-grouped: 16px;
@@ -31,21 +31,21 @@
   --openbot-bg-chrome-blur: rgba(26, 26, 28, 0.62);
 
   /* Neutral color system. Keep UI colors here, not in components. */
-  --openbot-bg-canvas: #1a1a1a;
+  --openbot-bg-canvas: #0d1117;
   /* The window frame around the page card, darker than the card, so the card comes forward. */
-  --openbot-bg-frame: #0d0d0d;
+  --openbot-bg-frame: #090d12;
   /* A rail inside a menu, a step darker than the menu sheet. */
   --openbot-bg-sheet-inset: #101010;
   --openbot-bg-canvas-clear: rgba(26, 26, 26, 0);
-  --openbot-bg-sidebar: #1a1a1a;
+  --openbot-bg-sidebar: #0d1117;
   --openbot-marketplace-detail-bg: #111111;
-  --openbot-bg-surface: #212121;
-  --openbot-bg-surface-raised: #242424;
-  --openbot-bg-control: #212121;
-  --openbot-bg-control-hover: #242424;
-  --openbot-bg-control-active: #2a2a2a;
-  --openbot-tabs-bar-bg: #212121;
-  --openbot-tabs-pill-bg: #2a2a2a;
+  --openbot-bg-surface: #161b22;
+  --openbot-bg-surface-raised: #212830;
+  --openbot-bg-control: #161b22;
+  --openbot-bg-control-hover: #212830;
+  --openbot-bg-control-active: #29343e;
+  --openbot-tabs-bar-bg: #161b22;
+  --openbot-tabs-pill-bg: #29343e;
   --openbot-bg-overlay: rgba(26, 26, 26, 0.92);
   --openbot-dialog-overlay: rgba(0, 0, 0, 0.1);
   --openbot-dialog-ring: rgba(255, 255, 255, 0.1);
@@ -175,15 +175,15 @@
   /* A chart series needs a hue of its own: the logo colours above give codex and grok the
      same white, which no reader can tell apart in two overlaid areas. Validated together
      with the dataviz skill's checker -
-     node scripts/validate_palette.js "#26c6c2,#d97757,#6bc7d9" --mode dark --surface "#1a1a1a"
+     node scripts/validate_palette.js "#26c6c2,#d97757,#6bc7d9" --mode dark --surface "#0d1117"
      - for colour-vision separation and contrast on the canvas. */
   --openbot-chart-series-codex: #26c6c2;
   --openbot-chart-series-claude: var(--openbot-provider-claude);
   --openbot-chart-series-grok: #6bc7d9;
   --openbot-chart-series-other: var(--openbot-text-muted);
   /* The storage bar: five hues in this fixed order, then neutral app data. Validated with
-     node scripts/validate_palette.js "#3987e5,#d95926,#199e70,#9085e9,#c98500" --mode dark --surface "#1a1a1a"
-     and again on #212121. */
+     node scripts/validate_palette.js "#3987e5,#d95926,#199e70,#9085e9,#c98500" --mode dark --surface "#0d1117"
+     and again on #161b22. */
   --openbot-chart-storage-workspaces: #3987e5;
   --openbot-chart-storage-files: #d95926;
   --openbot-chart-storage-chats: #199e70;

@@ -5,6 +5,7 @@ import { createSignal, onSettled, Show } from "solid-js";
 import "@openbot/brand/logo.css";
 import { installPointerFocusGuard } from "@openbot/ui/pointer-focus";
 import "../styles.css";
+import { CookieNotice } from "../components/legal/CookieNotice";
 import "../everestq.css";
 import { NotFoundPage } from "../components/landing/NotFoundPage";
 import { PageError } from "../components/landing/PageError";
@@ -49,7 +50,7 @@ export const Route = createRootRoute({
 function RootComponent() {
   // Runs only in the browser: the server render has no document.
   onSettled(() => installPointerFocusGuard());
-  return <Outlet />;
+  return <><Outlet /><CookieNotice /></>;
 }
 
 /**

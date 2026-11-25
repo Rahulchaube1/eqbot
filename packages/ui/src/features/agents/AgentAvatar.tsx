@@ -395,7 +395,7 @@ function GeneratedAvatar(props: {
   // pose on screen and resumes from it, and a change made while it rests still plays to its end. So a
   // new shape or colour always pops: the old body shrinks away and the new one springs out.
   const avatar = () => (
-    <EqMascot
+    <EqMascot identity={props.seed}
       size={100}
       shape={appearance().shape}
       color={appearance().color}
@@ -417,7 +417,7 @@ function GeneratedAvatar(props: {
   );
 
   const flatAvatar = () => (
-    <EqMascot
+    <EqMascot identity={props.seed}
       size={100}
       shape={flatAppearance().shape}
       color={flatAppearance().color}
@@ -444,7 +444,7 @@ function GeneratedAvatar(props: {
              at once, with no transition. */
         <Show when={appearance()} keyed>
           {(frozen) => (
-            <EqMascot
+            <EqMascot identity={props.seed}
               size={100}
               shape={frozen.shape}
               color={frozen.color}
@@ -480,7 +480,7 @@ function GeneratedAvatar(props: {
           fallback={
             <Show when={flatAppearance()} keyed>
               {(frozen) => (
-                <EqMascot
+                <EqMascot identity={props.seed}
                   size={100}
                   shape={frozen.shape}
                   color={frozen.color}

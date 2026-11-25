@@ -6,11 +6,6 @@
   "trailingSlash": false,
   "redirects": [
     {
-      "source": "/download/windows/latest",
-      "destination": "https://github.com/Rahulchaube1/eqbot/releases/download/cat-windows-v0.70.1/Cat-0.70.1-x64.exe",
-      "permanent": false
-    },
-    {
       "source": "/app",
       "has": [
         {

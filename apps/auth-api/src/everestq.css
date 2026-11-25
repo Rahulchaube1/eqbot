@@ -1,27 +1,67 @@
 @import "@fontsource-variable/bricolage-grotesque/wght.css";
 @import "@fontsource-variable/newsreader/wght.css";
 
+.cat-cookie {
+  position: fixed;
+  z-index: 1100;
+  inset-inline-start: max(16px, env(safe-area-inset-left));
+  bottom: max(16px, env(safe-area-inset-bottom));
+  width: min(450px, calc(100% - 32px));
+  padding: 18px;
+  border: 1px solid #435260;
+  border-radius: 14px;
+  background: #161d25;
+  box-shadow: 0 12px 44px #0006;
+  color: #edf3f8;
+  font: 14px/1.45 system-ui, sans-serif;
+}
+.cat-cookie header, .cat-cookie nav, .cat-cookie-actions { display: flex; align-items: center; gap: 10px; }
+.cat-cookie header strong { font-size: 16px; }
+.cat-cookie p { color: #b8c6d0; margin: 8px 0; }
+.cat-cookie nav { flex-wrap: wrap; gap: 4px 14px; margin-bottom: 14px; }
+.cat-cookie nav a, .cat-tool a { color: #84ded5; text-decoration: underline; text-underline-offset: 3px; }
+.cat-cookie button, .cat-tool button { cursor: pointer; font: inherit; }
+.cat-cookie-close, .cat-cookie-settings { color: inherit; border: 0; background: transparent; cursor: pointer; }
+.cat-cookie-close { margin-inline-start: auto; min-width: 32px; min-height: 32px; font-size: 20px; }
+.cat-cookie-actions button, .cat-tool button { border: 1px solid #465563; color: #edf3f8; background: #222d37; border-radius: 7px; padding: 9px 14px; }
+.cat-cookie-actions button { flex: 1; }
+.cat-cookie-actions button:first-child, .cat-tool button { background: #8de7db; color: #102520; }
+.cat-cookie :focus-visible, .cat-tool :focus-visible { outline: 2px solid #76e7da; outline-offset: 3px; }
+.cat-tool { max-width: 760px; padding: 70px 20px; margin: auto; min-height: 80vh; }
+.cat-tool h1 { font-size: clamp(44px,8vw,80px); margin: 0; letter-spacing: -.055em; }
+.cat-tool p { line-height: 1.6; color: var(--openbot-text-secondary); }
+.cat-tool form, .cat-tool pre { border: 1px solid #344150; padding: 18px; background: #161b22; border-radius: 10px; }
+.cat-tool form { display: grid; gap: 10px; }
+.cat-tool input { background: #0d1117; border: 1px solid #495462; color: #edf3f8; font: inherit; padding: 12px; border-radius: 6px; width: 100%; }
+.cat-tool pre { overflow-x: auto; }
+.cat-tool li { display: flex; justify-content: space-between; gap: 12px; padding: 9px 0; border-bottom: 1px solid #344150; }
+.cat-tool hr { border: 0; border-top: 1px solid #344150; margin-block: 28px; }
+.landing-glow { filter: hue-rotate(170deg) saturate(.72); }
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .landing-page :is(.download-hub-card, .post-card, .plugin-card):hover { translate: 0 -2px; }
+}
+
 /* Only the public site has this header. The signed-in client and its preview use their own theme. */
 html:has(.landing-header) {
-  --openbot-bg-canvas: #080807;
-  --openbot-bg-sidebar: #0e0d0c;
-  --openbot-bg-surface: #141311;
-  --openbot-bg-surface-raised: #201d1a;
-  --openbot-bg-control: #201d1a;
-  --openbot-bg-control-hover: #322a24;
-  --openbot-text-primary: #f5f0eb;
-  --openbot-text-secondary: #d9cabe;
-  --openbot-text-muted: #aaa39e;
-  --openbot-accent: #c0552e;
-  --openbot-accent-text: #f2b18c;
-  --openbot-accent-strong: #e49d72;
-  --openbot-surface-light: #f2d9c4;
-  --openbot-text-on-light: #141311;
+  --openbot-bg-canvas: #0d1117;
+  --openbot-bg-sidebar: #101820;
+  --openbot-bg-surface: #161b22;
+  --openbot-bg-surface-raised: #202a34;
+  --openbot-bg-control: #212830;
+  --openbot-bg-control-hover: #293740;
+  --openbot-text-primary: #eef4f7;
+  --openbot-text-secondary: #c4ced8;
+  --openbot-text-muted: #9ba9b5;
+  --openbot-accent: #26c6c2;
+  --openbot-accent-text: #76e7da;
+  --openbot-accent-strong: #51dbce;
+  --openbot-surface-light: #8de7db;
+  --openbot-text-on-light: #0b2021;
   --openbot-font-sans: "Bricolage Grotesque Variable", "Inter Variable", system-ui, sans-serif;
 }
 
 .landing-page :is(h1, h2, h3) {
-  font-family: "Newsreader Variable", Georgia, serif;
+  font-family: var(--openbot-font-sans);
   font-optical-sizing: auto;
 }
 
@@ -36,7 +76,7 @@ html:has(.landing-header) {
 }
 
 .landing-header .site-nav {
-  --site-nav-radius: 0;
+  --site-nav-radius: 10px;
 }
 
 .landing-page
@@ -54,7 +94,7 @@ html:has(.landing-header) {
     .post-card,
     .plugin-card
   ) {
-  border-radius: 0;
+  border-radius: 10px;
 }
 
 .site-brand-links,

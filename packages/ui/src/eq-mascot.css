@@ -2,6 +2,13 @@
   transform-origin: 50% 85%;
 }
 
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .eq-mascot { transition: transform 180ms ease; }
+  :is(button, a, [role="button"]):is(:hover, :focus-visible) .eq-mascot {
+    transform: perspective(160px) rotateY(-15deg) rotateX(6deg);
+  }
+}
+
 .eq-mascot-eyes {
   transform-box: fill-box;
   transform-origin: center;

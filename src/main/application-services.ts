@@ -1314,6 +1314,12 @@ export async function createApplicationServices({
       ? join(process.resourcesPath, "managed-skills", "openbot-site-hosting", "SKILL.md")
       : resolve(__dirname, "../../resources/managed-skills/openbot-site-hosting/SKILL.md"),
   );
+  const catTools = ["cat-ship", "cat-computer"].map((slug) => new ManagedSkillService(
+    app.isPackaged
+      ? join(process.resourcesPath, "managed-skills", slug, "SKILL.md")
+      : resolve(__dirname, "../../resources/managed-skills", slug, "SKILL.md"),
+    undefined, undefined, slug,
+  ));
   const skillCreator = new ManagedSkillService(
     app.isPackaged
       ? join(process.resourcesPath, "managed-skills", "openbot-skill-creator", "SKILL.md")
@@ -1333,7 +1339,7 @@ export async function createApplicationServices({
   // Together: each skill has its own folder in an agent's workspace, and a failed copy is only reported.
   await Effect.runPromise(
     Effect.all(
-      [managedSkills, skillCreator, dataSkill].map((skill) => skill.syncAll(store.list())),
+      [managedSkills, skillCreator, dataSkill, ...catTools].map((skill) => skill.syncAll(store.list())),
       {
         concurrency: "unbounded",
         discard: true,
@@ -2259,6 +2265,7 @@ export async function createApplicationServices({
         yield* managedSkills.syncAgent(agent);
         yield* skillCreator.syncAgent(agent);
         yield* dataSkill.syncAgent(agent);
+        for (const skill of catTools) yield* skill.syncAgent(agent);
       }),
     hostedSites: {
       list: () => hostedSites.list().pipe(toHostedSiteOperationFailed),

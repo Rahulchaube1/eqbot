@@ -2,7 +2,7 @@
   "name": "openbot",
   "productName": "Cat",
   "desktopName": "openbot.desktop",
-  "version": "0.70.1",
+  "version": "0.70.2",
   "description": "Cat by EverestQai — A local-first multi-agent desktop workspace for Codex, Claude, and Grok.",
   "author": {
     "name": "EverestQai",

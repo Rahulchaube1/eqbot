@@ -15,6 +15,8 @@ const distClientDir = join(authApiDir, "dist", "client");
 const outDir = join(rootDir, "vercel-dist");
 
 const STATIC_ROUTES = [
+  "/cat-ship",
+  "/cat-computer",
   "/",
   "/app",
   "/app-preview",

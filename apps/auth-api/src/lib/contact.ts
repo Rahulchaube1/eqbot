@@ -7,7 +7,7 @@ export const CONTACT_ROUTE = "/contact";
 export const CONTACT_SOCIAL_IMAGE_PATH = "/social/contact.jpg";
 
 /** The mailbox that receives each message. The form also names it for people who prefer email. */
-export const CONTACT_EMAIL = "hello@openbot.run";
+export const CONTACT_EMAIL = "support@everestqai.com";
 
 /** The topics of the form. The labels name the topic in the email to the team; the form shows `sitePage.contact.topic.*`. */
 export const CONTACT_TOPICS = [

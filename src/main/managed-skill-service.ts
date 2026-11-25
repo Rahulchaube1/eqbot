@@ -19,6 +19,8 @@ export const MANAGED_SKILL_SLUGS: ReadonlySet<string> = new Set([
   MANAGED_SKILL_SLUG,
   SKILL_CREATOR_SKILL_SLUG,
   DATA_SKILL_SLUG,
+  "cat-ship",
+  "cat-computer",
 ]);
 export const OWNERSHIP_MARKER = SKILL_OWNERSHIP_MARKER;
 /** The workspace skill folders OpenBot writes. Each provider reads at least one of them. */

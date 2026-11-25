@@ -1,5 +1,5 @@
-const FILE = "Cat-0.70.1-x64.exe";
-const RELEASE = `https://github.com/Rahulchaube1/eqbot/releases/download/cat-windows-v0.70.1/${FILE}`;
+const FILE = "Cat-0.70.2-x64.exe";
+const RELEASE = `https://github.com/Rahulchaube1/eqbot/releases/download/cat-windows-v0.70.2/${FILE}`;
 
 /** Follow the release host's signed redirect on the server and stream bytes to the original browser request. */
 export async function installerResponse(request: Request, platform: string, fetcher = fetch): Promise<Response> {
