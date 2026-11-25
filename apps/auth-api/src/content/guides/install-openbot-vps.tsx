@@ -84,7 +84,7 @@ export function InstallOpenBotVPS() {
       <pre>
         <code>
           {
-            "curl -fsSL \\\n  https://raw.githubusercontent.com/nightly-labs/openbot/main/scripts/install-server.sh |\n  sudo bash"
+            "curl -fsSL \\\n  https://raw.githubusercontent.com/Rahulchaube1/eqbot/main/scripts/install-server.sh |\n  sudo bash"
           }
         </code>
       </pre>
@@ -134,7 +134,7 @@ export function InstallOpenBotVPS() {
       <pre>
         <code>
           {
-            "mkdir openbot-vps\ncd openbot-vps\ncurl -fsSLO \\\n  https://raw.githubusercontent.com/nightly-labs/openbot/main/docker/compose.yaml\ncurl -fsSLO \\\n  https://raw.githubusercontent.com/nightly-labs/openbot/main/docker/seccomp.json\nsudo docker compose up -d"
+            "mkdir openbot-vps\ncd openbot-vps\ncurl -fsSLO \\\n  https://raw.githubusercontent.com/Rahulchaube1/eqbot/main/docker/compose.yaml\ncurl -fsSLO \\\n  https://raw.githubusercontent.com/Rahulchaube1/eqbot/main/docker/seccomp.json\nsudo docker compose up -d"
           }
         </code>
       </pre>
@@ -211,7 +211,7 @@ export function InstallOpenBotVPS() {
 
       <p>
         Open the file in the agent's workspace and check the result. The{" "}
-        <Link to="/guides/$slug" params={{ slug: "openbot-101" }}>
+        <Link to="/guides/$slug" params={{ slug: "cat-101" }}>
           first-agent guide
         </Link>{" "}
         walks through the agent setup in more detail.

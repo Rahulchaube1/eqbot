@@ -6,7 +6,7 @@ import { BENCHMARK_SOURCES, type RoundupComparison } from "./comparison";
 // official home or pricing page of each app. The benchmark numbers are read by hand
 // from the Artificial Analysis Coding Agent Index.
 
-const OPENBOT = "https://github.com/nightly-labs/openbot";
+const OPENBOT = "https://github.com/Rahulchaube1/eqbot";
 
 export const BEST_AI_AGENT_APPS: RoundupComparison = {
   kind: "roundup",

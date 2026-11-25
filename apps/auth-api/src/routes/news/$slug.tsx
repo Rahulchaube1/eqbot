@@ -1,4 +1,4 @@
-import { createFileRoute, notFound } from "@tanstack/solid-router";
+import { createFileRoute, notFound, redirect } from "@tanstack/solid-router";
 import { ArticlePage } from "../../components/content/ArticlePage";
 import { type CollectionArticle, findArticle } from "../../lib/content-collection";
 import { articleHead } from "../../lib/content-metadata";
@@ -14,7 +14,12 @@ function loadNewsArticle(slug: string): CollectionArticle {
 }
 
 export const Route = createFileRoute("/news/$slug")({
-  loader: ({ params }) => loadNewsArticle(params.slug),
+  loader: ({ params }) => {
+    if (params.slug === "introducing-openbot") {
+      throw redirect({ to: "/news/$slug", params: { slug: "introducing-cat" }, statusCode: 308 });
+    }
+    return loadNewsArticle(params.slug);
+  },
   head: ({ loaderData, match }) => (loaderData ? articleHead(NEWS_COLLECTION, loaderData, match.context.siteUrl) : {}),
   component: NewsArticleRoute,
 });

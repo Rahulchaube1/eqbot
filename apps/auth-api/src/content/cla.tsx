@@ -2,7 +2,6 @@
 // replace `public/openbot-cla.pdf` with it, and move `CLA_UPDATED_AT`.
 
 import { Link } from "@tanstack/solid-router";
-import { CLA_PDF_PATH } from "../lib/cla";
 
 const LICENSES_EMAIL = "support@everestqai.com";
 
@@ -10,10 +9,7 @@ export function Cla() {
   return (
     <>
       <p>
-        <a href={CLA_PDF_PATH} download>
-          Download the agreement as a PDF
-        </a>{" "}
-        to fill in and sign it.
+        <button type="button" onClick={() => window.print()}>Print or save this agreement as a PDF</button>
       </p>
 
       <h2>For Individual and Corporate Contributors</h2>

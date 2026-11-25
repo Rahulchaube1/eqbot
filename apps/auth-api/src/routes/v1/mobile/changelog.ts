@@ -1,11 +1,12 @@
 import { isNewerMobileVersion, type MobileReleaseNotes } from "@openbot/contracts/mobile-features";
 import { createFileRoute } from "@tanstack/solid-router";
-import { parseInline } from "../../../lib/changelog";
-import { CHANGELOG_RELEASES } from "../../../lib/changelog-releases";
+import mobileChangelogSource from "../../../../../mobile/CHANGELOG.md?raw";
+import { parseChangelog, parseInline } from "../../../lib/changelog";
 import { json } from "../../../server/request-auth";
 
 // The update header shows the versions between the app and the newest one, so a few are enough.
 const MAX_RELEASES = 10;
+const mobileReleases = parseChangelog(mobileChangelogSource, { anchorPrefix: "mobile-", stores: true });
 
 /** The text of an item without its Markdown: the phone shows plain text. */
 function plainText(item: string): string {
@@ -28,7 +29,7 @@ export const Route = createFileRoute("/v1/mobile/changelog")({
         const after = query.get("after");
         const releases: MobileReleaseNotes[] =
           platform === "ios" || platform === "android"
-            ? CHANGELOG_RELEASES.mobile
+            ? mobileReleases
                 .flatMap((release) => {
                   const date = release.stores.find((store) => store.store === platform)?.date;
                   if (!date || (after && !isNewerMobileVersion(release.version, after))) return [];

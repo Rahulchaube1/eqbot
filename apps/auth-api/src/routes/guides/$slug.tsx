@@ -16,11 +16,15 @@ export const Route = createFileRoute("/guides/$slug")({
   loader: ({ params }) => {
     if (params.slug === "write-a-guide-for-openbot") {
       throw redirect({
-        href: "https://github.com/nightly-labs/openbot/blob/main/CONTRIBUTING.md",
+        href: "https://github.com/Rahulchaube1/eqbot/blob/main/CONTRIBUTING.md",
         statusCode: 308,
       });
     }
 
+    const catSlug = params.slug.replace("openbot", "cat");
+    if (catSlug !== params.slug && findArticle(GUIDES_COLLECTION, catSlug)) {
+      throw redirect({ to: "/guides/$slug", params: { slug: catSlug }, statusCode: 308 });
+    }
     return loadGuide(params.slug);
   },
   head: ({ loaderData, match }) =>

@@ -303,7 +303,7 @@ export const DOWNLOAD_PAGES: Record<DownloadPagePlatform, DownloadPageContent> =
         steps: [
           {
             text: "On Ubuntu 24.04 or 26.04 with systemd, install Cat as an always-on server of your account, then sign in with an email code:",
-            code: "curl -fsSL https://raw.githubusercontent.com/nightly-labs/openbot/main/scripts/install-server.sh | sudo bash\nsudo openbot login",
+            code: "curl -fsSL https://raw.githubusercontent.com/Rahulchaube1/eqbot/main/scripts/install-server.sh | sudo bash\nsudo openbot login",
           },
           { text: "Then use it from the desktop app, the mobile app or eqbot.everestqai.com/app." },
         ],

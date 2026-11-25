@@ -2,9 +2,6 @@
 
 export const CLA_ROUTE = "/cla";
 
-/** The PDF that a contributor fills in, signs and sends back. It is in `public/`. */
-export const CLA_PDF_PATH = "/openbot-cla.pdf";
-
 /** The "Last updated" date on the page. Change it when the text changes. */
 export const CLA_UPDATED_AT = "2026-11-04";
 

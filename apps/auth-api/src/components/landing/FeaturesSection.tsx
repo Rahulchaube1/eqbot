@@ -37,7 +37,8 @@ const AgentAvatar = lazy(() =>
 );
 
 /** The second marquee row runs the other way, so it starts from the other end of the list. */
-const PROVIDER_ROWS = [LANDING_PROVIDERS, [...LANDING_PROVIDERS].reverse()];
+const modelMarks = [...LANDING_PROVIDERS, { provider: "everestq", name: "EverestQ L1" } as const];
+const PROVIDER_ROWS = [modelMarks, [...modelMarks].reverse()];
 
 /**
  * The second marquee row and the second copy in each track (the copy closes the loop) are hidden
@@ -198,7 +199,7 @@ export function FeaturesSection() {
                       data-provider={entry.provider}
                       aria-hidden={hiddenFromReaders(index() >= row.length)}
                     >
-                      <ProviderLogo provider={entry.provider} class="landing-provider-pill-logo" />
+                      {entry.provider === "everestq" ? <img src="/everestq.png" alt="" class="landing-provider-pill-logo" /> : <ProviderLogo provider={entry.provider} class="landing-provider-pill-logo" />}
                       {entry.name}
                     </li>
                   )}

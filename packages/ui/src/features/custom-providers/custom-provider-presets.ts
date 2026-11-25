@@ -1,10 +1,10 @@
 // The starting points of the add flow. A preset only fills the form: the user still sees and can
-// change every field before OpenBot saves anything.
+// change every field before Cat saves anything.
 
 import { DEFAULT_MODEL_SERVERS, type DefaultModelServerId, detectedModelServerKey } from "@openbot/contracts/ipc";
 import type { DetectedProvider, ProviderDetection } from "./detected-providers";
 
-export type CustomProviderPresetId = "ollama" | "lmstudio" | "openai-compatible" | "acp";
+export type CustomProviderPresetId = "everestq" | "ollama" | "lmstudio" | "openai-compatible" | "acp";
 
 /** What the host found at a local server's default address. */
 export type LocalServerProbe = { status: "checking" } | { status: "running"; models: number };
@@ -38,6 +38,20 @@ export function presetSetupProvider(
   preset: CustomProviderPresetId,
   detection: ProviderDetection | undefined,
 ): DetectedProvider {
+  if (preset === "everestq") {
+    const saved = detection?.found.find((row) => row.kind === "models" && row.id === preset && row.added);
+    if (saved) return saved;
+    const baseUrl = "http://localhost:11434/v1";
+    return {
+      kind: "models",
+      key: detectedModelServerKey(baseUrl),
+      id: preset,
+      name: "EverestQai",
+      baseUrl,
+      models: [],
+      presetModels: [{ id: "everestq/l1", name: "EverestQ L1" }],
+    };
+  }
   if (preset === "acp") return { kind: "agent", key: "", id: "", name: "", command: "", args: "" };
   if (preset === "openai-compatible") return { kind: "models", key: "", id: "", name: "", baseUrl: "", models: [] };
   const found = foundServer(detection, preset);

@@ -33,7 +33,7 @@ export const GUIDES_COLLECTION: ContentCollection<"guides"> = {
       author: NEWS_AUTHOR,
     },
     {
-      slug: "install-openbot-vps",
+      slug: "install-cat-vps",
       title: "How to Install Cat on a VPS: Ubuntu and Docker Guide",
       description:
         "Install Cat on a VPS with Ubuntu or Docker. Connect the server to your account, set up an AI provider, and manage updates, logs and backups.",
@@ -81,7 +81,7 @@ export const GUIDES_COLLECTION: ContentCollection<"guides"> = {
       author: NEWS_AUTHOR,
     },
     {
-      slug: "openbot-hosted-servers",
+      slug: "cat-hosted-servers",
       title: "Cat Hosted Servers: Plans, Pricing, and How They Work",
       description:
         "Compare Cat hosted server plans, pricing, storage, and team limits. Learn how to set one up and when self-hosting may suit you better.",
@@ -89,7 +89,7 @@ export const GUIDES_COLLECTION: ContentCollection<"guides"> = {
       author: NEWS_AUTHOR,
     },
     {
-      slug: "openbot-marketplace",
+      slug: "cat-marketplace",
       title: "How to Use the Cat Marketplace: Agents, Skills, and Plugins",
       description:
         "Browse the Cat Marketplace, install agents, plugins, and skills, and submit your own agent for review.",
@@ -105,7 +105,7 @@ export const GUIDES_COLLECTION: ContentCollection<"guides"> = {
       author: NEWS_AUTHOR,
     },
     {
-      slug: "openbot-101",
+      slug: "cat-101",
       title: "How to Use Cat: Set Up Your First AI Agent",
       description:
         "What Cat is, what an agent keeps between runs, and how to get one doing real work on your computer. Start here if you have not opened the app yet.",
@@ -113,7 +113,7 @@ export const GUIDES_COLLECTION: ContentCollection<"guides"> = {
       author: NEWS_AUTHOR,
     },
     {
-      slug: "wtf-is-openbot",
+      slug: "wtf-is-cat",
       title: "What Is Cat? Models, Providers and Agents Explained",
       description:
         "A practical explanation of models, providers, agents, and the local-first workspace that brings them together.",

@@ -132,7 +132,7 @@ export function AIAgentsExamples() {
 
       <p>
         If you have not created an agent yet, start with{" "}
-        <Link to="/guides/$slug" params={{ slug: "openbot-101" }}>
+        <Link to="/guides/$slug" params={{ slug: "cat-101" }}>
           How to Use Cat
         </Link>
         .

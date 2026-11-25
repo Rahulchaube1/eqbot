@@ -42,6 +42,11 @@ export const LOCAL_MODELS_PROVIDER: ProviderPage = {
   comparisons: ["best-ai-agent-apps"],
   faq: [
     {
+      question: "How do I connect EverestQ L1?",
+      answer:
+        "On the computer that runs your agents, use EQ Engine to pull the model with eq pull everestq/l1 and start its local API. In Cat's provider settings, add an OpenAI-compatible endpoint with http://localhost:11434/v1 as the base URL and everestq/l1 as the model ID. If EQ Engine uses another port, enter that port instead.",
+    },
+    {
       question: "Can I use Ollama or LM Studio with a coding agent?",
       answer:
         "Yes. In Cat, OpenCode runs the agent on the OpenAI-compatible server of Ollama or LM Studio. Choose a model that supports tool calls: smaller models and models not trained for tools can send tool calls in the wrong format.",
@@ -62,6 +67,8 @@ export const LOCAL_MODELS_PROVIDER: ProviderPage = {
     },
   ],
   sources: [
+    { label: "EQ Engine model library", url: "https://engine.everestqai.com/models" },
+    { label: "EQ Engine API reference", url: "https://engine.everestqai.com/api-reference" },
     { label: "Ollama: download", url: "https://ollama.com/download" },
     { label: "Ollama: macOS", url: "https://docs.ollama.com/macos" },
     { label: "Ollama: Windows", url: "https://docs.ollama.com/windows" },
@@ -73,5 +80,5 @@ export const LOCAL_MODELS_PROVIDER: ProviderPage = {
     { label: "LM Studio: tool use", url: "https://lmstudio.ai/docs/developer/openai-compat/tools" },
     { label: "LM Studio: free for work", url: "https://lmstudio.ai/blog/free-for-work" },
   ],
-  checkedAt: "2026-10-03",
+  checkedAt: "2026-11-25",
 };

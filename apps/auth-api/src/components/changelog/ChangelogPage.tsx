@@ -18,7 +18,7 @@ import { ChangelogStores } from "./ChangelogStores";
 import { ChangelogSwap, createPlatformSwap } from "./ChangelogSwap";
 
 /** The seed for the hero's colours: the Sunset family, the one the featured article on /news uses. */
-const HERO_GRADIENT_SEED = "OpenBot releases";
+const HERO_GRADIENT_SEED = "Cat releases";
 
 /** A release becomes current once its heading passes this share of the window's height. */
 const ACTIVE_LINE = 0.3;
@@ -212,7 +212,7 @@ export function ChangelogPage(props: ChangelogPageProps) {
 
             <ChangelogSwap swap={swap} class="changelog-releases">
               {(platform) => (
-                <For each={CHANGELOG_RELEASES[platform]}>
+                <For each={CHANGELOG_RELEASES[platform]} fallback={<p>No Cat mobile releases have been published.</p>}>
                   {(release, position) => (
                     <ChangelogRelease release={release} product={PRODUCT_NAMES[platform]} latest={position() === 0} />
                   )}

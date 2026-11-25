@@ -16,6 +16,7 @@ import type { JSX } from "@solidjs/web";
 import { For, Show } from "solid-js";
 import { useText } from "../../text";
 import type { CustomProviderPresetId, LocalServerProbe } from "./custom-provider-presets";
+import everestLogo from "./everestq.png";
 
 interface CustomProviderPresetDialogProps {
   open: boolean;
@@ -92,6 +93,12 @@ export function CustomProviderPresetDialog(props: CustomProviderPresetDialogProp
   const { t } = useText();
 
   const modelRows: readonly PresetRow[] = [
+    {
+      id: "everestq",
+      icon: () => <img src={everestLogo} alt="" width={24} height={24} />,
+      title: () => "EverestQ L1",
+      description: () => "EQ Engine · localhost:11434",
+    },
     {
       id: "ollama",
       icon: () => <HardDrive />,

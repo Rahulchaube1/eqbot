@@ -15,6 +15,36 @@
       ],
       "destination": "https://eqbot.everestqai.com/app",
       "permanent": false
+    },
+    {
+      "source": "/guides/install-openbot-vps",
+      "destination": "/guides/install-cat-vps",
+      "permanent": true
+    },
+    {
+      "source": "/guides/openbot-101",
+      "destination": "/guides/cat-101",
+      "permanent": true
+    },
+    {
+      "source": "/guides/openbot-marketplace",
+      "destination": "/guides/cat-marketplace",
+      "permanent": true
+    },
+    {
+      "source": "/guides/openbot-hosted-servers",
+      "destination": "/guides/cat-hosted-servers",
+      "permanent": true
+    },
+    {
+      "source": "/guides/wtf-is-openbot",
+      "destination": "/guides/wtf-is-cat",
+      "permanent": true
+    },
+    {
+      "source": "/news/introducing-openbot",
+      "destination": "/news/introducing-cat",
+      "permanent": true
     }
   ],
   "rewrites": [

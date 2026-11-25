@@ -113,7 +113,7 @@ export function WhatAreAIAgents() {
       <p>
         Cat is local-first, but that does not necessarily mean the model runs on your computer. The workspace can be
         local while a connected provider handles the requests. For a closer look, see{" "}
-        <Link to="/guides/$slug" params={{ slug: "openbot-101" }}>
+        <Link to="/guides/$slug" params={{ slug: "cat-101" }}>
           How to Use Cat
         </Link>
         . To see how this differs from an agent app that runs in the cloud, read{" "}

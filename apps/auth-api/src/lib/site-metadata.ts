@@ -6,7 +6,7 @@
 import { faqStructuredData, type LandingQuestion } from "./landing-faq";
 import { OPENBOT_ALTERNATE_DOWNLOAD_LINKS, OPENBOT_DOWNLOAD_LINKS } from "./landing-links";
 
-export const OPENBOT_SITE_URL = "https://bots.everestqai.com/";
+export const OPENBOT_SITE_URL = "https://eqbot.everestqai.com/";
 export const OPENBOT_SITE_TITLE = "Cat: Run a team of AI agents on your computer";
 export const OPENBOT_SITE_DESCRIPTION =
   "A free desktop app by EverestQai that runs AI agents as a team on your own computer, with the ChatGPT, Claude, Gemini or Grok plan you already pay for, or your own model.";

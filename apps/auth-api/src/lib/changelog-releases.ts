@@ -3,13 +3,12 @@
 // `vite.config.ts` loads `content-images.ts` in plain Node, so nothing that file reaches may
 // import through Vite.
 
-import changelogSource from "../../../../CHANGELOG.md?raw";
-import mobileChangelogSource from "../../../mobile/CHANGELOG.md?raw";
+import changelogSource from "../content/cat-releases.md?raw";
 import { type ChangelogPlatform, type ChangelogRelease, parseChangelog } from "./changelog";
 
 export const CHANGELOG_RELEASES: Readonly<Record<ChangelogPlatform, readonly ChangelogRelease[]>> = {
   desktop: parseChangelog(changelogSource),
-  mobile: parseChangelog(mobileChangelogSource, { anchorPrefix: "mobile-", stores: true }),
+  mobile: [],
 };
 
 /** The date of the newest dated release, for the sitemap. */

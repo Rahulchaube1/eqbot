@@ -17,15 +17,15 @@ import { WtfIsOpenBot } from "./wtf-is-openbot";
 
 export const GUIDE_BODIES: Readonly<Record<string, ArticleBody>> = {
   "ai-workspace-vs-chat": AIWorkspaceVsChat,
-  "install-openbot-vps": InstallOpenBotVPS,
+  "install-cat-vps": InstallOpenBotVPS,
   "import-hermes-agents": ImportHermesAgents,
   "import-grok-bot-agents": ImportGrokBotAgents,
   "ai-agents-examples": AIAgentsExamples,
   "ai-agents-vs-agentic-ai": AIAgentsVsAgenticAI,
   "agentic-ai-definition": AgenticAIDefinition,
   "what-are-ai-agents": WhatAreAIAgents,
-  "openbot-101": OpenBot101,
-  "openbot-hosted-servers": OpenBotHostedServers,
-  "openbot-marketplace": OpenBotMarketplace,
-  "wtf-is-openbot": WtfIsOpenBot,
+  "cat-101": OpenBot101,
+  "cat-hosted-servers": OpenBotHostedServers,
+  "cat-marketplace": OpenBotMarketplace,
+  "wtf-is-cat": WtfIsOpenBot,
 };

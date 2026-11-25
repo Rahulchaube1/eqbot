@@ -28,7 +28,7 @@ export const NEWS_COLLECTION: ContentCollection<"news"> = {
   imageEyebrow: "CAT · NEWS",
   articles: publishedFirst([
     {
-      slug: "introducing-openbot",
+      slug: "introducing-cat",
       title: "Introducing Cat: A Shared Workspace for AI Agents",
       description:
         "Meet Cat, a local-first workspace where the AI models you already use can work as a team of agents, alongside you and your coworkers.",

@@ -152,7 +152,7 @@ export function WtfIsOpenBot() {
       <p>That is the idea behind Cat: turning separate AI tools into persistent teammates for real work.</p>
       <p>
         If you want to see how it works in practice, start with{" "}
-        <Link to="/guides/$slug" params={{ slug: "openbot-101" }}>
+        <Link to="/guides/$slug" params={{ slug: "cat-101" }}>
           How to Use Cat
         </Link>
         . To see how it differs from an agent app that runs in the cloud, read{" "}

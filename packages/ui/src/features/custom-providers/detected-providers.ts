@@ -32,6 +32,8 @@ export type DetectedProvider =
       baseUrl: string;
       /** The list the server gave when the host asked it, so the form opens with them. */
       models: readonly DiscoveredModel[];
+      /** Editable suggestions for a new preset. These models have not been probed. */
+      presetModels?: readonly DiscoveredModel[];
       /** For a saved endpoint: the models the user chose, which Edit opens with. */
       savedModels?: readonly DiscoveredModel[] | undefined;
       /** For a saved endpoint: main holds a key, which a blank key field keeps. */
@@ -99,7 +101,7 @@ export function detectedModelsDraft(
   provider: Extract<DetectedProvider, { kind: "models" }>,
   format: Pick<AppFormat, "number">,
 ): CustomProviderDraft {
-  const source = provider.added && provider.savedModels ? provider.savedModels : provider.models;
+  const source = provider.added && provider.savedModels ? provider.savedModels : (provider.presetModels ?? provider.models);
   const models = source.slice(0, CUSTOM_PROVIDER_LIMITS.models).map((model) => ({
     id: model.id,
     name: model.name ?? "",
