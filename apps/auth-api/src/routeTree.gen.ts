@@ -16,6 +16,8 @@ import { Route as TeamsRouteImport } from './routes/_teams'
 import { Route as AppRouteImport } from './routes/app'
 import { Route as AppPreviewRouteImport } from './routes/app-preview'
 import { Route as BrandingRouteImport } from './routes/branding'
+import { Route as CatComputerRouteImport } from './routes/cat-computer'
+import { Route as CatShipRouteImport } from './routes/cat-ship'
 import { Route as ChangelogRouteImport } from './routes/changelog'
 import { Route as ClaRouteImport } from './routes/cla'
 import { Route as CommercialLicenseRouteImport } from './routes/commercial-license'
@@ -246,6 +248,16 @@ const AppPreviewRoute = AppPreviewRouteImport.update({
 const BrandingRoute = BrandingRouteImport.update({
   id: '/branding',
   path: '/branding',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CatComputerRoute = CatComputerRouteImport.update({
+  id: '/cat-computer',
+  path: '/cat-computer',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CatShipRoute = CatShipRouteImport.update({
+  id: '/cat-ship',
+  path: '/cat-ship',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ChangelogRoute = ChangelogRouteImport.update({
@@ -1321,6 +1333,8 @@ export interface FileRoutesByFullPath {
   '/app': typeof AppRoute
   '/app-preview': typeof AppPreviewRoute
   '/branding': typeof BrandingRoute
+  '/cat-computer': typeof CatComputerRoute
+  '/cat-ship': typeof CatShipRoute
   '/changelog': typeof ChangelogRoute
   '/cla': typeof ClaRoute
   '/commercial-license': typeof CommercialLicenseRoute
@@ -1526,6 +1540,8 @@ export interface FileRoutesByTo {
   '/app': typeof AppRoute
   '/app-preview': typeof AppPreviewRoute
   '/branding': typeof BrandingRoute
+  '/cat-computer': typeof CatComputerRoute
+  '/cat-ship': typeof CatShipRoute
   '/changelog': typeof ChangelogRoute
   '/cla': typeof ClaRoute
   '/commercial-license': typeof CommercialLicenseRoute
@@ -1735,6 +1751,8 @@ export interface FileRoutesById {
   '/app': typeof AppRoute
   '/app-preview': typeof AppPreviewRoute
   '/branding': typeof BrandingRoute
+  '/cat-computer': typeof CatComputerRoute
+  '/cat-ship': typeof CatShipRoute
   '/changelog': typeof ChangelogRoute
   '/cla': typeof ClaRoute
   '/commercial-license': typeof CommercialLicenseRoute
@@ -1943,6 +1961,8 @@ export interface FileRouteTypes {
     | '/app'
     | '/app-preview'
     | '/branding'
+    | '/cat-computer'
+    | '/cat-ship'
     | '/changelog'
     | '/cla'
     | '/commercial-license'
@@ -2148,6 +2168,8 @@ export interface FileRouteTypes {
     | '/app'
     | '/app-preview'
     | '/branding'
+    | '/cat-computer'
+    | '/cat-ship'
     | '/changelog'
     | '/cla'
     | '/commercial-license'
@@ -2356,6 +2378,8 @@ export interface FileRouteTypes {
     | '/app'
     | '/app-preview'
     | '/branding'
+    | '/cat-computer'
+    | '/cat-ship'
     | '/changelog'
     | '/cla'
     | '/commercial-license'
@@ -2566,6 +2590,8 @@ export interface RootRouteChildren {
   AppRoute: typeof AppRoute
   AppPreviewRoute: typeof AppPreviewRoute
   BrandingRoute: typeof BrandingRoute
+  CatComputerRoute: typeof CatComputerRoute
+  CatShipRoute: typeof CatShipRoute
   ChangelogRoute: typeof ChangelogRoute
   ClaRoute: typeof ClaRoute
   CommercialLicenseRoute: typeof CommercialLicenseRoute
@@ -2778,6 +2804,20 @@ declare module '@tanstack/solid-router' {
       path: '/branding'
       fullPath: '/branding'
       preLoaderRoute: typeof BrandingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/cat-computer': {
+      id: '/cat-computer'
+      path: '/cat-computer'
+      fullPath: '/cat-computer'
+      preLoaderRoute: typeof CatComputerRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/cat-ship': {
+      id: '/cat-ship'
+      path: '/cat-ship'
+      fullPath: '/cat-ship'
+      preLoaderRoute: typeof CatShipRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/changelog': {
@@ -4408,6 +4448,8 @@ const rootRouteChildren: RootRouteChildren = {
   AppRoute: AppRoute,
   AppPreviewRoute: AppPreviewRoute,
   BrandingRoute: BrandingRoute,
+  CatComputerRoute: CatComputerRoute,
+  CatShipRoute: CatShipRoute,
   ChangelogRoute: ChangelogRoute,
   ClaRoute: ClaRoute,
   CommercialLicenseRoute: CommercialLicenseRoute,
