@@ -26,8 +26,8 @@ import type {
 import { SIDEBAR_UNASSIGNED_SECTION_ID } from "@openbot/contracts/ipc";
 import { TEAM_CURRENT_CAPABILITIES } from "@openbot/contracts/team-protocol/current";
 import { TEAM_PROTOCOL_V6 } from "@openbot/contracts/team-protocol/v6";
-import developmentLogoUrl from "../assets/openbot-logo-dev.png";
-import productionLogoUrl from "../assets/openbot-logo-production.png";
+
+import productionLogoUrl from "../assets/cat-server.png";
 import { STORY_AGENT_STATUS, STORY_PRESENCE } from "./fixtures";
 import type { MockChannelSeed } from "./mock-channels";
 import type { MockOpenBotOptions } from "./mock-openbot";
@@ -131,7 +131,7 @@ function landingAgents(at: (minutesAgo: number) => string): ClientAgentSummary[]
     ...fields,
     notifications: true,
     threadId: `thread-${fields.id}`,
-    workspacePath: `/mock/OpenBot/Agents/${fields.id}`,
+    workspacePath: `/mock/Cat/Agents/${fields.id}`,
     updatedAt: at(minutesAgo),
     avatarSeed: fields.id,
     avatarHue: hue,
@@ -271,7 +271,7 @@ function landingServers(): ServerSummary[] {
     {
       id: "local",
       name: "Local",
-      logoUrl: developmentLogoUrl,
+      logoUrl: productionLogoUrl,
       notificationsMuted: false,
       notificationsMutedUntil: null,
       notificationLevel: "all",
@@ -284,7 +284,7 @@ function landingServers(): ServerSummary[] {
     },
     {
       id: "team",
-      name: "OpenBot team",
+      name: "Cat team",
       logoUrl: productionLogoUrl,
       notificationsMuted: false,
       notificationsMutedUntil: null,

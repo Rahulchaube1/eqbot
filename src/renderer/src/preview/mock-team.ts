@@ -184,7 +184,7 @@ export function createMockTeam(
     previewInvite: async () => ({
       serverId: "00000000-0000-4000-8000-000000000000",
       serverName: "Joined workspace",
-      apiHostname: "story-host.openbot.run",
+      apiHostname: "preview.example",
       role: "member",
       expiresAt: "2026-09-19T10:00:00.000Z",
       emailBound: false,
@@ -425,7 +425,7 @@ export function createMockTeam(
       role: input.role,
       expiresAt: "2026-09-19T10:00:00.000Z",
       usedAt: null,
-      inviteUrl: "https://openbot.run/join?invite=mock-invite",
+      inviteUrl: "https://eqbot.everestqai.com/join?invite=mock-invite",
       email: input.email ?? null,
       permanent: input.permanent ?? false,
       useCount: 0,
