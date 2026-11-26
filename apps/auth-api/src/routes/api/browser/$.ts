@@ -2,6 +2,7 @@ import { env } from "cloudflare:workers";
 import { createFileRoute } from "@tanstack/solid-router";
 import { Effect } from "effect";
 import { handleBrowserApi } from "../../../server/browser-api";
+import { editorConsentPage, exchangeEditorCode } from "../../../server/editor-connect";
 import { handleGoogleSignIn } from "../../../server/google-sign-in";
 import { readHostLogo } from "../../../server/host-logo";
 import {
@@ -22,6 +23,9 @@ import { requireWorkerBindings } from "../../../server/types";
 async function handle({ request }: { request: Request }) {
   const bindings = requireWorkerBindings(env);
   const url = new URL(request.url);
+  if (url.pathname === "/api/browser/editor/connect" && request.method === "GET") return editorConsentPage();
+  if (url.pathname === "/api/browser/editor/exchange" && request.method === "POST")
+    return exchangeEditorCode(request, requestAuthService());
   if (url.pathname.startsWith("/api/browser/google/")) {
     const result = await handleGoogleSignIn(request, bindings, (email) =>
       Effect.runPromise(requestCompanySignIn().usesCompanySignIn(email)),

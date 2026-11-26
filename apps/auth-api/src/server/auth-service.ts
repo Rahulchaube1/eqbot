@@ -568,14 +568,15 @@ export class AuthService {
     function* (
       this: AuthService,
       userId: string,
+      editorChallenge?: string,
     ): Effect.fn.Return<{ claim: string; expiresAt: number }, AuthWorkflowFailure, AuthDependencies> {
       const dependencies = yield* AuthDependencies;
       const now = dependencies.now();
       yield* this.#enforceRateLimit(`server-claim:user:${userId}`, 20, now);
       const claim = randomToken();
-      const expiresAt = now + SERVER_CLAIM_TTL_MS;
+      const expiresAt = now + (editorChallenge === undefined ? SERVER_CLAIM_TTL_MS : 2 * 60_000);
       yield* dependencies.repository.createServerClaimForUser({
-        claimHash: yield* sha256(claim),
+        claimHash: editorChallenge === undefined ? yield* sha256(claim) : yield* editorClaimKey(claim, editorChallenge),
         userId,
         createdAt: now,
         expiresAt,
@@ -591,6 +592,7 @@ export class AuthService {
       this: AuthService,
       claim: unknown,
       sourceIp: string,
+      editorVerifier?: string,
     ): Effect.fn.Return<{ sessionToken: string; user: AuthUser }, AuthWorkflowFailure, AuthDependencies> {
       const dependencies = yield* AuthDependencies;
       const now = dependencies.now();
@@ -598,7 +600,10 @@ export class AuthService {
       yield* this.#enforceRateLimit(`server-claim:ip:${normalizeSourceIp(sourceIp)}`, 30, now);
       if (!isString(claim) || claim.length < 16 || claim.length > 128) return yield* invalidServerClaim();
       const session = yield* dependencies.repository.redeemServerClaim({
-        claimHash: yield* sha256(claim),
+        claimHash:
+          editorVerifier === undefined
+            ? yield* sha256(claim)
+            : yield* editorClaimKey(claim, yield* sha256(editorVerifier)),
         now,
         session: { id: crypto.randomUUID(), token: randomToken(), expiresAt: PERSISTENT_SESSION_EXPIRES_AT },
       });
@@ -967,6 +972,12 @@ export class AuthServiceError extends Schema.TaggedError<AuthServiceError>()("Au
 export class AuthOperationError extends Schema.TaggedError<AuthOperationError>()("AuthOperationError", {
   message: Schema.String,
 }) {}
+
+// A generic claim lookup produces only a base64url hash. Even a client that knows an editor
+// code and its public challenge cannot redeem it through the server provisioning endpoint.
+const editorClaimKey = Effect.fn("Auth.editorClaimKey")(function* (code: string, challenge: string) {
+  return `editor:${yield* sha256(`${code}.${challenge}`)}`;
+});
 
 function invalidServerClaim(): AuthServiceError {
   return new AuthServiceError(401, "server_claim_invalid", "The server claim is invalid or used.");

@@ -1,0 +1,117 @@
+{
+  "name": "cat-workspace",
+  "displayName": "Cat by EverestQai",
+  "description": "Open your Cat agent workspace, sign in, and prepare code selections for your agents from VS Code.",
+  "version": "0.1.0",
+  "publisher": "EverestQai",
+  "author": {
+    "name": "EverestQai",
+    "url": "https://www.everestqai.com"
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "homepage": "https://eqbot.everestqai.com/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Rahulchaube1/eqbot.git",
+    "directory": "extensions/cat"
+  },
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "cat",
+    "everestqai",
+    "agents",
+    "workspace"
+  ],
+  "icon": "cat.png",
+  "main": "./extension.js",
+  "extensionKind": [
+    "ui"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "cat.openWorkspace",
+        "title": "Open Workspace",
+        "category": "Cat"
+      },
+      {
+        "command": "cat.signIn",
+        "title": "Sign In",
+        "category": "Cat"
+      },
+      {
+        "command": "cat.signUp",
+        "title": "Create Account",
+        "category": "Cat"
+      },
+      {
+        "command": "cat.copySelection",
+        "title": "Copy Selection for Cat",
+        "category": "Cat"
+      },
+      {
+        "command": "cat.openShip",
+        "title": "Open Cat-Ship",
+        "category": "Cat"
+      },
+      {
+        "command": "cat.openComputer",
+        "title": "Open Cat Computer",
+        "category": "Cat"
+      },
+      {
+        "command": "cat.account",
+        "title": "Show Signed-In Account",
+        "category": "Cat"
+      },
+      {
+        "command": "cat.signOut",
+        "title": "Sign Out of Editor",
+        "category": "Cat"
+      }
+    ],
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "cat-workbench",
+          "title": "Cat",
+          "icon": "cat-mark.svg"
+        }
+      ]
+    },
+    "views": {
+      "cat-workbench": [
+        {
+          "id": "cat.workspace",
+          "name": "Agent workspace"
+        }
+      ]
+    },
+    "viewsWelcome": [
+      {
+        "view": "cat.workspace",
+        "contents": "Cat by EverestQai\n[Open Cat Workspace](command:cat.openWorkspace)\n[Sign In](command:cat.signIn)  \u00c2\u00b7  [Create Account](command:cat.signUp)\n\nSelect code in an editor, then choose **Cat: Copy Selection for Cat** to prepare it for your agent.\n\n[Cat-Ship](command:cat.openShip)  \u00c2\u00b7  [Cat Computer](command:cat.openComputer)",
+        "when": "!cat.signedIn"
+      },
+      {
+        "view": "cat.workspace",
+        "when": "cat.signedIn",
+        "contents": "Cat by EverestQai\n[Open Cat Workspace](command:cat.openWorkspace)\n[Show Account](command:cat.account)  \u00b7  [Sign Out of Editor](command:cat.signOut)\n\nCopy a code selection from the editor context menu and paste it into a Cat conversation.\n\n[Cat-Ship](command:cat.openShip)  \u00b7  [Cat Computer](command:cat.openComputer)"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "command": "cat.copySelection",
+          "when": "editorHasSelection",
+          "group": "9_cutcopypaste@10"
+        }
+      ]
+    }
+  }
+}

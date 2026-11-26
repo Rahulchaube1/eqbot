@@ -421,6 +421,26 @@ const handleAccount = Effect.fn("BrowserApi.handleAccount")(function* (
   // The install command of a self-hosted server. Never log the claim.
   if (path === "v2/server-claims" && request.method === "POST")
     return json(yield* services.auth.createServerClaimForUser(user.id));
+  if (path === "editor/approve" && request.method === "POST") {
+    const { challenge, state, port, accountId } = yield* readJsonObject(request);
+    if (
+      accountId !== user.id ||
+      typeof challenge !== "string" ||
+      !/^[A-Za-z0-9_-]{43}$/u.test(challenge) ||
+      typeof state !== "string" ||
+      !/^[A-Za-z0-9_-]{43}$/u.test(state) ||
+      typeof port !== "number" ||
+      !Number.isInteger(port) ||
+      port < 1024 ||
+      port > 65535
+    ) {
+      return failure(400, "invalid_editor_request", "Restart the connection from Cat in VS Code.");
+    }
+    const grant = yield* services.auth.createServerClaimForUser(user.id, challenge);
+    const callback = new URL(`http://127.0.0.1:${port}/cat/callback`);
+    callback.search = new URLSearchParams({ code: grant.claim, state }).toString();
+    return json({ callback: callback.href });
+  }
   if (path.startsWith("v1/me/billing") || path.startsWith("v1/me/license"))
     return yield* handleBilling(request, path, user, services);
   // A session ID is a UUID, so the segment needs no decoding; the service refuses any other value.

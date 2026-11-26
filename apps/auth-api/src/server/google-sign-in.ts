@@ -54,7 +54,10 @@ export async function handleGoogleSignIn(
       code_challenge: await Effect.runPromise(sha256(verifier)),
       code_challenge_method: "S256",
     }).toString();
-    return redirect(target.href, [`${FLOW_COOKIE}=${state}.${verifier}.${nonce}; ${ATTRIBUTES}; Max-Age=600`]);
+    const editorReturn = url.searchParams.get("return") === "editor" ? ".editor" : "";
+    return redirect(target.href, [
+      `${FLOW_COOKIE}=${state}.${verifier}.${nonce}${editorReturn}; ${ATTRIBUTES}; Max-Age=600`,
+    ]);
   }
   if (action !== "callback") return new Response(null, { status: 404 });
 
@@ -63,9 +66,10 @@ export async function handleGoogleSignIn(
     .get("Cookie")
     ?.split(/;\s*/u)
     .find((part) => part.startsWith(`${FLOW_COOKIE}=`));
-  const [state, verifier, nonce] = flow?.slice(FLOW_COOKIE.length + 1).split(".") ?? [];
+  const [state, verifier, nonce, destination] = flow?.slice(FLOW_COOKIE.length + 1).split(".") ?? [];
+  const returnPath = destination === "editor" ? "/api/browser/editor/connect" : "/app";
   const code = url.searchParams.get("code");
-  const failed = () => redirect("/app?google_sign_in=failed", cookies);
+  const failed = () => redirect(`${returnPath}?google_sign_in=failed`, cookies);
   if (!state || !verifier || !nonce || !code || url.searchParams.get("state") !== state) return failed();
   try {
     const token = await fetch("https://oauth2.googleapis.com/token", {
@@ -117,7 +121,7 @@ export async function handleGoogleSignIn(
       ),
     );
     cookies.push(`${SESSION_COOKIE}=${sessionToken}; ${ATTRIBUTES}; Max-Age=34560000`);
-    return redirect("/app", cookies);
+    return redirect(returnPath, cookies);
   } catch {
     return failed();
   }
